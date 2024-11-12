@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi kfsi--main">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-main">
+          <div class="kfsi-main-head">
+            <div class="kfsi-inner">
+              <div class="kfsi-main-search">
+                <div class="kfsi-main-search-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="검색어를 입력해보세요."
+                    title="검색어를 입력해보세요."
+                  />
+                  <button>검색</button>
+                </div>
+                <div class="pc">
+                  <div class="kfsi-main-search-popular">
+                    <ol>
+                      <li>
+                        <a href=""
+                          ><strong>1</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>2</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>3</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>4</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>5</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                    </ol>
+                    <!-- <a href="" class="kfsi-main-search-popular__all">
+                      전체보기
+                    </a> -->
+                  </div>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const items = document.querySelectorAll(
+                        '.kfsi-main-search-popular li'
+                      );
+                      let currentIndex = 0;
+
+                      function showNextItem() {
+                        items.forEach((item, index) => {
+                          item.classList.remove('active');
+                          if (index === currentIndex) {
+                            item.classList.add('active');
+                          }
+                        });
+
+                        currentIndex = (currentIndex + 1) % items.length;
+                      }
+
+                      setInterval(showNextItem, 3000); // 2초 간격으로 전환
+                      showNextItem(); // 첫 항목 표시
+                    });
+                  </script>
+                </div>
+              </div>
+              <div class="kfsi-main-head-section">
+                <div class="kfsi-main-banner">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/banner01.png"
+                            alt="특별한 회원 혜택 한국소방안전원이 회원 여러분께만 드리는 특별한 혜택 #재해위로금 #전자도서관 운영 #소방안전장학금 지급 #회원복지운영"
+                          />
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/banner01.png"
+                            alt="특별한 회원 혜택 한국소방안전원이 회원 여러분께만 드리는 특별한 혜택 #재해위로금 #전자도서관 운영 #소방안전장학금 지급 #회원복지운영"
+                          />
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="">
+                          <img
+                            src="./assets/images/main/banner01.png"
+                            alt="특별한 회원 혜택 한국소방안전원이 회원 여러분께만 드리는 특별한 혜택 #재해위로금 #전자도서관 운영 #소방안전장학금 지급 #회원복지운영"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="kfsi-main-banner__button">
+                      <a href="javascript:void(0)" class="swiper-button-prev"
+                        >이전</a
+                      >
+                      <div class="swiper-pagination"></div>
+                      <a href="javascript:void(0)" class="swiper-button-next"
+                        >다음</a
+                      >
+                      <div class="swiper-control">
+                        <a href="javascript:void(0)" class="swiper-button-pause"
+                          >멈춤</a
+                        >
+                        <a href="javascript:void(0)" class="swiper-button-play"
+                          >재생</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    $(document).ready(function () {
+                      var swiper = new Swiper('.kfsi-main-banner .swiper', {
+                        loop: true,
+                        pagination: {
+                          el: '.kfsi-main-banner .swiper-pagination',
+                          type: 'fraction',
+                        },
+                        navigation: {
+                          nextEl: '.kfsi-main-banner .swiper-button-next',
+                          prevEl: '.kfsi-main-banner .swiper-button-prev',
+                        },
+                        autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                        },
+                      });
+
+                      // 멈춤 버튼 클릭 이벤트
+                      $('.swiper-button-pause').on('click', function () {
+                        swiper.autoplay.stop();
+                        $('.kfsi-main-banner').addClass('pause');
+                      });
+
+                      // 재생 버튼 클릭 이벤트
+                      $('.swiper-button-play').on('click', function () {
+                        swiper.autoplay.start();
+                        $('.kfsi-main-banner').removeClass('pause');
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="mo">
+                  <button class="kfsi-main-search-popular-mo">
+                    <ol>
+                      <li>
+                        <a href=""
+                          ><strong>1</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>2</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>3</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>4</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong>5</strong>
+                          <p>소방관련법령</p></a
+                        >
+                      </li>
+                    </ol>
+                  </button>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const items = document.querySelectorAll(
+                        '.kfsi-main-search-popular-mo li'
+                      );
+                      let currentIndex = 0;
+
+                      function showNextItem() {
+                        items.forEach((item, index) => {
+                          item.classList.remove('active');
+                          if (index === currentIndex) {
+                            item.classList.add('active');
+                          }
+                        });
+
+                        currentIndex = (currentIndex + 1) % items.length;
+                      }
+
+                      setInterval(showNextItem, 3000); // 2초 간격으로 전환
+                      showNextItem(); // 첫 항목 표시
+                    });
+                  </script>
+                </div>
+                <div class="kfsi-main-board">
+                  <div class="kfsi-main-board-tab">
+                    <a href="" class="kfsi-main-board-tab-item active"
+                      >공지사항</a
+                    >
+                    <a href="" class="kfsi-main-board-tab-item">입찰공고</a>
+                    <a href="" class="kfsi-main-board-tab-item">보도자료</a>
+                  </div>
+                  <div class="kfsi-main-board-list">
+                    <a
+                      href=""
+                      class="kfsi-main-board-list-item kfsi-main-board-list-item--notice"
+                    >
+                      <p>
+                        <i class="ico-notice"></i>
+                        제21회 특급 소방안전관리자 자격시험 일정
+                        안내(변경)제21회 특급 소방안전관리자 자격시험 일정
+                        안내(변경)
+                      </p>
+                      <span>2024-07-17</span>
+                    </a>
+                    <a href="" class="kfsi-main-board-list-item">
+                      <p>제21회 특급 소방안전관리자 자격시험 일정 안내(변경)</p>
+                      <span>2024-07-17</span>
+                    </a>
+                    <a href="" class="kfsi-main-board-list-item">
+                      <p>제21회 특급 소방안전관리자 자격시험 일정 안내(변경)</p>
+                      <span>2024-07-17</span>
+                    </a>
+                    <a href="" class="kfsi-main-board-list-item">
+                      <p>제21회 특급 소방안전관리자 자격시험 일정 안내(변경)</p>
+                      <span>2024-07-17</span>
+                    </a>
+                    <a href="" class="kfsi-main-board-list-item">
+                      <p>제21회 특급 소방안전관리자 자격시험 일정 안내(변경)</p>
+                      <span>2024-07-17</span>
+                    </a>
+                  </div>
+                  <a href="" class="kfsi-main-board-more">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-inner">
+            <div class="kfsi-main-quick">
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick01.png"
+                    alt="소방관계법령"
+                  />
+                </div>
+                <p>소방<br class="mo" />관계법령</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick02.png"
+                    alt="소방계획서작성영상"
+                  />
+                </div>
+                <p>소방계획서<br class="mo" />작성영상</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick03.png"
+                    alt="소방정보 각종서식"
+                  />
+                </div>
+                <p>
+                  소방정보<br class="mo" />
+                  각종서식
+                </p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick04.png"
+                    alt="소방안전자가진단"
+                  />
+                </div>
+                <p>소방안전<br class="mo" />자가진단</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick05.png"
+                    alt="소방안전플러스"
+                  />
+                </div>
+                <p>소방안전<br class="mo" />플러스</p>
+              </a>
+              <a href="" class="kfsi-main-quick-item">
+                <div class="kfsi-main-quick-item__img">
+                  <img
+                    src="./assets/images/main/quick06.png"
+                    alt="캠페인영상"
+                  />
+                </div>
+                <p>캠페인<br class="mo" />영상</p>
+              </a>
+            </div>
+          </div>
+          <div class="kfsi-main-check">
+            <div class="kfsi-inner">
+              <div class="kfsi-main-check-title">
+                <h3>화재안전진단 서비스</h3>
+                <p>국민의 소중한 재산 한국소방안전원이 지켜드리겠습니다.</p>
+              </div>
+              <div class="kfsi-main-check-list">
+                <div class="kfsi-main-check-list-item">
+                  <div class="kfsi-main-check-list-item__img">
+                    <img
+                      src="./assets/images/main/check01.png"
+                      alt="특별화재예방안전진단 견적신청"
+                    />
+                  </div>
+                  <strong
+                    >특별화재예방안전진단<br />
+                    견적신청</strong
+                  >
+                  <p>
+                    화재가 발생 시 경제적으로 피해 규모가<br />
+                    큰 특별관리시설물 대책 수립
+                  </p>
+                  <div class="kfsi-main-check-list-item__button">
+                    <a href="">바로가기</a>
+                  </div>
+                </div>
+                <div class="kfsi-main-check-list-item">
+                  <div class="kfsi-main-check-list-item__img">
+                    <img
+                      src="./assets/images/main/check02.png"
+                      alt="소방시설점검 견적신청"
+                    />
+                  </div>
+                  <strong> 소방시설점검<br/ > 견적신청 </strong>
+                  <p>건축물 화재예방을 위한<br/ > 전문인력의 소방시설 점검</p>
+                  <div class="kfsi-main-check-list-item__button">
+                    <a href="">바로가기</a>
+                  </div>
+                </div>
+                <div class="kfsi-main-check-list-item">
+                  <div class="kfsi-main-check-list-item__img">
+                    <img
+                      src="./assets/images/main/check03.png"
+                      alt="연구실안전진단 견적신청"
+                    />
+                  </div>
+                  <strong> 연구실안전진단<br/ > 견적신청 </strong>
+                  <p>
+                    연구기관과 종사자들의 안전환경<br/ > 조성을 위한 안전진단
+                  </p>
+                  <div class="kfsi-main-check-list-item__button">
+                    <a href="">바로가기</a>
+                  </div>
+                </div>
+                <div class="kfsi-main-check-list-item">
+                  <div class="kfsi-main-check-list-item__img">
+                    <img
+                      src="./assets/images/main/check04.png"
+                      alt="화재안전진단 견적신청"
+                    />
+                  </div>
+                  <strong> 화재안전진단<br/ > 견적신청 </strong>
+                  <p>
+                    인명안전과 재산보호를 위한<br/ > 화재 위험요소 진단 및
+                    안전진단
+                  </p>
+                  <div class="kfsi-main-check-list-item__button">
+                    <a href="">바로가기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-inner">
+            <div class="kfsi-main-section">
+              <div class="kfsi-main-promotion">
+                <div class="kfsi-main-promotion-title">
+                  <h4>
+                    영상으로 보는 대국민
+                    <strong>홍보관</strong>
+                  </h4>
+                  <p>
+                    한국소방안전원에서는<br class="mo" />
+                    소방안전 홍보 영상<br class="pc" />
+                    정보를 제공하고 있습니다.
+                  </p>
+                </div>
+                <div class="kfsi-main-promotion-body">
+                  <div class="kfsi-main-promotion-link">
+                    <a href="" class="kfsi-main-promotion-link-item">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/main/promotion01.png"
+                          alt="홍보 동영상 썸네일"
+                          style="width: 210px"
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/main/promotion01_mo.png"
+                          alt="홍보 동영상 썸네일"
+                        />
+                      </div>
+                      <p>홍보 동영상</p>
+                    </a>
+                    <a href="" class="kfsi-main-promotion-link-item">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/main/promotion02.png"
+                          alt="브랜드 캠페인 썸네일"
+                          style="width: 210px"
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/main/promotion02_mo.png"
+                          alt="브랜드 캠페인 썸네일"
+                        />
+                      </div>
+                      <p>브랜드 캠페인</p>
+                    </a>
+                    <a href="" class="kfsi-main-promotion-link-item">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/main/promotion03.png"
+                          alt="Shorts 썸네일"
+                          style="width: 122px"
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/main/promotion03_mo.png"
+                          alt="Shorts 썸네일"
+                        />
+                      </div>
+                      <p>
+                        <i class="ico-shorts"></i>
+                        Shorts
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="kfsi-main-member">
+                <div class="kfsi-main-member-title">
+                  <h4><strong>회원 전용</strong> 서비스</h4>
+                </div>
+                <div class="kfsi-main-member-list">
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member01.png"
+                        alt="회원가입안내"
+                        style="width: 63px"
+                      />
+                    </div>
+                    <p>회원가입안내</p>
+                  </a>
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member02.png"
+                        alt="회비납부"
+                        style="width: 39px"
+                      />
+                    </div>
+                    <p>회비납부</p>
+                  </a>
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member03.png"
+                        alt="납부조회"
+                        style="width: 65px"
+                      />
+                    </div>
+                    <p>납부조회</p>
+                  </a>
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member04.png"
+                        alt="확인서 발급"
+                        style="width: 46px"
+                      />
+                    </div>
+                    <p>확인서 발급</p>
+                  </a>
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member05.png"
+                        alt="재해위로금 신청"
+                        style="width: 77px"
+                      />
+                    </div>
+                    <p>재해위로금 신청</p>
+                  </a>
+                  <a href="" class="kfsi-main-member-list-item">
+                    <div class="kfsi-main-member-list-item__img">
+                      <img
+                        src="./assets/images/main/member06.png"
+                        alt="장학금 신청"
+                        style="width: 87px"
+                      />
+                    </div>
+                    <p>장학금 신청</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-inner">
+            <div class="kfsi-main-benefit">
+              <div class="kfsi-main-benefit-title">
+                <h3>다양한 혜택 서비스</h3>
+                <p>
+                  안전원 가입회원만이 <br class="mo" />받을 수 있는 혜택 및
+                  서비스를 안내해 드립니다.
+                </p>
+              </div>
+              <div class="kfsi-main-benefit-list">
+                <a href="" class="kfsi-main-benefit-list-item">
+                  <div class="kfsi-main-benefit-list-item__img">
+                    <img
+                      src="./assets/images/main/benefit01.png"
+                      alt="회원혜택"
+                    />
+                  </div>
+                  <strong>회원혜택</strong>
+                  <p>
+                    한국소방안전원 회원에게만<br />
+                    받으실 수 있는 다양하고 특별한 <br />
+                    혜택을 안내해 드립니다.
+                  </p>
+                  <span>바로가기</span>
+                </a>
+                <a href="" class="kfsi-main-benefit-list-item">
+                  <div class="kfsi-main-benefit-list-item__img">
+                    <img
+                      src="./assets/images/main/benefit02.png"
+                      alt="제휴업체"
+                    />
+                  </div>
+                  <strong>제휴업체</strong>
+                  <p>
+                    복지몰,법률·세무, 의료, <br />
+                    문화·여행·레저, 생활, 교육, 상조 등 <br />
+                    다양한 혜택을 받아보세요.
+                  </p>
+                  <span>바로가기</span>
+                </a>
+                <a href="" class="kfsi-main-benefit-list-item">
+                  <div class="kfsi-main-benefit-list-item__img">
+                    <img
+                      src="./assets/images/main/benefit03.png"
+                      alt="퀴즈이벤트"
+                    />
+                  </div>
+                  <strong>퀴즈이벤트</strong>
+                  <p>
+                    정기적으로 진행하는 <br />
+                    퀴즈 및 이벤트 참여로 풍성하고 <br />
+                    다양한 상품을 받으세요.
+                  </p>
+                  <span>바로가기</span>
+                </a>
+                <a href="" class="kfsi-main-benefit-list-item">
+                  <div class="kfsi-main-benefit-list-item__img">
+                    <img
+                      src="./assets/images/main/benefit04.png"
+                      alt="전자도서관"
+                    />
+                  </div>
+                  <strong>전자도서관</strong>
+                  <p>
+                    Yes24에서 제공하는<br />
+                    전자책(E-BOOK) 서비스를 <br />
+                    PC, 스마트폰, 태블릿에서 이용해 보세요.
+                  </p>
+                  <span>바로가기</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-inner">
+            <div class="kfsi-main-introduction">
+              <div class="kfsi-main-introduction-title">
+                <h4><strong>소방안전원</strong> 소개</h4>
+              </div>
+              <div class="kfsi-main-introduction-body">
+                <div class="kfsi-main-introduction-page">
+                  <a href="" class="kfsi-main-introduction-page-item">
+                    <strong>원장님 인사말</strong>
+                    <p>이상규 한국소방안전원장</p>
+                    <span>바로가기</span>
+                  </a>
+                  <a href="" class="kfsi-main-introduction-page-item">
+                    <strong>열린경영</strong>
+                    <p>경영목적 및 방침</p>
+                    <span>바로가기</span>
+                  </a>
+                  <a href="" class="kfsi-main-introduction-page-item">
+                    <strong>조직안내</strong>
+                    <p>조직도 및 부서별 연락처</p>
+                    <span>바로가기</span>
+                  </a>
+                  <a href="" class="kfsi-main-introduction-page-item">
+                    <strong>찾아오시는 길</strong>
+                    <p>본원 및 지부청사안내</p>
+                    <span>바로가기</span>
+                  </a>
+                </div>
+                <div class="kfsi-main-introduction-customer">
+                  <a href="" class="kfsi-main-introduction-customer-item">
+                    <div class="kfsi-main-introduction-customer__img">
+                      <img
+                        src="./assets/images/main/customer01.png"
+                        alt="자주하는 질문"
+                        style="width: 60px"
+                      />
+                    </div>
+                    <p>
+                      <strong>자주하는 질문</strong>
+                      도움이 필요하신가요?
+                    </p>
+                  </a>
+                  <a href="" class="kfsi-main-introduction-customer-item">
+                    <div class="kfsi-main-introduction-customer__img">
+                      <img
+                        src="./assets/images/main/customer02.png"
+                        alt="묻고 답하기"
+                        style="width: 50px"
+                      />
+                    </div>
+                    <p>
+                      <strong>묻고 답하기</strong>
+                      궁금하신 사항을 직접 문의해 주세요!
+                    </p>
+                  </a>
+                  <a href="" class="kfsi-main-introduction-customer-item">
+                    <div class="kfsi-main-introduction-customer__img">
+                      <img
+                        src="./assets/images/main/customer03.png"
+                        alt="취업 정보"
+                        style="width: 50px"
+                      />
+                    </div>
+                    <p>
+                      <strong>취업 정보</strong>
+                      구인/구직 정보
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $('.kfsi').addClass('kfsi--main');
+          </script>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

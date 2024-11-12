@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>찾아오시는 길</h2>
+              </div>
+              <a href="US-PS00-02-03-01-10.html" class="kfsi-snb-item active"
+                >본부</a
+              >
+              <a href="US-PS00-02-03-01-11.html" class="kfsi-snb-item"
+                >서울지부</a
+              >
+              <a href="US-PS00-02-03-01-12.html" class="kfsi-snb-item"
+                >서울동부지부</a
+              >
+              <a href="US-PS00-02-03-01-13.html" class="kfsi-snb-item">부산</a>
+              <a href="US-PS00-02-03-01-14.html" class="kfsi-snb-item"
+                >대구경북지부</a
+              >
+              <a href="US-PS00-02-03-01-15.html" class="kfsi-snb-item"
+                >인천지부</a
+              >
+              <a href="US-PS00-02-03-01-16.html" class="kfsi-snb-item"
+                >광주전남지부</a
+              >
+              <a href="US-PS00-02-03-01-17.html" class="kfsi-snb-item"
+                >대전충남지부</a
+              >
+              <a href="US-PS00-02-03-01-18.html" class="kfsi-snb-item"
+                >울산지부</a
+              >
+              <a href="US-PS00-02-03-01-19.html" class="kfsi-snb-item"
+                >경기지부</a
+              >
+              <a href="US-PS00-02-03-01-20.html" class="kfsi-snb-item"
+                >경기북부지부</a
+              >
+              <a href="US-PS00-02-03-01-21.html" class="kfsi-snb-item"
+                >강원지부</a
+              >
+              <a href="US-PS00-02-03-01-22.html" class="kfsi-snb-item"
+                >충북지부</a
+              >
+              <a href="US-PS00-02-03-01-23.html" class="kfsi-snb-item"
+                >전북지부</a
+              >
+              <a href="US-PS00-02-03-01-24.html" class="kfsi-snb-item"
+                >경남지부</a
+              >
+              <a href="US-PS00-02-03-01-25.html" class="kfsi-snb-item"
+                >제주지부</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">열린경영</li>
+                    <li class="breadcrumb-item">찾아오시는 길</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      본부
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>찾아오시는 길</h1>
+              </div>
+              <div class="kfsi-location">
+                <div class="kfsi-location-select">
+                  <select
+                    id="branchSelect"
+                    onchange="navigateToPage()"
+                    title="지부 선택"
+                  >
+                    <option value="US-PS00-02-03-01-10.html" selected>
+                      본부
+                    </option>
+                    <option value="US-PS00-02-03-01-11.html">서울지부</option>
+                    <option value="US-PS00-02-03-01-12.html">
+                      서울동부지부
+                    </option>
+                    <option value="US-PS00-02-03-01-13.html">부산</option>
+                    <option value="US-PS00-02-03-01-14.html">
+                      대구경북지부
+                    </option>
+                    <option value="US-PS00-02-03-01-15.html">인천지부</option>
+                    <option value="US-PS00-02-03-01-16.html">
+                      광주전남지부
+                    </option>
+                    <option value="US-PS00-02-03-01-17.html">
+                      대전충남지부
+                    </option>
+                    <option value="US-PS00-02-03-01-18.html">울산지부</option>
+                    <option value="US-PS00-02-03-01-19.html">경기지부</option>
+                    <option value="US-PS00-02-03-01-20.html">
+                      경기북부지부
+                    </option>
+                    <option value="US-PS00-02-03-01-21.html">강원지부</option>
+                    <option value="US-PS00-02-03-01-22.html">충북지부</option>
+                    <option value="US-PS00-02-03-01-23.html">전북지부</option>
+                    <option value="US-PS00-02-03-01-24.html">경남지부</option>
+                    <option value="US-PS00-02-03-01-25.html">제주지부</option>
+                  </select>
+                  <script>
+                    function navigateToPage() {
+                      const selectElement =
+                        document.getElementById('branchSelect');
+                      const selectedValue = selectElement.value;
+
+                      // 선택된 value가 비어있지 않은 경우에만 이동
+                      if (selectedValue) {
+                        window.location.href = selectedValue;
+                      }
+                    }
+                  </script>
+                </div>
+                <div class="kfsi-location-item">
+                  <div class="pc">
+                    <h5 class="kfsi-h5">본부</h5>
+                  </div>
+                  <div class="kfsi-location-head">
+                    <div class="kfsi-location-head-thumb">
+                      <img
+                        src="/assets/images/user/map/seoul-building.png"
+                        alt="서울청사 사진"
+                      />
+                    </div>
+                    <div class="kfsi-location-head-info">
+                      <div class="kfsi-location-head-info-item">
+                        <strong> 주소 </strong>
+                        <div>
+                          (07226)서울특별시 영등포구 영중로 170, 한국소방안전원
+                          (영등포동8가 87-4)
+                        </div>
+                      </div>
+                      <div class="kfsi-location-head-info-item">
+                        <strong>TEL</strong>
+                        <div class="kfsi-location-head-info-item__list">
+                          <ul>
+                            <li>경영관리과 : 02-850-1365</li>
+                            <li>재무회계과 : 02-850-1366</li>
+                            <li>고객지원과 : 02-850-1377</li>
+                            <li>홍 보 과 : 02-850-1376</li>
+                            <li>전문자격과 : 02-850-1371</li>
+                          </ul>
+                          <ul>
+                            <li>정책연구과 : 02-850-1369</li>
+                            <li>교육운영과 : 02-850-1370</li>
+                            <li>교재개발과 : 02-850-1372</li>
+                            <li>기술지원과 : 02-850-1374</li>
+                            <li>안전진단과 : 02-850-1375</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="kfsi-danger">
+                        <p>
+                          휴대폰 이용시 지역번호(02)를 포함하여 전화번호를
+                          눌러주시기 바랍니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-table">
+                    <table
+                      summary="건물 층별 부서 및 시설에 대한 정보를 제공합니다."
+                    >
+                      <caption>
+                        건물 층별 부서 및 시설 안내
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 740px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">6F</th>
+                          <td class="text-start">임원실, 경영관리부</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5F</th>
+                          <td class="text-start">
+                            정책연구소, 교육부, 안전관리부
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4F</th>
+                          <td class="text-start">고객관리부, 콜센터</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3F</th>
+                          <td class="text-start">제3교육장, 제4교육장</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2F</th>
+                          <td class="text-start">
+                            서울지부(교육접수처), 제2교육장
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1F</th>
+                          <td class="text-start">제1교육장, 매점</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">B1</th>
+                          <td class="text-start">
+                            대강당, 실습실(기계, 전기, 응급, 피난), 구내식당
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">B2</th>
+                          <td class="text-start">주차장</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="kfsi-location-map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div
+                      id="daumRoughmapContainer1730906380066"
+                      class="root_daum_roughmap root_daum_roughmap_landing"
+                    ></div>
+
+                    <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                  -->
+                    <script
+                      charset="UTF-8"
+                      class="daum_roughmap_loader_script"
+                      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+                    ></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                      new daum.roughmap.Lander({
+                        timestamp: '1730906380066',
+                        key: '2m6zc',
+                        mapWidth: '940',
+                        mapHeight: '300',
+                      }).render();
+                    </script>
+                  </div>
+                  <div class="kfsi-danger mt-4">
+                    <p>
+                      요일별 5부제 주차 운영(공공기관 의무시행) 및 주차공간이
+                      협소하오니 대중교통을 이용해 주십시오.<br />
+                      (예. 월요일 차량번호 끝자리 1,6번 제한)
+                    </p>
+                  </div>
+                </div>
+                <div class="kfsi-location-item">
+                  <h5 class="kfsi-h5 mb-2">찾아가는 법</h5>
+                  <div class="kfsi-danger">
+                    <p>
+                      스마트폰에서 QR코드를 스캔하시면 각각 앱으로 확인하실 수
+                      있습니다. (익숙한 앱으로 선택 바랍니다.)
+                    </p>
+                  </div>
+                  <div class="kfsi-location-qr">
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="https://map.kakao.com/?itemId=690852519"
+                          target="_blank"
+                          title="카카오맵 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_kakao.png"
+                            alt="카카오맵"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr01_kakao.png"
+                          alt="카카오맵 QR코드"
+                        />
+                      </div>
+                    </div>
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="https://map.naver.com/v5/entry/place/1064824610"
+                          target="_blank"
+                          title="네이버지도 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_naver.png"
+                            alt="네이버 지도"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr01_naver.png"
+                          alt="네이버 지도 QR코드"
+                        />
+                      </div>
+                    </div>
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="https://surl.tmap.co.kr/8b0b57d2"
+                          target="_blank"
+                          title="티맵 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_tmap.png"
+                            alt="티맵"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr01_tmap.png"
+                          alt="티맵 QR코드"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-location-item">
+                  <h5 class="kfsi-h5">교통편</h5>
+                  <div class="kfsi-table">
+                    <table aria-labelledby="transportation-info">
+                      <caption id="transportation-info">
+                        교통편 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 740px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row" headers="bus-info">버스</th>
+                          <td class="text-start" id="bus-info">
+                            <p class="m-0 text-secondary">
+                              <span class="text-black">
+                                당산동 삼성래미안아파트, 당산동 푸르지오아파트 </span
+                              ><br />
+                              지선 초록(지선) : 5714, 6514, 6623, 6633<br />
+                              간선 파랑(간선) : 605, 661, 760<br />
+                              광역 빨강(광역) : 9707
+                            </p>
+                            <p class="m-0 mt-4 text-secondary">
+                              <span class="text-black">삼환아파트</span><br />
+                              지선 초록(지선) : 5616, 5714<br />
+                              간선 파랑(간선) : 605, 661, 760<br />
+                              광역 빨강(광역) : 700, 87, 83, 87-1, 87-3
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" headers="subway-info">지하철</th>
+                          <td class="text-start" id="subway-info">
+                            <p class="m-0 text-secondary">
+                              2호선 당산역 : 6번출구 505m<br />
+                              9호선 당산역 : 8번, 9번 출구 290m
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-location-item">
+                  <h5 class="kfsi-h5">김포공항에서 오시는 방법</h5>
+                  <div class="kfsi-table">
+                    <table aria-labelledby="how-to-arrive">
+                      <caption id="how-to-arrive">
+                        김포공항에서 오시는 방법
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 740px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row" headers="limousine-info">
+                            공항리무진 이용
+                          </th>
+                          <td class="text-start" id="limousine-info">
+                            <div class="kfsi-location-table-text">
+                              <p class="m-0 text-secondary">
+                                공항버스 6008번 당산전철역 정류장 하차
+                              </p>
+                              <a
+                                href=""
+                                class="btn btn-primary btn-sm"
+                                style="width: 120px"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal01"
+                                >버스 노선보기</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" headers="subway-info">지하철 이용</th>
+                          <td class="text-start" id="subway-info">
+                            <div class="kfsi-location-table-text">
+                              <p class="m-0 text-secondary">
+                                9호선 김포공항역 탑승 후 당산역 하차<br />
+                                8번, 9번 출구로 진출 290m
+                              </p>
+                              <a
+                                href="http://map.naver.com/?region=1000&amp;departureId=902&amp;arrivalId=913&amp;pathType=1&amp;menu=subway&amp;enc=b64"
+                                target="_blank"
+                                title="지하철 노선도가 새창으로 열립니다."
+                                class="btn btn-primary btn-sm"
+                                style="width: 120px"
+                                >지하철 노선보기</a
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">노선안내</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-location-modal">
+              <div class="kfsi-location-modal-title">6008번</div>
+              <div class="kfsi-location-modal-box">
+                <img src="./assets/images/map/6008.jpg" alt="6008번 노선도" />
+              </div>
+              <h5 class="kfsi-h5">당산 전철역 정류장 주변보기</h5>
+              <div class="kfsi-textlist">
+                <ul>
+                  <li>지하철 당산역 13번 출구에서 양화대교 방면 80m 전방</li>
+                  <li>GS25 편의점 앞</li>
+                </ul>
+              </div>
+              <div class="kfsi-location-modal-img">
+                <img
+                  src="./assets/images/map/center.jpg"
+                  alt="당산 전철역 정류장 주변보기"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

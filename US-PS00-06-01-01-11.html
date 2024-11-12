@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>고객의 소리</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">묻고 답하기</a>
+              <a href="" class="kfsi-snb-item">자주하는 질문</a>
+              <a href="" class="kfsi-snb-item">친절직원 추천</a>
+              <a href="" class="kfsi-snb-item">클린신고센터</a>
+              <a href="" class="kfsi-snb-item">
+                <span
+                  >갑질피해상담<i class="ico-newwindow-black ms-2"></i
+                ></span>
+              </a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">고객의 소리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      묻고 답하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>묻고 답하기</h1>
+              </div>
+              <div class="kfsi-caution mt-10">
+                게시글은 2년 경과 후 자동으로 삭제됩니다. 이점 유의 하시기
+                바랍니다.
+              </div>
+              <div class="kfsi-board-write mt-10">
+                <div class="kfsi-board-write__title">묻고 답하기 입력</div>
+                <div class="kfsi-board-write-form">
+                  <table>
+                    <colgroup>
+                      <col style="width: 210px" />
+                      <col style="width: 730px" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>제목</th>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="제목을 입력해 주세요."
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>작성자</th>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr>
+                        <th>구분</th>
+                        <td>
+                          <div class="dropdown">
+                            <button
+                              class="btn btn-outline-secondary dropdown-toggle"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              선택
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>공개여부</th>
+                        <td>
+                          <div class="d-flex">
+                            <div class="form-check me-8">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault1"
+                              >
+                                공개
+                              </label>
+                            </div>
+                            <div class="form-check me-8">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault2"
+                                checked
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault2"
+                              >
+                                비공개
+                              </label>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>답변알림</th>
+                        <td>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                              <div class="form-check me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  문자메세지
+                                </label>
+                              </div>
+                              <div class="form-check me-8">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckChecked"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckChecked"
+                                >
+                                  이메일
+                                </label>
+                              </div>
+                            </div>
+                            <div class="text-danger">
+                              ※ 회원가입 시 입력하신 휴대폰, 이메일주소로
+                              답변알림 됩니다.
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>내용</th>
+                        <td>
+                          <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"
+                            style="height: 360px"
+                            placeholder="내용을 입력해 주세요."
+                          ></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>파일첨부</th>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kfsi-board-button">
+                <p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg"
+                  >
+                    목록
+                  </button>
+                </p>
+                <p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg"
+                  >
+                    취소
+                  </button>
+                  <button type="button" class="btn btn-primary btn-lg">
+                    저장
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

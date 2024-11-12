@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>찾아오시는 길</h2>
+              </div>
+              <a href="US-PS00-02-03-01-10.html" class="kfsi-snb-item">본부</a>
+              <a href="US-PS00-02-03-01-11.html" class="kfsi-snb-item"
+                >서울지부</a
+              >
+              <a href="US-PS00-02-03-01-12.html" class="kfsi-snb-item"
+                >서울동부지부</a
+              >
+              <a href="US-PS00-02-03-01-13.html" class="kfsi-snb-item">부산</a>
+              <a href="US-PS00-02-03-01-14.html" class="kfsi-snb-item"
+                >대구경북지부</a
+              >
+              <a href="US-PS00-02-03-01-15.html" class="kfsi-snb-item"
+                >인천지부</a
+              >
+              <a href="US-PS00-02-03-01-16.html" class="kfsi-snb-item"
+                >광주전남지부</a
+              >
+              <a href="US-PS00-02-03-01-17.html" class="kfsi-snb-item"
+                >대전충남지부</a
+              >
+              <a href="US-PS00-02-03-01-18.html" class="kfsi-snb-item"
+                >울산지부</a
+              >
+              <a href="US-PS00-02-03-01-19.html" class="kfsi-snb-item"
+                >경기지부</a
+              >
+              <a href="US-PS00-02-03-01-20.html" class="kfsi-snb-item active"
+                >경기북부지부</a
+              >
+              <a href="US-PS00-02-03-01-21.html" class="kfsi-snb-item"
+                >강원지부</a
+              >
+              <a href="US-PS00-02-03-01-22.html" class="kfsi-snb-item"
+                >충북지부</a
+              >
+              <a href="US-PS00-02-03-01-23.html" class="kfsi-snb-item"
+                >전북지부</a
+              >
+              <a href="US-PS00-02-03-01-24.html" class="kfsi-snb-item"
+                >경남지부</a
+              >
+              <a href="US-PS00-02-03-01-25.html" class="kfsi-snb-item"
+                >제주지부</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">열린경영</li>
+                    <li class="breadcrumb-item">찾아오시는 길</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      경기북부지부
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>찾아오시는 길</h1>
+              </div>
+              <div class="kfsi-location">
+                <div class="kfsi-location-select">
+                  <select
+                    id="branchSelect"
+                    onchange="navigateToPage()"
+                    title="지부 선택"
+                  >
+                    <option value="US-PS00-02-03-01-10.html">본부</option>
+                    <option value="US-PS00-02-03-01-11.html">서울지부</option>
+                    <option value="US-PS00-02-03-01-12.html">
+                      서울동부지부
+                    </option>
+                    <option value="US-PS00-02-03-01-13.html">부산</option>
+                    <option value="US-PS00-02-03-01-14.html">
+                      대구경북지부
+                    </option>
+                    <option value="US-PS00-02-03-01-15.html">인천지부</option>
+                    <option value="US-PS00-02-03-01-16.html">
+                      광주전남지부
+                    </option>
+                    <option value="US-PS00-02-03-01-17.html">
+                      대전충남지부
+                    </option>
+                    <option value="US-PS00-02-03-01-18.html">울산지부</option>
+                    <option value="US-PS00-02-03-01-19.html">경기지부</option>
+                    <option value="US-PS00-02-03-01-20.html" selected>
+                      경기북부지부
+                    </option>
+                    <option value="US-PS00-02-03-01-21.html">강원지부</option>
+                    <option value="US-PS00-02-03-01-22.html">충북지부</option>
+                    <option value="US-PS00-02-03-01-23.html">전북지부</option>
+                    <option value="US-PS00-02-03-01-24.html">경남지부</option>
+                    <option value="US-PS00-02-03-01-25.html">제주지부</option>
+                  </select>
+                  <script>
+                    function navigateToPage() {
+                      const selectElement =
+                        document.getElementById('branchSelect');
+                      const selectedValue = selectElement.value;
+
+                      // 선택된 value가 비어있지 않은 경우에만 이동
+                      if (selectedValue) {
+                        window.location.href = selectedValue;
+                      }
+                    }
+                  </script>
+                </div>
+                <div class="kfsi-location-item">
+                  <div class="pc">
+                    <h5 class="kfsi-h5">경기북부지부</h5>
+                  </div>
+                  <div class="kfsi-location-head">
+                    <div class="kfsi-location-head-thumb">
+                      <img
+                        src="/assets/images/user/map/gyeonggibukbu-building.png"
+                        alt="경기북부지부 사진"
+                      />
+                    </div>
+                    <div class="kfsi-location-head-info">
+                      <div class="kfsi-location-head-info-item">
+                        <strong> 주소 </strong>
+                        <div>
+                          (10905)경기도 파주시 미래로 371(동패동 1759-6번지)
+                          시티타워 6층
+                        </div>
+                      </div>
+                      <div class="kfsi-location-head-info-item">
+                        <strong>TEL</strong>
+                        <div>031-945-3118</div>
+                      </div>
+                      <div class="kfsi-location-head-info-item">
+                        <strong>FAX</strong>
+                        <div>031-945-6887</div>
+                      </div>
+                      <div class="kfsi-danger">
+                        <p>
+                          휴대폰 이용시 지역번호(031)를 포함하여 전화번호를
+                          눌러주시기 바랍니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-table">
+                    <table
+                      summary="건물 층별 부서 및 시설에 대한 정보를 제공합니다."
+                    >
+                      <caption>
+                        건물 층별 부서 및 시설 안내
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 740px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row" headers="floor-9">9F</th>
+                          <td class="text-start" id="floor-9">
+                            1강의실, 2강의실, 전기실습실, 기계실습실
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6F</th>
+                          <td class="text-start">
+                            사무실, 교육접수처, 지부장실
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="kfsi-location-map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div
+                      id="daumRoughmapContainer1731059279501"
+                      class="root_daum_roughmap root_daum_roughmap_landing"
+                    ></div>
+
+                    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                    <script
+                      charset="UTF-8"
+                      class="daum_roughmap_loader_script"
+                      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+                    ></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                      new daum.roughmap.Lander({
+                        timestamp: '1731059279501',
+                        key: '2m6s4',
+                        mapWidth: '940',
+                        mapHeight: '300',
+                      }).render();
+                    </script>
+                  </div>
+                </div>
+                <div class="kfsi-location-item">
+                  <h5 class="kfsi-h5 mb-2">찾아가는 법</h5>
+                  <div class="kfsi-textlist">
+                    <ul>
+                      <li>
+                        자차이용시 주차장 :
+                        <a
+                          href="https://www.youtube.com/watch?v=optCj1EjZMQ"
+                          target="_blank"
+                          >https://www.youtube.com/watch?v=optCj1EjZMQ</a
+                        >
+                        (클릭)
+                      </li>
+                      <li>
+                        대중교통 :
+                        <a
+                          href="https://www.youtube.com/watch?v=XmWT3BCOczQ"
+                          target="_blank"
+                          >https://www.youtube.com/watch?v=XmWT3BCOczQ</a
+                        >
+                        (클릭)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-danger mt-4">
+                    <p>
+                      스마트폰에서 QR코드를 스캔하시면 각각 앱으로 확인하실 수
+                      있습니다. (익숙한 앱으로 선택 바랍니다.)
+                    </p>
+                  </div>
+                  <div class="kfsi-location-qr">
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="http://kko.to/A0enVyi38"
+                          target="_blank"
+                          title="카카오맵 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_kakao.png"
+                            alt="카카오맵"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr10_kakao.png"
+                          alt="카카오맵 QR코드"
+                        />
+                      </div>
+                    </div>
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="http://naver.me/GXvDthmc"
+                          target="_blank"
+                          title="네이버지도 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_naver.png"
+                            alt="네이버 지도"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr10_naver.png"
+                          alt="네이버 지도 QR코드"
+                        />
+                      </div>
+                    </div>
+                    <div class="kfsi-location-qr-item">
+                      <div class="kfsi-location-qr-item__title">
+                        <a
+                          href="https://surl.tmap.co.kr/4563a5bb"
+                          target="_blank"
+                          title="티맵 사이트가 새창으로 열립니다."
+                        >
+                          <img
+                            src="/assets/images/map/qr/map_icon_tmap.png"
+                            alt="티맵"
+                          />
+                        </a>
+                      </div>
+                      <div class="kfsi-location-qr-item__qr">
+                        <img
+                          src="/assets/images/map/qr/qr10_tmap.png"
+                          alt="티맵 QR코드"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-location-item">
+                  <h5 class="kfsi-h5">교통편</h5>
+                  <div class="kfsi-table">
+                    <table aria-labelledby="transportation-info">
+                      <caption id="transportation-info">
+                        교통편 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 740px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row" headers="bus-info">버스</th>
+                          <td class="text-start" id="bus-info">
+                            <p class="m-0 text-secondary">
+                              <span class="text-black"> 새암공원 하차</span
+                              ><br />
+                              일반: 66, 80, 92, 92-1, 150<br />
+                              직행: 7111, 9030, M7111, M7426, M7625<br />
+                              마을: 81, 82, 83, 85
+                            </p>
+                            <p class="m-0 mt-4 text-secondary">
+                              <span class="text-black">경기인력개발원 하차</span
+                              ><br />
+                              일반: 10, 56<br />
+                              직행: 2000
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" headers="subway-info">지하철+버스</th>
+                          <td class="text-start" id="subway-info">
+                            <p class="m-0 text-secondary">
+                              <span class="text-black"> [경의선]</span><br />
+                              운정역 : 마을버스 85, 82(새암공원 하차)<br />
+                              야당역 : 81(새암공원 하차),
+                              75·76·86(경기인력개발원 하차)<br />
+                              탄현역: 56,10(경기인력 개발원 하차)
+                            </p>
+                            <p class="m-0 mt-4 text-secondary">
+                              <span class="text-black">[3호선]</span><br />
+                              대화역 4번출구 → 80, 92, 66(새암공원 하차)<br />
+                              대화역 4번출구 → 56, 10 (경기인력 개발원 하차)
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

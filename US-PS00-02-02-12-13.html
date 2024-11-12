@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>열린경영</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">주요업무</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">소방홍보</a>
+                  <a href="" class="kfsi-snb-item-sub-item">안전진단</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >연구개발 및 국제교류</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">회원복리증진</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">경영공시</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">경영목적 및 방침</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >임원현황 및 선임방법</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">재무제표</a>
+                  <a href="" class="kfsi-snb-item-sub-item">기타사항</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">청렴정보</a>
+              <a href="" class="kfsi-snb-item">부패공직자 처리현황</a>
+              <a href="" class="kfsi-snb-item">
+                고문변호사위촉 및 <br />
+                소송현황
+              </a>
+              <a href="" class="kfsi-snb-item">채용비리관련 공지사항</a>
+              <a href="" class="kfsi-snb-item">위원회 결과공개</a>
+              <a href="" class="kfsi-snb-item">상품권 구매 및 사용현황</a>
+              <a href="" class="kfsi-snb-item">카드뉴스</a>
+              <a href="" class="kfsi-snb-item">입찰</a>
+              <a href="" class="kfsi-snb-item">보도자료</a>
+              <div class="kfsi-snb-item-sub active">
+                <a href="" class="kfsi-snb-item active">안전원 통계</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">연구개발</a>
+                  <a href="" class="kfsi-snb-item-sub-item">소방안전관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >위험물안전관리</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">열린경영</li>
+                    <li class="breadcrumb-item">안전원 통계</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      위험물안전관리
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>위험물안전관리</h1>
+              </div>
+              <div class="kfsi-openmanagement">
+                <h5 class="kfsi-h5">위험물제조소 등 현황</h5>
+                <div class="kfsi-table-unit">[단위 : 개소]</div>
+                <div class="kfsi-table kfsi-table-scroll">
+                  <table
+                    summary="위험물제조소와 취급소, 저장소의 현황을 제공하며, 각 유형에 따라 세부 항목별 정보를 나타냅니다."
+                  >
+                    <caption>
+                      위험물제조소등 현황
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">총계</th>
+                        <th scope="col" rowspan="2">제조소</th>
+                        <th scope="col" colspan="5">취급소</th>
+                        <th scope="col" colspan="9">저장소</th>
+                      </tr>
+                      <tr>
+                        <th scope="col" class="border-left">소계</th>
+                        <th scope="col">주유</th>
+                        <th scope="col">판매</th>
+                        <th scope="col">이송</th>
+                        <th scope="col">일반</th>
+                        <th scope="col">소계</th>
+                        <th scope="col">옥내</th>
+                        <th scope="col">옥외<br />탱크</th>
+                        <th scope="col">옥내<br />탱크</th>
+                        <th scope="col">지하<br />탱크</th>
+                        <th scope="col">간이<br />탱크</th>
+                        <th scope="col">이동<br />탱크</th>
+                        <th scope="col">옥외</th>
+                        <th scope="col">암반<br />탱크</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>110,350</td>
+                        <td>2,375</td>
+                        <td>24,650</td>
+                        <td>14,910</td>
+                        <td>552</td>
+                        <td>363</td>
+                        <td>8,825</td>
+                        <td>83,325</td>
+                        <td>8,023</td>
+                        <td>26,745</td>
+                        <td>10,765</td>
+                        <td>7,383</td>
+                        <td>35</td>
+                        <td>25,839</td>
+                        <td>4,509</td>
+                        <td>26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="kfsi-table-danger">
+                    ※ 출처 : 2021 위험물 통계자료(소방청)
+                  </p>
+                </div>
+                <h5 class="kfsi-h5">위험물안전관리자 현황</h5>
+                <div class="kfsi-table-unit">[단위 : 명]</div>
+                <div class="kfsi-table kfsi-table-scroll">
+                  <table
+                    summary="위험물안전관리자의 총계, 국가기술자격자 및 기타자격자 현황을 제공합니다."
+                  >
+                    <caption>
+                      위험물안전관리자 현황
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">총계</th>
+                        <th scope="col" colspan="4">국가기술자격자</th>
+                        <th scope="col" colspan="4">기타자격자</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">안전관리자</th>
+                        <th scope="col">선임자수</th>
+                        <th scope="col">소계</th>
+                        <th scope="col">위험물<br />기능장</th>
+                        <th scope="col">위험물<br />산업기사</th>
+                        <th scope="col">위험물<br />기능사</th>
+                        <th scope="col">소계</th>
+                        <th scope="col">강 습 <br />수료자</th>
+                        <th scope="col">관련자격<br />겸 직</th>
+                        <th scope="col">일정요건<br />구 비</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>84,043</td>
+                        <td>57,285</td>
+                        <td>17,227</td>
+                        <td>705</td>
+                        <td>7,744</td>
+                        <td>8,778</td>
+                        <td>40,058</td>
+                        <td>38,272</td>
+                        <td>484</td>
+                        <td>1,302</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="kfsi-table-danger">
+                    ※ 출처 : 2021 위험물 통계자료(소방청)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

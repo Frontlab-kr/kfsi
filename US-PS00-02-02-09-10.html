@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>열린경영</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">주요업무</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">소방홍보</a>
+                  <a href="" class="kfsi-snb-item-sub-item">안전진단</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >연구개발 및 국제교류</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">회원복리증진</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">경영공시</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">경영목적 및 방침</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >임원현황 및 선임방법</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">재무제표</a>
+                  <a href="" class="kfsi-snb-item-sub-item">기타사항</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">청렴정보</a>
+              <a href="" class="kfsi-snb-item">부패공직자 처리현황</a>
+              <a href="" class="kfsi-snb-item">
+                고문변호사위촉 및 <br />
+                소송현황
+              </a>
+              <a href="" class="kfsi-snb-item">채용비리관련 공지사항</a>
+              <a href="" class="kfsi-snb-item">위원회 결과공개</a>
+              <a href="" class="kfsi-snb-item">상품권 구매 및 사용현황</a>
+              <a href="" class="kfsi-snb-item active">카드뉴스</a>
+              <a href="" class="kfsi-snb-item">입찰</a>
+              <a href="" class="kfsi-snb-item">보도자료</a>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">안전원 통계</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">연구개발</a>
+                  <a href="" class="kfsi-snb-item-sub-item">소방안전관리</a>
+                  <a href="" class="kfsi-snb-item-sub-item">위험물안전관리</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">열린경영</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      카드뉴스
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>카드뉴스</h1>
+              </div>
+              <div class="kfsi-board mt-10">
+                <div class="kfsi-board-head">
+                  <div class="kfsi-board-head-start">
+                    <div class="kfsi-board-head-amount">총 10건</div>
+                  </div>
+                  <div class="kfsi-board-head-end">
+                    <div class="kfsi-board-head-search">
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          작성자
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="검색어를 입력해 주세요."
+                        title="검색어를 입력해 주세요."
+                      />
+                      <button type="button" class="btn btn-primary">
+                        검색
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board-card">
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>
+                        2024년 추석 명철 청탁금지법 바로알기2024년 추석 명철
+                        청탁금지법 바로알기
+                      </p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-card-item">
+                    <div class="kfsi-board-card-item__thumb">
+                      <img
+                        src="https://picsum.photos/300/220"
+                        alt="카드뉴스 썸네일 이미지"
+                      />
+                    </div>
+                    <div class="kfsi-board-card-item__title">
+                      <p>2024년 추석 명철 청탁금지법 바로알기</p>
+                    </div>
+                    <div class="kfsi-board-card-item__info">
+                      <p>
+                        <span>홍*동</span>
+                        <span>2024.09.13</span>
+                        <span>조회수 55</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="kfsi-board-pagination">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item--first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item--prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item--next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item--last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

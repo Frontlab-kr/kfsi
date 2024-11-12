@@ -1,0 +1,358 @@
+$mobileWidth: 992px;
+.kfsi {
+  &-h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    &:before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      border: solid 4px #00597d;
+      background-color: #fff;
+    }
+    @media screen and (max-width: $mobileWidth) {
+      gap: 9px;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.41;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+    }
+  }
+  &-table {
+    &-unit {
+      margin-top: -10px;
+      margin-bottom: 4px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: right;
+      color: #666;
+    }
+    &-danger {
+      margin-top: 12px;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: left;
+      color: #d93600;
+    }
+    table {
+      width: 100%;
+      border-top: 1px solid #999;
+      word-break: keep-all;
+      thead {
+        th {
+          padding: 16px;
+          border: 1px solid #ccc;
+          background-color: #f7f7f7;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+        }
+        tr {
+          th,
+          td {
+            &:first-child {
+              border-left: none;
+            }
+            &:last-child {
+              border-right: none;
+            }
+          }
+          // &:last-child {
+          //   th,
+          //   td {
+          //     border-bottom: none;
+          //   }
+          // }
+        }
+      }
+      tbody,
+      tfoot {
+        th {
+          padding: 12px 16px;
+          border: 1px solid #ccc;
+          background-color: #f7f7f7;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+          word-break: keep-all;
+          &:first-child {
+            border-left: none;
+          }
+        }
+        td {
+          padding: 12px 16px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+          word-break: keep-all;
+        }
+        tr {
+          th,
+          td {
+            &:first-child {
+              border-left: none;
+            }
+            &:last-child {
+              border-right: none;
+            }
+          }
+          &:first-child {
+            th,
+            td {
+              border-top: none;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        thead {
+          th {
+            padding: 16px 8px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000;
+          }
+        }
+        tbody,
+        tfoot {
+          th {
+            padding: 16px 8px;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000;
+          }
+          td {
+            padding: 16px 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      &-unit {
+        margin-top: 0;
+      }
+      &-danger {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #d93600;
+      }
+    }
+    &-scroll {
+      overflow: auto;
+      table {
+        white-space: noWrap;
+      }
+    }
+  }
+  &-danger {
+    p {
+      display: flex;
+      gap: 2px;
+      margin: 0;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: left;
+      color: #d93600;
+      word-break: keep-all;
+      &::before {
+        content: '※';
+        display: block;
+      }
+    }
+  }
+  &-textlist {
+    margin-left: 22px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+      a {
+        text-decoration: underline;
+      }
+    }
+    > ul {
+      > li {
+        position: relative;
+        margin-bottom: 6px;
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        a {
+          color: #000;
+        }
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 8px;
+          left: 0;
+          min-width: 5px;
+          width: 5px;
+          height: 5px;
+
+          border-radius: 5px;
+          background-color: #999;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        ul {
+          li {
+            display: flex;
+            gap: 6px;
+            margin-top: 4px;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: left;
+            color: #666;
+            a {
+              color: #666;
+            }
+            &:before {
+              content: '-';
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      margin-left: 0;
+      > ul {
+        > li {
+          position: relative;
+          margin-bottom: 6px;
+          padding-left: 15px;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000;
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            min-width: 5px;
+            width: 5px;
+            height: 5px;
+
+            border-radius: 5px;
+            background-color: #00597d;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          ul {
+            li {
+              display: flex;
+              gap: 6px;
+              margin-top: 4px;
+              font-size: 15px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              letter-spacing: normal;
+              text-align: left;
+              color: #666;
+              &:before {
+                content: '-';
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

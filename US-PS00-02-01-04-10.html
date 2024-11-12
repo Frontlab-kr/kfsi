@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>원장 인사말</h2>
+              </div>
+              <a href="/US-PS00-02-01-01-10.html" class="kfsi-snb-item"
+                >원장 인사말</a
+              >
+              <div class="kfsi-snb-item-sub active">
+                <a href="javscript:void(0)" class="kfsi-snb-item">조직안내</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a
+                    href="US-PS00-02-01-02-10.html"
+                    class="kfsi-snb-item-sub-item"
+                    >조직도</a
+                  >
+                  <a
+                    href="US-PS00-02-01-03-10.html"
+                    class="kfsi-snb-item-sub-item"
+                    >부서별 연락처</a
+                  >
+                  <a
+                    href="US-PS00-02-01-04-10.html"
+                    class="kfsi-snb-item-sub-item active"
+                    >부서별 업무소개</a
+                  >
+                </div>
+              </div>
+              <a href="US-PS00-02-01-05-10.html" class="kfsi-snb-item">연혁</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">원장 인사말</li>
+                    <li class="breadcrumb-item">조직안내</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      부서별 업무소개
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>부서별 업무소개</h1>
+              </div>
+              <div class="mt-9">
+                <div class="kfsi-organization-table">
+                  <h5 class="kfsi-h5" id="deptNm">감사실</h5>
+                  <div class="kfsi-organization-table-head">
+                    <div class="kfsi-organization-table-summary">
+                      <table
+                        summary="본 테이블은 부서의 주소와 전화번호 정보를 제공함"
+                      >
+                        <caption>
+                          부서 정보
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th scope="row">주소</th>
+                            <td id="addr">
+                              (07226)서울특별시 영등포구 영중로 170,
+                              한국소방안전원 (영등포동8가 87-4) 4층
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">TEL</th>
+                            <td id="tel">02-850-1364</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="kfsi-organization-table-select">
+                      <select
+                        id="deptSel"
+                        name="deptSel"
+                        class="form-select"
+                        title="부서선택"
+                      >
+                        <option selected="">-- 부서선택 --</option>
+                        <option value="dept">감사실</option>
+                        <option value="dept1">경영관리부</option>
+                        <option value="dept1-1">경영관리과</option>
+                        <option value="dept1-2">재무회계과</option>
+                        <option value="dept2">정책연구소</option>
+                        <option value="dept2-1">정책연구과</option>
+                        <option value="dept2-2">전문자격과</option>
+                        <option value="dept3">교육부</option>
+                        <option value="dept3-1">교육운영과</option>
+                        <option value="dept3-3">교재개발과</option>
+                        <option value="dept4">안전관리부</option>
+                        <option value="dept4-1">기술지원과</option>
+                        <option value="dept4-2">안전진단과</option>
+                        <option value="dept5">고객관리부</option>
+                        <option value="dept5-2">고객지원과</option>
+                        <option value="dept5-1">홍보과</option>
+                        <option>--시·도지부--</option>
+                        <option value="dept6">서울지부</option>
+                        <option value="dept7">서울동부지부</option>
+                        <option value="dept8">부산지부</option>
+                        <option value="dept9">대구경북지부</option>
+                        <option value="dept10">인천지부</option>
+                        <option value="dept11">광주전남지부</option>
+                        <option value="dept12">대전충남지부</option>
+                        <option value="dept13">울산지부</option>
+                        <option value="dept14">경기지부</option>
+                        <option value="dept15">경기북부지부</option>
+                        <option value="dept16">강원지부</option>
+                        <option value="dept17">충북지부</option>
+                        <option value="dept18">전북지부</option>
+                        <option value="dept19">경남지부</option>
+                        <option value="dept20">제주지부</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="kfsi-organization-table-body">
+                    <div class="kfsi-table">
+                      <table summary="부서별 업무소개 - 부서, 분장업무">
+                        <caption>
+                          부서별 업무소개
+                        </caption>
+                        <colgroup>
+                          <col style="width: 230px" />
+                          <col style="width: 700px" />
+                        </colgroup>
+
+                        <thead>
+                          <tr>
+                            <th scope="col"><span>부서</span></th>
+                            <th scope="col"><span>분장업무</span></th>
+                          </tr>
+                        </thead>
+
+                        <tbody id="tbodyAdd">
+                          <tr>
+                            <td>감사실</td>
+                            <td class="text-start">
+                              1. 감사 계획수립, 시행, 보고, 처분지시에 관한 사항
+                              <br />
+                              2. 회계와 재산 및 업무집행에 관한 사항 <br />
+                              3. 업무와 관련된 부정과 비위조사에 관한 사항
+                              <br />
+                              4. 직원 직무감찰에 관한 사항 <br />
+                              5. 진정투서 및 비위사항의 조사처리에 관한 사항<br />
+                              6.사고방지를 위한 업무개선 사항<br />
+                              7. 대외감사 수감에 관한 사항<br />
+                              8. 감독청의 지시사항 및 대행감사에 관한 사항<br />
+                              9. 임직원 행동강령에 관한 사항<br />
+                              10. 감사원 및 국민권익위원회 교육에 관한 사항<br />
+                              11. 기타 상기업무와 관련된 사항
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div style="display: none">
+                    <table
+                      id="dept"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가 87-4) 4층"
+                      tel="02-850-1364"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>감사실</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 감사 계획수립, 시행, 보고, 처분지시에 관한 사항
+                              <br />
+                              2. 회계와 재산 및 업무집행에 관한 사항 <br />
+                              3. 업무와 관련된 부정과 비위조사에 관한 사항
+                              <br />
+                              4. 직원 직무감찰에 관한 사항 <br />
+                              5. 진정투서 및 비위사항의 조사처리에 관한 사항<br />
+                              6.사고방지를 위한 업무개선 사항<br />
+                              7. 대외감사 수감에 관한 사항<br />
+                              8. 감독청의 지시사항 및 대행감사에 관한 사항<br />
+                              9. 임직원 행동강령에 관한 사항<br />
+                              10. 감사원 및 국민권익위원회 교육에 관한 사항<br />
+                              11. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 6층"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>경영관리과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 정관 및 제규정 관리 업무<br />
+                              2. 이사회 및 대의원총회 운영<br />
+                              3. 채용, 승진, 전보 등 인사관리<br />
+                              4. 직원복무근태 관리<br />
+                              5. 사업계획 및 예산의 편성·집행<br />
+                              6. 직원 복리후생 및 4대보험 관련 업무<br />
+                              7. 단체협약, 노사협의회 운영 등 노무관리<br />
+                              8. 성과관리 운영<br />
+                              9. 직원 교육·훈련 실시<br />
+                              10. 교육시설 중·장기투자계획 수립<br />
+                              11. 교육장 확충계획 수립 및 실시<br />
+                              12. 실습장 확보·운영계획 수립 및 실시<br />
+                              13. 교육시설 운영관리 업무<br />
+                              14. 시설물(건축, 토목) 신축공사 및 증·개축 업무<br />
+                              15. 각종공사 감독, 안전관리 및 공사준공 검사<br />
+                              16. 시설물의일반관리및유지보수<br />
+                              17. 부동산 취득에 관한 컨설팅 및 임대관리<br />
+                              18. 건축물 건축시 건축계획, 에너지계획 등 건축물
+                              전반의 운영계획 수립<br />
+                              19. 비품·물품 재물관리<br />
+                              20. 차량관리 및 유류수불<br />
+                              21. 기타 상기 업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>재무회계과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 현금, 예금 및 유가증권 관리<br />
+                              2. 전도자금 수급<br />
+                              3. 예수금 관리<br />
+                              4. 금전출납에 관련된 업무<br />
+                              5. 예산집행 및 결산<br />
+                              6. 회계장부 기장 및 관리<br />
+                              7. 타임리포트 관리<br />
+                              8. 세무에 관련된 업무<br />
+                              9. 급여 및 퇴직금 지급업무<br />
+                              10. 법인카드 관리<br />
+                              11. 회계직무담당자 교육<br />
+                              12. 자금운영계획 수립 및 조정<br />
+                              13. 자금의 차입 및 상환<br />
+                              14. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept1-1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 6층"
+                      tel="02-850-1365"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>경영관리과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 정관 및 제규정 관리 업무<br />
+                              2. 이사회 및 대의원총회 운영<br />
+                              3. 채용, 승진, 전보 등 인사관리<br />
+                              4. 직원복무근태 관리<br />
+                              5. 사업계획 및 예산의 편성·집행<br />
+                              6. 직원 복리후생 및 4대보험 관련 업무<br />
+                              7. 단체협약, 노사협의회 운영 등 노무관리<br />
+                              8. 성과관리 운영<br />
+                              9. 직원 교육·훈련 실시<br />
+                              10. 교육시설 중·장기투자계획 수립<br />
+                              11. 교육장 확충계획 수립 및 실시<br />
+                              12. 실습장 확보·운영계획 수립 및 실시<br />
+                              13. 교육시설 운영관리 업무<br />
+                              14. 시설물(건축, 토목) 신축공사 및 증·개축 업무<br />
+                              15. 각종공사 감독, 안전관리 및 공사준공 검사<br />
+                              16. 시설물의일반관리및유지보수<br />
+                              17. 부동산 취득에 관한 컨설팅 및 임대관리<br />
+                              18. 건축물 건축시 건축계획, 에너지계획 등 건축물
+                              전반의 운영계획 수립<br />
+                              19. 비품·물품 재물관리<br />
+                              20. 차량관리 및 유류수불<br />
+                              21. 기타 상기 업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept1-2"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 6층"
+                      tel="02-850-1366"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>재무회계과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 현금, 예금 및 유가증권 관리<br />
+                              2. 전도자금 수급<br />
+                              3. 예수금 관리<br />
+                              4. 금전출납에 관련된 업무<br />
+                              5. 예산집행 및 결산<br />
+                              6. 회계장부 기장 및 관리<br />
+                              7. 타임리포트 관리<br />
+                              8. 세무에 관련된 업무<br />
+                              9. 급여 및 퇴직금 지급업무<br />
+                              10. 법인카드 관리<br />
+                              11. 회계직무담당자 교육<br />
+                              12. 자금운영계획 수립 및 조정<br />
+                              13. 자금의 차입 및 상환<br />
+                              14. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept2"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>정책연구과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 정책연구소 중장기 발전전략 및 계획 수립에 관한
+                              사항<br />
+                              2. 소방 관련 법령, 정책 및 제도개선 총괄<br />
+                              3. 행정기관 위탁업무 연구<br />
+                              4. 안전원 운영전략 수립 및 비전제시<br />
+                              5. 소방정책자문위원회 운영<br />
+                              6. 부서별 제도개선에 필요한 기초자료 제공<br />
+                              7. 소방학술연구에 관한 사항<br />
+                              8. 소방안전기준의 연구, 개발<br />
+                              9. 소방기술관련 위탁연구에 관한 사항<br />
+                              10.소방안전에 관한 기술정책 개발<br />
+                              11. 연구보고서 또는 논문전파<br />
+                              12. 소방기술정보지 발간계획 수립 및 시행<br />
+                              13. 소방기술관련 해외자료 번역제공<br />
+                              14. 소방법령 관련 도서 수집, 관리에 관한 사항<br />
+                              15. 자료실 운영<br />
+                              16. 법령집 관리업무<br />
+                              17. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span>전문자격과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 소방안전관리자 시험 운영 및 관리<br />
+                              2. 소방안전관리자 시험문제지 발간<br />
+                              3. 시험위원(출제·선제·검토·채점) 운영<br />
+                              4. 위험물안전관리자 등 평가 운영 및 관리<br />
+                              5. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept2-1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1369"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>정책연구과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 정책연구소 중장기 발전전략 및 계획 수립에 관한
+                              사항<br />
+                              2. 소방 관련 법령, 정책 및 제도개선 총괄<br />
+                              3. 행정기관 위탁업무 연구<br />
+                              4. 안전원 운영전략 수립 및 비전제시<br />
+                              5. 소방정책자문위원회 운영<br />
+                              6. 부서별 제도개선에 필요한 기초자료 제공<br />
+                              7. 소방학술연구에 관한 사항<br />
+                              8. 소방안전기준의 연구, 개발<br />
+                              9. 소방기술관련 위탁연구에 관한 사항<br />
+                              10.소방안전에 관한 기술정책 개발<br />
+                              11. 연구보고서 또는 논문전파<br />
+                              12. 소방기술정보지 발간계획 수립 및 시행<br />
+                              13. 소방기술관련 해외자료 번역제공<br />
+                              14. 소방법령 관련 도서 수집, 관리에 관한 사항<br />
+                              15. 자료실 운영<br />
+                              16. 법령집 관리업무<br />
+                              17. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept2-2"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1371"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>전문자격과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 소방안전관리자 시험 운영 및 관리<br />
+                              2. 소방안전관리자 시험문제지 발간<br />
+                              3. 시험위원(출제·선제·검토·채점) 운영<br />
+                              4. 위험물안전관리자 등 평가 운영 및 관리<br />
+                              5. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept3"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>교육운영과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 교육계획 및 교육운영기준 수립 및 실시,
+                              결과분석, 교육운영 개선<br />
+                              2. 교육실적 현황 및 통계관리<br />
+                              3. 강습 및 실무교육 확인지도평가<br />
+                              4. 교육 설문조사 및 분석<br />
+                              5. 교육평가회의 운영<br />
+                              6. 교육시행의 승인 및 통제<br />
+                              7. 교수운영 및 관리(교수 연수 및 연찬,
+                              강의경연대회, 강의지원 등)<br />
+                              8. 교수요원 선발 및 자격기준 등 심사<br />
+                              9. 교수요원 교안 및 강의수행시간 관리<br />
+                              10. 교수요원 연구실적 분석<br />
+                              11. 교수전문화 방안 수립 및 운영<br />
+                              12. 초빙강사 위촉 및 운영<br />
+                              13. 특성화전문교육 계획 수립 및 운영, 실적 및
+                              결과분석<br />
+                              14. 교육관련 수수료 산정에 관한 사항<br />
+                              15. 소방관서 실무자 간담회 운영<br />
+                              16. 신규교육과정 연구 및 개발<br />
+                              17. 교육관련 각종서식 제작 및 배부<br />
+                              18. 자격 수첩 (재)교부 및 관리<br />
+                              19. 교육관련 법령, 정책 및 제도개선<br />
+                              20. 교육관련 민원 대응<br />
+                              21. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span>교재개발과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 강습 및 실무교육 등 교재개발 및 제작<br />
+                              2. 교육용기자재 개발 및 제작<br />
+                              3. 교재편찬 심의위원 위촉 및 운영<br />
+                              4. 실기실습 프로그램 개발<br />
+                              5. 시청각 교육자료 개발<br />
+                              6. 이동용 교육기자재 운영에 관한 사항<br />
+                              7. 사이버교육계획 운영 및 관리<br />
+                              8. 사이버교육 콘텐츠 개발 및 제작<br />
+                              9. 사이버교육센터 운영 및 개선<br />
+                              10. 사이버교육실적 현황 및 결과 분석<br />
+                              11. 기타 상기업무와 관련된 사항<br />
+                              12. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept3-1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1370"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>교육운영과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 교육계획 및 교육운영기준 수립 및 실시,
+                              결과분석, 교육운영 개선<br />
+                              2. 교육실적 현황 및 통계관리<br />
+                              3. 강습 및 실무교육 확인지도평가<br />
+                              4. 교육 설문조사 및 분석<br />
+                              5. 교육평가회의 운영<br />
+                              6. 교육시행의 승인 및 통제<br />
+                              7. 교수운영 및 관리(교수 연수 및 연찬,
+                              강의경연대회, 강의지원 등)<br />
+                              8. 교수요원 선발 및 자격기준 등 심사<br />
+                              9. 교수요원 교안 및 강의수행시간 관리<br />
+                              10. 교수요원 연구실적 분석<br />
+                              11. 교수전문화 방안 수립 및 운영<br />
+                              12. 초빙강사 위촉 및 운영<br />
+                              13. 특성화전문교육 계획 수립 및 운영, 실적 및
+                              결과분석<br />
+                              14. 교육관련 수수료 산정에 관한 사항<br />
+                              15. 소방관서 실무자 간담회 운영<br />
+                              16. 신규교육과정 연구 및 개발<br />
+                              17. 교육관련 각종서식 제작 및 배부<br />
+                              18. 자격 수첩 (재)교부 및 관리<br />
+                              19. 교육관련 법령, 정책 및 제도개선<br />
+                              20. 교육관련 민원 대응<br />
+                              21. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept3-3"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1372"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><span>교재개발과</span></td>
+                          <td class="text-start">
+                            <span>
+                              1. 강습 및 실무교육 등 교재개발 및 제작<br />
+                              2. 교육용기자재 개발 및 제작<br />
+                              3. 교재편찬 심의위원 위촉 및 운영<br />
+                              4. 실기실습 프로그램 개발<br />
+                              5. 시청각 교육자료 개발<br />
+                              6. 이동용 교육기자재 운영에 관한 사항<br />
+                              7. 사이버교육계획 운영 및 관리<br />
+                              8. 사이버교육 콘텐츠 개발 및 제작<br />
+                              9. 사이버교육센터 운영 및 개선<br />
+                              10. 사이버교육실적 현황 및 결과 분석<br />
+                              11. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept4"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1374"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>기술지원과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 소방안전 연구·조사<br />
+                              2. 소방기술지도 및 신기술 보급에 관한 사항 <br />
+                              3. 소방시설관리업 관련 업무 총괄 <br />
+                              4. 점검(업무대행 포함)·안전진단 계획 수립 및 시행
+                              <br />
+                              5. 점검·안전진단 계약 체결에 관한 사항 <br />
+                              6. 점검·안전진단 수수료 산정에 관한 사항 <br />
+                              7. 점검·안전진단 기술요원 관리, 감독 및 연찬
+                              <br />
+                              8. 점검·안전진단 기법개발, 연구 및 보급 <br />
+                              9. 점검·안전진단 대상처 자료확보 및 관리·홍보
+                              <br />
+                              10. 점검·안전진단 장비 관리 <br />
+                              11. 소방안전점검·안전진단 관련 법령, 정책 및
+                              제도개선
+                              <br />
+                              12. 소방안전관리자문위원회 운영 <br />
+                              13. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>안전진단과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 종합방재안전컨설팅 계획 수립 및 시행 <br />
+                              2. 종합방재안전컨설팅 관련 업무 총괄 <br />
+                              3. 종합방재안전컨설팅 관련 기술개발·보급 <br />
+                              4. 종합방재안전컨설팅 관련 인력운영 및 장비관리<br />
+                              5. 종합방재안전컨설팅 등 신규사업 개발 <br />
+                              6. 종합방재안전컨설팅 수수료 산정에 관한 사항<br />
+                              7. 종합방재안전컨설팅 관련 법령, 정책 및 제도개선
+                              <br />
+                              8. 대한민국안전대상 계획 수립 및 시행 <br />
+                              9. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept4-1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1374"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>기술지원과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 소방안전 연구·조사<br />
+                              2. 소방기술지도 및 신기술 보급에 관한 사항 <br />
+                              3. 소방시설관리업 관련 업무 총괄 <br />
+                              4. 점검(업무대행 포함)·안전진단 계획 수립 및 시행
+                              <br />
+                              5. 점검·안전진단 계약 체결에 관한 사항 <br />
+                              6. 점검·안전진단 수수료 산정에 관한 사항 <br />
+                              7. 점검·안전진단 기술요원 관리, 감독 및 연찬
+                              <br />
+                              8. 점검·안전진단 기법개발, 연구 및 보급 <br />
+                              9. 점검·안전진단 대상처 자료확보 및 관리·홍보
+                              <br />
+                              10. 점검·안전진단 장비 관리 <br />
+                              11. 소방안전점검·안전진단 관련 법령, 정책 및
+                              제도개선
+                              <br />
+                              12. 소방안전관리자문위원회 운영 <br />
+                              13. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept4-2"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 5층"
+                      tel="02-850-1375"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>안전진단과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 종합방재안전컨설팅 계획 수립 및 시행 <br />
+                              2. 종합방재안전컨설팅 관련 업무 총괄 <br />
+                              3. 종합방재안전컨설팅 관련 기술개발·보급 <br />
+                              4. 종합방재안전컨설팅 관련 인력운영 및 장비관리<br />
+                              5. 종합방재안전컨설팅 등 신규사업 개발 <br />
+                              6. 종합방재안전컨설팅 수수료 산정에 관한 사항<br />
+                              7. 종합방재안전컨설팅 관련 법령, 정책 및 제도개선
+                              <br />
+                              8. 대한민국안전대상 계획 수립 및 시행 <br />
+                              9. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept5"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 4층"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>고객지원과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 회원가입 및 제명<br />
+                              2. 회비 책정 및 부과기준에 관한 사항<br />
+                              3. 회비고지, 수납·통계<br />
+                              4. 회원복지 및 권익신장<br />
+                              5. 회원 서비스사업 개발 및 운영<br />
+                              6. 회원 만족도 조사 및 대응방안 등의 업무<br />
+                              7. 회원관리관련 제서식 제작·보급<br />
+                              8. 지부 회원위원회 관리·운영<br />
+                              9. 회원 소방안전장학금, 회원 재해위로금 지급<br />
+                              10. 회원 산업시찰 및 해외시찰<br />
+                              11. 소방안전지 발간계획 수립 및 시행<br />
+                              12. 소방안전지 취재·편집·제작 및 배포<br />
+                              13. 간행물 등록·허가·변경에 관한 사항<br />
+                              14. 홈 페이지 (묻고답하기 등 고객참여)<br />
+                              15. 기타 상기업무와 관련된 사항<br />
+                              16. 정보화 추진관련 계획수립 및 추진<br />
+                              17. 본지회 네트워크 및 통신회선 관리<br />
+                              18. 정보시스템 및 정보보안 관리<br />
+                              19. 개인정보 보호업무 수행<br />
+                              20. 안전원사이트 관리<br />
+                              21. 인터넷 베너광고 운영<br />
+                              22. 업무 시스템 개발 및 운영<br />
+                              23. 타기관 정보 연계 업무<br />
+                              24. 개인PC 등 전산기자재 관리<br />
+                              25. 기타 전산 및 정보화관련 업무
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>홍보과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 홍보계획 수립 및 시행<br />
+                              2. 방송매체 및 시청각 홍보물 제작<br />
+                              3. 방송실 운영에 관한 사항<br />
+                              4. 한국 119소년단 운영에 관한사항<br />
+                              5. 유관기관 소방안전행사 지원<br />
+                              6. 안전원 이미지 제고 및 홍보<br />
+                              7. 안전원 역사편찬 및 백서발간<br />
+                              8. 대국민 화재예방캠페인 계획 수립 및 시행<br />
+                              9. 보도자료 배포, 인터뷰 등 언론기관 협력 업무<br />
+                              10. 119동요대회 개최에 관한 사항<br />
+                              11. 화재취약계층 소방시설 보급 등 사회공헌활동<br />
+                              12. 소방관련 국제교류 및 협력<br />
+                              13. 해외 소방관련기관 연수 및 교류<br />
+                              14. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept5-1"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 4층"
+                      tel="02-850-1376"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>홍보과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 홍보계획 수립 및 시행<br />
+                              2. 방송매체 및 시청각 홍보물 제작<br />
+                              3. 방송실 운영에 관한 사항<br />
+                              4. 한국 119소년단 운영에 관한사항<br />
+                              5. 유관기관 소방안전행사 지원<br />
+                              6. 안전원 이미지 제고 및 홍보<br />
+                              7. 안전원 역사편찬 및 백서발간<br />
+                              8. 대국민 화재예방캠페인 계획 수립 및 시행<br />
+                              9. 보도자료 배포, 인터뷰 등 언론기관 협력 업무<br />
+                              10. 119동요대회 개최에 관한 사항<br />
+                              11. 화재취약계층 소방시설 보급 등 사회공헌활동<br />
+                              12. 소방관련 국제교류 및 협력<br />
+                              13. 해외 소방관련기관 연수 및 교류<br />
+                              14. 기타 상기업무와 관련된 사항
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept5-2"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 4층"
+                      tel="02-850-1377"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>고객지원과</td>
+                          <td class="text-start">
+                            <span>
+                              1. 회원가입 및 제명<br />
+                              2. 회비 책정 및 부과기준에 관한 사항<br />
+                              3. 회비고지, 수납·통계<br />
+                              4. 회원복지 및 권익신장<br />
+                              5. 회원 서비스사업 개발 및 운영<br />
+                              6. 회원 만족도 조사 및 대응방안 등의 업무<br />
+                              7. 회원관리관련 제서식 제작·보급<br />
+                              8. 지부 회원위원회 관리·운영<br />
+                              9. 회원 소방안전장학금, 회원 재해위로금 지급<br />
+                              10. 회원 산업시찰 및 해외시찰<br />
+                              11. 소방안전지 발간계획 수립 및 시행<br />
+                              12. 소방안전지 취재·편집·제작 및 배포<br />
+                              13. 간행물 등록·허가·변경에 관한 사항<br />
+                              14. 홈 페이지 (묻고답하기 등 고객참여)<br />
+                              15. 기타 상기업무와 관련된 사항<br />
+                              16. 정보화 추진관련 계획수립 및 추진<br />
+                              17. 본지회 네트워크 및 통신회선 관리<br />
+                              18. 정보시스템 및 정보보안 관리<br />
+                              19. 개인정보 보호업무 수행<br />
+                              20. 안전원사이트 관리<br />
+                              21. 인터넷 베너광고 운영<br />
+                              22. 업무 시스템 개발 및 운영<br />
+                              23. 타기관 정보 연계 업무<br />
+                              24. 개인PC 등 전산기자재 관리<br />
+                              25. 기타 전산 및 정보화관련 업무
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept6"
+                      addr="(07226)서울특별시 영등포구 영중로 170, 한국소방안전원 (영등포동8가) 2층"
+                      tel="02-850-1370"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>교육국</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리<br />
+                              3. 교육관리 및 외래강사 초빙<br />
+                              4. 교재 배부 및 관리 운영<br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리<br />
+                              6. 점검등 수익사업 수행<br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>고객관리국</td>
+                          <td class="text-start">
+                            <span>
+                              1. 회원관리, 회비고지 및 수납업무<br />
+                              2. 회원복지 및 권익신장 <br />
+                              3. 지부 소관 예산 집행, 경리, 회계 업무<br />
+                              4. 직원 복무관리 <br />
+                              5. 지부 회원위원회 운영<br />
+                              6. 전산관련업무 <br />
+                              7. 지부 자산관리에 관한 사항 <br />
+                              8. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept7"
+                      addr="(02586)서울특별시 동대문구 청계천로 447 한국도자기 서울사옥 (신설동 100-29)"
+                      tel="02-850-1392"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>서울동부지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept8"
+                      addr="(46332) 부산광역시 금정구 공단서로 8번길 53-12(금사동 80-1)"
+                      tel="051-553-8423"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>부산지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept9"
+                      addr="(41940) 대구광역시 중구 동덕로 115, 진석타워4층 (삼덕동2가)"
+                      tel="053-431-2393"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>대구경북지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept10"
+                      addr="(22707) 인천광역시 서구 경명대로 701 (공촌동)"
+                      tel="032-569-1971"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>인천지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영 <br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept11"
+                      addr="(62363) 광주광역시 광산구 사암로171번길 112 (우산동)"
+                      tel="062-942-6679"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>광주전남지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7. 각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept12"
+                      addr="(34426) 대전광역시 대덕구 한밭대로 1118 (중리동)"
+                      tel="042-638-4119"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>대전충남지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept13"
+                      addr="(44689) 울산광역시 남구 돋질로 97, 울산상공회의소6층 (신정동)"
+                      tel="052-256-9011"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>울산지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept14"
+                      addr="(16440) 경기도 수원시 팔달구 고화로 119 (화서동)"
+                      tel="031-257-0131"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>경기지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept15"
+                      addr="(10905) 경기도 파주시 미래로 371(동패동 1759-6번지) 시티타워 6층"
+                      tel="031-945-3118"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>경기북부지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept16"
+                      addr="(25236) 강원도 횡성군 횡성읍 문예로 145"
+                      tel="033-345-2119"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>강원지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept17"
+                      addr="(28620) 충북 청주시 흥덕구 2순환로 1502번길 5(성화동 225-12)"
+                      tel="043-237-3119"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>충북지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept18"
+                      addr="(55365) 전라북도 완주군 지사제로 59(완주군 이서면 용서리 874-1)"
+                      tel="063-212-8315"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>전북지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept19"
+                      addr="(63217) 경상남도 창원시 의창구 충혼로 91, 창원문성대학 6호관 1층 (두대동)"
+                      tel="055-237-2071"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>경남지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table
+                      id="dept20"
+                      addr="(63230) 제주특별자치도 제주시 중앙로 369, 센트럴타워 3층 (이도이동)"
+                      tel="064-758-8047"
+                      summary="부서별 업무소개 - 부서, 분장업무"
+                    >
+                      <caption>
+                        부서별 업무소개
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td>제주지부</td>
+                          <td class="text-start">
+                            <span>
+                              1. 지부 교육계획 수립 및 수행 <br />
+                              2. 교육기자재 및 교육장 관리 <br />
+                              3. 교육관리 및 외래강사 초빙 <br />
+                              4. 교재 배부 및 관리 운영 <br />
+                              5. 교육시행관련 수료증, 수첩 발급 및 관리 <br />
+                              6. 점검등 수익사업 수행 <br />
+                              7.각종 사업 영업활동<br />
+                              8. 소방홍보업무 수행<br />
+                              9. 회원관리, 회비고지 및 수납업무 <br />
+                              10. 회원복지 및 권익신장 <br />
+                              11. 지부 소관 예산 집행, 경리, 회계 업무 <br />
+                              12. 직원 복무관리 <br />
+                              13. 지부 회원위원회 운영<br />
+                              14. 전산관련업무 <br />
+                              15. 지부 자산관리에 관한 사항 <br />
+                              16. 기타 본부 지시에 따른 사무 시행
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  $(function () {
+                    if ('') {
+                      $('#deptSel').val('');
+                      fnCmdContsChange($('#deptSel'));
+                    }
+
+                    // $(document).on("change", "#deptSel", function(){
+                    $('#deptSel').on('change', function () {
+                      fnCmdContsChange(this);
+                    });
+                  });
+
+                  function fnCmdContsChange(obj) {
+                    if ($(obj).val()) {
+                      var trId = $(obj).val();
+
+                      // 업무소개 변경
+                      $('#tbodyAdd').html($('#' + trId + ' tbody').html());
+
+                      // 부서명 변경
+                      $('#deptNm').text(
+                        $('#deptSel option:selected').text().replace('-', '')
+                      );
+
+                      // 주소 변경
+                      $('#addr').text($('#' + trId).attr('addr'));
+
+                      // Tel 변경
+                      if ($('#' + trId).attr('tel') == null) {
+                        $('#tel').text('');
+                        $('#tel').parent().hide();
+                      } else {
+                        $('#tel').text($('#' + trId).attr('tel'));
+                        $('#tel').parent().show();
+                      }
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

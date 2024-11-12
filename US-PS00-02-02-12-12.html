@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>열린경영</h2>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">주요업무</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">소방홍보</a>
+                  <a href="" class="kfsi-snb-item-sub-item">안전진단</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >연구개발 및 국제교류</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">회원복리증진</a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="" class="kfsi-snb-item">경영공시</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">경영목적 및 방침</a>
+                  <a href="" class="kfsi-snb-item-sub-item"
+                    >임원현황 및 선임방법</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">재무제표</a>
+                  <a href="" class="kfsi-snb-item-sub-item">기타사항</a>
+                </div>
+              </div>
+              <a href="" class="kfsi-snb-item">청렴정보</a>
+              <a href="" class="kfsi-snb-item">부패공직자 처리현황</a>
+              <a href="" class="kfsi-snb-item">
+                고문변호사위촉 및 <br />
+                소송현황
+              </a>
+              <a href="" class="kfsi-snb-item">채용비리관련 공지사항</a>
+              <a href="" class="kfsi-snb-item">위원회 결과공개</a>
+              <a href="" class="kfsi-snb-item">상품권 구매 및 사용현황</a>
+              <a href="" class="kfsi-snb-item">카드뉴스</a>
+              <a href="" class="kfsi-snb-item">입찰</a>
+              <a href="" class="kfsi-snb-item">보도자료</a>
+              <div class="kfsi-snb-item-sub active">
+                <a href="" class="kfsi-snb-item active">안전원 통계</a>
+                <div class="kfsi-snb-item-sub-list">
+                  <a href="" class="kfsi-snb-item-sub-item">소방교육</a>
+                  <a href="" class="kfsi-snb-item-sub-item">연구개발</a>
+                  <a href="" class="kfsi-snb-item-sub-item active"
+                    >소방안전관리</a
+                  >
+                  <a href="" class="kfsi-snb-item-sub-item">위험물안전관리</a>
+                </div>
+              </div>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">열린경영</li>
+                    <li class="breadcrumb-item">안전원 통계</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전관리
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전관리</h1>
+              </div>
+              <div class="kfsi-openmanagement">
+                <h5 class="kfsi-h5">소방안전관리자 현황</h5>
+                <div class="kfsi-table-unit">[단위 : 명]</div>
+                <div class="kfsi-table kfsi-table-scroll">
+                  <table summary="소방안전관리자 현황">
+                    <caption>
+                      소방안전관리자 현황
+                    </caption>
+                    <colgroup>
+                      <col style="width: 150px" />
+                      <col style="width: 184px" />
+                      <col style="width: 120px" />
+                      <col style="width: 120px" />
+                      <col style="width: 120px" />
+                      <col style="width: 120px" />
+                      <col style="width: 120px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">계</th>
+                        <th scope="col">특급</th>
+                        <th scope="col">1급</th>
+                        <th scope="col">2급</th>
+                        <th scope="col">3급</th>
+                        <th scope="col">공공기관</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>선임자</td>
+                        <td>370,981</td>
+                        <td>769</td>
+                        <td>16,487</td>
+                        <td>169,716</td>
+                        <td>150,256</td>
+                        <td>33,753</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="kfsi-table-danger">
+                    ※ 출처 : 2021 소방통계연보(소방청)
+                  </p>
+                </div>
+                <h5 class="kfsi-h5">소방안전관리보조자 현황</h5>
+                <div class="kfsi-table-unit">[단위 : 명]</div>
+                <div class="kfsi-table kfsi-table-scroll">
+                  <table
+                    summary="소방안전관리보조자 현황으로 구분, 계, 다양한 소방안전관리대상물에 대한 정보를 제공합니다."
+                  >
+                    <caption>
+                      소방안전관리보조자 현황
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">구분</th>
+                        <th scope="col" rowspan="2">계</th>
+                        <th scope="col" rowspan="2">1. 연면적 15,000㎡ 이상</th>
+                        <th scope="col" rowspan="2">
+                          2. 세대수합계 300세대 이상인 아파트
+                        </th>
+                        <th scope="col" colspan="2">
+                          1 또는 2에 해당하지 않는 소방안전관리대상물
+                        </th>
+                        <th scope="col" colspan="3">
+                          1 또는 2에 해당하지 않는 소방안전관리대상물
+                        </th>
+                      </tr>
+                      <tr>
+                        <th scope="col">기숙사</th>
+                        <th scope="col">의료시설</th>
+                        <th scope="col">노유자시설</th>
+                        <th scope="col">수련시설</th>
+                        <th scope="col">숙박시설</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>선임자</td>
+                        <td>70,537</td>
+                        <td>25,632</td>
+                        <td>26,512</td>
+                        <td>698</td>
+                        <td>3,404</td>
+                        <td>7,983</td>
+                        <td>294</td>
+                        <td>6,014</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="kfsi-table-danger">
+                    ※ 출처 : 2021 소방통계연보(소방청)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
