@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>제휴업체</h2>
+              </div>
+              <a href="US-PS00-05-02-01-10.html" class="kfsi-snb-item"
+                >회원복지몰</a
+              >
+              <a href="US-PS00-05-02-02-10.html" class="kfsi-snb-item"
+                >법률 · 세무</a
+              >
+              <a href="US-PS00-05-02-03-10.html" class="kfsi-snb-item">의료</a>
+              <a href="US-PS00-05-02-04-10.html" class="kfsi-snb-item active"
+                >문화·여행·레저</a
+              >
+              <a href="US-PS00-05-02-05-10.html" class="kfsi-snb-item"
+                >생활·웨딩·안경</a
+              >
+              <a href="US-PS00-05-02-06-10.html" class="kfsi-snb-item">교육</a>
+              <a href="US-PS00-05-02-07-10.html" class="kfsi-snb-item">상조</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">제휴업체</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      문화·여행·레저
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>문화·여행·레저</h1>
+              </div>
+              <div class="kfsi-welfare kfsi-welfare--tab">
+                <div class="pc">
+                  <div
+                    class="d-flex align-items-end justify-content-between mb-3"
+                  >
+                    <div></div>
+                    <div>
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-welfare-tab">
+                  <ul class="kfsi-welfare-tab-nav" role="tablist">
+                    <li role="presentation">
+                      <button
+                        class="active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        전국
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        서울
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        대구경북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        광주전남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        전북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab06-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab06-pane"
+                        aria-selected="false"
+                      >
+                        제주
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="mo">
+                    <div class="kfsi-welfare-button mb-6">
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">일성콘도 & 리조트</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 객실요금 할인</li>
+                            <li>대상 : 안전원 회원(가족 포함) - 양도불가</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.ilsungresort.co.kr"
+                                target="_blank"
+                                title="http://www.ilsungresort.co.kr (새창 열림)"
+                                >http://www.ilsungresort.co.kr</a
+                              >
+                            </li>
+                            <li>
+                              예약방법 : 법인번호를 받아 일성콘도 홈페이지에서
+                              직접 예약
+                            </li>
+                            <li>
+                              유선예약 : 1566-8113(한국소방안전원 회원임을
+                              말하고 법인번호 확인 후 예약진행)
+                            </li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 성수기,연휴기간 요금은 변동 또는 객실운영 상황에
+                            따라 이용이 불가할 수 있습니다.
+                          </div>
+                          <div class="kfsi-button mt-5">
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary"
+                              onclick="getCompanyCd('6223-9246');"
+                            >
+                              법인번호 받기
+                            </button>
+                            <a
+                              href="http://year.lparkcondo.com/mypage/login_form.asp"
+                              target="_blank"
+                              class="btn btn-outline-primary"
+                              >예약하러 가기</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">
+                        금호리조트㈜ (※ 통영,화순,속초,남제주점 이용 가능)
+                      </h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 객실 등 요금 할인(업체문의)</li>
+                            <li>대상 : 안전원 회원(가족 포함) - 양도불가</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.kumhoresort.co.kr"
+                                target="_blank"
+                                title="http://www.kumhoresort.co.kr (새창 열림)"
+                                >http://www.kumhoresort.co.kr</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 서울시 종로구 새문안로 76, 금호아시아나
+                              본관 8층
+                            </li>
+                            <li>문의전화 : 02-737-5400</li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 체크인 시 '회원확인서'를 제출해야 하며, 미지참시
+                            정상요금으로 변경되어 차액을 지불하셔야 합니다.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">서울프린스호텔</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  주중·주말·연휴에 따라정상요금의 30％~50％ 할인
+                                </li>
+                                <li>별관 컨벤션홀 이용 시 20％ 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 (가족 포함)</li>
+                            <li>주소 : 서울 중구 퇴계로 130</li>
+                            <li>문의전화 : 02-752-7111</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.princeseoul.co.kr"
+                                target="_blank"
+                                title="http://www.princeseoul.co.kr (새창 열림)"
+                                >http://www.princeseoul.co.kr</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">평산아카데미 문화관광연수원</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>(객실) 한실, 양실 30％할인</li>
+                                <li>(웨딩) 웨딩뷔페식대 10％ 할인</li>
+                                <li>단체행사 대관료 20％ 할인</li>
+                                <li>커피바리스타 20％ 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              주소 : 경북 칠곡군 동명면 득명 1길 106(득명리 147)
+                            </li>
+                            <li>문의전화 : 054-975-8008</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">스파밸리</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    워터파크 30％ 할인(자유이용상품에 한함)
+                                    <div class="text-danger">
+                                      ※ 이용시 회원확인서 제시
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 동반 1인</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.spavalley.co.kr"
+                                tabindex="_blank"
+                                title="http://www.spavalley.co.kr (새창 열림)"
+                                >http://www.spavalley.co.kr</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 대구시 달성군 가창면 냉천리 27-9 스파밸리
+                            </li>
+                            <li>문의전화 : 053-608-5000</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">팔공산온천관광호텔</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>(객실) 주중·주말 20％ 할인</li>
+                                <li>
+                                  (온천) 대인기준 본인 포함 동반 1인 30％ 할인
+                                </li>
+                                <li>
+                                  연회, 워크숍, 단체행사, 직원개인행사 시
+                                  특전부여
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 (가족 포함)</li>
+                            <li>주소 : 대구 동구 팔공산로185길 11</li>
+                            <li>문의전화 : 053-985-8080</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">남경여행사</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 여행상품(패키지상품) 및 항공권에 한하여
+                              정상금액의 3％~5％ 할인
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함)</li>
+                            <li>주소 : 대구 중구 경삼감영길 281</li>
+                            <li>문의전화 : 053-425-1400</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">(주)엘도라도리조트</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 객실 등 요금 할인(업체문의)</li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="https://eldomou.roomio.co.kr"
+                                target="_blank"
+                                title="https://eldomou.roomio.co.kr (새창 열림)"
+                                >https://eldomou.roomio.co.kr</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 전남 신안군 증도면 지도증도로 1766-15
+                            </li>
+                            <li>문의전화 : 1544-8865</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab05-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab05"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">전주 엔브릿지호텔</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 전주 엔브릿지호텔 이용혜택
+                              <ul>
+                                <li>주중(일~목 체크인) 10% 할인</li>
+                                <li>단체예약 시 10% 할인</li>
+                                <li>
+                                  예약 현황에 따라 우선 고층배정 또는 객실
+                                  업그레이드
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>위치 : 전주시 완산구 전주천서로 81</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.nbridge.kr"
+                                target="_blank"
+                                title="http://www.nbridge.kr (새창 열림)"
+                                >http://www.nbridge.kr</a
+                              >
+                            </li>
+                            <li>Instagram ID : nbridgehotel</li>
+                            <li>
+                              유선예약 : 0507-1381-6000 (※안전원 회원확인서
+                              발급받은 후 제출)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">상관리조트&스파</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 리조트 시설 10％~20％할인(업체문의)</li>
+                            <li>대상 : 안전원 회원(회원가족포함)</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.sanggwanresort.co.kr"
+                                target="_blank"
+                                title="http://www.sanggwanresort.co.kr (새창 열림)"
+                                >http://www.sanggwanresort.co.kr</a
+                              >
+                            </li>
+                            <li>주소 : 전북 완주군 상관면 죽림편백길 118-38</li>
+                            <li>문의전화 : 063-230-4500</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">남원호텔</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 성수기 10％, 비수기 20％ 할인</li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.namwonhotel.com"
+                                target="_blank"
+                                title="http://www.namwonhotel.com (새창 열림)"
+                                >http://www.namwonhotel.com</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 전북 남원시 주천면 정령치로
+                              122-11(호경리369-1)
+                            </li>
+                            <li>문의전화 : 063-626-8552</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab06-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab06"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">소방산업공제조합 한림리조트</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 한림리조트 할인혜택
+                              <ul>
+                                <li>리조트 판매가격의 10% 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 회원 및 회원가족</li>
+                            <li>
+                              위치 : 제주시 한림읍 일주서로 5083-5(협재해수욕장
+                              인근)
+                            </li>
+                            <li>유선예약 : 064-796-8231</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">수앤수 가족호텔</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              <div>
+                                혜택 : 객실 협회 회원 특가 적용 등 요금
+                                할인(업체문의)
+                                <div class="text-danger">
+                                  ※ 회원 혜택을 받기 위해서는 호텔 이용 시
+                                  회원확인서를 제시하여야 한다.
+                                </div>
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.suandsu.kr"
+                                target="_blank"
+                                title="http://www.suandsu.kr (새창 열림)"
+                                >http://www.suandsu.kr</a
+                              >
+                            </li>
+                            <li>주소 : 제주 제주시 애월읍 부룡수길 60</li>
+                            <li>문의전화 : 064-799-7090</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">이제주몰</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  제주특산품 판매장을 방문하여 회원 확인서
+                                  제시후 10％~5％ 금액 할인
+                                </li>
+                                <li>
+                                  온라인쇼핑몰(이제주몰)에서 구매한 물품에
+                                  대하여 택배비 50％할인(업체문의)
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://mall.ejeju.net"
+                                target="_blank"
+                                title="http://mall.ejeju.net (새창 열림)"
+                                >http://mall.ejeju.net</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 제주시 연삼로 495 제주특별자치도 중소기업
+                              종합지원센터
+                            </li>
+                            <li>문의전화 : 064-751-3320</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">별마로</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>혜택 : 숙박시설 20％~40％ 할인(업체문의)</li>
+                            <li>
+                              대상 : 안전원 회원(회원가족), 소방공무원,
+                              의용소방대원
+                            </li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.byulmaro.co.kr"
+                                target="_blank"
+                                title="http://www.byulmaro.co.kr (새창 열림)"
+                                >http://www.byulmaro.co.kr</a
+                              >
+                            </li>
+                            <li>주소 : 제주 제주시 이호1동 687로</li>
+                            <li>문의전화 : 064-713-8788</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">허브동산</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              혜택 : 숙박 및 레저이용시설 20％ 할인(업체문의)
+                            </li>
+                            <li>대상 : 안전원 회원(회원가족)</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.herbdongsan.com"
+                                target="_blank"
+                                title="http://www.herbdongsan.com (새창 열림)"
+                                >http://www.herbdongsan.com</a
+                              >
+                            </li>
+                            <li>주소 : 제주 서귀포시 표선면 돈오름로 170</li>
+                            <li>문의전화 : 064-787-7362</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

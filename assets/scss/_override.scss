@@ -40,7 +40,7 @@ textarea {
   &-header {
     height: 50px;
     padding: 12px 12px 12px 24px;
-    background-color: #00597d;
+    background-color: #032c5e;
     border: 0;
     border-radius: 0;
     .btn-close {
@@ -86,15 +86,20 @@ textarea {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
+  text-decoration: none !important;
   &-round {
     border-radius: 100px;
   }
   &-sm {
-    height: 33px;
+    height: 30px;
     font-size: 15px;
   }
   &-lg {
     height: 40px;
+  }
+  &-xl {
+    height: 50px;
+    font-size: 17px;
   }
   &-white {
     background: #fff;
@@ -106,7 +111,7 @@ textarea {
   }
   &-outline-secondary {
     border: solid 1px #ccc;
-    color: #666;
+    color: #666 !important;
     &:hover {
       background: none;
       border: solid 1px #ccc;
@@ -115,9 +120,21 @@ textarea {
   }
   &-info {
     border: solid 1px #ccc;
+    color: #333 !important;
   }
 }
-
+.form-check {
+  &-label {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+}
 .badge {
   padding: 4px 6px;
   border-radius: 12px;

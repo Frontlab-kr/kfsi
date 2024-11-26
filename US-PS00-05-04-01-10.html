@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>소방안전장학금</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">소방안전장학금</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">회원서비스</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전장학금
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전장학금</h1>
+              </div>
+              <div class="kfsi-welfare">
+                <div class="pc">
+                  <div
+                    class="d-flex align-items-end justify-content-between mb-6"
+                  >
+                    <div></div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        style="width: 220px"
+                      >
+                        장학금 신청하기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-tabs kfsi-tabs--columns2">
+                  <ul role="tablist">
+                    <li role="presentation">
+                      <button
+                        class="active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        신청자격
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        지급개요
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        지급기준 및 금액
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        첨부서류
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="mo">
+                    <div class="kfsi-welfare-button mt-7">
+                      <button type="button" class="btn btn-success">
+                        장학금 신청하기
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <div class="pt-7">
+                        <h5 class="kfsi-h5 mb-3">
+                          신청자격 : 다음 각 호를 모두 만족하는 안전원 회원
+                        </h5>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>회원가입기간이 5년 이상인 사람</li>
+                            <li>
+                              회원 본인 또는 회원의 자녀가 대학(교)에 재학중인
+                              사람
+                            </li>
+                            <li>안전원 회원으로써 회원의 의무를 다한 사람</li>
+                          </ul>
+                          <div class="text-danger mt-1">
+                            ※ 최근 5년간 안전원 소방안전장학금 기 수혜 회원 신청
+                            불가
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <div class="pt-7">
+                        <h5 class="kfsi-h5 mb-3">선발개요</h5>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>접수처 : 회원 소속 시·도지부 사무실</li>
+                            <li>
+                              접수기간 : 10월 중 접수 (8월 경 안전원 홈페이지
+                              공지사항 참조)
+                            </li>
+                            <li>회원가입기간이 5년 이상인 사람</li>
+                            <li>선발기준 : 회원가입기간이 오래된 순</li>
+                            <li>
+                              선발인원 및 장학금 지급액 : 총 200명/ 2억원 (1인당
+                              100만원)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <div class="pt-7">
+                        <h5 class="kfsi-h5 mb-3">첨부서류</h5>
+                        <div class="kfsi-textlist">
+                          <div class="text-danger mb-1">
+                            ※ 모든 서류 주민번호 뒤 7자리 삭제 후 제출해 주세요.
+                          </div>
+                          <ul>
+                            <li>재학증명서 1부</li>
+                            <li>
+                              회원 및 자녀 모두 등재된 주민등록등본 또는
+                              가족관계증명서
+                            </li>
+                            <li>
+                              관할소방서 선임신고 필한 자격증 1부 (해당하는
+                              사람에 한함)
+                              <ul>
+                                <li>
+                                  직위선임자 및 개인회원은 자격증 외 확인 서류
+                                  (재직증명서, 경력증명서 등)
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      <div class="pt-7">
+                        <h5 class="kfsi-h5 mb-3">기타사항</h5>
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              선발자에 한하여 1인당 100만원씩 해당 시·도지부에서
+                              지급(11~12월중)
+                            </li>
+                            <li>
+                              제출된 서류는 반환되지 않으며 허위사실을
+                              기재하거나 기타 부정한 방법 등으로 장학생에 선발된
+                              경우 지급된 장학금은 환수될 수 있습니다.
+                            </li>
+                            <li>
+                              추가 문의사항은 안전원 시·도지부로 문의하시기
+                              바랍니다.
+                              <ul>
+                                <li>
+                                  시·도지부 연락처 : 안전원소개 -
+                                  찾아오시는길(연락처)
+                                  <a href="" class="ms-2 text-success"
+                                    >[바로가기]</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

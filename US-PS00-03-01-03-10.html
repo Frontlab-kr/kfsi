@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>법령정보</h2>
+              </div>
+              <a href="US-PS00-03-01-01-10.html" class="kfsi-snb-item"
+                >소방관계법령</a
+              >
+
+              <a href="US-PS00-03-01-02-10.html" class="kfsi-snb-item">
+                훈령·예규·고시
+              </a>
+              <a href="US-PS00-03-01-03-10.html" class="kfsi-snb-item active"
+                >화재안전기준</a
+              >
+              <a href="US-PS00-03-01-04-10.html" class="kfsi-snb-item"
+                >타관련법령</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">법령정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      화재안전기준
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>화재안전기준</h1>
+              </div>
+              <div class="kfsi-statute">
+                본 정보는 법제처 국가법령정보센터와 연계하여 제공되는
+                서비스입니다.
+                <div class="kfsi-statute-list">
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      소화설비분야
+                    </div>
+                    <ul>
+                      <li>
+                        <span>소화기구 및 자동소화장치</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소화기구 및 자동소화장치의 화재안전기술기준(NFTC 101)/(2023-47,20231229)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소화기구 및 자동소화장치의 화재안전기술기준(NFTC 101)/(2023-47,20231229) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소화기구및자동소화장치의화재안전성능기준(NFPC101)/(2022-31,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소화기구및자동소화장치의화재안전성능기준(NFPC101)/(2022-31,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>포소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/포소화설비의화재안전기술기준(NFTC105)/(2022-215,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/포소화설비의화재안전기술기준(NFTC105)/(2022-215,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/포소화설비의화재안전성능기준(NFPC105)/(2022-38,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/포소화설비의화재안전성능기준(NFPC105)/(2022-38,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>옥내소화전설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전기술기준(NFTC102)/(2022-209,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전기술기준(NFTC102)/(2022-209,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전성능기준(NFPC102)/(2022-32,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/옥내소화전설비의화재안전성능기준(NFPC102)/(2022-32,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>이산화탄소소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/이산화탄소소화설비의화재안전기술기준(NFTC106)/(2022-216,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/이산화탄소소화설비의화재안전기술기준(NFTC106)/(2022-216,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/이산화탄소소화설비의화재안전성능기준(NFPC106)/(2022-39,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/이산화탄소소화설비의화재안전성능기준(NFPC106)/(2022-39,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>스프링클러설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/스프링클러설비의 화재안전기술기준(NFTC 103)/(2024-9,20240328)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/스프링클러설비의 화재안전기술기준(NFTC 103)/(2024-9,20240328) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/스프링클러설비의 화재안전성능기준(NFPC 103)/(2024-2,20240208)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/스프링클러설비의 화재안전성능기준(NFPC 103)/(2024-2,20240208) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>할로겐화합물 및 불활성기체소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/할로겐화합물 및 불활성기체소화설비의 화재안전기술기준(NFTC 107A)/(2023-20,20230809)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/할로겐화합물 및 불활성기체소화설비의 화재안전기술기준(NFTC 107A)/(2023-20,20230809) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/할로겐화합물및불활성기체소화설비의화재안전성능기준(NFPC107A)/(2022-41,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/할로겐화합물및불활성기체소화설비의화재안전성능기준(NFPC107A)/(2022-41,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>간이스프링클러설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/간이스프링클러설비의화재안전기술기준(NFTC103A)/(2022-211,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/간이스프링클러설비의화재안전기술기준(NFTC103A)/(2022-211,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/간이스프링클러설비의 화재안전성능기준(NFPC 103A)/(2024-3,20240304)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/간이스프링클러설비의 화재안전성능기준(NFPC 103A)/(2024-3,20240304) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>분말소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/분말소화설비의 화재안전기술기준(NFTC 108)/(2023-3,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/분말소화설비의 화재안전기술기준(NFTC 108)/(2023-3,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/분말소화설비의 화재안전성능기준(NFPC 108)/(2023-4,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/분말소화설비의 화재안전성능기준(NFPC 108)/(2023-4,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>화재조기진압용스프링클러설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/화재조기진압용스프링클러설비의화재안전기술기준(NFTC103B)/(2022-212,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/화재조기진압용스프링클러설비의화재안전기술기준(NFTC103B)/(2022-212,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/화재조기진압용 스프링클러설비의 화재안전성능기준(NFPC 103B)/(2023-7,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/화재조기진압용 스프링클러설비의 화재안전성능기준(NFPC 103B)/(2023-7,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>옥외소화전설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/옥외소화전설비의화재안전기술기준(NFTC109)/(2022-220,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/옥외소화전설비의화재안전기술기준(NFTC109)/(2022-220,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/옥외소화전설비의화재안전성능기준(NFPC109)/(2022-43,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/옥외소화전설비의화재안전성능기준(NFPC109)/(2022-43,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>물분무소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/물분무소화설비의화재안전기술기준(NFTC104)/(2022-213,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/물분무소화설비의화재안전기술기준(NFTC104)/(2022-213,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/물분무소화설비의화재안전성능기준(NFPC104)/(2022-36,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/물분무소화설비의화재안전성능기준(NFPC104)/(2022-36,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>할론소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/할론소화설비의 화재안전기술기준(NFTC 107)/(2023-2,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/할론소화설비의 화재안전기술기준(NFTC 107)/(2023-2,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/할론소화설비의 화재안전성능기준(NFPC 107)/(2023-3,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/할론소화설비의 화재안전성능기준(NFPC 107)/(2023-3,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>미분무소화설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/미분무소화설비의화재안전기술기준(NFTC104A)/(2022-214,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/미분무소화설비의화재안전기술기준(NFTC104A)/(2022-214,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/미분무소화설비의 화재안전성능기준(NFPC 104A)/(2023-7,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/미분무소화설비의 화재안전성능기준(NFPC 104A)/(2023-7,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li class="kfsi-statute-list-item__row"></li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      경비설비분야
+                    </div>
+                    <ul>
+                      <li>
+                        <span>비상경보설비 및 단독경보형감지기</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전기술기준(NFTC201)/(2022-222,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전기술기준(NFTC201)/(2022-222,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전성능기준(NFPC201)/(2022-45,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상경보설비및단독경보형감지기의화재안전성능기준(NFPC201)/(2022-45,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>비상방송설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상방송설비의 화재안전기술기준(NFTC 202)/(2023-4,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상방송설비의 화재안전기술기준(NFTC 202)/(2023-4,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상방송설비의 화재안전성능기준(NFPC202)/(2023-7,20230210)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상방송설비의 화재안전성능기준(NFPC202)/(2023-7,20230210) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>자동화재탐지설비 및 시각경보장치</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전기술기준(NFTC203)/(2022-224,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전기술기준(NFTC203)/(2022-224,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전성능기준(NFPC203)/(2022-47,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/자동화재탐지설비및시각경보장치의화재안전성능기준(NFPC203)/(2022-47,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>자동화재속보설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/자동화재속보설비의화재안전기술기준(NFTC204)/(2022-225,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/자동화재속보설비의화재안전기술기준(NFTC204)/(2022-225,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/자동화재속보설비의화재안전성능기준(NFPC204)/(2022-48,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/자동화재속보설비의화재안전성능기준(NFPC204)/(2022-48,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>누전경보기</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/누전경보기의화재안전기술기준(NFTC205)/(2022-226,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/누전경보기의화재안전기술기준(NFTC205)/(2022-226,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/누전경보기의화재안전성능기준(NFPC205)/(2022-49,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/누전경보기의화재안전성능기준(NFPC205)/(2022-49,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>가스누설경보기</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/가스누설경보기의화재안전기술기준(NFTC206)/(2022-227,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/가스누설경보기의화재안전기술기준(NFTC206)/(2022-227,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/가스누설경보기의화재안전성능기준(NFPC206)/(2022-50,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/가스누설경보기의화재안전성능기준(NFPC206)/(2022-50,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      피난설비분야
+                    </div>
+                    <ul>
+                      <li>
+                        <span>피난기구</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/피난기구의 화재안전기술기준(NFTC 301)/(2023-49,20231229)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/피난기구의 화재안전기술기준(NFTC 301)/(2023-49,20231229) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/피난기구의 화재안전성능기준(NFPC 301)/(2023-40,20231013)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/피난기구의 화재안전성능기준(NFPC 301)/(2023-40,20231013) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>유도등 및 유도표지</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/유도등 및 유도표지의 화재안전기술기준(NFTC 303)/(2023-50,20231229)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/유도등 및 유도표지의 화재안전기술기준(NFTC 303)/(2023-50,20231229) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/유도등 및 유도표지의 화재안전성능기준(NFPC 303)/(2023-40,20231013)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/유도등 및 유도표지의 화재안전성능기준(NFPC 303)/(2023-40,20231013) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>인명구조기구</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/인명구조기구의화재안전기술기준(NFTC302)/(2022-229,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/인명구조기구의화재안전기술기준(NFTC302)/(2022-229,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/인명구조기구의화재안전성능기준(NFPC302)/(2022-52,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/인명구조기구의화재안전성능기준(NFPC302)/(2022-52,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>비상조명등</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상조명등의화재안전기술기준(NFTC304)/(2022-231,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상조명등의화재안전기술기준(NFTC304)/(2022-231,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상조명등의화재안전성능기준(NFPC304)/(2022-54,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상조명등의화재안전성능기준(NFPC304)/(2022-54,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      소화용수설비분야
+                    </div>
+                    <ul>
+                      <li>
+                        <span>상수도소화용수설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/상수도소화용수설비의화재안전기술기준(NFTC401)/(2022-232,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/상수도소화용수설비의화재안전기술기준(NFTC401)/(2022-232,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/상수도소화용수설비의화재안전성능기준(NFPC401)/(2022-55,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/상수도소화용수설비의화재안전성능기준(NFPC401)/(2022-55,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>소화수조 및 저수조</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소화수조및저수조의화재안전기술기준(NFTC402)/(2022-233,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소화수조및저수조의화재안전기술기준(NFTC402)/(2022-233,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소화수조및저수조의화재안전성능기준(NFPC402)/(2022-56,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소화수조및저수조의화재안전성능기준(NFPC402)/(2022-56,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      방재안전분야
+                    </div>
+                    <ul>
+                      <li class="w-100">
+                        <div>
+                          <span>다중이용업소의 소방·방화시설</span>
+                          <span class="kfsi-statute-list-item__small"
+                            >※ 고시폐지(2007.3.25)</span
+                          >
+                        </div>
+                      </li>
+                      <li style="display: none"></li>
+                      <li>
+                        <span>소방시설용 비상전원수전설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소방시설용비상전원수전설비의화재안전기술기준(NFTC602)/(2022-240,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소방시설용비상전원수전설비의화재안전기술기준(NFTC602)/(2022-240,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/소방시설용비상전원수전설비의화재안전성능기준(NFPC602)/(2022-63,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/소방시설용비상전원수전설비의화재안전성능기준(NFPC602)/(2022-63,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>고층건축물</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/고층건축물의 화재안전기술기준(NFTC 604)/(2023-44,20231220)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/고층건축물의 화재안전기술기준(NFTC 604)/(2023-44,20231220) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/고층건축물의화재안전성능기준(NFPC604)/(2022-65,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/고층건축물의화재안전성능기준(NFPC604)/(2022-65,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>도로터널</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/도로터널의화재안전기술기준(NFTC603)/(2022-241,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/도로터널의화재안전기술기준(NFTC603)/(2022-241,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/도로터널의화재안전성능기준(NFPC603)/(2022-64,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/도로터널의화재안전성능기준(NFPC603)/(2022-64,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>임시소방시설</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/건설현장의 화재안전기술기준(NFTC 606)/(2023-16,20230630)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/건설현장의 화재안전기술기준(NFTC 606)/(2023-16,20230630) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/건설현장의 화재안전성능기준(NFPC 606)/(2023-23,20230628)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/건설현장의 화재안전성능기준(NFPC 606)/(2023-23,20230628) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>공동주택</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/공동주택의 화재안전기술기준(NFTC 608)/(2023-45,20231229)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/공동주택의 화재안전기술기준(NFTC 608)/(2023-45,20231229) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/공동주택의 화재안전성능기준(NFPC 608)/(2023-40,20231013)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/공동주택의 화재안전성능기준(NFPC 608)/(2023-40,20231013) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li class="kfsi-statute-list-item__row"></li>
+                    </ul>
+                  </div>
+                  <div class="kfsi-statute-list-item">
+                    <div class="kfsi-statute-list-item__title">
+                      소화활동설비분야
+                    </div>
+                    <ul>
+                      <li>
+                        <span>제연설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/제연설비의화재안전기술기준(NFTC501)/(2022-234,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/제연설비의화재안전기술기준(NFTC501)/(2022-234,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/제연설비의화재안전성능기준(NFPC501)/(2022-57,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/제연설비의화재안전성능기준(NFPC501)/(2022-57,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>비상콘센트설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상콘센트설비의 화재안전기술기준(NFTC 504)/(2023-51,20231229)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상콘센트설비의 화재안전기술기준(NFTC 504)/(2023-51,20231229) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/비상콘센트설비의 화재안전성능기준(NFPC 504)/(2023-40,20231013)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/비상콘센트설비의 화재안전성능기준(NFPC 504)/(2023-40,20231013) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>특별피난계단의 계단실 및 부속실 제연설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/특별피난계단의 계단실 및 부속실 제연설비의 화재안전기술기준(NFTC 501A)/(2024-10,20240328)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/특별피난계단의 계단실 및 부속실 제연설비의 화재안전기술기준(NFTC 501A)/(2024-10,20240328) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/특별피난계단의 계단실 및 부속실 제연설비의 화재안전성능기준(NFPC 501A)/(2024-5,20240318)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/특별피난계단의 계단실 및 부속실 제연설비의 화재안전성능기준(NFPC 501A)/(2024-5,20240318) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>무선통신보조설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전기술기준(NFTC505)/(2022-239,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전기술기준(NFTC505)/(2022-239,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전성능기준(NFPC505)/(2022-62,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/무선통신보조설비의화재안전성능기준(NFPC505)/(2022-62,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>연결송수관설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/연결송수관설비의화재안전기술기준(NFTC502)/(2022-236,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/연결송수관설비의화재안전기술기준(NFTC502)/(2022-236,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/연결송수관설비의화재안전성능기준(NFPC502)/(2022-59,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/연결송수관설비의화재안전성능기준(NFPC502)/(2022-59,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <span>지하구의 화재안전</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/지하구의화재안전기술기준(NFTC605)/(2022-243,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/지하구의화재안전기술기준(NFTC605)/(2022-243,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/지하구의화재안전성능기준(NFPC605)/(2022-66,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/지하구의화재안전성능기준(NFPC605)/(2022-66,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+
+                      <li>
+                        <span>연결살수설비</span>
+                        <div class="kfsi-statute-list-item__button">
+                          <a
+                            href="https://www.law.go.kr/행정규칙/연결살수설비의화재안전기술기준(NFTC503)/(2022-237,20221201)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/연결살수설비의화재안전기술기준(NFTC503)/(2022-237,20221201) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >기술</a
+                          >
+                          <a
+                            href="https://www.law.go.kr/행정규칙/연결살수설비의화재안전성능기준(NFPC503)/(2022-60,20221125)"
+                            target="_blank"
+                            class="btn btn-sm btn-outline-secondary"
+                            title="https://www.law.go.kr/행정규칙/연결살수설비의화재안전성능기준(NFPC503)/(2022-60,20221125) (새창 열림)"
+                            style="background-color: #f7f7f7"
+                            >성능</a
+                          >
+                        </div>
+                      </li>
+                      <li class="kfsi-statute-list-item__row"></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -90,8 +90,8 @@
 }
 .ico-eye {
   display: inline-block;
-  min-width: 18px;
-  height: 14px;
+  min-width: 14px;
+  height: 11px;
   background: url(../images/icon/ico-eye.png) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
@@ -133,6 +133,22 @@
   min-width: 10px;
   height: 10px;
   background: url(../images/icon/ico-search-remove.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+}
+.ico-search-arrow {
+  display: inline-block;
+  min-width: 17px;
+  height: 12px;
+  background: url(../images/icon/ico-search-arrow.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+}
+.ico-refresh {
+  display: inline-block;
+  min-width: 14px;
+  height: 17px;
+  background: url(../images/icon/ico-refresh.png) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
 }

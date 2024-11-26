@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>법령정보</h2>
+              </div>
+              <a href="US-PS00-03-01-01-10.html" class="kfsi-snb-item"
+                >소방관계법령</a
+              >
+
+              <a href="US-PS00-03-01-02-10.html" class="kfsi-snb-item">
+                훈령·예규·고시
+              </a>
+              <a href="US-PS00-03-01-03-10.html" class="kfsi-snb-item"
+                >화재안전기준</a
+              >
+              <a href="US-PS00-03-01-04-10.html" class="kfsi-snb-item active"
+                >타관련법령</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">법령정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      타관련법령
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>타관련법령</h1>
+              </div>
+              <div class="kfsi-statute">
+                <p>
+                  본 정보는 법제처 국가법령정보센터와 연계하여 제공되는
+                  서비스입니다.
+                </p>
+                <div class="kfsi-statute-table">
+                  <div class="kfsi-table">
+                    <table
+                      summary="법령명과 법령 구분에 따라 링크를 제공하는 표입니다. 법률, 시행령, 시행규칙 등의 링크를 포함합니다."
+                    >
+                      <caption>
+                        법령 목록과 관련 링크
+                      </caption>
+                      <colgroup>
+                        <col style="width: 160px" />
+                        <col style="width: 466px" />
+                        <col style="width: 310px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="2">법령명</th>
+                          <th scope="col">구분</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="kfsi-statute-table__head">
+                          <td class="text-start" colspan="2">헌법</td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/대한민국헌법"
+                                  title="http://www.law.go.kr/법령/대한민국헌법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >헌법</a
+                                >
+                              </div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="kfsi-statute-table__head">
+                          <td class="text-start" colspan="2">민법</td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/민법"
+                                  title="http://www.law.go.kr/법령/민법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="kfsi-statute-table__head">
+                          <td class="text-start" colspan="2">형법</td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/형법"
+                                  title="http://www.law.go.kr/법령/형법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-start" scope="row" rowspan="13">
+                            <div class="fs17 fc-violet">건축</div>
+                          </td>
+                          <td class="text-start">건축법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축법"
+                                  title="http://www.law.go.kr/법령/건축법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축법%20시행령"
+                                  title="http://www.law.go.kr/법령/건축법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/건축법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">건축사법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축사법"
+                                  title="http://www.law.go.kr/법령/건축사법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축사법%20시행령"
+                                  title="http://www.law.go.kr/법령/건축사법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축사법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/건축사법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">건설기술 진흥법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설기술진흥법"
+                                  title="http://www.law.go.kr/법령/건설기술진흥법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설기술진흥법%20시행령"
+                                  title="http://www.law.go.kr/법령/건설기술진흥법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설기술진흥법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/건설기술진흥법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">건설산업기본법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설산업기본법"
+                                  title="http://www.law.go.kr/법령/건설산업기본법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설산업기본법%20시행령"
+                                  title="http://www.law.go.kr/법령/건설산업기본법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건설산업기본법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/건설산업기본법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">주택법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주택법"
+                                  title="http://www.law.go.kr/법령/주택법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주택법%20시행령"
+                                  title="http://www.law.go.kr/법령/주택법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주택법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/주택법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">주차장법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주차장법"
+                                  title="http://www.law.go.kr/법령/주차장법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주차장법%20시행령"
+                                  title="http://www.law.go.kr/법령/주차장법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/주차장법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/주차장법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            국토의 계획 및 이용에 관한 법률
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/국토계획법"
+                                  title="http://www.law.go.kr/법령/국토계획법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/국토계획법%20시행령"
+                                  title="http://www.law.go.kr/법령/국토계획법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/국토계획법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/국토계획법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">해외건설촉진법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/해외건설촉진법"
+                                  title="http://www.law.go.kr/법령/해외건설촉진법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/해외건설촉진법%20시행령"
+                                  title="http://www.law.go.kr/법령/해외건설촉진법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/해외건설촉진법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/해외건설촉진법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            건축물의 설비기준 등에 관한 규칙
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축물의%20설비기준%20등에%20관한%20규칙"
+                                  title="http://www.law.go.kr/법령/건축물의%20설비기준%20등에%20관한%20규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="min-width: 99px"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>
+                              건축물의 피난 방화구조 등의 기준에 관한 규칙
+                            </div>
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙"
+                                  title="http://www.law.go.kr/법령/건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="min-width: 99px"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            자동방화셔터 및 방화문의 기준
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="javascript:law_open2('http://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2000000058613')"
+                                  title="http://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2000000058613 (새창 열림)"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="
+                                    background-color: #cce2eb;
+                                    min-width: 99px;
+                                  "
+                                  >고시</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            발코니 등의 구조변경절차 및 설치기준
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="javascript:law_open2('http://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2000000053275')"
+                                  title="http://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2000000053275 (새창 열림)"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="
+                                    background-color: #cce2eb;
+                                    min-width: 99px;
+                                  "
+                                  >고시</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>내화구조의 인정 및 관리기준</div>
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="javascript:law_open2('http://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2000000052266')"
+                                  title="http://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2000000052266 (새창 열림)"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="
+                                    background-color: #cce2eb;
+                                    min-width: 99px;
+                                  "
+                                  >고시</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-start" scope="row" rowspan="3">
+                            <div class="fs17 fc-violet">가스</div>
+                          </td>
+                          <td class="text-start">고압가스 안전관리법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/고압가스 안전관리법 "
+                                  title="http://www.law.go.kr/법령/고압가스 안전관리법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/고압가스 안전관리법%20시행령"
+                                  title="http://www.law.go.kr/법령/고압가스 안전관리법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/고압가스 안전관리법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/고압가스 안전관리법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            액화석유가스의 안전관리 및 사업법
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/액화석유가스법"
+                                  title="http://www.law.go.kr/법령/액화석유가스법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/액화석유가스법%20시행령"
+                                  title="http://www.law.go.kr/법령/액화석유가스법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/액화석유가스법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/액화석유가스법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>도시가스사업법</div>
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/도시가스사업법"
+                                  title="http://www.law.go.kr/법령/도시가스사업법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/도시가스사업법%20시행령"
+                                  title="http://www.law.go.kr/법령/도시가스사업법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/도시가스사업법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/도시가스사업법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-start" scope="row" rowspan="5">
+                            <div class="fs17 fc-violet">전기</div>
+                          </td>
+                          <td class="text-start">전기공사업법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기공사업법"
+                                  title="http://www.law.go.kr/법령/전기공사업법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기공사업법%20시행령"
+                                  title="http://www.law.go.kr/법령/전기공사업법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기공사업법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/전기공사업법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">전기사업법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기사업법"
+                                  title="http://www.law.go.kr/법령/전기사업법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기사업법%20시행령"
+                                  title="http://www.law.go.kr/법령/전기사업법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전기사업법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/전기사업법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">전력기술관리법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전력기술관리법"
+                                  title="http://www.law.go.kr/법령/전력기술관리법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전력기술관리법%20시행령"
+                                  title="http://www.law.go.kr/법령/전력기술관리법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/전력기술관리법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/전력기술관리법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">산업안전보건법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업안전보건법"
+                                  title="http://www.law.go.kr/법령/산업안전보건법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업안전보건법%20시행령"
+                                  title="http://www.law.go.kr/법령/산업안전보건법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업안전보건법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/산업안전보건법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>산업재해보상보험법</div>
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업재해보상보험법"
+                                  title="http://www.law.go.kr/법령/산업재해보상보험법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업재해보상보험법%20시행령"
+                                  title="http://www.law.go.kr/법령/산업재해보상보험법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/산업재해보상보험법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/산업재해보상보험법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-start" scope="row" rowspan="5">
+                            <div class="fs17 fc-violet">위험물</div>
+                          </td>
+                          <td class="text-start">토양환경보전법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/토양환경보전법"
+                                  title="http://www.law.go.kr/법령/토양환경보전법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/토양환경보전법%20시행령"
+                                  title="http://www.law.go.kr/법령/토양환경보전법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/토양환경보전법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/토양환경보전법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            기업활동 규제완화에 관한 특별조치법
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/기업규제완화법"
+                                  title="http://www.law.go.kr/법령/기업규제완화법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/기업규제완화법%20시행령"
+                                  title="http://www.law.go.kr/법령/기업규제완화법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/기업규제완화법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/기업규제완화법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">화학물질 관리법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/화학물질관리법 "
+                                  title="http://www.law.go.kr/법령/화학물질관리법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/화학물질관리법%20시행령"
+                                  title="http://www.law.go.kr/법령/화학물질관리법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/화학물질관리법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/화학물질관리법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            석유 및 석유대체연료 사업법
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/석유사업법 "
+                                  title="http://www.law.go.kr/법령/석유사업법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/석유사업법%20시행령"
+                                  title="http://www.law.go.kr/법령/석유사업법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/석유사업법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/석유사업법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>대기환경보전법</div>
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/대기환경보전법 "
+                                  title="http://www.law.go.kr/법령/대기환경보전법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/대기환경보전법%20시행령"
+                                  title="http://www.law.go.kr/법령/대기환경보전법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/대기환경보전법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/대기환경보전법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-start" scope="row" rowspan="6">
+                            <div class="fs17 fc-violet">소방관련 기타</div>
+                          </td>
+                          <td class="text-start">재난 및 안전관리 기본법</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/재난안전법 "
+                                  title="http://www.law.go.kr/법령/재난안전법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/재난안전법%20시행령"
+                                  title="http://www.law.go.kr/법령/재난안전법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/재난안전법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/재난안전법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">응급의료에 관한 법률</td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/응급의료법 "
+                                  title="http://www.law.go.kr/법령/응급의료법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/응급의료에관한법률시행령"
+                                  title="http://www.law.go.kr/법령/응급의료에관한법률시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/응급의료에관한법률시행규칙"
+                                  title="http://www.law.go.kr/법령/응급의료에관한법률시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">소방장비관리규칙</td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/소방장비관리규칙"
+                                  title="http://www.law.go.kr/법령/소방장비관리규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="min-width: 99px"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">소방력기준에 관한 규칙</td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/소방력기준에 관한 규칙"
+                                  title="http://www.law.go.kr/법령/소방력기준에 관한 규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="min-width: 99px"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>소방용기계·기구의 형식승인 등에 관한 규칙</div>
+                          </td>
+                          <td class="text-start">
+                            <div
+                              class="kfsi-statute-table__button kfsi-statute-table__button--reverse"
+                            >
+                              <div></div>
+                              <div></div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/소방용기계·기구의 형식승인 등에 관한 규칙"
+                                  title="http://www.law.go.kr/법령/소방용기계·기구의 형식승인 등에 관한 규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="min-width: 99px"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">
+                            <div>119구조·구급에 관한 법률</div>
+                          </td>
+                          <td class="text-start">
+                            <div class="kfsi-statute-table__button">
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/119법 "
+                                  title="http://www.law.go.kr/법령/119법 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #fafcfc"
+                                  >법률</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/119법%20시행령"
+                                  title="http://www.law.go.kr/법령/119법%20시행령 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  style="background-color: #f2f7f8"
+                                  >시행령</a
+                                >
+                              </div>
+                              <div>
+                                <a
+                                  href="http://www.law.go.kr/법령/119법%20시행규칙"
+                                  title="http://www.law.go.kr/법령/119법%20시행규칙 (새창 열림)"
+                                  target="_blank"
+                                  class="btn btn-sm btn-outline-secondary"
+                                  >시행규칙</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

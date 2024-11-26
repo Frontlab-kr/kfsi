@@ -27,10 +27,53 @@
           <div>
             <h3>BUTTON</h3>
             <div class="mt-4">준비중</div>
+            <h3>ALERT</h3>
+            <div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#alert01"
+              >
+                alert (타입1)
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content kfsi-alert">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="alert01Label">알림 타이틀</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              입력하신 정보가 틀렸습니다.<br />
+              다시 확인해 주시기 바랍니다.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

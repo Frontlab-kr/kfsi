@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>관련사이트</h2>
+              </div>
+              <a href="US-PS00-03-04-01-10.html" class="kfsi-snb-item"
+                >소방관서</a
+              >
+              <a href="US-PS00-03-04-02-10.html" class="kfsi-snb-item">
+                국내소방관련 단체
+              </a>
+              <a href="US-PS00-03-04-03-10.html" class="kfsi-snb-item">
+                국외소방관련 단체
+              </a>
+              <a href="US-PS00-03-04-04-10.html" class="kfsi-snb-item">
+                소방관련학과
+              </a>
+              <a href="US-PS00-03-04-05-10.html" class="kfsi-snb-item active">
+                소방언론사
+              </a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">관련사이트</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방언론사
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방언론사</h1>
+              </div>
+              <div class="kfsi-site">
+                <div class="kfsi-textlist mb-5">
+                  <ul>
+                    <li>소방관련 언론사의 홈페이지 정보를 알려드립니다.</li>
+                    <li>명칭을 클릭하면 해당사이트로 이동합니다.</li>
+                  </ul>
+                </div>
+                <div class="kfsi-site-list mb-9">
+                  <ul>
+                    <li>
+                      <a
+                        href="http://www.sobangnews.kr/"
+                        target="_blank"
+                        title="소방신문 (새 창 열림)"
+                        ><img
+                          src="/assets/images/infocenter/related-media-01.png"
+                          alt="소방신문"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.fpn119.co.kr/index.html"
+                        target="_blank"
+                        title="소방방재신문 (새 창 열림)"
+                        ><img
+                          src="/assets/images/infocenter/related-media-02.png"
+                          alt="소방방재신문"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.safety119.org/"
+                        target="_blank"
+                        title="안전포커스 (새 창 열림)"
+                        ><img
+                          src="/assets/images/infocenter/related-media-03.png"
+                          alt="안전포커스"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.safekoreanews.com/"
+                        target="_blank"
+                        title="Safe Korea News (새 창 열림)"
+                        ><img
+                          src="/assets/images/infocenter/related-media-04.png"
+                          alt="Safe Korea News"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">국립소방연구원</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-textlist mb-5">
+              <ul>
+                <li>
+                  국립소방연구원 홈페이지
+                  <a
+                    href="http://nfire.go.kr/index.do"
+                    target="_blank"
+                    title="국립소방연구원 홈페이지 (새 창 열림)"
+                  >
+                    [ 바로가기 ]
+                  </a>
+                </li>
+                <li>
+                  국립소방연구원 유튜브 채널
+                  <a
+                    href="https://www.youtube.com/channel/UC6sMQzBMSAciQKVtRTyY38g/featured"
+                    target="_blank"
+                    title="국립소방연구원 유튜브 채널 (새 창 열림)"
+                  >
+                    [ 바로가기 ]
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

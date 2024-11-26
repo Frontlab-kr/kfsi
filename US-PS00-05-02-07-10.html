@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>제휴업체</h2>
+              </div>
+              <a href="US-PS00-05-02-01-10.html" class="kfsi-snb-item"
+                >회원복지몰</a
+              >
+              <a href="US-PS00-05-02-02-10.html" class="kfsi-snb-item"
+                >법률 · 세무</a
+              >
+              <a href="US-PS00-05-02-03-10.html" class="kfsi-snb-item">의료</a>
+              <a href="US-PS00-05-02-04-10.html" class="kfsi-snb-item"
+                >문화·여행·레저</a
+              >
+              <a href="US-PS00-05-02-05-10.html" class="kfsi-snb-item"
+                >생활·웨딩·안경</a
+              >
+              <a href="US-PS00-05-02-06-10.html" class="kfsi-snb-item">교육</a>
+              <a href="US-PS00-05-02-07-10.html" class="kfsi-snb-item active"
+                >상조</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">제휴업체</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      상조
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>상조</h1>
+              </div>
+              <div class="kfsi-welfare kfsi-welfare--tab">
+                <div class="pc">
+                  <div
+                    class="d-flex align-items-end justify-content-between mb-3"
+                  >
+                    <div></div>
+                    <div>
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-welfare-tab">
+                  <ul class="kfsi-welfare-tab-nav" role="tablist">
+                    <li role="presentation">
+                      <button
+                        class="active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        전국
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        부산
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        대구경북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        광주전남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        강원
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab06-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab06-pane"
+                        aria-selected="false"
+                      >
+                        전북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab07"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab07-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab07-pane"
+                        aria-selected="false"
+                      >
+                        제주
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="mo">
+                    <div class="kfsi-welfare-button mb-6">
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">프리드라이프</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 회원만을 위한 특가상품(프리드vip)
+                              제공(10％할인 제공) (업체문의)
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.preedlife.com"
+                                target="_blank"
+                                title="http://www.preedlife.com (새창 열림)"
+                                >http://www.preedlife.com</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 서울 영등포 여의도동 25-5번지 동화빌딩
+                            </li>
+                            <li>
+                              문의전화 : 1588-8204 / 담당자 : 이한봉 팀장(HP :
+                              010-2890-0324)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">(주)장례를 돕는사람들</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>상ㆍ장례컨설팅 서비스 무료 제공</li>
+                                <li>상ㆍ장례상품 30％ 할인</li>
+                                <li>
+                                  장례식장 시설사용료 최고 50％할인(전국 120개)
+                                </li>
+                                <li>제휴납골당 분양가격 최고 30％할인</li>
+                                <li>근조화 1조(2개) 무료 서비스(업체문의)</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원(직계존비속포함)</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.장례를돕는사람들.kr"
+                                target="_blank"
+                                title="http://www.장례를돕는사람들.kr (새창 열림)"
+                                >http://www.장례를돕는사람들.kr</a
+                              >
+                            </li>
+                            <li>주소 : 부산 연제구 연산동 397-51</li>
+                            <li>문의전화 : 051-758-0558</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">문요양병원장례식장</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>분향실 사용료 30％ 할인</li>
+                                <li>장례용품 20％ 할인</li>
+                                <li>
+                                  운구차량 무료 서비스 (대구시 전역 24시간)
+                                </li>
+                                <li>주차장 무료 이용</li>
+                                <li>문요양병원 진료비 감면 (병원문의)</li>
+                              </ul>
+                            </li>
+                            <li>
+                              대상 : 안전원 회원 및 가족(배우자 및 직계존비속
+                              포함)
+                            </li>
+                            <li>주소 : 대구 북구 칠곡중앙대로 2215</li>
+                            <li>문의전화 : 053-326-6800</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">(재)운경재단모레아</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>분향실 사용료 30％ 할인</li>
+                                <li>장례용품 20％ 할인</li>
+                                <li>운구료(대구시 전역) 및 영정사진 무료</li>
+                                <li>
+                                  주차장이용 및 장례지도사 상례서비스무료
+                                  (업체문의))
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.moorea.co.kr"
+                                target="_blank"
+                                title="http://www.moorea.co.kr (새창 열림)"
+                                >http://www.moorea.co.kr</a
+                              >
+                            </li>
+                            <li>주소 : 대구광역시 수성구 욱수동 48-1</li>
+                            <li>문의전화 : 053-801-9999</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">jk상조</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>직영장례식장 사용료 50％할인</li>
+                                <li>대표자명의 3단 근조화환 제공</li>
+                                <li>리무진 소비자가 50％할인</li>
+                                <li>
+                                  고인영정사진무상제작, 야식무료제공(50인분)
+                                </li>
+                                <li>직영장례식장 이용시 무료 운구(관내)</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.jk.co.kr"
+                                target="_blank"
+                                title="http://www.jk.co.kr (새창 열림)"
+                                >http://www.jk.co.kr</a
+                              >
+                            </li>
+                            <li>주소 : 광주광역시 광산구 우산동 1596-1</li>
+                            <li>문의전화 : 1588-4484</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab05-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab05"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">강원 효장례식장/문화원</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용(병원문의)
+                              <ul>
+                                <li>빈 행사 시 30％ 할인</li>
+                                <li>상조회사를 통한 행사 시 30％ 할인</li>
+                                <li>근조 꽃바구니 1개 무료지원 등</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소 : 강원도 춘천시 동내면 거두리 516-1번지
+                            </li>
+                            <li>문의전화 : 033-261-4441</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab06-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab06"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">금성장례식장</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>할인율 : 분향소사용료 33％~50％</li>
+                                <li>영정틀 꽃장식 18％~100％</li>
+                                <li>수의1벌 무료 또는 리무진차량 무료 제공</li>
+                                <li>
+                                  3단화한 1점 무료, 매장 시 삼우제 제물무료
+                                </li>
+                              </ul>
+                              <div class="text-danger">
+                                ※ 단 상조에 가입되신 분 제외 (업체문의)
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              주소 : 전주시 덕진구 가리내로670 (송천동2가 1222)
+                            </li>
+                            <li>문의전화 : 063-276-4444</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">은파 장례문화원</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용(병원문의)<br />
+                              <은파장례문화원에 장례 전반을 일임한 경우>
+                              <ul>
+                                <li>
+                                  <div>
+                                    분향실 사용료의 70％ 또는 장례식장 전체
+                                    비용의 15％ 할인 중 선택(외부업체 비용은
+                                    미적용)
+                                    <div class="text-danger">
+                                      ※ 상조회 이용 시 별도의 할인율 적용
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>사우나실 무료 이용</li>
+                                <li>추가 접객실 사용료 무료</li>
+                              </ul>
+                            </li>
+                            <li>
+                              대상 : 안전원 회원 및 회원의 배우자·양가
+                              조부모·양가 부모·자녀
+                            </li>
+                            <li>주소 : 전북 군산시 미성로 512</li>
+                            <li>문의전화 : 063-445-4444</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab07-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab07"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">더리본㈜</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              혜택 : 협회 회원 전용상품(라이프케어
+                              플러스-제주전용 390상품) 가입 시 납입요금 10％
+                              할인 적용
+                              <div class="text-danger">
+                                ※ 상품 미가입 상태에서 협회 회원
+                                전용상품(라이프케어 플러스-제주전용 390상품)
+                                이용 시 요금 5％ 할인 적용
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 회원 혜택을 받기 위해서는 이용 시 회원확인서를
+                            제시하여야 한다.
+                          </div>
+                          <ul>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="www.the-reborn.co.kr"
+                                target="_blank"
+                                title="www.the-reborn.co.kr (새창 열림)"
+                                >www.the-reborn.co.kr</a
+                              >
+                            </li>
+                            <li>
+                              주소 : 제주 제주시 연삼로 295-1번지삼다빌딩 3층
+                            </li>
+                            <li>문의전화 :1644-3651</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">S-중앙병원장례식장</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>혜택 : 분향실 사용료의 50％ 할인</li>
+                            <li>대상 : 안전원 회원(회원가족포함)</li>
+                            <li>주소 : 제주 제주시 이호2동 22</li>
+                            <li>문의전화 : 064-786-7439</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">부민장례식장</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>혜택 : 분향실 사용료의 50％ 할인</li>
+                            <li>대상 : 안전원 회원(회원가족포함)</li>
+                            <li>주소 : 제주 제주시 도남동 1237</li>
+                            <li>문의전화 : 064-744-4444</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

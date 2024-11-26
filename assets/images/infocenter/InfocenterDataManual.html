@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link rel="alternate" hreflang="x-default" href="https://www.kfsi.or.kr/user/Main.do" />
+<link rel="canonical" href="https://www.kfsi.or.kr/">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
+<![endif]-->
+
+<meta name="description" content="한국소방안전원(구. 한국소방안전협회)">
+<meta name="keywords" content="한국소방안전원(구. 한국소방안전협회)" />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="한국소방안전원(구. 한국소방안전협회)">
+<meta property="og:description" name="og:description" content="한국소방안전원(구. 한국소방안전협회)">
+<meta property="og:keywords" name="og:keywords" content="한국소방안전원(구. 한국소방안전협회)" />
+<meta property="og:url" content="http://www.kfsi.or.kr">
+
+<meta name="_csrf" content=""/>
+<meta name="_csrf_header" content=""/>
+<META NAME="ROBOTS" CONTENT="NOINDEX"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>한국소방안전원</title>
+<!-- 171103 add -->
+<link rel="SHORTCUT ICON" href="/assets/icon/k6.ico" />
+<link rel="stylesheet" type="text/css" href="/assets/css/user/ui.css?171214" />
+<link rel="stylesheet" type="text/css" href="/assets/css/user/pre_style.css?1711032" />
+<link rel="stylesheet" type="text/css" href="/assets/css/user/jquery.modal.min.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/user/common.user.css" />
+
+<!-- <link href="/assets/css/manager/jquery.selectBox.css" rel="stylesheet" type="text/css" /> -->
+<link href="/assets/css/module/jquery.timepicker.css" rel="stylesheet" type="text/css" />
+<link href="/assets/css/module/jquery.plupload.queue.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="/assets/css/user/flexslider.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/flexslider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />--><script type="text/javascript">
+var ASSET_ROOT = "/assets";
+var BASE_ROOT = "";
+var DEVICE_TYPE = "NORMAL";
+</script>
+
+<script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.mobilePassword.js"></script>
+
+<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/jquery.checkingInput.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/jquery-plugin/jquery.cookie.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/jquery-plugin/jquery.print.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/jquery-plugin/jquery.lazyload.min.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/common/jquery.common.fn.js" defer="defer"></script>
+
+<script type="text/javascript" src="/assets/js/module/tinymce/tinymce.min.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/module/timepicker/jquery.timepicker.min.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/module/plupload/plupload.full.min.js"></script>
+<script type="text/javascript" src="/assets/js/module/plupload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+<script type="text/javascript" src="/assets/js/module/plupload/jquery.plupload/jquery.plupload.js"></script>
+<script type="text/javascript" src="/assets/js/module/plupload/uploadprogress.js"></script>
+
+<script type="text/javascript" src="/assets/js/user/jquery.flexslider-min.js"></script>
+<!-- 2017-11-09 osw -->
+<script type="text/javascript" src="/assets/js/php/php-common.js"></script>
+
+<script type="text/javascript" src="/assets/js/NetFunnel/netfunnel.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/assets/js/NetFunnel/skin.js" charset="euc-kr"></script>
+<script type="text/javascript">
+
+function getCookie(name) { 
+    var cName = name + "=";      
+    var x = 0; 
+    
+    while (document.cookie.length > 0){ 
+        var y = (x + cName.length); 
+        if ( document.cookie.substring( x, y ) == cName ){ 
+            if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) 
+                endOfCookie = document.cookie.length;
+            return unescape( document.cookie.substring( y, endOfCookie ) ); 
+        } 
+        x = document.cookie.indexOf( " ", x ) + 1; 
+        if ( x == 0 ) 
+            break; 
+    } 
+    return ""; 
+} 
+
+var filter = "win16|win32|win64|mac|macintel";
+
+if(getCookie("pcVersion") != "Y"){
+	if(navigator.platform){
+	    if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+			location.href = '/mobile/Main.do';	    			
+	    }
+	}
+}
+
+$(function() {
+    if($('.location-wrap > ul > li').length > 0){
+    	for(var j = 0 ; j < $('.location-wrap > ul > li').length ; j++){
+    		$('.location-wrap > ul > li:eq('+ j +') > a').attr('href', '#');
+    	}
+    }
+    
+});
+
+function fnCmdSetMeta(desc, keyword) {
+	desc = '한국소방안전원 ' + desc;
+    keyword = keyword.replace(/  /gi, '');
+    keyword = keyword.replace(/\n/gi, ' ');
+    $("meta[name='description']").attr('content', desc);
+    $("meta[name='keywords']").attr('content', keyword);
+    $("meta[name='og:description']").attr('content', desc);
+    $("meta[name='og:keywords']").attr('content', keyword);
+}
+</script>
+
+<script type="text/javascript" src="/assets/js/user/login.js?180104" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/jquery.checkingInput.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/jquery.flexibleLocation.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/jquery.bxslider.min.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/jquery.search.user.fn.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/common.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/common.user.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/ui.js?171214" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/jquery-plugin/jquery.modal.min.js" defer="defer"></script>
+<script type="text/javascript" src="/assets/js/user/exif.js" defer="defer"></script>
+<script type="text/javascript">
+window.onbeforeunload = function(){
+//	$('.dim, .loading').show();
+}
+window.onload = function(){
+	$('.dim, .loading').hide();
+}
+</script>
+</head>
+<body>
+
+<div class="wrapper">
+    <!--  -->
+<script type="text/javascript">
+
+/* 브라우저 종류 및 버전 체크 */
+var BrowserVersionCheck = function() {
+    var word;
+    var versionOrType = "another";
+
+    var agent = navigator.userAgent.toLowerCase();
+    var name = navigator.appName;
+    var ie;
+
+    /***********************************************
+     * IE인 경우 버전 체크
+     ***********************************************/ 
+    // IE old version ( IE 10 or Lower )
+    if ( name == "Microsoft Internet Explorer" ){
+		word = "msie ";
+    }else{
+        // IE 11
+        if( agent.search("trident") > -1 ) {
+        	word = "trident/.*rv:";
+        	ie = 'Explorer ';
+        }
+        // IE 12  ( Microsoft Edge )
+        else if( agent.search("edge/") > -1 ) {
+        	word = "edge/";
+        	ie = 'Edge ';
+        }
+    }
+
+    var reg = new RegExp( word + "([0-9]{1,})(\\.{0,}[0-9]{0,1})" );
+    if ( reg.exec( agent ) != null ){
+    	versionOrType = ie + RegExp.$1 + RegExp.$2;	
+    }
+
+    /***********************************************
+     * IE가 아닌 경우 브라우저의 종류 체크
+     ***********************************************/ 
+    if( versionOrType == "another" ){
+		if (agent.indexOf("chrome") != -1) versionOrType = "Chrome";
+		else if (agent.indexOf("opera") != -1) versionOrType = "Opera";
+		else if (agent.indexOf("firefox") != -1) versionOrType = "Firefox"; 
+		else if (agent.indexOf("safari") != -1) versionOrType = "Safari";
+    }
+    
+    return versionOrType;
+};
+
+/* OS 종류 및 버전 체크 */
+var OsVersionCheck = function() {	
+	var os, ua = navigator.userAgent;
+	if (ua.match(/Win(dows )?NT 6\.0/)) {
+		os = "Windows Vista";
+	} else if (ua.match(/Win(dows )?(NT 5\.1|XP)/)) {
+		os = "Windows XP";
+	} else {
+		if ((ua.indexOf("Windows NT 5.1") != -1) || (ua.indexOf("Windows XP") != -1)) {
+			os = "Windows XP";
+		} else if ((ua.indexOf("Windows NT 7.0") != -1) || (ua.indexOf("Windows NT 6.1") != -1)) {
+			os = "Windows 7";
+		} else if ((ua.indexOf("Windows NT 8.0") != -1) || (ua.indexOf("Windows NT 6.2") != -1)) {
+			os = "Windows 8";
+		} else if ((ua.indexOf("Windows NT 8.1") != -1) || (ua.indexOf("Windows NT 6.3") != -1)) {
+			os = "Windows 8.1";
+		} else if ((ua.indexOf("Windows NT 10.0") != -1) || (ua.indexOf("Windows NT 6.4") != -1)) {
+			os = "Windows 10";
+		} else if ((ua.indexOf("iPad") != -1) || (ua.indexOf("iPhone") != -1) || (ua.indexOf("iPod") != -1)) {
+			os = "Apple iOS";
+		} else if (us.indexOf("Android" != -1)) {
+			os = "Android Phone";
+		} else if (ua.match(/Win(dows )?NT( 4\.0)?/)) {
+			os = "Windows NT";
+		} else if (ua.match(/Mac|PPC/)) {
+			os = "Mac OS";
+		} else if (ua.match(/Linux/)) {
+			os = "Linux";
+		} else if (ua.match(/(Free|Net|Open)BSD/)) {
+			os = RegExp.$1 + "BSD";
+		} else if (ua.match(/SunOS/)) {
+			os = "Solaris";
+		}
+	}
+	
+	if (os.indexOf("Windows") != -1) {
+		if (navigator.userAgent.indexOf('WOW64') > -1 || navigator.userAgent.indexOf('Win64') > -1) {
+	    	os += ' 64bit';
+		} else {
+	    	os += ' 32bit';
+		}
+	}
+	return os;
+};
+
+/* PC/모바일 체크 */
+var PlatformCheck = function() {
+	var filter = "win16|win32|win64|mac|macintel";
+	var vWebType = "";
+
+	if (navigator.platform ) {
+		if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+			vWebType = "M"; //MOBILE
+		 } else {
+			vWebType = "P"; //PD
+		 }
+	}
+	
+	return vWebType;
+};
+
+var reqUrlnPrm = "";
+
+
+
+function fncmdGoLogin() {
+	location.href = BASE_ROOT + "/user/login/Login.do?dept2Menu=login";
+}
+
+
+function fncmdGoLogin2(preMenuNo) {
+	
+		reqUrlnPrm = fnSetrtnAuthUrl("/user/infocenter/InfocenterDataManual.do","dept1Menu=3&dept2Menu=3&_menuNo=472");
+		var  _goAuth =  "N";
+		
+		var paramDetp1 = '3';
+		var paramDetp2 = 'login';
+		//var paramMenuNo = '569';
+		
+		
+		location.href = BASE_ROOT + "/user/login/LoginTypeA.do?dept2Menu=" + paramDetp2 + "&dept1Menu=" + paramDetp1 + "&_goAuth="+_goAuth+"&preMenuNo="+preMenuNo+"&rtnAuthUrl="+reqUrlnPrm;
+	
+}
+
+function fnMenuUrlMove(url){
+	sessionStorage.setItem('returnMenuUrl', url);
+	sessionStorage.setItem('returnPageGbn', "PC");
+	location.href =  url ;
+}
+
+function fnNetFunnel_Action(gbn , url){
+	if('production' == "production"){
+		sessionStorage.setItem('returnMenuUrl', url);
+		sessionStorage.setItem('returnPageGbn', "PC");
+		NetFunnel_Action({action_id:gbn},url);
+	}else{
+		location.href =  url ;
+	}
+}
+
+function fnSetrtnAuthUrl(rtn,prm) {
+	var rtnPlsprm ="";
+	rtnPlsprm = rtn;
+    if (prm != '') {
+    	rtnPlsprm = rtnPlsprm+"?"+prm;
+    }
+    rtnPlsprm =  encodeURIComponent(rtnPlsprm);
+    return rtnPlsprm;
+}
+
+
+function searchMenu(){
+	var sMenu = $("input[name=main-src]").val().trim();
+	
+	if(sMenu ==''){
+		alert('검색어를 입력해 주세요.');
+	}else{
+		$("#sKeyword").val(sMenu);
+        $.commandSubmit({
+            commandUrl     : '/user/search/Search.do',
+            commandForm    : 'mSearchForm'
+        });
+	}
+}
+
+
+function fnCmdMenu(menuNo){
+	sessionStorage.removeItem('returnMenuUrl');
+	sessionStorage.removeItem('returnPageGbn');
+	
+	$.ajax({
+        type: 'post',
+        url: '/user/MenuAccessLog.do',
+        data: {"menuNo": menuNo, "browser": BrowserVersionCheck(), "os": OsVersionCheck(), "platform": "P", "systemCd": "USER"},
+        dataType: 'json',
+        success: function(response) {
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+        	result.status = _STATUS_ERROR;        	
+        }
+	});
+}
+
+//return url 생성시 사용
+var requestURL ="/user/infocenter/InfocenterDataManual.do";
+var requestParam ="dept1Menu=3&dept2Menu=3&_menuNo=472";
+
+//systemMenu.authA:성명,주민,핸폰 	systemMenu.authB:성명,생년,핸폰 	systemMenu.authC:ipin (기타 systemMenu.authE  다중이용업 이수증출력시 , systemMenu.authL,systemMenu.authM 은 로그인)
+//sessionAuthDivision A(성명,주민,핸폰),B(성명,생년,핸폰),C(ipin) 인증한 사람
+//_goAuth eq 'Y' 메뉴랑 상관없이 인증필용시 및 di필요시
+
+//systemMenu 있거나 _goAuth eq 'Y'
+
+	var v_menuNo = "472";
+	var v_menuAuth = "N,N,N,,N,N,N";
+
+    
+	    	fnCmdMenu('472');
+	    
+
+$(function() {
+	//비밀번호 변경한 후 30일 지난 경우  비밀번호 변경 유도
+	
+	
+	$('#locale').change(function () {
+	    location.href = '?locale='+ this.value;
+	});
+
+	
+	
+	$('#siteSearchWord').keyup(function (){
+	    if (event.keyCode == 13) {
+	        fnCmdHeaderSearch(1);
+	        return;
+	    }
+	});
+});
+
+</script>
+
+<form id="mSearchForm" method="POST">
+	<input type="hidden" name="sKeyword" id="sKeyword">
+	<input type="hidden" value="search" name="dept1Menu">
+</form><script type="text/javascript">
+
+
+var domain = location.host;
+if(domain == "www.kfsa.or.kr"){
+	location.href ="http://www.kfsi.or.kr";
+	//return;
+}
+
+$(function() {
+    $('#main-src').keydown(function (event){
+        if (event.keyCode == 13) {
+        	searchMenu();
+            return;
+        }
+    });  
+});
+</script>
+<form id="hrefForm"></form>
+<!-- layer popup -->
+<div class="popup-wrap" style="display: none;">
+	<div class="inwrap">
+
+		<button type="button" name="closepopup" id="closepopup" class="btn-x">
+			<span class="alter">팝업 닫기</span>
+		</button>
+	</div>
+</div>
+
+<!-- end of layer popup -->
+<header class="header">
+	<div class="wrap">
+		<div class="inwrap">
+			<ul>
+<li><a href="/user/edu/Main.do?dept1Menu=1&_menuNo=386" class="safety">소방안전교육</a></li>
+				<li><a href="/user/volunteerfireman/Main.do?dept1Menu=9&_menuNo=9045" class="volunteerfireman">의용소방대교육</a></li>
+				<li><a href="/user/multiuse/Main.do?dept1Menu=2&_menuNo=387" class="multiuse">다중이용업교육</a></li>
+				<li><a href="  /user/infocenter/InfocenterMain.do?dept1Menu=3&_menuNo=388" class="infocenter active">소방정보센터</a></li>
+				<li><a href="/user/memberService/Main.do?dept1Menu=4&_menuNo=389" class="memberservice">회원서비스</a></li>
+				<li><a href="/user/diagnosis/Main.do?dept1Menu=5&_menuNo=390" class="diagnosis">화재안전진단</a></li>
+				<li><a href="  /user/intro/IntroUserMain.do?dept1Menu=6&_menuNo=391" class="association">안전원소개</a></li>
+				</ul>
+			
+			<div class="engSiteLogo" style="position: absolute;top:7px;right: 56px;">
+		        <a href="https://pf.kakao.com/_reFxld" class="kakao" target="_blank"><span class="alter">카카오채널</span></a>
+		        <a href="http://www.youtube.com/channel/UCxxWnGhFgJOzsNOwYSHN5cQ" class="youtube" target="_blank"><span class="alter">유튜브</span></a>
+				<a href="http://www.facebook.com/kfsi.official" class="facebook2" target="_blank"><span class="alter">페이스북</span></a>
+				<a href="http://www.instagram.com/kfsi_official" class="insta" target="_blank"><span class="alter">인스타그램</span></a>
+				<a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10049&_menuNo=487" class="webzine"><span class="alter">웹진</span></a>
+        	</div>
+        
+        
+			<div class="btn-nav">
+				<!-- toggle btn-x -->
+				<button type="button" name="openmenu" id="openmenu"
+					class="btn-hamburg">
+					<span class="alter">전체 메뉴</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- navigation -->
+<div class="menu" id="all-menu">
+        <div class="inwrap">
+            <div class="navwrap">            
+                        	
+<dl class="safety">
+                    <dt>
+                        <a href="/user/edu/Main.do?dept1Menu=1&_menuNo=386">소방안전교육</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/edumyinfo/MyQualificationList.do?dept1Menu=1&dept2Menu=1&_menuNo=402">나의 교육정보</a>
+                                </h3>
+                                <ul>
+									<li><a href="/user/edumyinfo/MyClassRoom.do?dept1Menu=1&dept2Menu=1&_menuNo=432">나의 강의실</a></li>
+                                    <li><a href="/user/edumyinfo/SimpleBill.do?dept1Menu=1&dept2Menu=1&_menuNo=9106">납부내역 조회</a></li>
+                                    <li><a href="/user/edumyinfo/MyQualificationList.do?dept1Menu=1&dept2Menu=1&_menuNo=402">자격취득 현황</a></li>
+                                    <li><a href="/user/edumyinfo/MyPredecessorList.do?dept1Menu=1&dept2Menu=1&_menuNo=403">선임대상처 현황</a></li>
+                                    <li><a href="/user/edumyinfo/MyTermsOfTrainingList.do?dept1Menu=1&dept2Menu=1&_menuNo=404">교육이수 기한</a></li>
+                                    <li><a href="/edumyinfo/PeriodOfTraining.do?dept1Menu=1&dept2Menu=1&_menuNo=405">교육이수 현황</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <!-- <a href="/user/training/TrainingApplyList.do?dept1Menu=1&dept2Menu=2&_menuNo=407" >강습교육</a> -->
+                                    <a href="/user/training/TrainingApplyWaitList.do?dept1Menu=1&dept2Menu=2&_menuNo=407" >강습교육</a>
+                                </h3>
+                                <ul>
+                                    <!-- <li><a href="/user/training/TrainingApplyList.do?dept1Menu=1&dept2Menu=2&_menuNo=407">강습교육 신청</a></li> -->
+                                    <li><a href="/user/training/TrainingApplyWaitList.do?dept1Menu=1&dept2Menu=2&_menuNo=407">강습교육 신청</a></li>
+                                    <li><a href="/user/training/TrainingApplyHistory.do?dept1Menu=1&dept2Menu=2&_menuNo=408">강습교육 내역</a></li>
+                                    <li><a href="/user/training/TrainingCertiList.do?dept1Menu=1&dept2Menu=2&_menuNo=409">수료증 발급</a></li>
+                                    <li><a href="/user/training/TrainingCertiAuthenticity.do?dept1Menu=1&dept2Menu=2&_menuNo=410">수료증 진위확인</a></li>
+                                    <li><a href="/user/training/TrainingReceiptAuthenticity.do?dept1Menu=1&dept2Menu=2&_menuNo=411">교육접수증 진위확인</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="#" onclick="javascript:fnNetFunnel_Action('ojt','/user/ojt/OjtApplyList.do?dept1Menu=1&dept2Menu=3&_menuNo=412');">실무교육</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="#" onclick="javascript:fnNetFunnel_Action('ojt','/user/ojt/OjtApplyList.do?dept1Menu=1&dept2Menu=3&_menuNo=412');">실무교육 신청</a></li>
+                                    <li><a href="/user/ojt/OjtApplyHistory.do?dept1Menu=1&dept2Menu=3&_menuNo=413">실무교육신청 내역</a></li>
+                                    <li><a href="/user/ojt/OjtCertiList.do?dept1Menu=1&dept2Menu=3&_menuNo=414">수료확인서 발급</a></li>
+                                    <li><a href="/user/ojt/OjtCertiAuthenticity.do?dept1Menu=1&dept2Menu=3&_menuNo=415">수료확인서 발급 진위확인</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+									<!-- <a href="#" onclick="javascript:fnNetFunnel_Action('exam','/user/exam/ExamApplyList.do?dept1Menu=1&dept2Menu=4&_menuNo=416');">시험신청&middot;점수확인</a> -->
+									<a href="/user/exam/ExamApplyWaitList.do?dept1Menu=1&dept2Menu=4&_menuNo=416" >시험신청&middot;점수확인</a>
+								</h3>
+								<ul>
+									<!-- <li><a href="#" onclick="javascript:fnNetFunnel_Action('exam','/user/exam/ExamApplyList.do?dept1Menu=1&dept2Menu=4&_menuNo=416');">시험신청</a></li> -->
+									<li><a href="/user/exam/ExamApplyWaitList.do?dept1Menu=1&dept2Menu=4&_menuNo=416">시험신청</a></li>
+									<li><a href="/user/exam/Examine.do?dept1Menu=1&dept2Menu=4&_menuNo=9104">응시자격 심사 신청</a></li>
+									<li><a href="/user/exam/ExamApplyHistory.do?dept1Menu=1&dept2Menu=4&_menuNo=417">시험(심사) 신청 내역</a></li>
+									<li><a href="/user/exam/ExamScoreview.do?dept1Menu=1&dept2Menu=4&_menuNo=418">시험(평가) 점수 확인</a></li>
+									<li><a href="/user/exam/SucessCandidateList.do?dept1Menu=1&dept2Menu=4&_menuNo=9094">합격자 발표 조회</a></li>
+								</ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/certificate/IssueInfo.do?dept1Menu=1&dept2Menu=5&_menuNo=419">자격발급</a>
+                                </h3>
+                                <ul>
+                                   	<li><a href="/user/certificate/IssueInfo.do?dept1Menu=1&dept2Menu=5&_menuNo=419">자격 발급안내</a></li>
+					                <li><a href="/user/certificate/IssueReInfo.do?dept1Menu=1&dept2Menu=5&_menuNo=420">자격 재발급 안내</a></li>
+					                <li><a href="/user/certificate/IssueExamine.do?dept1Menu=1&dept2Menu=5&_menuNo=425">자격 발급심사 신청</a></li>
+<li><a href="/user/certificate/Issue.do?dept1Menu=1&dept2Menu=5&_menuNo=421">자격 (재)발급신청</a></li>
+					                <li><a href="/user/certificate/IssueHistoryList.do?dept1Menu=1&dept2Menu=5&_menuNo=422">자격 발급(심사) 신청 내역</a></li> 
+					                <li><a href="/user/certificate/IssueConfirmList.do?dept1Menu=1&dept2Menu=5&_menuNo=423">자격 취득확인</a></li>
+					                <li><a href="/user/certificate/IssueAuthenticity.do?dept1Menu=1&dept2Menu=5&_menuNo=424">자격 발급 진위확인</a></li>
+                                </ul> 
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/openedu/OpenEdu.do?dept1Menu=1&dept2Menu=6&_menuNo=425">열린교육</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/openedu/OpenEdu.do?dept1Menu=1&dept2Menu=6&_menuNo=425">열린교육 신청</a></li>
+                                    <li><a href="/user/openedu/OpenEduHistory.do?dept1Menu=1&dept2Menu=6&_menuNo=426">열린교육 신청내역</a></li>
+                                    <li><a href="/user/openedu/CertificateHistory.do?dept1Menu=1&dept2Menu=6&_menuNo=427">이수확인서 발급</a></li>
+                                    <li><a href="/user/openedu/OpenAthenticity.do?dept1Menu=1&dept2Menu=6&_menuNo=428">진위확인</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/book/BookLesson.do?dept1Menu=1&dept2Menu=7&_menuNo=430">교재</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/book/BookLesson.do?dept1Menu=1&dept2Menu=7&_menuNo=430">강습교재</a></li>
+                                    <li><a href="/user/book/BookField.do?dept1Menu=1&dept2Menu=7&_menuNo=429">실무교재</a></li>
+                                    <li><a href="/user/book/BookManual.do?dept1Menu=1&dept2Menu=7&_menuNo=431">위험물실무해설서</a></li>
+                                    <li><a href="/user/book/BookSelfdefense.do?dept1Menu=1&dept2Menu=7&_menuNo=9079">자위소방대 훈련·교육</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/notice/NoticeList.do?dept1Menu=1&dept2Menu=8&_menuNo=400">공지사항</a>
+                                    <br /><br />
+                                </h3>        
+                                <h3>
+                                    <a href="/user/notice/FaqList.do?dept1Menu=1&dept2Menu=9&_menuNo=401">자주하는 질문</a>
+                                </h3>                                       
+                            </div>                      
+                        </div>
+                    </dd>
+                </dl>
+
+				<!-- 의용소방대교육    -->
+  				<dl class="volunteerfireman">
+                    <dt>
+                        <a href="/user/volunteerfireman/Main.do?dept1Menu=9&_menuNo=9045">의용소방대교육</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/volunteerfireman/MyEduClassCource.do?dept1Menu=9&dept2Menu=1&_menuNo=9050">나의 교육정보</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/volunteerfireman/CyberGuide.do?dept1Menu=9&dept2Menu=1&_menuNo=9050">교육안내</a></li>
+                                    <li><a href="/user/volunteerfireman/MyEduCertification.do?dept1Menu=9&dept2Menu=2&_menuNo=9051">이수증 출력</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/volunteerfireman/MyinfoChange.do?dept1Menu=9&dept2Menu=2&_menuNo=9052">나의 정보변경</a>
+                                </h3>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/volunteerfireman/VolunteerFiremanBaseEdu.do?dept1Menu=9&dept2Menu=1&_menuNo=9048">교육신청</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/volunteerfireman/VolunteerFiremanBaseEdu.do?dept1Menu=9&dept2Menu=1&_menuNo=9048">기본 교육</a></li>
+                                    <li><a href="/user/volunteerfireman/VolunteerFiremanExpertEdu.do?dept1Menu=9&dept2Menu=1&_menuNo=9049">전문 교육</a></li>
+                                </ul>
+                            </div>
+                                <div class="cell">
+                                <h3>
+                                    <a href="/user/volunteerfireman/MyEduCertification.do?dept1Menu=9&dept2Menu=2&_menuNo=9051">이수내역 조회</a>
+                                </h3>
+                            </div>                         
+                        </div>
+                      
+                    </dd>
+                </dl>
+             
+
+                <dl class="multiuse">
+                    <dt>
+                        <a href="/user/multiuse/Main.do?dept1Menu=2&_menuNo=387">다중이용업교육</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/myinfo/MyEduClassCource.do?dept1Menu=2&dept2Menu=1&_menuNo=434">나의 교육정보</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/multiuse/myinfo/MyEduClassCource.do?dept1Menu=2&dept2Menu=1&_menuNo=440">나의 강의실</a></li>
+                                    <li><a href="/user/multiuse/myinfo/MyEduCertification.do?dept1Menu=2&dept2Menu=1&_menuNo=441">이수증 출력</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/myinfo/MyinfoChange.do?dept1Menu=2&dept2Menu=2&_menuNo=435">업소정보 관리</a>
+                                </h3>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/apply/MultiUseEdu.do?dept1Menu=2&dept2Menu=3&_menuNo=436">교육신청</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/multiuse/apply/CyberGuide.do?dept1Menu=2&dept2Menu=3&_menuNo=442">사이버교육 이용안내</a></li>
+                                    <li><a href="/user/multiuse/apply/MultiUseEdu.do?dept1Menu=2&dept2Menu=3&_menuNo=443">다중이용업 종사자 교육</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/myinfo/MyEduCertification.do?dept1Menu=2&dept2Menu=1&_menuNo=441">이수증 출력</a>
+                                </h3>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/MultiUseAthenticity.do?dept1Menu=2&dept2Menu=4&_menuNo=437">이수진위확인</a>
+                                </h3>
+                            </div>                        
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/NoticeList.do?dept1Menu=2&dept2Menu=5&_menuNo=438">공지사항</a>
+                                </h3>                           
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/multiuse/FaqList.do?dept1Menu=2&dept2Menu=6&_menuNo=439">자주하는 질문</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                
+                <dl class="infocenter">
+                    <dt>
+                        <a href="/user/infocenter/InfocenterMain.do?dept1Menu=3">소방정보센터</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/infocenter/InfocenterLawFire.do?dept1Menu=3&dept2Menu=1">법령정보</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/infocenter/InfocenterLawFire.do?dept1Menu=3&dept2Menu=1&_menuNo=449">소방관계법령</a></li>
+                                    <li><a href="/user/infocenter/InfocenterLawInstruction.do?dept1Menu=3&dept2Menu=1&_menuNo=459">훈령&middot;예규&middot;고시</a></li>
+                                    <li><a href="/user/infocenter/InfocenterLawStandard.do?dept1Menu=3&dept2Menu=1&_menuNo=451">국가화재안전기준</a></li>
+                                    <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10042&_menuNo=452">과거 소방법</a></li>
+                                    <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10043&_menuNo=453">질의회신</a></li>
+                                    <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10044&_menuNo=454">소방관련 법원판례</a></li>
+                                    <li><a href="/user/infocenter/InfocenterLawRelated.do?dept1Menu=3&dept2Menu=1&_menuNo=455">타관련법령</a></li>
+                                    <li><a href="/user/infocenter/InfocenterLawForeign.do?dept1Menu=3&dept2Menu=1&_menuNo=456">외국소방법 및 코드</a></li>
+                                    <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=5&_menuNo=457&boardSeqno=10045">각종서식</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=458">대국민캠페인</a>
+                                </h3>
+                                    <ul>
+                                      <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10059&_menuNo=9006">소방정책 알림방</a></li>
+                                      <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=458">화재예방캠페인</a></li>
+                                           <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=459">- 캠페인영상</a></li>
+                                           <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10047&_menuNo=460">- 소방포스터</a></li>
+                                           <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10048&_menuNo=461">- 소방표어</a></li>
+                                      <li><a href="/user/infocenter/InfocenterCampaignPrExperience.do?dept1Menu=3&dept2Menu=2&_menuNo=462">대국민홍보활동</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignPrExperience.do?dept1Menu=3&dept2Menu=2&_menuNo=463">- 안전체험행사</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignPrVod.do?dept1Menu=3&dept2Menu=2&_menuNo=464">- 보도영상</a></li>
+                                      <li><a href="/user/infocenter/InfocenterCampaignSososim.do?dept1Menu=3&dept2Menu=2&_menuNo=465">소소심캠페인</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignSososim.do?dept1Menu=3&dept2Menu=2&_menuNo=466">- 소소심 캠페인</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignSososimExtinguisher.do?dept1Menu=3&dept2Menu=2&_menuNo=457">- 소화기 사용법</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignSososimHydrant.do?dept1Menu=3&dept2Menu=2&_menuNo=468">- 소화전 사용법</a></li>
+                                          <li class="depth4"><a href="/user/infocenter/InfocenterCampaignSososimResuscitation.do?dept1Menu=3&dept2Menu=2&_menuNo=469">- 심폐소생술</a></li>
+                                      <li><a href="/user/infocenter/InfocenterCampaignSososimUcc.do?dept1Menu=3&dept2Menu=2&_menuNo=470">화재예방 UCC공모전</a></li>
+                                    </ul>                               
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/infocenter/InfocenterDataKnowHow.do?dept1Menu=3&dept2Menu=3&_menuNo=471">소방자료</a>
+                                </h3>
+                                      <ul>
+                                      	  <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&_menuNo=9124&boardSeqno=10068">소방계획서 작성 영상</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataKnowHow.do?dept1Menu=3&dept2Menu=3&_menuNo=471">화재예방요령</a></li>
+                                          <li><a href="/user/infocenter/InfocenterAccidentCasebook.do?dept1Menu=3&dept2Menu=3&_menuNo=9111">화재사고사례집</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataManual.do?dept1Menu=3&dept2Menu=3&_menuNo=472">소방안전 매뉴얼</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataSelf.do?dept1Menu=3&dept2Menu=3&_menuNo=473">소방안전관리 업무자가진단</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataConduct.do?dept1Menu=3&dept2Menu=3&_menuNo=474">화재시 행동요령</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataSteps.do?dept1Menu=3&dept2Menu=3&_menuNo=475">화재발생 후 조치사항</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataEmergency.do?dept1Menu=3&dept2Menu=3&_menuNo=476">응급상황 행동요령</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataExit.do?dept1Menu=3&dept2Menu=3&_menuNo=477">비상구 이용방법</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataShelter.do?dept1Menu=3&dept2Menu=3&_menuNo=478">공동주택 피난시설</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataForeigners.do?dept1Menu=3&dept2Menu=3&_menuNo=479">외국인 소방교육자료</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataVod.do?dept1Menu=3&dept2Menu=3&_menuNo=480">소방교육영상</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataSafety.do?dept1Menu=3&dept2Menu=3&_menuNo=481">안전교육</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataScreensaver.do?dept1Menu=3&dept2Menu=3&_menuNo=482">소방안전 화면보호기</a></li>
+                                          <li><a href="/user/infocenter/InfocenterDataAcademicInformation.do?dept1Menu=3&dept2Menu=3&_menuNo=484">학술정보</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterDataAcademicInformation.do?dept1Menu=3&dept2Menu=3&_menuNo=485">- 자료실</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterSataAcademicTech.do?dept1Menu=3&dept2Menu=3&_menuNo=486">- 소방기술자료집</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10056&_menuNo=487">- (구) 소방안전지</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10050&_menuNo=488">- 소방기술정보지</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10051&_menuNo=489">- 위탁연구개발사업</a></li>
+                                              <li class="depth4"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10052&_menuNo=490">- 소방용어사전</a></li>
+                                          <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10049&_menuNo=487">소방안전플러스</a></li>
+                                      </ul>                             
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/infocenter/InfocenterRelatedFirecenter.do?dept1Menu=3&dept2Menu=4&_menuNo=491&relateSite=A">관련사이트</a>
+                                </h3>
+                                   <ul>
+                                     <li><a href="/user/infocenter/InfocenterRelatedFirecenter.do?dept1Menu=3&dept2Menu=4&_menuNo=491&relateSite=A">소방관서</a></li>
+                                     <li><a href="/user/infocenter/InfocenterRelatedDomestic.do?dept1Menu=3&dept2Menu=4&_menuNo=492">국내소방관련 단체</a></li>
+                                     <li><a href="/user/infocenter/InfocenterRelatedInternational.do?dept1Menu=3&dept2Menu=4&_menuNo=493">국외소방관련 단체</a></li>
+                                     <li><a href="/user/infocenter/InfocenterRelatedMajor.do?dept1Menu=3&dept2Menu=4&_menuNo=494">소방관련학과</a></li>
+                                     <li><a href="/user/infocenter/InfocenterRelatedMedia.do?dept1Menu=3&dept2Menu=4&_menuNo=495">소방언론사</a></li>
+                                   </ul>
+                            </div>                            
+                        </div>
+                    </dd>
+                </dl>                
+
+                <dl class="memberservice">
+                    <dt>
+                        <a href="/user/memberService/Main.do?dept1Menu=4&_menuNo=389">회원서비스</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                             <div class="cell">
+                                <h3>
+                                   <a href="/user/memberService/userPrivInfo.do?dept1Menu=4&dept2Menu=1&_menuNo=9073">나의 안전원정보</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/memberService/feePay.do?dept1Menu=4&dept2Menu=1&_menuNo=506">회비납부</a></li>
+                                    <li><a href="/user/memberService/feeList.do?dept1Menu=4&dept2Menu=1&_menuNo=507">회비/교육수수료 납부조회</a></li>
+                                    <li><a href="/user/memberService/fcList.do?dept1Menu=4&dept2Menu=1&_menuNo=508">안전원회원확인서 발급</a></li>
+                                    <li><a href="/user/memberService/fcConfirm.do?dept1Menu=4&dept2Menu=1&_menuNo=509">안전원회원확인서 진위확인</a></li>
+                                    <li><a href="/user/memberService/fcMemberwithdrawal.do?dept1Menu=4&dept2Menu=1&_menuNo=9025">안전원 회원탈퇴</a></li>
+                                    <li><a href="/user/memberService/userPrivInfo.do?dept1Menu=4&dept2Menu=1&_menuNo=9073">정보제공 수신동의 신청/해지</a></li>
+                                </ul>
+                             </div>
+                             <div class="cell">
+                                 <h3>
+                                     <a href="/user/memberService/joinInfo.do?dept1Menu=4&dept2Menu=2&_menuNo=499">회원가입안내</a>
+                                 </h3>
+                                 <br /><br />
+                                        <h3>
+                                            <a href="/user/memberService/quizList.do?dept1Menu=4&dept2Menu=5&_menuNo=503">퀴즈이벤트</a>
+                                        </h3>
+                                        <ul>
+                                            <li><a href="/user/memberService/quizList.do?dept1Menu=4&dept2Menu=5&_menuNo=503">퀴즈이벤트 참여</a></li>
+                                            <li><a href="/user/memberService/quizHistoryList.do?dept1Menu=4&dept2Menu=5&_menuNo=503">지난이벤트(당첨자)</a></li>
+                                        </ul>                                 
+                             </div>
+                             <div class="cell">
+                                 <h3>
+                                     <a href="/user/memberService/welfare.do?dept1Menu=4&dept2Menu=3&_menuNo=500">제휴업체</a>
+                                 </h3>
+                                 <ul>
+                                     <li><a href="/user/memberService/welfare.do?dept1Menu=4&dept2Menu=3&_menuNo=510">회원복지몰</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&dept2Menu=3&upperCategoryNo=1043">법률/세무</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&upperCategoryNo=1044">의료</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&upperCategoryNo=1045">문화/여행/레저</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&upperCategoryNo=1046">생활/웨딩/안경</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&upperCategoryNo=1047">교육</a></li>
+                                     <li><a href="/user/memberService/company.do?dept1Menu=4&upperCategoryNo=1048">상조</a></li>
+                                 </ul>
+                             </div>
+                             <div class="cell">
+                                 <h3>
+                                     <a href="/user/memberService/disasterCompensation.do?dept1Menu=4&dept2Menu=4&_menuNo=501">재해위로금</a>
+                                 </h3>
+                                 <br /><br />
+                                 <h3>
+                                        <a href="/user/memberService/firefightingScholarship.do?dept1Menu=4&dept2Menu=5&_menuNo=502">소방안전장학금</a>
+                                 </h3> 
+                                 <br /><br />
+                                 <h3>
+                                      <a href="/user/memberService/ebook.do?dept1Menu=4&_menuNo=504">전자도서관</a>
+                                 </h3>  
+                                 <br /><br />
+                                 <h3>
+                                      <a href="/user/memberService/noticeList.do?dept1Menu=4&_menuNo=505">공지사항</a>
+                                 </h3>               
+                                 <br /><br />
+                                 <h3>
+                                      <a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=4&dept2Menu=9&_menuNo=9082&boardSeqno=10066">영상자료</a>
+                                 </h3>                                                                                                       
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+
+<dl class="diagnosis">
+                    <dt>
+                        <a href="/user/diagnosis/Main.do?dept1Menu=5&_menuNo=390">화재안전진단</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/diagnosis/facilityGuide.do?dept1Menu=5&dept2Menu=1&_menuNo=525">소방시설점검</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/diagnosis/facilityGuide.do?dept1Menu=5&dept2Menu=1&_menuNo=525">점검안내</a></li>
+                                    <!-- 
+                                    <li><a href="/user/diagnosis/facilityForm.do?dept1Menu=5&dept2Menu=1&_menuNo=526">점검양식</a></li>
+                                    <li><a href="/user/diagnosis/facilitySefl.do?dept1Menu=5&dept2Menu=1&_menuNo=527">자체점검</a></li>
+                                     -->
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/diagnosis/labs.do?dept1Menu=5&dept2Menu=2&_menuNo=521">연구실 정밀안전진단</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/diagnosis/labs.do?dept1Menu=5&dept2Menu=2&_menuNo=521">연구실 정밀안전진단</a></li>
+                                </ul>                               
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/diagnosis/firesafe.do?dept1Menu=5&dept2Menu=3&_menuNo=522">화재안전진단</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/diagnosis/firesafe.do?dept1Menu=5&dept2Menu=3&_menuNo=522">화재안전진단</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/diagnosis/firePrevention.do?dept1Menu=5&dept2Menu=5">화재예방안전진단</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/diagnosis/firePrevention.do?dept1Menu=5&dept2Menu=5">화재예방안전진단</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                        	<div class="cell">
+                                <h3>
+                                    <a href="/user/diagnosis/estimateFacility.do?dept1Menu=5&dept2Menu=4&_menuNo=523">견적신청</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/diagnosis/estimateFacility.do?dept1Menu=5&dept2Menu=4&_menuNo=528">소방시설점검</a></li>
+                                    <li><a href="/user/diagnosis/estimateLabs.do?dept1Menu=5&dept2Menu=4&_menuNo=529">연구실 정밀안전진단</a></li>
+                                    <li><a href="/user/diagnosis/estimateDiagnosis.do?dept1Menu=5&dept2Menu=4&_menuNo=530">화재안전진단</a></li>                                    
+                                </ul>                               
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="javascript:open_ebook('book','chkinfo13','');">점검/진단 홍보 팜플릿</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+
+                <dl class="association">
+                    <dt>
+                        <a href="/user/intro/IntroUserMain.do?dept1Menu=6&_menuNo=391">안전원소개</a>
+                    </dt>
+                    <dd>
+                        <div class="row">
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/intro/QnaUserList.do?dept1Menu=6&dept2Menu=1&_menuNo=532">고객의 소리</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/intro/QnaUserList.do?dept1Menu=6&dept2Menu=1&_menuNo=541">묻고 답하기</a></li>
+                                    <li><a href="/user/intro/FaqUserList.do?dept1Menu=6&dept2Menu=1&_menuNo=542">자주하는 질문</a></li>
+                                    <li><a href="/user/intro/RecomUserList.do?dept1Menu=6&dept2Menu=1&_menuNo=543">친절직원 추천</a></li>
+                                    <li><a href="/user/intro/CleanUserMain.do?dept1Menu=6&dept2Menu=1&_menuNo=544">클린신고센터</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/intro/GooinUserList.do?dept1Menu=6&dept2Menu=2&_menuNo=545">취업 정보</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/intro/GooinUserList.do?dept1Menu=6&dept2Menu=2&_menuNo=545">구인정보</a></li>
+                                    <li><a href="/user/intro/GoojikUserList.do?dept1Menu=6&dept2Menu=2&_menuNo=546">구직정보</a></li>
+                                </ul>                               
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/intro/OpenUserList.do?dept1Menu=6&dept2Menu=3534&_menuNo=534">열린경영</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/intro/EduUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=550">주요업무</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=556">- 소방교육</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduInfoUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=557">- 소방홍보</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduCheckUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=558">- 안전진단</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduResrchUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=559">- 연구개발 및 국제교류</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduMemberUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=560">- 회원복리증진</a></li>
+                                    <li><a href="/user/intro/ObjectUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=549">경영공시</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=552">- 경영목적 및 방침</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectDirectorUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=553">- 임원현황 및 선임방법</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectPlanUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=554">- 재무제표</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectEtcUserMain.do?dept1Menu=6&dept2Menu=3&_menuNo=555">- 기타사항</a></li>
+                                    <li><a href="/user/intro/OpenUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=547">청렴정보</a></li>
+                                    <li><a href="/user/intro/CorrUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=548">부패공직자 처리현황</a></li>
+                                    <li><a href="/user/intro/RawSuitUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9033">고문변호사 위촉 및 소송현황</a></li>
+                                    <li><a href="/user/intro/RecruitCorrUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9023">채용비리관련 공지사항</a></li>
+                                    <li><a href="/user/intro/CommissionOpenUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9030">위원회 결과공개</a></li>
+                                    <li><a href="/user/intro/GiftCardUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9036">상품권 구매 및 사용현황</a></li>
+                                    <li><a href="/user/intro/CardNewsUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9065">카드뉴스</a></li>
+                                    <li><a href="/user/intro/PressDataUserList.do?dept1Menu=6&dept2Menu=3&_menuNo=9069">보도자료</a></li>
+                                    <li><a href="/user/intro/EduUserStatistics.do?dept1Menu=6&dept2Menu=3&_menuNo=9013">안전원 통계</a></li>
+                                    	<li class="depth4"><a href="/user/intro/EduUserStatistics.do?dept1Menu=6&dept2Menu=3&_menuNo=9013">- 소방교육</a></li>
+                                    	<li class="depth4"><a href="/user/intro/EduResrchUserStatistics.do?dept1Menu=6&dept2Menu=3&_menuNo=9014">- 연구개발</a></li>
+                                    	<li class="depth4"><a href="/user/intro/EduStatisticsMain.do?dept1Menu=6&dept2Menu=3&_menuNo=9015">- 소방안전관리</a></li>
+                                    	<li class="depth4"><a href="/user/intro/EduStatisticsMain2.do?dept1Menu=6&dept2Menu=3&_menuNo=9016">- 위험물안전관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell">
+                                <h3>
+                                    <a href="/user/intro/Greeting.do?dept1Menu=6&dept2Menu=4&_menuNo=535">안전원안내</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="/user/intro/Greeting.do?dept1Menu=6&dept2Menu=4&_menuNo=589">원장 인사말</a></li>
+<!--                                     <li><a href="/user/intro/ObjectUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=549">경영공시</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=552">- 경영목적 및 방침</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectDirectorUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=553">- 임원현황 및 선임방법</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectPlanUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=554">- 재무제표</a></li>
+                                        <li class="depth4"><a href="/user/intro/ObjectEtcUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=555">- 기타사항</a></li>
+                                    <li><a href="/user/intro/EduUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=550">주요업무</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=556">- 소방교육</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduInfoUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=557">- 소방홍보</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduCheckUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=558">- 안전진단</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduResrchUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=559">- 연구개발 및 국제교류</a></li>
+                                        <li class="depth4"><a href="/user/intro/EduMemberUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=560">- 회원복리증진</a></li> -->
+                                    <li><a href="/user/intro/OrgUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=551">조직안내</a></li>
+                                        <li class="depth4"><a href="/user/intro/OrgUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=561">- 조직도</a></li>
+                                        <li class="depth4"><a href="/user/intro/OrgPostUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=562">- 부서별 연락처</a></li>
+                                        <li class="depth4"><a href="/user/intro/OrgDeptUserMain.do?dept1Menu=6&dept2Menu=4&_menuNo=563">- 부서별 업무소개</a></li>
+                                     <li><a href="/user/intro/MapUserMain.do?dept1Menu=6&dept2Menu=4&area=01&_menuNo=565">찾아오시는길</a></li>   
+                                     <li><a href="/user/intro/NoticeUserList.do?dept1Menu=6&dept2Menu=4&_menuNo=566">공지사항</a></li>                                                                                                                                        
+                                </ul>                               
+                            </div>
+                        </div>
+                    </dd>
+                </dl>                                
+            
+            </div>
+        </div>
+    </div>   
+	<!-- end of navigation -->
+
+
+	<div class="wrap util">
+		<div class="inwrap">
+			<div class="logo-wrap">
+				<h1>
+					<a href="/user/Main.do?_menuNo=0"><img
+						src="/assets/images/user/logo.png" alt="KFSI 한국소방안전원(구. 한국소방안전안전원)"><span
+						class="alter">한국소방안전원</span></a>
+				</h1>
+				<h2>소방정보센터</h2>
+				</div>
+			<div class="util-menu">
+				<!-- before login -->
+				<p class="before-login">
+						<span><a href="/user/login/Login.do?dept2Menu=login&_menuNo=568">로그인</a></span>
+						<span class="last"><a href="/user/member/join/Member.do?dept2Menu=login&_menuNo=570">회원가입</a></span>
+						<span><a href="/user/edumyinfo/MyClassRoom.do?dept1Menu=1&dept2Menu=1&_menuNo=432">나의 강의실</a></span>
+					</p>
+				<!-- end of before login -->
+				<!-- after login -->
+				<!-- end of after login -->
+				<span><input type="text" name="main-src" id="main-src"
+					placeholder="검색어를 입력해주세요" title="검색어 입력">
+				<button onclick="searchMenu()" type="button" name="serach"
+						id="search"></button></span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 소방안전교육 -->
+	<!-- 의용소방대교육 -->
+	<!-- 다중이용업교육 -->
+	<!-- sub navigation -->
+		<div class="wrap sub-nav">
+			<div class="inwrap">
+				<ul>
+					<li class="btn"><button type="button" name="submenu" id="submenu" class="btn-hamburg">
+							<span class="alter">소방정보센터 전체메뉴</span>
+						</button></li>
+					<li><a href="#" onclick="javascript:fnMenuUrlMove('/user/infocenter/InfocenterLawFire.do?dept1Menu=3&dept2Menu=1&_menuNo=449');">법령정보</a></li>
+					<li><a href="#" onclick="javascript:fnMenuUrlMove('/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=458');">대국민 캠페인</a></li>
+					<li><a href="#" onclick="javascript:fnMenuUrlMove('/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&_menuNo=9124&boardSeqno=10068');">소방자료</a></li>
+					<li><a href="#" onclick="javascript:fnMenuUrlMove('/user/infocenter/InfocenterRelatedFirecenter.do?dept1Menu=3&dept2Menu=4&_menuNo=448');">관련 사이트</a></li>
+					<li><a href="#" onclick="javascript:fnMenuUrlMove('/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=5&boardSeqno=10045&_menuNo=457');">각종 서식</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end of sub navigation -->
+
+		<div class="menu" id="sub-menu">
+			<div class="inwrap">
+				<div class="navwrap">
+					<dl class="infocenter">
+						<dt>
+							<a href="../infocenter/">소방정보센터</a>
+						</dt>
+						<dd>
+							<div class="row">
+								<div class="cell">
+									<h3>
+										<a href="/user/infocenter/InfocenterLawFire.do?dept1Menu=3&dept2Menu=1&_menuNo=449">법령정보</a>
+									</h3>
+									<ul>
+										<li><a href="/user/infocenter/InfocenterLawFire.do?dept1Menu=3&dept2Menu=1&_menuNo=449">소방관계법령</a></li>
+										<li><a href="/user/infocenter/InfocenterLawInstruction.do?dept1Menu=3&dept2Menu=1&_menuNo=450">훈련&middot;예규&middot;고시</a></li>
+										<li><a href="/user/infocenter/InfocenterLawStandard.do?dept1Menu=3&dept2Menu=1&_menuNo=451">국가화재안전기준</a></li>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10042&_menuNo=452">과거 소방법</a></li>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10043&_menuNo=453">질의회신</a></li>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=1&boardSeqno=10044&_menuNo=454">소방관련 법원판례</a></li>
+										<li><a href="/user/infocenter/InfocenterLawRelated.do?dept1Menu=3&dept2Menu=1&_menuNo=455">타관련법령</a></li>
+										<li><a href="/user/infocenter/InfocenterLawForeign.do?dept1Menu=3&dept2Menu=1&_menuNo=456">외국소방법 및 코드</a></li>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=5&boardSeqno=10045&_menuNo=457">각종서식</a></li>
+									</ul>
+								</div>
+								<div class="cell">
+									<h3>
+										<a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=458">대국민캠페인</a>
+									</h3>
+									<ul>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=2&boardSeqno=10046&_menuNo=458">화재예방캠페인</a></li>
+										<li><a href="/user/infocenter/InfocenterCampaignPrExperience.do?dept1Menu=3&dept2Menu=2&_menuNo=462">대국민홍보활동</a></li>
+										<li><a href="/user/infocenter/InfocenterCampaignSososim.do?dept1Menu=3&dept2Menu=2&_menuNo=466">소소심캠페인</a></li>
+										<li><a href="/user/infocenter/InfocenterCampaignSososimUcc.do?dept1Menu=3&dept2Menu=2&_menuNo=470">화재예방 UCC공모전</a></li>
+									</ul>
+								</div>
+								<div class="cell">
+									<h3>
+										<a href="/user/infocenter/InfocenterDataKnowHow.do?dept1Menu=3&dept2Menu=3&_menuNo=471">소방자료</a>
+									</h3>
+									<ul>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&_menuNo=9124&boardSeqno=10068">소방계획서 작성 영상</a></li>
+										<li><a href="/user/infocenter/InfocenterDataKnowHow.do?dept1Menu=3&dept2Menu=3&_menuNo=471">화재예방요령</a></li>
+										<li><a href="/user/infocenter/InfocenterAccidentCasebook.do?dept1Menu=3&dept2Menu=3&_menuNo=9111">화재사고사례집</a></li>
+										<li><a href="/user/infocenter/InfocenterDataManual.do?dept1Menu=3&dept2Menu=3&_menuNo=472">소방안전 매뉴얼</a></li>
+										<li><a href="/user/infocenter/InfocenterDataSelf.do?dept1Menu=3&dept2Menu=3&_menuNo=473">소방안전관리 업무자가진단</a></li>
+										<li><a href="/user/infocenter/InfocenterDataConduct.do?dept1Menu=3&dept2Menu=3&_menuNo=474">화재시 행동요령</a></li>
+										<li><a href="/user/infocenter/InfocenterDataSteps.do?dept1Menu=3&dept2Menu=3&_menuNo=475">화재발생 후 조치사항</a></li>
+										<li><a href="/user/infocenter/InfocenterDataEmergency.do?dept1Menu=3&dept2Menu=3&_menuNo=476">응급상황 행동요령</a></li>
+										<li><a href="/user/infocenter/InfocenterDataExit.do?dept1Menu=3&dept2Menu=3&_menuNo=477">비상구 이용방법</a></li>
+										<li><a href="/user/infocenter/InfocenterDataShelter.do?dept1Menu=3&dept2Menu=3&_menuNo=478">공동주택 피난시설</a></li>
+										<li><a href="/user/infocenter/InfocenterDataForeigners.do?dept1Menu=3&dept2Menu=3&_menuNo=479">외국인 소방교육자료</a></li>
+										<li><a href="/user/infocenter/InfocenterDataVod.do?dept1Menu=3&dept2Menu=3&_menuNo=480">소방교육영상</a></li>
+										<li><a href="/user/infocenter/InfocenterDataSafety.do?dept1Menu=3&dept2Menu=3&_menuNo=481">안전교육</a></li>
+										<li><a href="/user/infocenter/InfocenterDataScreensaver.do?dept1Menu=3&dept2Menu=3&_menuNo=482">소방안전 화면보호기</a></li>
+										<li><a href="/user/infocenter/InfocenterDataAcademicInformation.do?dept1Menu=3&dept2Menu=3&_menuNo=484">학술정보</a></li>
+										<li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10049&_menuNo=487">소방안전플러스</a></li>
+									</ul>
+								</div>
+								<div class="cell">
+									<h3>
+										<a href="/user/infocenter/InfocenterRelatedFirecenter.do?dept1Menu=3&dept2Menu=4&_menuNo=491&relateSite=A">관련사이트</a>
+									</h3>
+									<ul>
+										<li><a href="/user/infocenter/InfocenterRelatedFirecenter.do?dept1Menu=3&dept2Menu=4&_menuNo=491&relateSite=A">소방관서</a></li>
+										<li><a href="/user/infocenter/InfocenterRelatedDomestic.do?dept1Menu=3&dept2Menu=4&_menuNo=492">국내소방관련 단체</a></li>
+										<li><a href="/user/infocenter/InfocenterRelatedInternational.do?dept1Menu=3&dept2Menu=4&_menuNo=493">국외소방관련 단체</a></li>
+										<li><a href="/user/infocenter/InfocenterRelatedMajor.do?dept1Menu=3&dept2Menu=4&_menuNo=494">소방관련학과</a></li>
+										<li><a href="/user/infocenter/InfocenterRelatedMedia.do?dept1Menu=3&dept2Menu=4&_menuNo=495">소방언론사</a></li>
+									</ul>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	<!-- lyb -->
+	<!-- 화재안전진단 -->
+	<!-- 안전원소개 -->
+	<!-- 소방안전관리선임신고 -->
+	<!-- lyb end -->
+</header>
+<div class="wrap section"  ng-controller="lmsCtrl">
+	    <div class="inwrap">
+<script type="text/javascript" defer="defer">
+
+function noticeSearch() {
+	event.preventDefault();//스크롤링
+    $.commandSubmit({
+        commandUrl    : 'InfocenterBbsList.do',
+        commandForm   : 'noticeForm',
+        onBeforeSubmit : function () {
+            $('#noticeForm input[name=pageIndex]').val(1);
+        }
+    });
+}
+
+function noticeDetailView(postsSeqno) {
+    $.commandSubmit({
+    	commandMethod  : 'get',
+        commandUrl     : 'InfocenterBbsView.do',
+        commandForm    : 'noticeForm',
+        onBeforeSubmit : function () {
+            $('#postsSeqno').val(postsSeqno);
+        }
+    });
+}
+
+function noticePaging(pageNo) {
+    $.commandSubmit({
+        commandUrl     : 'InfocenterBbsList.do',
+        commandForm    : 'noticeForm',
+        onBeforeSubmit : function () {
+            $('#noticeForm input[name=pageIndex]').val(pageNo);
+        }
+    });
+}
+
+</script>
+
+<div class="wrap section">
+    <div class="inwrap">
+		<!-- left menu -->
+		<script type="text/javascript" defer="defer">
+$(function() {	
+	
+	var dept1 = '3';
+	var dept2 = '3';
+	var menuNo = '472';
+		
+	$('.sub-nav	a[href*=dept1Menu\\='+dept1+'][href*=dept2Menu\\='+dept2+']').addClass('active');	//head 메뉴활성화
+	$('a[href$='+menuNo+']').parent().parent().removeClass('hide');	//선택메뉴의 동레벨 메뉴가 보이도록
+	$('a[href$='+menuNo+']').parent().parent().prev().addClass('active');	//선택메뉴의 상위메뉴 활성화		
+		
+	for(var x = 0 ; x <  $('.lnb-wrap a').length ; x++){
+		var onclickVal = $('.lnb-wrap a:eq('+ x +')').attr('onclick');
+		
+		if(onclickVal != '' && onclickVal != 'undefined' && onclickVal != undefined){			
+			if(onclickVal.indexOf(menuNo) != -1) {				
+				$('.lnb-wrap a:eq('+ x +')').parent().addClass('current');
+			}	
+		}
+	}
+	
+	//menuNo로 끝나지 않는 페이지들 활성화처리..
+	var areaNo = '';
+	var relateSite = '';
+	var upperCategoryNo = '';
+	var categoryNo = '';
+	var relateType = '';
+
+	if(relateSite != '' && relateSite == 'A'){	//소방관서
+		$('a[href*=relateSite\\='+relateSite+']').addClass('active');
+		$('a[href*=relateSite\\='+relateSite+']').parent().addClass('current');
+	}else if(relateSite != '' && relateSite == 'QNA'){	//묻고 답하기
+		$('a[href$=541]').addClass('active');
+		$('a[href$=541]').parent().addClass('current');
+	}else if(relateSite != '' && relateSite == 'RECOM'){	//친절직원추천
+		$('a[href$=543]').addClass('active');
+		$('a[href$=543]').parent().addClass('current');
+	}else if(relateSite != '' && relateSite == 'CLEAN'){	//클린신고센터
+		$('a[href$=544]').addClass('active');
+		$('a[href$=544]').parent().addClass('current');
+	}else if(relateSite != '' && relateSite == 'GOOJIK'){	//구직
+		$('a[href$=546]').addClass('active');
+		$('a[href$=546]').parent().addClass('current');
+	}
+	
+	if(upperCategoryNo != '' || categoryNo != ''){	//제휴업체
+		$('a[href$=upperCategoryNo\\='+upperCategoryNo+']').addClass('active');
+		$('a[href$=upperCategoryNo\\='+upperCategoryNo+']').parent().addClass('current');
+	}
+	
+	if(areaNo != ''){	//찾아오시는길
+		$('a[href*=area\\='+areaNo+']').addClass('active');	
+		$('a[href*=area\\='+areaNo+']').parent().addClass('current');
+	}else{
+		$('a[href$='+menuNo+']').addClass('active');	//선택메뉴 활성화
+		$('a[href$='+menuNo+']').parent().addClass('current');
+	}
+	
+	if(relateType != ''){   //제휴업체		
+		$('a[href$=499]').removeClass('active');
+		$('a[href$=499]').parent().removeClass('current');
+		$('a[href$=590]').addClass('active');
+		$('a[href$=590]').parent().addClass('current');
+	}
+	
+    $(".lnb-wrap").click(function(event){
+    	var ul = $(".lnb-wrap").children('ul');
+    	
+    	if($(event.target).hasClass('active') ){ 
+			var targetul = $(event.target).next('ul');
+			ul.find('.active').removeClass('active');
+
+			$(event.target).parent().addClass('active');
+			$(event.target).addClass('active');
+			$(event.target).next('ul').slideDown();
+
+			ul.find('ul').not(targetul).slideUp();
+		}else{	
+			ul.find('.active').removeClass('active');
+			ul.next().removeClass('active');
+			ul.removeClass('current');
+			ul.find('ul').not($(event.target)).slideUp();
+	    }
+    });
+});
+
+function fnCmdOnSelect() {
+	
+}
+
+</script>
+<!-- 검색 -->
+<!-- 배너 -->
+<!-- 개인정보처리방침 -->
+<!-- 영상정보처리기기 -->
+<!-- 이용약관 -->
+<!-- 소방안전교육 -->
+<!-- 의용소방대교육 -->
+<!-- 다중이용업교육 -->
+<!-- 소방정보센터 -->
+<div class="lnb-wrap safety">
+            <h3>소방자료</h3>
+            <ul>
+            	<li class="current"><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&_menuNo=9124&boardSeqno=10068">소방계획서 작성 영상</a>
+            	<li><a href="/user/infocenter/InfocenterDataKnowHow.do?dept1Menu=3&dept2Menu=3&_menuNo=471">화재예방요령</a></li>
+            	<li><a href="/user/infocenter/InfocenterAccidentCasebook.do?dept1Menu=3&dept2Menu=3&_menuNo=9111">화재사고사례집</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataManual.do?dept1Menu=3&dept2Menu=3&_menuNo=472">소방안전 매뉴얼</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataSelf.do?dept1Menu=3&dept2Menu=3&_menuNo=473">소방안전관리 업무자가진단</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataConduct.do?dept1Menu=3&dept2Menu=3&_menuNo=474">화재시 행동요령</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataSteps.do?dept1Menu=3&dept2Menu=3&_menuNo=475">화재발생 후 조치사항</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataEmergency.do?dept1Menu=3&dept2Menu=3&_menuNo=476">응급상황 행동요령</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataExit.do?dept1Menu=3&dept2Menu=3&_menuNo=477">비상구 이용방법</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataShelter.do?dept1Menu=3&dept2Menu=3&_menuNo=478">공동주택 피난시설</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataForeigners.do?dept1Menu=3&dept2Menu=3&_menuNo=479">외국인 소방교육자료</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataVod.do?dept1Menu=3&dept2Menu=3&_menuNo=480">소방교육영상</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataSafety.do?dept1Menu=3&dept2Menu=3&_menuNo=481">안전교육</a></li>
+	            <li><a href="/user/infocenter/InfocenterDataScreensaver.do?dept1Menu=3&dept2Menu=3&_menuNo=482">소방안전 화면보호기</a></li>
+	            <li class="depth3"><a href="javascript:;" name="484">학술정보</a>
+	            	<ul class="hide" style="border:0px;border-top:1px #dedede solid">
+		            	<li><a href="/user/infocenter/InfocenterDataAcademicInformation.do?dept1Menu=3&dept2Menu=3&_menuNo=485"> - 자료실</a></li>
+			            <li><a href="/user/infocenter/InfocenterSataAcademicTech.do?dept1Menu=3&dept2Menu=3&_menuNo=486"> - 소방기술자료집</a></li>
+			            <!-- <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10049&_menuNo=487"> - 소방안전지</a></li> -->
+			            <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10056&_menuNo=487"> - (구) 소방안전지</a></li>
+			            <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10050&_menuNo=488"> - 소방기술정보지</a></li>
+			            <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10051&_menuNo=489"> - 위탁연구개발사업</a></li>
+			            <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10052&_menuNo=490"> - 소방용어사전</a></li>
+			         </ul>
+			    </li>
+			    <li><a href="/user/infocenter/InfocenterBbsList.do?dept1Menu=3&dept2Menu=3&boardSeqno=10049&_menuNo=487">소방안전플러스</a></li>
+			    <li><a href="/user/infocenter/InfocenterDataTrainingWorker.do?dept1Menu=3&dept2Menu=3&_menuNo=9100">근로자(종사자)<br>소방교육훈련 자료</a></li>
+			    <li><a href="/user/infocenter/InstallCriterionList.do?dept1Menu=3&dept2Menu=3&_menuNo=9113">소방시설설치기준</a></li>
+			</ul>
+        </div>
+	<!-- 회원서비스 -->
+<!-- 화재안전진단 -->
+<!-- 협회소개 -->
+<!-- 선임신고 -->
+<!-- end of left menu -->
+
+		<form id="noticeForm" name="noticeForm" method="post"><input id="boardSeqno" name="boardSeqno" type="hidden" value="">
+			<input id="postsGrpId" name="postsGrpId" type="hidden" value="SS001">
+			<input id="postsSeqno" name="postsSeqno" type="hidden">
+
+			<input id="dept1Menu" name="dept1Menu" type="hidden" value="3">
+			<input id="dept2Menu" name="dept2Menu" type="hidden" value="3">
+
+			<div id="hiddenInputDiv"></div>
+
+        <!-- contents -->
+        <div class="contents">
+            <h4>소방안전 매뉴얼<span class="icon-underline"></span></h4>
+            <div class="location-wrap">
+              <ul>
+                <li><a href="#" class="home"><span class="alter">홈</span></a></li>
+                <li><a href="#">소방정보센터</a></li>
+                <li><a href="#">소방자료</a></li>
+                <li><a href="#">소방안전 매뉴얼</a></li>
+              </ul>
+            </div>
+            <div class="conwrap">
+
+              <div class="section">
+                <table class="list detail fixed">
+                <colgroup>
+                  <col width="200"><col width="">
+                </colgroup>
+                <tbody>
+
+                <tr>
+                    <td>
+                        <div class="book-wrap mt20 mb20" style="padding:4px 0 0 0;">
+                          <div class="figure"><a href="#none" onClick="javascript:open_ebook('book','winter','');"><img src="/assets/images/infocenter/data-manual-19.jpg" alt="겨울철 난방용품 안전매뉴얼"></a></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text">
+                          <p class="fs17 mb20"><a href="javascript:open_ebook('book','winter','');" class="fc-333">겨울철 난방용품 안전매뉴얼</a></p>
+                          <ul class="dot-square">
+                            <li>겨울철 난방용품 화재발생현황</li>
+							<li>전기장판·히터, 화목보일러, 전기열선 안전사용법</li>
+							<li>화재발생시 행동 요령</li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="book-wrap mt20 mb20" style="padding:4px 0 0 0;">
+                          <div class="figure"><a href="#none" onClick="javascript:open_ebook('book','ApartFireFleeGuideBook','');"><img src="/assets/images/infocenter/data-manual-17.jpg" alt="아파트 화재 피난행동요령(아파트 입주자용)"  style="border: 1px #032c5e solid;"></a></div>
+                        </div>
+                    </td>
+ 
+                    <td>
+                        <div class="text">
+                          <p class="fs17 mb20"><a href="javascript:open_ebook('book','ApartFireFleeGuideBook','');" class="fc-333">아파트 화재 피난행동요령(아파트 입주자용)</a></p>
+                          <ul class="dot-square">
+                            <li>아파트 입주자 화재 피난행동요령(인포그래픽, 요약 등)</li>
+							<li>대피 전략</li>
+							<li>우리 아파트 피난계획 수립 가이드</li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr> 
+                
+                <tr>  
+                    <td>
+                        <div class="book-wrap mt20 mb20" style="padding:4px 0 0 0;">
+                          <div class="figure"><a href="#none" onClick="javascript:open_ebook('book','ApartFireFleeGuideBookAdmin','');"><img src="/assets/images/infocenter/data-manual-18.jpg" alt="아파트 화재 피난안전매뉴얼(아파트 관리자용)"  style="border: 1px #032c5e solid;"></a></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text">
+                          <p class="fs17 mb20"><a href="javascript:open_ebook('book','ApartFireFleeGuideBookAdmin','');" class="fc-333">아파트 화재 피난안전매뉴얼(아파트 관리자용)</a></p>
+                          <ul class="dot-square">
+                          	<li>공동주택(아파트) 화재사례</li>
+							<li>공동주택(아파트) 화재통계 및 위험요인</li>
+							<li>공동주택(아파트) 경보방식 및 비화재보 관리</li>
+							<li>공동주택(아파트) 피난설비 사용법</li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="book-wrap mt20 mb20" style="padding:4px 0 0 0;">
+                          <div class="figure"><a href="#none" onClick="javascript:open_ebook('book','GasStationGuideBook','');"><img src="/assets/images/infocenter/data-manual-16.jpg" alt="주유취급소 정전기 화재예방 매뉴얼"  style="border: 1px #032c5e solid;"></a></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text">
+                          <p class="fs17 mb20"><a href="javascript:open_ebook('book','winter','');" class="fc-333">주유취급소 정전기 화재예방 매뉴얼</a></p>
+                          <ul class="dot-square">
+                            <li>정전기의 정의와 화재사고</li>
+							<li>주유취급소 화재발생 과정 및 예방법</li>
+							<li>주유취급소 안전수칙</li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="book-wrap mt20 mb20" style="padding:4px 0 0 0;">
+                          <div class="figure"><a href="#none" onClick="javascript:open_ebook('book','pinan','');"><img src="/assets/images/infocenter/data-manual-11.JPG" alt="피난안내도 표준매뉴얼"></a></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text">
+                          <p class="fs17 mb20"><a href="javascript:open_ebook('book','pinan','');" class="fc-333">피난안내도 표준매뉴얼</a></p>
+                          <ul class="dot-square">
+                            <li>표준 피난안내도 작성기준</li>
+                            <li>피난안내도 예시(외국어)</li>
+                            <li><a href="/assets/downloadDoc/pinanAiFile.zip" style="color: blue;">피난안내도 편집도안(ai파일)(dwonload)</a></li>
+                          </ul>
+                        </div>
+                    </td>
+                </tr> 
+
+                </tbody>
+                </table>
+              </div>
+
+
+
+
+            </div>
+        </div>
+     		<!-- end of contents -->
+		<input type="hidden" name="_menuNo" id="_menuNo" value="472" data-creator="framework" /><input type="hidden" name="_csrf" value="0e4c9b2a-f8aa-4f96-8dda-0a9bfb57007f" data-creator="framework"/></form><!-- ad -->
+		<!-- end of ad -->
+	</div>
+</div></div>
+	</div>
+    <script type="text/javascript">
+
+function commonFooterEduInfoContact(){
+	window.open('/user/intro/EduInfoContactUs.do', 'EduInfoContactUs', 'width=1240, height=700, scrollbars=1');
+}
+
+</script>
+	<footer class="wrap footer">
+	<div class="wrap">
+        <div class="inwrap">
+        	<span style="font-size:1.45rem;">&nbsp;</span>
+
+	    	<span style="font-size:1.45rem;">사이트·단순 문의 : </span>
+	        <span class=""><font size="6">1899-4819</font></span>
+	        <span>(콜센터 운영시간 : 평일 08:00~18:00</span> 
+	        <span>점심시간 12:00~13:00</span>
+	        <span>주말, 공휴일 제외)&nbsp;&nbsp;&nbsp;</span>
+
+	        <div class="link"><a href="#" onCLick="commonFooterEduInfoContact()" style="color: yellow;">교육&middot;기술문의 안내 및 연락처</a></div>
+	        
+<!--   	       <span style="font-size:1.45rem;">이용 문의 : </span>
+	        <span class="tel">안전원 시도지부</span>
+	        <span style="font-size:1.45rem;">&nbsp;</span>
+			<div class="link" style="left:0px;"><a href="#" onCLick="commonFooterEduInfoContact()">교육&middot;기술문의 안내 및 연락처</a></div>
+ -->				        
+	    </div>
+
+	</div>
+	<div class="wrap">
+	    <div class="inwrap">
+	        <ul>
+	            <li><a href="/user/intro/PrivacyPolicy.do?dept1Menu=privacy&dept2Menu=5&_menuNo=577" style="font-size:1.45rem;">개인정보처리방침</a></li>
+	            <li style="margin-top:4px;"><a href="/user/intro/MovInfoLegal.do?dept1Menu=movInfo&dept2Menu=5&_menuNo=579">영상정보처리기기 운영관리 방침</a></li>
+	            <li style="margin-top:4px;"><a href="/user/intro/Legal.do?dept1Menu=legal&dept2Menu=5&_menuNo=580">이용약관</a></li>
+	            <!-- <li><a href="/user/intro/Copyright.do?dept1Menu=6&dept2Menu=6">저작권 보호법</a></li> -->
+	            <!-- <li><a href="/user/intro/AdContactUs.do?dept1Menu=6&dept2Menu=7">광고문의</a></li> -->
+	            <li style="margin-top:4px;"><a href="http://988.co.kr/kfsi/" target="_blank" style="color:yellow;font-weight:600;">원격지원서비스</a></li>
+	        </ul>
+	        <!-- 
+	        <div class="sns-wrap">
+			<ul>
+				<li><a href="https://isms.kisa.or.kr/main/ispims/issue/" target="_blank">
+				<img src="http://cdn.kfsi.or.kr/kfsa/FILE/intro/ismsp02.png" alt="ISMS-P 인증마크" style="margin-left:150px"></a></li>
+			</ul>
+	            <!-- <a href="#" class="facebook"><span class="alter">페이스북</span></a> --//>
+	        </div>
+	         -->
+	        <address class="address">
+	            <p class="info">
+	                <span>한국소방안전원</span>
+	                <span>사업자등록번호 : 107-82-05239 / 07226 서울특별시 영등포구 영중로 170 (영등포동8가)</span>
+	            </p>
+	            <p class="copyright">
+	                COPYRIGHT ⓒ Korea Fire Safety Institute. All Rights Reserved.
+	            </p>
+	        </address>
+	    </div>
+	</div>
+	</footer></div>
+
+    <div class="dim" style="display:none;"></div>
+    <div class="loader" style="display:none;"></div>
+    <p class="loading" ><img src="/assets/images/common/loader_kfsi.gif" alt="페이지 로딩중"/></p>
+</body>
+</html>

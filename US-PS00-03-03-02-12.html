@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>소방자료</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">소방계획서 작성 영상</a>
+              <a href="" class="kfsi-snb-item active">
+                소방안전관리 업무자가진단
+              </a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">소방자료</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방안전관리업무 자가진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방안전관리업무 자가진단</h1>
+              </div>
+              <div class="kfsi-checklist">
+                <div class="kfsi-checklist-title">
+                  <h3>소방안전관리업무 자가진단 체크리스트</h3>
+                </div>
+                <div class="kfsi-checklist-form">
+                  <ul>
+                    <li>
+                      <strong>대상처명</strong>
+                      <input
+                        type="text"
+                        class="form-control"
+                        title="대상처명"
+                      />
+                    </li>
+                    <li>
+                      <strong>소재지</strong>
+                      <input type="text" class="form-control" title="소재지" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="kfsi-checklist-nav">
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>1</span></strong>
+                    <p>
+                      소방계획서<br />
+                      작성
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item active">
+                    <strong><span>2</span></strong>
+                    <p>자위소방대</p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>3</span></strong>
+                    <p>
+                      피난·방화시설의<br />
+                      유지관리
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>4</span></strong>
+                    <p>
+                      소방시설 등의<br />
+                      유지관리
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>5</span></strong>
+                    <p>
+                      소전기 가스 몇<br />
+                      화기취급의
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>6</span></strong>
+                    <p>
+                      소방안전 관리자의<br />
+                      안전의식
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>7</span></strong>
+                    <p>
+                      소방안전<br />
+                      시스템 운영
+                    </p>
+                  </div>
+                  <div class="kfsi-checklist-nav-item">
+                    <strong><span>8</span></strong>
+                    <p>
+                      소방안전관리<br />
+                      실무
+                    </p>
+                  </div>
+                </div>
+                <div class="kfsi-checklist-question">
+                  <div class="kfsi-checklist-question-title">2. 자위소방대</div>
+                  <div class="kfsi-checklist-question-list">
+                    <div class="kfsi-checklist-question-list-item">
+                      <div class="kfsi-checklist-question-list-item-title">
+                        6. 자위소방대의 반(팀)별 인원의 적정성, 실제거주 여부 등
+                        건물상황과 비교하여 실제적으로 운용가능한
+                        자위소방대인가?
+                      </div>
+                      <div class="kfsi-checklist-question-list-item-answer">
+                        <ol>
+                          <li>
+                            <p>① 반(팀)별 인원이 적정하게 편성되었다</p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio06-01"
+                                  id="radio06-01-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio06-01-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio06-01"
+                                  id="radio06-01-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio06-01-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <p>② 실제적으로 운용가능한 자위소방대이다</p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio06-02"
+                                  id="radio06-02-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio06-02-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio06-02"
+                                  id="radio06-02-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio06-02-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="kfsi-checklist-question-list-item">
+                      <div class="kfsi-checklist-question-list-item-title">
+                        7. 각 반별 편성된 해당자는 화재 시 임무에 대해 정확히
+                        숙지하고 있다고 생각하는가?
+                      </div>
+                      <div class="kfsi-checklist-question-list-item-answer">
+                        <ol>
+                          <li>
+                            <p>
+                              ① 각 반별 해당자는 자신의 임무에 대해 정확히 알고
+                              있다
+                            </p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio07-01"
+                                  id="radio07-01-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio07-01-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio07-01"
+                                  id="radio07-01-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio07-01-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <p>
+                              ② 각 반별 해당자는 자신의 임무를 정확히 수행하고
+                              있다
+                            </p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio07-02"
+                                  id="radio07-02-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio07-02-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio07-02"
+                                  id="radio07-02-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio07-02-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="kfsi-checklist-question-list-item">
+                      <div class="kfsi-checklist-question-list-item-title">
+                        8. 화재발생 시 거주원이 행동해야 할 화재대응 시나리오가
+                        현실성있게 작성되어 있고, 그에 따라 교육 및 훈련을
+                        하였는가?
+                      </div>
+                      <div class="kfsi-checklist-question-list-item-answer">
+                        <ol>
+                          <li>
+                            <p>
+                              ① 거주원의 화재대응 시나리오가 구체적으로 작성되어
+                              있다
+                            </p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio08-01"
+                                  id="radio08-01-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio08-01-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio08-01"
+                                  id="radio08-01-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio08-01-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <p>② 시나리오에 따라 소방교육·훈련을 실시하였다</p>
+                            <div
+                              class="kfsi-checklist-question-list-item-answer-checkbox"
+                            >
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio08-02"
+                                  id="radio08-02-01"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio08-02-01"
+                                  checked
+                                >
+                                  예
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio08-02"
+                                  id="radio08-02-02"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="radio08-02-02"
+                                >
+                                  아니오
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-checklist-question-button">
+                    <a href="" class="btn btn-lg btn-outline-secondary">목록</a>
+                    <a href="" class="btn btn-lg btn-primary">다음단계로</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>법령정보</h2>
+              </div>
+              <a href="US-PS00-03-01-01-10.html" class="kfsi-snb-item active"
+                >소방관계법령</a
+              >
+              <a href="US-PS00-03-01-02-10.html" class="kfsi-snb-item">
+                훈령·예규·고시
+              </a>
+              <a href="US-PS00-03-01-03-10.html" class="kfsi-snb-item"
+                >화재안전기준</a
+              >
+              <a href="US-PS00-03-01-04-10.html" class="kfsi-snb-item"
+                >타관련법령</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">법령정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방관계법령
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방관계법령</h1>
+              </div>
+              <div class="kfsi-statute">
+                본 정보는 법제처 국가법령정보센터와 연계하여 제공되는
+                서비스입니다.
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) : <span class="text-primary">소방기본법</span>
+                    </dt>
+                    <dd>
+                      소방장비 및 소방용수시설 등/ 화재의 예방과 경계(警戒)/
+                      소방활동 등/ 화재의 조사/ 구조 및 구급/ 의용소방대/
+                      소방산업의 육성·진흥 및 지원 등/ 한국소방안전원
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/소방기본법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방기본법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/소방기본법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방기본법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/소방기본법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방기본법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary"
+                        >화재의 예방 및 안전관리에 관한 법률 (약칭 :
+                        화재예방법)</span
+                      >
+                    </dt>
+                    <dd>
+                      화재의 예방 및 안전관리 기본계획의 수립·시행/
+                      화재안전조사/ 화재의 예방조치 등/ 소방대상물의
+                      소방안전관리/ 특별관리시설물의 소방안전관리
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            <a href="" class=""
+                              >화재안전조사에 관한 세부운영규정[시행 2022. 12.
+                              1]</a
+                            >
+                          </li>
+                          <li>예방소방업무처리규정[시행 2022. 12. 1]</li>
+                          <li>
+                            우수소방대상물 선정 및 포상 등에 관한 운영 규정[시행
+                            2022. 12. 1]
+                          </li>
+                          <li>
+                            소방안전 관련 교과목·소방안전 관련 학과 및 소방관련
+                            학과 등에 관한 기준[시행 2022. 12. 1]
+                          </li>
+                          <li>
+                            소방안전 특별관리시설물의 화재예방안전진단 세부절차
+                            및 평가방법 등에 관한 규정[시행 2023. 3. 6]
+                          </li>
+                          <li>
+                            소방시설 설치 및 관리에 관한 법률(약칭 : 소방시설법)
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행령"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행규칙"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/화재의예방및안전관리에관한법률시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary"
+                        >소방시설 설치 및 관리에 관한 법률 (약칭 :
+                        소방시설법)</span
+                      >
+                    </dt>
+                    <dd>
+                      소방시설등의 설치·관리 및 방염/ 소방시설등의 자체점검/
+                      소방시설관리사 및 소방시설관리업/ 소방용품의 품질관리
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            소방시설 자체점검사항 등에 관한 고시[시행 2022. 12.
+                            1]
+                          </li>
+                          <li>
+                            소방시설관리사증 발급 및 소방시설관리업의 점검능력
+                            평가 등의 업무 위탁 고시[시행 2022. 12. 1]
+                          </li>
+                          <li>
+                            소방실무경력 인정범위에 관한 기준 고시[시행 2022.
+                            12. 1]
+                          </li>
+                          <li>
+                            자격수첩 및 경력수첩의 발급절차 등에 관한 기준[시행
+                            2022. 12. 1]
+                          </li>
+                          <li>
+                            소방시설등 표준자체점검비 산정기준 및 공표방법 등에
+                            관한 고시[시행 2022. 12. 1]
+                          </li>
+                          <li>소방시설의 내진설계 기준[시행 2022. 12. 1]</li>
+                          <li>방염성능기준[시행 2022. 12. 1]</li>
+                          <li>
+                            방염제품의 성능인증 및 제품검사의 기술기준[시행
+                            2023. 3. 9.]
+                          </li>
+                          <li>
+                            소방시설관리업 점검능력 평가 등 업무위탁 및 수탁기관
+                            지정 고시[시행 2022. 12. 1]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="https://www.law.go.kr/법령/소방시설설치및관리에관한법률"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/소방시설설치및관리에관한법률 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행령"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행규칙"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/소방시설설치및관리에관한법률시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary"
+                        >공공기관의 소방안전관리에 관한 규정</span
+                      >
+                    </dt>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="https://www.law.go.kr/법령/공공기관의소방안전관리에관한규정"
+                        target="_blank"
+                        title="https://www.law.go.kr/법령/공공기관의소방안전관리에관한규정 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc; min-width: 120px"
+                        >행정규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary">위험물안전관리법</span>
+                    </dt>
+                    <dd>
+                      위험물시설의 설치 및 변경/ 위험물시설의 안전관리/ 위험물의
+                      운반 등/ 감독 및 조치명령
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙[시행
+                            2022. 4. 29]
+                          </li>
+                          <li>
+                            고강도 콘크리트 기둥·보의 내화성능 관리기준[시행
+                            2008. 7. 21]
+                          </li>
+                          <li>
+                            건축자재등 품질인정 및 관리기준[시행 2023. 1. 9]
+                          </li>
+                          <li>
+                            도로터널 방재·환기시설 설치 및 관리지침[시행 2021.
+                            12. 2]
+                          </li>
+                          <li>
+                            발코니 등의 구조변경절차 및 설치기준[시행 2018. 12.
+                            7]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/위험물안전관리법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/위험물안전관리법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/위험물안전관리법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/위험물안전관리법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/위험물안전관리법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/위험물안전관리법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary">소방시설공사업법</span>
+                    </dt>
+                    <dd>
+                      소방시설업/ 소방시설공사/ 소방기술자/ 소방기술 심의위원회
+                      및 소방시설업자안전원
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            소방기술자 실무교육 기준 고시 [시행 2020. 1. 28]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/소방시설공사업법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방시설공사업법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/소방시설공사업법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방시설공사업법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/소방시설공사업법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/소방시설공사업법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary"
+                        >다중이용업소의 안전관리에 관한 특별법</span
+                      >
+                    </dt>
+                    <dd>
+                      다중이용업소의 안전관리기본계획/ 허가관청의 통보/
+                      다중이용업주의 화재배상책임보험의 의무가입/ 다중이용업소
+                      안전관리를 위한 기반조성
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            다중이용업주 및 종업원 소방안전교육에 관한 규정
+                            [시행 2019. 9. 11]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/다중이용업소법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/다중이용업소법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/다중이용업소법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/다중이용업소법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/다중이용업소법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/다중이용업소법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary"
+                        >초고층 및 지하연계 복합건물 재난관리에 관한
+                        특별법</span
+                      >
+                    </dt>
+                    <dd>예방 및 대비/ 재난대응 및 지원</dd>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            초고층건축물 등 총괄재난관리자 교육운영기준 [시행
+                            202. 8. 24]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/초고층재난관리법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/초고층재난관리법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/초고층재난관리법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/초고층재난관리법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/초고층재난관리법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/초고층재난관리법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-statute-item">
+                  <dl>
+                    <dt>
+                      법률 (주제) :
+                      <span class="text-primary">건축법</span>
+                    </dt>
+                  </dl>
+                  <dl>
+                    <dt>행정규칙 (관련고시 등 포함) [시행일]</dt>
+                    <dd>
+                      <div class="kfsi-textlist">
+                        <ul>
+                          <li>
+                            건축물의 피난ㆍ방화구조 등의 기준에 관한 규칙[시행
+                            2022. 4. 29.]
+                          </li>
+                          <li>
+                            고강도 콘크리트 기둥·보의 내화성능 관리기준[시행
+                            2008. 7. 21.]
+                          </li>
+                          <li>
+                            건축자재등 품질인정 및 관리기준[시행 2023. 1. 9.]
+                          </li>
+                          <li>
+                            도로터널 방재·환기시설 설치 및 관리지침[시행 2021.
+                            12. 2.]
+                          </li>
+                          <li>
+                            발코니 등의 구조변경절차 및 설치기준[시행 2018. 12.
+                            7.]
+                          </li>
+                          <li>
+                            초고층건축물 등 총괄재난관리자 교육운영기준 [시행
+                            202. 8. 24]
+                          </li>
+                        </ul>
+                      </div>
+                    </dd>
+                  </dl>
+                  <div class="kfsi-statute-item-button">
+                    <strong>법령</strong>
+                    <div class="kfsi-statute-item-button-wrap">
+                      <a
+                        href="http://www.law.go.kr/법령/건축법"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/건축법 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #fafcfc"
+                        >법률</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/건축법%20시행령"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/건축법%20시행령 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        style="background-color: #f2f7f8"
+                        >시행령</a
+                      >
+                      <a
+                        href="http://www.law.go.kr/법령/건축법%20시행규칙"
+                        target="_blank"
+                        title="http://www.law.go.kr/법령/건축법%20시행규칙 (새창 열림)"
+                        class="btn btn-sm btn-outline-secondary"
+                        >시행규칙</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>제휴업체</h2>
+              </div>
+              <a href="US-PS00-05-02-01-10.html" class="kfsi-snb-item"
+                >회원복지몰</a
+              >
+              <a href="US-PS00-05-02-02-10.html" class="kfsi-snb-item"
+                >법률 · 세무</a
+              >
+              <a href="US-PS00-05-02-03-10.html" class="kfsi-snb-item">의료</a>
+              <a href="US-PS00-05-02-04-10.html" class="kfsi-snb-item"
+                >문화·여행·레저</a
+              >
+              <a href="US-PS00-05-02-05-10.html" class="kfsi-snb-item active"
+                >생활·웨딩·안경</a
+              >
+              <a href="US-PS00-05-02-06-10.html" class="kfsi-snb-item">교육</a>
+              <a href="US-PS00-05-02-07-10.html" class="kfsi-snb-item">상조</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">제휴업체</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      생활·웨딩·안경
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>생활·웨딩·안경</h1>
+              </div>
+              <div class="kfsi-welfare kfsi-welfare--tab">
+                <div class="pc">
+                  <div
+                    class="d-flex align-items-end justify-content-between mb-3"
+                  >
+                    <div></div>
+                    <div>
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-welfare-tab">
+                  <ul class="kfsi-welfare-tab-nav" role="tablist">
+                    <li role="presentation">
+                      <button
+                        class="active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        전국
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        광주전남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        울산
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        충북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        전북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab06-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab06-pane"
+                        aria-selected="false"
+                      >
+                        제주
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="mo">
+                    <div class="kfsi-welfare-button mb-6">
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">한국도자기(주)</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 한국도자기 제품 구매시 할인
+                              <ul>
+                                <li>본차이나 제품 : 45% 할인</li>
+                                <li>프라우나 제품 : 20% 할인</li>
+                                <li>기타 제품 : 10% 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>문의전화 : 043-279-9525</li>
+                            <li>
+                              매장안내 :
+                              <a
+                                href="http://group.hankook.com/default/mp6/mp6_sub3.php?sub=03&com_board_category_code=c1"
+                                target="_blank"
+                                title="http://group.hankook.com/default/mp6/mp6_sub3.php?sub=03&com_board_category_code=c1 (새창 열림)"
+                                >http://group.hankook.com/default/mp6/mp6_sub3.php?sub=03&com_board_category_code=c1</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">셀로니아 줄기세포 화장품</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>회원 전용 특가 쿠폰 제공</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              사이트 주소 :
+                              <a
+                                href="https://www.celonia.co.kr/"
+                                target="_blank"
+                                title="www.celonia.co.kr (새창 열림)"
+                                >www.celonia.co.kr</a
+                              >
+                              (※ 회원가입 필수)
+                            </li>
+                            <li>
+                              문의전화 : 02-5534-119 (※ 회원 가입 후 전화 문의시
+                              쿠폰 부여)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">안경나라 광주우산점</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>콘텍트렌즈·드림렌즈의 20％~30％ 할인</li>
+                                <li>안경렌즈·안경테의 10％~30％ 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원(배우자, 직계가족 포함)</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="https://www.aknara.co.kr/main/index.html"
+                                target="_blank"
+                                title="www.aknara.co.kr (새창 열림)"
+                                >www.aknara.co.kr</a
+                              >
+                            </li>
+                            <li>주소 : 광주 북구 동문대로 131</li>
+                            <li>문의전화 : 062-265-6233</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">울산 플라워뱅크</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>내용 : 화환, 관엽 등 특가상품 제공</li>
+                            <li>대상 :안전원 회원(가족 포함)</li>
+                            <li>주소 : 울산 남구 돋질로 72</li>
+                            <li>문의전화 : 052-271-2446</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">안경매니져 사창점</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>(안경) 기존 30％ 추가 10％ 할인</li>
+                                <li>(콘택트렌즈) 기존 30％ 추가 10％ 할인</li>
+                                <li>(선글라스) 기존 50％ 추가 10％ 할인</li>
+                              </ul>
+                            </li>
+                            <li>대상 : 안전원 회원(직계가족 포함)</li>
+                            <li>주소 : 충북 청주시 서원구 사직대로 86</li>
+                            <li>문의전화 : 043-265-4132</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab05-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab05"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">hi-office</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : Hi-office 사무용 가구 20％ 이상 할인
+                              (FURSYS, SIDIZ, KOAS, 현대LIVART 등)
+                            </li>
+                            <li>대상 : 전북지역 안전원 회원 및 가족</li>
+                            <li>주소 : 전라북도 전주시 덕진구 송천중앙로 6</li>
+                            <li>문의전화 : 063-273-6222</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab06-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab06"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">오늘은 녹차한잔(쇼핑몰&카페)</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 직접 생산하는 녹차류 구입 및카페 이용 시
+                              10％~30％ 할인(단, 행사상품 제외)
+                            </li>
+                            <li>대상 : 안전원 회원 및 회원가족</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://www.onulun.com"
+                                target="_blank"
+                                title="http://www.onulun.com (새창 열림)"
+                                >http://www.onulun.com</a
+                              >
+                            </li>
+                            <li>주소 : 제주 서귀포시 표선면 중산간동로 4772</li>
+                            <li>문의전화 : 064-787-2254~5</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">금호타이어 타이어프로 대리점</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 타이어 구매 시 할인
+                              <ul>
+                                <li>
+                                  제품 구매 시 휠 얼라이먼트 무상(4본) 및
+                                  50%(2본) 할인
+                                </li>
+                                <li>구매 이후 방문 시 펑크 수리 무료</li>
+                                <li>
+                                  타이어 마모 수명 보증 제도 실시(대리점 문의)
+                                </li>
+                                <li>
+                                  구매 장착한 날로부터 2년 이내, 마모 50% 내에
+                                  코드 절상이 발생할 경우 새제품으로 교환(대리점
+                                  문의)
+                                </li>
+                              </ul>
+                            </li>
+                            <li>대상 : 협회 회원 및 직원</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="https://www.tirepro.co.kr/"
+                                target="_blank"
+                                title="www.tirepro.co.kr (새창 열림)"
+                                >www.tirepro.co.kr</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="kfsi-textlist mt-5">
+                          [타이어프로 하나로점]
+                          <ul class="mt-1">
+                            <li>주소 : 제주 제주시 남광로 220</li>
+                            <li>문의전화 : 064-727-4007</li>
+                          </ul>
+                        </div>
+                        <div class="kfsi-textlist mt-5">
+                          [타이어프로 재일점]
+                          <ul class="mt-1">
+                            <li>주소 : 제주 제주시 주수길 2</li>
+                            <li>문의전화 : 064-746-0100</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

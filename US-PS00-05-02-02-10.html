@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>제휴업체</h2>
+              </div>
+              <a href="US-PS00-05-02-01-10.html" class="kfsi-snb-item"
+                >회원복지몰</a
+              >
+              <a href="US-PS00-05-02-02-10.html" class="kfsi-snb-item active"
+                >법률 · 세무</a
+              >
+              <a href="US-PS00-05-02-03-10.html" class="kfsi-snb-item">의료</a>
+              <a href="US-PS00-05-02-04-10.html" class="kfsi-snb-item"
+                >문화·여행·레저</a
+              >
+              <a href="US-PS00-05-02-05-10.html" class="kfsi-snb-item"
+                >생활·웨딩·안경</a
+              >
+              <a href="US-PS00-05-02-06-10.html" class="kfsi-snb-item">교육</a>
+              <a href="US-PS00-05-02-07-10.html" class="kfsi-snb-item">상조</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전원소개</li>
+                    <li class="breadcrumb-item">제휴업체</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      법률 · 세무
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>법률 · 세무</h1>
+              </div>
+              <div class="kfsi-welfare kfsi-welfare--tab">
+                <div class="pc">
+                  <div
+                    class="d-flex align-items-end justify-content-between mb-3"
+                  >
+                    <div></div>
+                    <div>
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-welfare-tab">
+                  <ul class="kfsi-welfare-tab-nav" role="tablist">
+                    <li role="presentation">
+                      <button
+                        class="active"
+                        id="tab01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab01-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab01-pane"
+                        aria-selected="true"
+                      >
+                        전국
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab02-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab02-pane"
+                        aria-selected="false"
+                      >
+                        서울
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab03-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab03-pane"
+                        aria-selected="false"
+                      >
+                        부산
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab04-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab04-pane"
+                        aria-selected="false"
+                      >
+                        대구경북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab05-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab05-pane"
+                        aria-selected="false"
+                      >
+                        인천
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab06-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab06-pane"
+                        aria-selected="false"
+                      >
+                        광주전남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab07"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab07-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab07-pane"
+                        aria-selected="false"
+                      >
+                        대전충남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab08"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab08-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab08-pane"
+                        aria-selected="false"
+                      >
+                        울산
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab09"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab09-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab09-pane"
+                        aria-selected="false"
+                      >
+                        경기
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab10"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab10-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab10-pane"
+                        aria-selected="false"
+                      >
+                        경기북부
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab11"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab11-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab11-pane"
+                        aria-selected="false"
+                      >
+                        강원
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab12"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab12-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab12-pane"
+                        aria-selected="false"
+                      >
+                        충북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab13"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab13-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab13-pane"
+                        aria-selected="false"
+                      >
+                        전북
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab14"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab14-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab14-pane"
+                        aria-selected="false"
+                      >
+                        경남
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="tab15"
+                        data-bs-toggle="tab"
+                        data-bs-target="#tab15-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="tab15-pane"
+                        aria-selected="false"
+                      >
+                        제주
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="mo">
+                    <div class="kfsi-welfare-button mb-6">
+                      <button type="button" class="btn btn-success">
+                        신청자격 안내 및 회원확인서 발급
+                      </button>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab01-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab01"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법무법인 마중</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+
+                              <ul>
+                                <li>
+                                  (법률 상담료) 최초 30분 무료, 이후 시간당
+                                  10만원(VAT 포함)
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                    정상 수임료의 10% 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 :
+                              <a
+                                href="majunglaw.kr"
+                                target="_blank"
+                                title="majunglaw.kr (새창열림)"
+                                >majunglaw.kr</a
+                              >
+                              참고
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab02-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab02"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법률서비스 안심</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (법률 상담료) 최초 30분 무료, 이후 시간당
+                                  11만원(VAT 포함)
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                    정상 수임료의 10％ 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>문의 : 02.850.1392 서울동부지부</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">세무법인 탑</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 일반 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세) 대행은 보수표의
+                              80％를 적용
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원(가족 포함)</li>
+                            <li>주소 : 서울 영등포구 양산로 79</li>
+                            <li>문의전화 : 02-3667-4800</li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 회원 혜택을 받기 위해서는 회원확인서를 제시하여야
+                            한다.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab03-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab03"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법무법인 백경</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (법률 상담료) 최초 30분 무료, 이후 10분당
+                                  1만원 (VAT 포함)
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소 : 부산 연제구 월드컵대로243번길 19 거제
+                              동원타원빌딩 902호
+                            </li>
+                            <li>문의전화 : 0507-1419-3427</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법무법인 인화국제</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                    정상 수임료의 10％ 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 : 부산 연제구 법원남로15번길 6, 은하빌딩 2층
+                            </li>
+                            <li>문의전화 : 051-503-0037 (황주환 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">변호사 김용규 법률사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                    정상 수임료의 10％ 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>주소 : 부산 연제구 법원로 12, 로윈타워 4층</li>
+                            <li>문의전화 : 051-506-6770 (김용규 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">이동규 세무회계사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 일반 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세) 대행은 보수표의
+                              80％를 적용
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>주소 : 부산 사상구 학감대로 266, 3층</li>
+                            <li>문의전화 : 070-7010-7850</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab04-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab04"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법무법인 평</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (법률 상담료) 최초 30분 무료, 이후 시간당
+                                  5만원(VAT 포함)
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 20％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>주소 : 대구 중구 동덕로 115, 4층</li>
+                            <li>문의전화 : 053-719-0230</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab05-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab05"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법무법인 正</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 30％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소 : 인천 남구 소성로 171(학익동), 로시스빌딩
+                              3,5,6층
+                            </li>
+                            <li>문의전화 : 032-861-7002 (임판 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">인일회계법인</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 일반 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세 등) 대행료는
+                              사건의 내용·난이도·관할 등을 고려한 정상 보수료의
+                              10％~20％ 할인
+                              <div class="text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소 : 인천 남동구 남동대로215번길 12, 302호
+                            </li>
+                            <li>문의전화 : 032-822-9514 (전대철 공인회계사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab06-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab06"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">정경일 법률사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려하여
+                                  통상 수임료 기준 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>주소 : 전남 해남군 해남읍 중앙1로 331</li>
+                            <li>문의전화 : 061-537-3600 (정경일 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법무법인 로컴</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을
+                                    고려하여 통상 수임료 기준 10％ 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>주소 : 광주 동구 준법로 25, 3층</li>
+                            <li>
+                              홈페이지 :
+                              <a
+                                href="http://law-com.co.kr"
+                                target="_blank"
+                                title="http://law-com.co.kr (새창열림)"
+                                >http://law-com.co.kr</a
+                              >
+                            </li>
+                            <li>문의전화 : 062-714-1424(박성찬 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab07-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab07"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법률사무소 정립</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>주소 : 충남 아산시 시민로 461, 정우빌딩 5층</li>
+                            <li>문의전화 : 041-547-9457</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법무법인 중부</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며,예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려하여
+                                  통상 수임료 기준 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>
+                              주소 : 충남 천안시 동남구 신부7길 7, 302호(신부동,
+                              중앙빌딩)
+                            </li>
+                            <li>문의전화 : 041-582-7200</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">유한회사 대신세무법인</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용 : 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세) 대행은 보수표의
+                              80％를 적용
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며, 상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>
+                              주소 : 대전 유성구 죽동로297번길 68, 6층(죽동,
+                              CNU프라자)
+                            </li>
+                            <li>
+                              문의전화 : 010-3411-0212 (안상규 대표 세무사)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab08-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab08"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">신영 회계법인</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (이용료) "안전원"의 임직원 및 회원을
+                                  대상(직계가족 포함)으로 이용료(10%할인)
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>주소 : 울산 남구 돋질로 97</li>
+                            <li>문의전화 : 052-267-4200</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab09-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab09"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">로엔법률사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    7만원
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10~15％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>주소 : 경기도 평택시 평남로 1023 502호</li>
+                            <li>문의전화 : 031-647-6630</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab10-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab10"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">경기북부지방변호사회(31개소)</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>법률사무소명 및 문의전화 : 첨부파일 참고</li>
+                          </ul>
+                          <div class="mt-4">
+                            <a
+                              href="/common/file/Download.do?repositoryId=board&amp;attachId=25559032087719000&amp;fileSeqno=1"
+                              target="_blank"
+                              class="btn btn-primary"
+                              title="법률사무소명 및 문의전화 첨부파일이 다운로드 됩니다."
+                              >첨부파일 다운로드</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">변호사 원희석</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며,예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 : 경기도 의정부시 녹양로 34번길 61, 102호
+                            </li>
+                            <li>문의전화 : 031-874-0087</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab11-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab11"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">변호사 안현희 법률 사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>분쟁해결을 위한 자문</li>
+                                <li>(수임료) 법률서비스 20%할인</li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소 : 강원특별자치도 원주시 만대로 200-22,
+                              블루타워 301호
+                            </li>
+                            <li>번호 : 1577-0448</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab12-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab12"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법률사무소 대청</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 10분 무료, 이후 30분당
+                                    10만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 : 청주시 서원구 산남로 62번길 35, 404호
+                            </li>
+                            <li>문의전화 : 043-295-0328 (변호사 : 박진현)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법무법인 함께걷기 변호사 오해진</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연 1회로 한정되며, 예약 후
+                                      방문 상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료 기준 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야 하며,상담 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 : 충북 청주시 서원구 산남로62번길 15,
+                              306호(산남동, 두꺼비빌딩)
+                            </li>
+                            <li>문의전화 : 043-285-7555 (오해진 변호사)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab13-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab13"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">전라북도지방변호사회</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>법률사무소명 및 문의전화 : 첨부파일 참고</li>
+                          </ul>
+                          <div class="mt-4">
+                            <a
+                              href="/common/file/Download.do?repositoryId=board&amp;attachId=33769028875522083&amp;fileSeqno=1"
+                              target="_blank"
+                              class="btn btn-primary"
+                              title="법률사무소명 및 문의전화 첨부파일이 다운로드 됩니다."
+                              >첨부파일 다운로드</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법무법인 드림</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며,예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려하여
+                                  통상 수임료 기준 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원(가족 포함) 및 직원</li>
+                            <li>
+                              주소 : 전북 전주시 덕진구 들사평서로 32, 2층
+                            </li>
+                            <li>
+                              문의전화 : 010-5872-2123 (엄윤상 대표 변호사)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab14-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab14"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">법무법인 샤</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  (수임료) 기본상담료 20%할인, 수임 계약체결시
+                                  기본상담료 무료 및 수임료 10% 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>
+                              주소: 경남 창원시 창이대로689번길 4-5(세영빌딩)
+                              103, 104호
+                            </li>
+                            <li>번호: 0507-1409-4120</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">변호사이상희 법률사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며,예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                  정상 수임료의 10％ 할인
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>
+                              주소 : 경남 창원시 성산구 창이대로695, 더원빌딩
+                              501호
+                            </li>
+                            <li>문의전화 : 055-267-7000</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">미래로세무법인(상남지사)</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              혜택 : 일반 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세) 대행은 보수표의
+                              80％를 적용
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원(가족 포함)</li>
+                            <li>
+                              주소 : 경남 창원시 성산구 단정로 9, 토토스빌딩
+                              503호
+                            </li>
+                            <li>문의전화 : 055-281-4567</li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 회원 혜택을 받기 위해서는 회원확인서를 제시하여야
+                            한다.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="tab15-pane"
+                      role="tabpanel"
+                      aria-labelledby="tab15"
+                      tabindex="0"
+                    >
+                      <h5 class="kfsi-h5">광장제주합동법무사</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              혜택 : 법무사 모든 업무 기본 수임료의 30% 할인
+                            </li>
+                            <li>대상 : 안전원 회원</li>
+                            <li>주소 : 제주시 구남동4길 3, 3층</li>
+                            <li>문의전화 : 064-723-1111</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">공인회계사 한철호사무소</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              혜택 : 일반 세무·회계 관련 상담은 무료로 실시하고,
+                              세무신고(소득세, 법인세, 부가세) 대행은 보수표의
+                              80％를 적용
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원(가족 포함)</li>
+                            <li>주소 : 제주 제주시 연삼로 473</li>
+                            <li>문의전화 : 064-723-4321</li>
+                          </ul>
+                          <div class="py-1 text-danger">
+                            ※ 회원 혜택을 받기 위해서는 회원확인서를 제시하여야
+                            한다.
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="kfsi-h5">법률사무소 청어람</h5>
+                      <div class="kfsi-welfare-tab-text">
+                        <div class="kfsi-textlist">
+                          <ul>
+                            <li>
+                              내용
+                              <ul>
+                                <li>
+                                  <div>
+                                    (법률 상담료) 최초 30분 무료, 이후 시간당
+                                    5만원(VAT 포함)
+                                    <div class="text-danger">
+                                      ※ 회원 1인당 연1회로 한정되며,예약 후
+                                      방문상담만 가능(전화상담 불가)
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div>
+                                    (수임료) 사건의 내용·난이도·관할 등을 고려한
+                                    정상 수임료의 10％ 할인
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="py-1 text-danger">
+                                ※ 회원 혜택을 받기 위해서는 최초 상담예약 시
+                                회원임을 밝혀야하며, 방문 시 회원확인서를
+                                제시하여야 한다.
+                              </div>
+                            </li>
+                            <li>대상 : 안전원 회원 및 직원</li>
+                            <li>주소 : 제주 제주시 중앙로 316</li>
+                            <li>문의전화 : 064-726-9550</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

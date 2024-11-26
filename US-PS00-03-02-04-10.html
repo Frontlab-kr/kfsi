@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>대국민홍보</h2>
+              </div>
+              <a href="US-PS00-03-02-01-10.html" class="kfsi-snb-item"
+                >캠페인영상</a
+              >
+              <div class="kfsi-snb-item-sub">
+                <a href="javascript:void(0)" class="kfsi-snb-item"
+                  >소방포스터</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a
+                    href="US-PS00-03-02-02-10.html"
+                    class="kfsi-snb-item-sub-item"
+                    >소방포스터</a
+                  >
+                  <a
+                    href=""
+                    class="kfsi-snb-item-sub-item"
+                    target="_blank"
+                    title="(새창 열림)"
+                  >
+                    <span
+                      >소방표어<i class="ico-newwindow-black ms-2"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+              <div class="kfsi-snb-item-sub">
+                <a href="javascript:void(0)" class="kfsi-snb-item"
+                  >소방안전플러스</a
+                >
+                <div class="kfsi-snb-item-sub-list">
+                  <a
+                    href="US-PS00-03-02-03-10.html"
+                    class="kfsi-snb-item-sub-item"
+                    >소방안전지</a
+                  >
+                </div>
+              </div>
+              <a href="US-PS00-03-02-04-10.html" class="kfsi-snb-item active"
+                >외국인 소방교육자료</a
+              >
+              <a href="US-PS00-03-02-05-10.html" class="kfsi-snb-item"
+                >소방안전 매뉴얼</a
+              >
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">소방정보센터</li>
+                    <li class="breadcrumb-item">대국민홍보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      외국인 소방교육자료
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>외국인 소방교육자료</h1>
+              </div>
+
+              <div class="kfsi-guide">
+                국내 체류중인 외국인의 소방안전의식 향상 및 안전사각 지대 해소를
+                위하여 다양한 언어로 화재안전 예방교육 자료를 제공하고
+                있습니다.<br />
+                Educational resources for fire prevention are provided in
+                various foreign languages to reduce fire risk and raise fire
+                safety awareness of foreigners.
+                <div class="kfsi-guide-head">
+                  <div class="kfsi-guide-head__title">
+                    알기쉬운 소방안전 가이드 eBook
+                  </div>
+                  <div class="kfsi-guide-head-item">
+                    <div class="kfsi-guide-head-item-thumb">
+                      <div class="pc">
+                        <img
+                          src="./assets/images/infocenter/data-foreigners-01.png"
+                          alt="A SIMPLE GUIDE TO FIRE SAFETY"
+                        />
+                      </div>
+                      <div class="mo">
+                        <img
+                          src="./assets/images/infocenter/data-foreigners-01_mo.png"
+                          alt="A SIMPLE GUIDE TO FIRE SAFETY"
+                        />
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-head-item-info">
+                      <strong>영어 English</strong>
+                      <div class="kfsi-guide-head-item-button">
+                        <a
+                          href="javascript:void(0)"
+                          onclick="open_ebook('book','english','');return false;"
+                          title="영어 English eBook (새창 열림)"
+                          class="btn btn-outline-secondary"
+                        >
+                          <i class="ico-eye"></i>
+                          바로보기
+                        </a>
+                        <button type="button" class="btn btn-info" title="">
+                          <i class="ico-download"></i>
+                          Download
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-guide-list">
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-02.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>중국어 Chinese</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-021.png"
+                            alt="简单易懂的消防安全指南"
+                          /> -->
+                          简单易懂的消防安全指南
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','chinese','');return false;"
+                        title="중국어 Chinese eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-04.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>베트남어 Vietnamese</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-041.png"
+                            alt="Hướng dẫn chống hỏa hoạn"
+                          /> -->
+                          Hướng dẫn chống hỏa hoạn
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','vietnam','');return false;"
+                        title="베트남어 Vietnamese eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-03.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>태국어 Thai</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-031.png"
+                            alt="คำแนะนำด้านความปลอดภัยเมื่อเกิดอัคคีภัย"
+                          /> -->
+                          คำแนะนำด้านความปลอดภัยเมื่อเกิดอัคคีภัย
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','thai','');return false;"
+                        title="태국어 Thai eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-05.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>우즈베크어 Uzbek</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-051.png"
+                            alt="Tushunishga oson Yong’in xavfsizlizi bo’yicha qo’llanma"
+                          /> -->
+                          Tushunishga oson Yong’in xavfsizlizi bo’yicha
+                          qo’llanma
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','uzbek','');return false;"
+                        title="우즈베크어 Uzbek eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-06.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>캄보디아어 Khmer</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-061.png"
+                            alt="មានការណែនាំអំពីសុវត្ថិភាពផ្ទាល់អគ្គិភ័យ"
+                          /> -->
+                          មានការណែនាំអំពីសុវត្ថិភាពផ្ទាល់អគ្គិភ័យ
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','khmer','');return false;"
+                        title="캄보디아어 Khmer eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-08.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>네팔어 Nepal</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-071.png"
+                            alt="बुझ्न सजिलो आगो सुरक्षा गाइड"
+                          /> -->
+                          बुझ्न सजिलो आगो सुरक्षा गाइड
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','nepal','');return false;"
+                        title="네팔어 Nepal eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-09.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>러시아어 Russia</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-081.png"
+                            alt="Понятное руководство по пожарной безопасности"
+                          /> -->
+                          Понятное руководство по пожарной безопасности
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','russia','');return false;"
+                        title="러시아어 Russia eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-10.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong
+                          >미얀마어 Republic of the Union of Myanmar</strong
+                        >
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-091.png"
+                            alt="လွယ်ကူစွာ နားလည်နိုင်သော မီးလောင်ခြင်း လုံခြုံရေးလမ်းညွှန်"
+                          /> -->
+                          လွယ်ကူစွာ နားလည်နိုင်သော မီးလောင်ခြင်း
+                          လုံခြုံရေးလမ်းညွှန်
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','myanmar','');return false;"
+                        title="미얀마어 Republic of the Union of Myanmar eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                  <div class="kfsi-guide-list-item">
+                    <div class="kfsi-guide-list-item-thumb">
+                      <img
+                        src="./assets/images/infocenter/data-foreigners-11.png"
+                        alt=""
+                      />
+                      <div class="kfsi-guide-list-item-info">
+                        <strong>필리핀어 Philippines</strong>
+                        <p>
+                          <!-- <img
+                            src="/assets/images/infocenter/data-foreigners-101.png"
+                            alt="Fire Safety Guide na Madaling Maunawaan "
+                          /> -->
+                          Fire Safety Guide na Madaling Maunawaan
+                        </p>
+                      </div>
+                    </div>
+                    <div class="kfsi-guide-list-item-button">
+                      <a
+                        href="javascript:void(0)"
+                        onclick="open_ebook('book','philippines','');return false;"
+                        title="필리핀어 Philippines eBook (새창 열림)"
+                        class="btn btn-outline-secondary"
+                      >
+                        <i class="ico-eye"></i>
+                        바로보기
+                      </a>
+                      <button type="button" class="btn btn-info" title="">
+                        <i class="ico-download"></i>
+                        Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
