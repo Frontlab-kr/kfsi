@@ -114,6 +114,11 @@ body {
     z-index: 60;
   }
 }
+@media screen and (max-width: $mobileWidth) {
+  .mo-justify-content-center {
+    justify-content: center !important;
+  }
+}
 .kfsi {
   // overflow-x: hidden;
   @media screen and (max-width: $mobileWidth) {
@@ -5352,15 +5357,15 @@ body {
       align-items: center;
       justify-content: space-between;
       margin-top: 24px;
-      &:last-child {
-        padding: 24px 0 0 0;
-      }
+      // &:last-child {
+      //   padding: 24px 0 0 0;
+      // }
       p {
         display: flex;
         gap: 16px;
         margin: 0;
         .btn {
-          min-width: 100px;
+          min-width: 140px;
         }
       }
     }
@@ -5608,7 +5613,7 @@ body {
     }
     &-write {
       &__title {
-        padding: 0 0 13px 0;
+        padding: 0 0 12px 0;
         font-size: 20px;
         font-weight: bold;
         font-stretch: normal;
@@ -5624,8 +5629,8 @@ body {
           width: 100%;
           tbody {
             th {
-              height: 51px;
-              padding: 16px 16px;
+              height: 50px;
+              padding: 14px 24px 0;
               border-right: 1px solid #ccc;
               border-bottom: 1px solid #ccc;
               background-color: #f7f7f7;
@@ -5638,10 +5643,11 @@ body {
               text-align: left;
               color: #000;
               vertical-align: top;
+              word-break: keep-all;
             }
             td {
-              height: 51px;
-              padding: 6px 16px;
+              height: 50px;
+              padding: 7px 16px;
               border-bottom: 1px solid #ccc;
               font-size: 16px;
               font-weight: normal;
@@ -5653,6 +5659,59 @@ body {
               color: #000;
             }
           }
+        }
+      }
+      &-subtable {
+        table {
+          tbody {
+            th,
+            td {
+              height: auto;
+              padding: 3px 0;
+              background: none;
+              border: 0;
+            }
+            th {
+              padding-top: 9px;
+            }
+          }
+        }
+        &-input {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 6px;
+          &:first-child {
+            margin-top: 0;
+          }
+          &__row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+          }
+        }
+      }
+      &-checkbox-list {
+        display: flex;
+        gap: 24px;
+      }
+      &-checkbox-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 12px;
+        padding: 7px 0;
+        &--columns3 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      &-date {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .form-control {
+          min-width: auto !important;
+          width: auto !important;
         }
       }
     }
@@ -5985,20 +6044,26 @@ body {
       &-button {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-top: 24px;
-        &.mo-justify-content-center {
-          justify-content: center;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 8px;
+        &--length3 {
+          flex-direction: column;
+          p {
+            flex-direction: column;
+          }
         }
         &:last-child {
-          padding: 24px 0 0 0;
+          //padding: 24px 0 0 0;
         }
         p {
           display: flex;
-          gap: 16px;
+          gap: 8px;
           margin: 0;
+          width: 100%;
           .btn {
             min-width: 140px;
+            width: 100%;
           }
         }
       }
@@ -6240,11 +6305,11 @@ body {
       &-write {
         &__title {
           padding: 0 0 13px 0;
-          font-size: 20px;
+          font-size: 17px;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
-          line-height: 1.2;
+          line-height: 1.41;
           letter-spacing: normal;
           text-align: left;
           color: #032c5e;
@@ -6253,10 +6318,16 @@ body {
           border-top: 2px solid #032c5e;
           table {
             width: 100%;
+            colgroup {
+              display: none;
+            }
             tbody {
               th {
-                height: 51px;
-                padding: 16px 16px;
+                width: 110px;
+                max-width: 110px;
+                min-width: 110px;
+                height: 50px;
+                padding: 14px 10px;
                 border-right: 1px solid #ccc;
                 border-bottom: 1px solid #ccc;
                 background-color: #f7f7f7;
@@ -6269,10 +6340,11 @@ body {
                 text-align: left;
                 color: #000;
                 vertical-align: top;
+                word-break: keep-all;
               }
               td {
-                height: 51px;
-                padding: 6px 16px;
+                height: 50px;
+                padding: 7px 10px;
                 border-bottom: 1px solid #ccc;
                 font-size: 16px;
                 font-weight: normal;
@@ -6282,8 +6354,72 @@ body {
                 letter-spacing: normal;
                 text-align: left;
                 color: #000;
+                word-break: keep-all;
               }
             }
+          }
+          .form-control,
+          .form-select {
+            min-width: auto !important;
+            width: 100% !important;
+          }
+        }
+        &-subtable {
+          table {
+            colgroup {
+              display: none;
+            }
+            tbody {
+              th,
+              td {
+                min-width: auto;
+                height: auto;
+                padding: 3px 0;
+                background: none;
+                border: 0;
+                vertical-align: middle;
+              }
+              th {
+                padding: 8px 14px 0 0;
+                vertical-align: top;
+              }
+            }
+          }
+          &-input {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 6px;
+            &__row {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              .form-control {
+                min-width: auto !important;
+                width: 60px !important;
+              }
+            }
+          }
+        }
+        &-checkbox-list {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        &-checkbox-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          column-gap: 8px;
+          row-gap: 8px;
+        }
+        &-date {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 4px;
+          .form-control {
+            min-width: auto !important;
+            width: auto !important;
           }
         }
       }
@@ -7707,6 +7843,74 @@ body {
             span {
               min-width: 30px;
               text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-modal {
+    &-user {
+      &__title {
+        margin-bottom: 12px;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+      }
+      &-form {
+        padding: 16px 40px;
+        border-radius: 20px;
+        background-color: #f7f7f7;
+        table {
+          width: 100%;
+          th,
+          td {
+            padding: 8px 0;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000;
+          }
+        }
+      }
+      @media screen and (max-width: $mobileWidth) {
+        &__title {
+          margin-bottom: 12px;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.6;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+        }
+        &-form {
+          padding: 16px 16px;
+          border-radius: 20px;
+          background-color: #f7f7f7;
+          table {
+            width: 100%;
+            th,
+            td {
+              padding: 8px 0;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              text-align: left;
+              color: #000;
             }
           }
         }

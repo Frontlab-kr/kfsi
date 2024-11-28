@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>견적신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item active">소방시설점검</a>
+              <a href="" class="kfsi-snb-item">연구실 정밀안전진단</a>
+              <a href="" class="kfsi-snb-item">화재안전진단</a>
+              <a href="" class="kfsi-snb-item">화재예방안전진단</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">화재안전진단</li>
+                    <li class="breadcrumb-item">견적신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      소방시설점검
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>소방시설점검</h1>
+              </div>
+              <div class="kfsi-box bg-light mt-10">
+                개인정보보호법 준수를 위해 견적신청 시 회사정보 외 개인정보를
+                수집하지 않습니다.<br />
+                작성하신 자료는 30일 이후
+                <span class="text-danger">자동삭제</span> 됩니다.
+              </div>
+              <div
+                class="d-flex align-items-center mo-justify-content-center mt-6 mb-2"
+              >
+                <a
+                  href=""
+                  class="btn btn-lg btn-primary"
+                  style="min-width: 200px"
+                  >견적서 작성</a
+                >
+                <div class="pc ms-6">
+                  소방시설점검 신규 견적서 신청을 하세요.
+                </div>
+              </div>
+              <div class="kfsi-board mt-6">
+                <div class="kfsi-board-head">
+                  <div class="kfsi-board-head-start">
+                    <div class="kfsi-board-head-amount">총 10건</div>
+                  </div>
+                  <div class="kfsi-board-head-end">
+                    <div class="kfsi-board-head-search">
+                      <div class="pc">업체명을 검색하세요.</div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="검색어를 입력해 주세요."
+                        title="검색어를 입력해 주세요."
+                      />
+                      <button type="button" class="btn btn-primary">
+                        검색
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board-list">
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">10</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>진행중</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">9</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">8</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">7</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">6</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">5</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">4</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">3</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">2</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="kfsi-board-list-item">
+                    <div class="kfsi-board-list-item-number">1</div>
+                    <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__title">
+                        <p>㈜ 한국*****</p>
+                      </div>
+                      <div class="kfsi-board-list-item-text__info">
+                        <p>
+                          <span>홍*동</span>
+                          <span>2024.09.13</span>
+                          <span>완료</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="kfsi-board-pagination">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item--first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item--prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item--next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item--last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+      "
+    >
+      <a
+        href=""
+        class="btn btn-primary btn-sm"
+        style="width: 120px"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+        >작성자 확인</a
+      >
+      <br />
+      <br />
+      <a
+        href=""
+        class="btn btn-primary btn-sm"
+        style="width: 120px"
+        data-bs-toggle="modal"
+        data-bs-target="#modal02"
+        >작성자 확인</a
+      >
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">작성자 확인</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-modal-user">
+              <div class="kfsi-modal-user__title">
+                점검견적 확인 관련 문의는<br />
+                정보지원과(02-850-1368)로 문의하시기 바랍니다.
+              </div>
+              <div class="kfsi-modal-user-form">
+                <table
+                  summary="회사 정보 입력을 위한 테이블로 회사명, 담당자, 회사 전화번호를 입력할 수 있는 필드를 제공합니다."
+                >
+                  <caption>
+                    회사 정보 입력 테이블
+                  </caption>
+                  <colgroup>
+                    <col style="width: 140px" />
+                    <col style="width: 330px" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>회사명</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          title="회사명을 입력해주세요."
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>담당자</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          title="담당자을 입력해주세요."
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>회사 전화번호</th>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="숫자만 입력 (ex 02267987468)"
+                          title="숫자만 입력 (ex 02267987468)"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5">작성자 확인</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-modal-user">
+              <div class="kfsi-modal-user__title">
+                점검견적 확인 관련 문의는<br />
+                정보지원과(02-2679-8748)로 문의하시기 바랍니다.
+              </div>
+              <div class="kfsi-modal-user-form">
+                <table
+                  summary="회사 정보 입력을 위한 테이블로 회사명, 담당자, 회사 전화번호를 입력할 수 있는 필드를 제공합니다."
+                >
+                  <caption>
+                    회사 정보 입력 테이블
+                  </caption>
+                  <colgroup>
+                    <col style="width: 140px" />
+                    <col style="width: 330px" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>회사명</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          title="회사명을 입력해주세요."
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>담당자</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          title="담당자을 입력해주세요."
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>회사 전화번호</th>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="숫자만 입력 (ex 02267987468)"
+                          title="숫자만 입력 (ex 02267987468)"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              data-bs-dismiss="modal"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

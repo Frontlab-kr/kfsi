@@ -87,6 +87,9 @@ textarea {
   letter-spacing: normal;
   text-align: center;
   text-decoration: none !important;
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 15px;
+  }
   &-round {
     border-radius: 100px;
   }
@@ -109,6 +112,9 @@ textarea {
       color: #000;
     }
   }
+  &-outline-primary {
+    color: #333;
+  }
   &-outline-secondary {
     border: solid 1px #ccc;
     color: #666 !important;
@@ -121,6 +127,12 @@ textarea {
   &-info {
     border: solid 1px #ccc;
     color: #333 !important;
+  }
+  &:disabled,
+  &-disabled {
+    border-color: #eee !important;
+    background-color: #eee !important;
+    color: #999 !important;
   }
 }
 .form-check {
@@ -167,12 +179,12 @@ textarea {
   display: inline-flex;
   align-items: center;
   min-width: 300px;
-  height: 35px;
+  height: 36px;
   padding: 0 16px;
   border-radius: 5px;
   border: solid 1px #ccc;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -180,10 +192,18 @@ textarea {
   letter-spacing: normal;
   text-align: left;
   @media screen and (max-width: $mobileWidth) {
-    min-width: 100%;
+    min-width: auto;
   }
 
   &-lg {
     font-size: 18px;
+  }
+}
+.form-select {
+  height: 36px;
+  font-size: 16px;
+  border: solid 1px #ccc;
+  @media screen and (max-width: $mobileWidth) {
+    min-width: auto;
   }
 }

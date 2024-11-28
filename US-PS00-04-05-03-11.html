@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>견적신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">소방시설점검</a>
+              <a href="" class="kfsi-snb-item">연구실 정밀안전진단</a>
+              <a href="" class="kfsi-snb-item active">화재안전진단</a>
+              <a href="" class="kfsi-snb-item">화재예방안전진단</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">화재안전진단</li>
+                    <li class="breadcrumb-item">견적신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      화재안전진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>화재안전진단</h1>
+              </div>
+              <div class="kfsi-write">
+                <div class="kfsi-box bg-light">
+                  개인정보보호법 준수를 위해 견적신청 시 회사정보 외 개인정보를
+                  수집하지 않습니다.<br />
+                  작성하신 자료는 30일 이후
+                  <span class="text-danger">자동삭제</span> 됩니다.
+                </div>
+                <div class="kfsi-write-item">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write__title">
+                      기본정보
+                      <small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </div>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="담당자 정보와 관련된 입력 필드로 담당자명, 회사 전화번호, 회사 이메일 정보를 입력합니다."
+                      >
+                        <caption>
+                          담당자 정보 입력 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 730px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>담당자명 <span class="text-danger">*</span></th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control w-auto"
+                                placeholder="담당자명을 입력해 주세요."
+                                title="담당자명을 입력해 주세요."
+                                value="홍길동"
+                                readonly
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>회사 전화번호</th>
+                            <td>
+                              <input
+                                type="number"
+                                class="form-control w-auto"
+                                placeholder="숫자만 입력 (ex 02267987468)"
+                                title="숫자만 입력 (ex 02267987468)"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              회사 E-mail <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="kfsi-email">
+                                <div class="kfsi-email-form">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="E-mail 입력"
+                                  />
+                                  <select
+                                    class="form-select w-auto"
+                                    aria-label="E-mail 선택"
+                                    title="E-mail 선택"
+                                  >
+                                    <option selected>선택</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hotmail.com">
+                                      hotmail.com
+                                    </option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="self">직접입력</option>
+                                  </select>
+                                </div>
+                                <small class="text-danger">
+                                  ※ 개인 E-mail 사용 불가
+                                </small>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-write-item">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write__title">
+                      업체현황
+                      <small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </div>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="진단 종류, 업체명, 건물 주소, 용도, 건축물 현황, 건축물 사용 승인일, 소방시설 현황, 파일 첨부 및 간단한 내용을 입력하는 폼 테이블입니다."
+                      >
+                        <caption>
+                          진단 및 건축물 정보 입력 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 730px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>
+                              진단 종류 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="kfsi-board-write-checkbox-grid">
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-01"
+                                  >
+                                    기존건축물 진단
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-02"
+                                  >
+                                    신규건축물 진단 (계획단계)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-03"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-03"
+                                  >
+                                    소방시설점검 포함
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-04"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-04"
+                                  >
+                                    화재 · 피난모델링
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-05"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-05"
+                                  >
+                                    기타
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>업체명 <span class="text-danger">*</span></th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control w-auto"
+                                placeholder="업체명을 입력해 주세요."
+                                title="업체명을 입력해 주세요."
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              건물 주소 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  style="min-width: 160px; width: 160px"
+                                  title="우편번호 입력"
+                                />
+                                <a href="" class="btn btn-info"
+                                  >우편번호 찾기</a
+                                >
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control mt-2"
+                                title="상세 주소"
+                              />
+                              <input
+                                type="text"
+                                class="form-control mt-2"
+                                title="나머지 주소"
+                                placeholder="나머지 주소"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>용도 <span class="text-danger">*</span></th>
+                            <td>
+                              <select
+                                class="form-select w-auto"
+                                aria-label="용도 선택"
+                                title="용도 선택"
+                              >
+                                <option value="">선택</option>
+                                <option value="1">공공기관(학교제외)</option>
+                                <option value="2">학교</option>
+                                <option value="3">업무시설</option>
+                                <option value="4">판매 및 영업시설</option>
+                                <option value="5">위락시설</option>
+                                <option value="6">공동주택</option>
+                                <option value="7">공장</option>
+                                <option value="8">창고</option>
+                                <option value="9">주상복합</option>
+                                <option value="10">노유자시설</option>
+                                <option value="11">의료시설</option>
+                                <option value="12">문화집회 및 운동시설</option>
+                                <option value="13">숙박시설</option>
+                                <option value="14">관광휴게시설</option>
+                                <option value="15">동식물관련시설</option>
+                                <option value="16">위생 등 관련시설</option>
+                                <option value="17">통신촬용시설</option>
+                                <option value="18">지하가</option>
+                                <option value="19">문화재</option>
+                                <option value="20">발전소</option>
+                                <option value="21">지하구</option>
+                                <option value="22">교정시설</option>
+                                <option value="23">기타시설</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              건축물현황 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="kfsi-board-write-subtable">
+                                <table
+                                  summary="건물 정보 입력을 위한 테이블로 동수, 층수, 연면적, 연면적 합계 항목을 포함하며, 입력 필드가 제공됩니다."
+                                >
+                                  <caption>
+                                    건물 정보 입력 테이블
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 170px" />
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">동수</th>
+                                      <td>
+                                        <div
+                                          class="kfsi-board-write-subtable-input"
+                                        >
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              style="
+                                                min-width: 100px;
+                                                width: 100px;
+                                              "
+                                              title="동수 입력"
+                                            />
+                                            동
+                                          </div>
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            (’동’이 여럿일 경우 주된 건물의 현황
+                                            작성)
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">층수</th>
+                                      <td>
+                                        <div
+                                          class="kfsi-board-write-subtable-input"
+                                        >
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            지상 :
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              style="
+                                                min-width: 80px;
+                                                width: 80px;
+                                              "
+                                              title="지상 층수 입력"
+                                            />
+                                          </div>
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            층, 지하 :
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              style="
+                                                min-width: 80px;
+                                                width: 80px;
+                                              "
+                                              title="지하 층수 입력"
+                                            />
+                                            층
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">연면적 ㎡</th>
+                                      <td>
+                                        <div
+                                          class="kfsi-board-write-subtable-input"
+                                        >
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              style="
+                                                min-width: 100px;
+                                                width: 100px;
+                                              "
+                                              title="연면적 입력"
+                                            />
+                                            ㎡
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        연면적<br class="mo" />합계
+                                      </th>
+                                      <td>
+                                        <div
+                                          class="kfsi-board-write-subtable-input"
+                                        >
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              style="
+                                                min-width: 100px;
+                                                width: 100px;
+                                              "
+                                              title="연면적합계 입력"
+                                            />
+                                            ㎡
+                                          </div>
+                                          <div
+                                            class="kfsi-board-write-subtable-input__row"
+                                          >
+                                            (모든 동의 연면적을 합한 것)
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>건축물 사용 승인일</th>
+                            <td>
+                              <div class="kfsi-board-write-date">
+                                <input
+                                  type="date"
+                                  class="form-control"
+                                  title="건축물 사용 승인일 입력"
+                                />
+                                <div>(건축물 관리대장을 참조하여 작성)</div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>소방시설현황</th>
+                            <td>
+                              <div class="d-flex justify-content-between">
+                                <div class="kfsi-board-write-checkbox-grid">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-01"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-01"
+                                    >
+                                      옥내소화전
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-02"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-02"
+                                    >
+                                      스프링클러
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-03"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-03"
+                                    >
+                                      이산화탄소소화설비
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-04"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-04"
+                                    >
+                                      할로겐화합물소화설비
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-05"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-05"
+                                    >
+                                      청정소화약제소화설비
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-06"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-06"
+                                    >
+                                      포소화설비
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-07"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-07"
+                                    >
+                                      자동화재탐지설비
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox02"
+                                      id="checkbox02-08"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox02-08"
+                                    >
+                                      제연설비
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>파일첨부</th>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th>간단한 내용입력</th>
+                            <td>
+                              <textarea
+                                class="form-control"
+                                style="height: 108px"
+                                placeholder="내용을 입력해 주세요."
+                                title="내용을 입력해 주세요."
+                              ></textarea>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      목록
+                    </button>
+                  </p>
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

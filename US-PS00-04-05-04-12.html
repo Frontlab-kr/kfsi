@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- flatpickr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>견적신청</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">소방시설점검</a>
+              <a href="" class="kfsi-snb-item">연구실 정밀안전진단</a>
+              <a href="" class="kfsi-snb-item">화재안전진단</a>
+              <a href="" class="kfsi-snb-item active">화재예방안전진단</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">화재안전진단</li>
+                    <li class="breadcrumb-item">견적신청</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      화재예방안전진단
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>화재예방안전진단</h1>
+              </div>
+              <div class="kfsi-write">
+                <div class="kfsi-box bg-light">
+                  개인정보보호법 준수를 위해 견적신청 시 회사정보 외 개인정보를
+                  수집하지 않습니다.<br />
+                  작성하신 자료는 30일 이후
+                  <span class="text-danger">자동삭제</span> 됩니다.
+                </div>
+                <div class="kfsi-write-item">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write__title">
+                      기본정보
+                      <small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </div>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="담당자 정보와 관련된 입력 필드로 담당자명, 전화번호, 휴대폰 번호, 회사 이메일 정보를 입력합니다."
+                      >
+                        <caption>
+                          담당자 정보 입력 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 730px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>담당자명 <span class="text-danger">*</span></th>
+                            <td>홍길동</td>
+                          </tr>
+                          <tr>
+                            <th>전화번호 <span class="text-danger">*</span></th>
+                            <td>02-1234-5678</td>
+                          </tr>
+                          <tr>
+                            <th>휴대폰 번호</th>
+                            <td>010-1234-5678</td>
+                          </tr>
+                          <tr>
+                            <th>
+                              회사 E-mail <span class="text-danger">*</span>
+                            </th>
+                            <td>abcd@gmail.com</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-write-item">
+                  <div class="kfsi-board-write">
+                    <div class="kfsi-board-write__title">
+                      업체현황
+                      <small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </div>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="시설물 구분, 기관명, 주소, 진단 대상처, 연면적, 필수자료 첨부, 진단 희망일(시작일), 비고와 관련된 입력 정보를 포함한 테이블입니다."
+                      >
+                        <caption>
+                          업체현황 정보 입력 테이블
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 730px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>
+                              시설물 구분 <span class="text-danger">*</span>
+                            </th>
+                            <td>공항시설, 공동구</td>
+                          </tr>
+                          <tr>
+                            <th>
+                              기관명(운영 업체명)
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>(주)길동건축</td>
+                          </tr>
+                          <tr>
+                            <th>
+                              기관(운영 업체) 주소
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              (07226) 서울시 영등포구 영중로 170<br />
+                              우리빌딩 3층
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>
+                              진단대상처
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>(주)길동건축</td>
+                          </tr>
+                          <tr>
+                            <th>
+                              진단대상처 주소
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              (07226) 서울시 영등포구 영중로 170<br />
+                              우리빌딩 3층
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>연면적 <span class="text-danger">*</span></th>
+                            <td>
+                              <div class="kfsi-board-write-subtable">
+                                <table
+                                  summary="연면적 입력을 위한 테이블로 연면적합계 항목을 포함하며, 입력 필드가 제공됩니다."
+                                >
+                                  <caption>
+                                    연면적 입력 테이블
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 170px" />
+                                  </colgroup>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">연면적합계</th>
+                                      <td>
+                                        155 ㎡ (모든 동의 연면적을 합한 것)
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>필수자료 첨부</th>
+                            <td>
+                              <div class="text-primary">
+                                필수자료 첨부 목록
+                                <div class="ms-3">
+                                  <p class="m-0">- 건축물대장(전체 건축물)</p>
+                                  <p class="m-0">- 소방계획서</p>
+                                  <p class="m-0">- 사업자등록증</p>
+                                  <p class="m-0">
+                                    - 건축물 명칭 및 건물별 면적 엑셀자료 :
+                                    양식을 다운 받아 작성
+                                    <button
+                                      type="button"
+                                      class="btn btn-outline-secondary ms-3"
+                                    >
+                                      <i class="ico-download"></i>
+                                      Download
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>진단 희망일(시작일)</th>
+                            <td>
+                              <div class="kfsi-board-write-date">
+                                <input
+                                  type="date"
+                                  class="form-control"
+                                  title="진단 희망일(시작일) 입력"
+                                />
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>비고</th>
+                            <td>
+                              <textarea
+                                class="form-control"
+                                style="height: 108px"
+                                placeholder="내용을 입력해 주세요."
+                                title="내용을 입력해 주세요."
+                              ></textarea>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      목록
+                    </button>
+                  </p>
+                  <p>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

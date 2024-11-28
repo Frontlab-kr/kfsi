@@ -49,6 +49,63 @@ $mobileWidth: 992px;
   &-box {
     padding: 24px;
     border: solid 1px #ccc;
+    table {
+      margin: -8px 0;
+      tbody {
+        th {
+          padding: 3px 20px 3px 0;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #666;
+        }
+        td {
+          padding: 3px 20px 3px 0;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #666;
+        }
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      padding: 16px;
+      table {
+        margin: -8px 0;
+        tbody {
+          th {
+            padding: 3px 10px 3px 0;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #666;
+          }
+          td {
+            padding: 3px 10px 3px 0;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #666;
+          }
+        }
+      }
+    }
   }
   &-table {
     &-head {
@@ -341,6 +398,108 @@ $mobileWidth: 992px;
       }
     }
   }
+  &-email {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &-form {
+      display: flex;
+      min-width: 400px;
+    }
+    .form-control {
+      min-width: auto;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .form-select {
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
+    @media screen and (max-width: $mobileWidth) {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2px;
+
+      &-form {
+        display: flex;
+        min-width: auto;
+        width: 100%;
+      }
+      .form-control {
+        min-width: auto;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+      }
+      .form-select {
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        max-width: 200px;
+      }
+    }
+  }
+  &-alert {
+    justify-content: center;
+    .modal-content {
+      width: 400px;
+      padding: 35px 24px 24px;
+      border-radius: 20px;
+      border: solid 1px #ccc;
+      background-color: #fff;
+    }
+    .modal-header {
+      height: auto;
+      margin-bottom: 14px;
+      padding: 0;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      .modal-title {
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+      }
+      .btn-close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        background: url(./../images/icon/ico-modal-close2.png) no-repeat 50% 50%;
+        background-size: 20px 20px;
+      }
+    }
+    .modal-body {
+      padding: 0;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+    }
+    .modal-footer {
+      display: flex;
+      flex-wrap: nowrap;
+      grid-gap: 16px;
+      padding: 16px 0 0 0;
+      .btn {
+        min-width: auto;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    @media screen and (max-width: $mobileWidth) {
+      .modal-content {
+        width: 320px;
+      }
+    }
+  }
   &-textlist {
     margin-left: 22px;
     ul {
@@ -357,6 +516,13 @@ $mobileWidth: 992px;
       }
     }
     > ul {
+      &.no-bullet {
+        > li {
+          &::before {
+            display: none;
+          }
+        }
+      }
       > li {
         position: relative;
         margin-bottom: 4px;
