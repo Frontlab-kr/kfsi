@@ -1,8 +1,7 @@
 @charset "UTF-8";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css");
-@import url("https://unpkg.com/dropzone@5/dist/min/dropzone.min.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css");
+@import url("./swiper-bundle.min.css");
+@import url("./dropzone.min.css");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -18068,6 +18067,16 @@ textarea {
   font-size: 20px !important;
 }
 
+small, .small {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+}
+
+@media screen and (max-width: 992px) {
+  small, .small {
+    font-size: 14px !important;
+  }
+}
 .modal-dialog {
   max-width: 600px;
 }
@@ -18176,6 +18185,16 @@ textarea {
   color: #999 !important;
 }
 
+.dropdown-toggle {
+  min-width: 200px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .dropdown-toggle {
+    min-width: 100%;
+  }
+}
+
 .form-check-label {
   font-size: 16px;
   font-weight: normal;
@@ -18203,8 +18222,8 @@ textarea {
   color: #333;
 }
 .badge-outline-primary {
-  border: solid 1px #7fc5e1;
-  color: #008bc4;
+  border: solid 1px #032c5e;
+  color: #032c5e;
 }
 .badge-outline-secondary {
   border: solid 1px #999;
@@ -18213,6 +18232,11 @@ textarea {
 .badge-outline-danger {
   border: solid 1px #d93600;
   color: #d93600;
+}
+.badge-outline-info {
+  border: solid 1px #406491;
+  background-color: #f4fcff;
+  color: #406491;
 }
 
 .form-control {
@@ -18434,6 +18458,15 @@ textarea {
   font-size: 0;
 }
 
+.ico-file-plus {
+  display: inline-block;
+  min-width: 19px;
+  height: 20px;
+  background: url(../images/icon/ico-file-plus.png) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+}
+
 .kfsi-h4 {
   font-size: 20px;
   font-weight: bold;
@@ -18443,6 +18476,7 @@ textarea {
   letter-spacing: normal;
   text-align: left;
   color: #032c5e;
+  word-break: keep-all;
 }
 @media screen and (max-width: 992px) {
   .kfsi-h4 {
@@ -18461,6 +18495,7 @@ textarea {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+  word-break: keep-all;
 }
 .kfsi-h5:before {
   content: "";
@@ -19069,6 +19104,34 @@ textarea {
     font-size: 15px;
     line-height: 1.33;
   }
+}
+.kfsi-upload .dropzone {
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 3px 0 rgba(9, 0, 0, 0.1);
+  border: dashed 1px #ccc;
+  background-color: #fbfbfb;
+}
+.kfsi-upload .dropzone .dz-message {
+  color: #666;
+}
+.kfsi-upload .dropzone .dz-message__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666;
+}
+.kfsi-upload .dropzone.dz-started .dz-message {
+  display: none;
 }
 
 .kfsi-write {
@@ -20227,6 +20290,18 @@ textarea {
 .kfsi-search-section-list-item__breadcrumb span:first-child::before {
   display: none;
 }
+.kfsi-search-section-list__none {
+  padding: 24px 16px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #666;
+}
 .kfsi-search-section-button {
   display: flex;
   align-items: center;
@@ -20781,6 +20856,17 @@ textarea {
   .kfsi-search-section-list-item__breadcrumb span:first-child::before {
     display: none;
   }
+  .kfsi-search-section-list__none {
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+  }
   .kfsi-search-section-button {
     display: flex;
     align-items: center;
@@ -21085,6 +21171,91 @@ textarea {
     display: block;
     margin-bottom: 8px;
   }
+}
+.kfsi-career-agree {
+  width: 1240px;
+  padding: 20px 24px;
+  background-color: #f7f7f7;
+}
+.kfsi-career-agree__body .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.kfsi-career-agree__body .accordion-item {
+  border: solid 1px #ccc;
+  border-radius: 0;
+}
+.kfsi-career-agree__body .accordion-header {
+  border: none;
+}
+.kfsi-career-agree__body .accordion-header .form-check {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 48px;
+  margin: 0;
+  padding: 0 20px;
+}
+.kfsi-career-agree__body .accordion-header .form-check-input {
+  float: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border-radius: 2px;
+}
+.kfsi-career-agree__body .accordion-header .form-check-label {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+.kfsi-career-agree__body .accordion-body {
+  border-top: 1px solid #999;
+}
+.kfsi-career-agree__body .accordion-button {
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+.kfsi-career-agree__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.kfsi-career-agree__button p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+.kfsi-career-agree__button p .btn {
+  min-width: 140px;
+}
+.kfsi-career-agree__text {
+  display: flex;
+  gap: 4px;
+}
+.kfsi-career-agree__text::before {
+  content: "※";
+}
+.kfsi-career-table .kfsi-table table {
+  border-top: 2px solid #032c5e;
+}
+.kfsi-career-table .kfsi-table table .form-control,
+.kfsi-career-table .kfsi-table table .dropdown-toggle {
+  width: 100%;
+  min-width: auto;
+}
+.kfsi-career-table .kfsi-table table tbody td {
+  padding: 6px 10px;
 }
 
 @keyframes slideIn {
@@ -24499,9 +24670,11 @@ body {
     width: 40px !important;
   }
 }
+.kfsi-snb ~ .kfsi-contents {
+  max-width: 940px;
+}
 .kfsi-contents {
   width: 100%;
-  max-width: 940px;
 }
 .kfsi-contents-title {
   padding: 24px 0 22px 0;
@@ -25639,6 +25812,13 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #d93600;
+  word-break: keep-all;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-caution {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .kfsi-tab {
   display: grid;
@@ -25653,6 +25833,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 48px;
+  padding: 5px;
   background-color: #fff;
   font-size: 16px;
   font-weight: normal;
@@ -25662,6 +25843,7 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #666;
+  word-break: keep-all;
 }
 .kfsi-tab-item span {
   position: relative;
@@ -25680,6 +25862,49 @@ body {
   left: -1px;
   background-color: #032c5e;
   z-index: 10;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-tab {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #ccc;
+    border: 1px solid #ccc;
+  }
+  .kfsi-tab-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666;
+  }
+  .kfsi-tab-item span {
+    position: relative;
+    z-index: 20;
+  }
+  .kfsi-tab-item.active {
+    font-weight: bold;
+    color: #fff;
+  }
+  .kfsi-tab-item.active::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background-color: #032c5e;
+    z-index: 10;
+  }
 }
 .kfsi-tabs > ul {
   display: flex;
@@ -25774,6 +25999,21 @@ body {
 }
 .kfsi-button .btn {
   min-width: 180px;
+}
+.kfsi-board {
+  margin-top: 40px;
+}
+.kfsi-board-text {
+  margin: 0 0 16px 16px;
+}
+.kfsi-board-text ul {
+  margin: 6px 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.kfsi-board-text ul li {
+  margin: 0;
+  padding: 0;
 }
 .kfsi-board-head {
   display: flex;
@@ -25947,7 +26187,7 @@ body {
   display: flex;
   align-items: center;
   gap: 26px;
-  padding: 14px 32px 12px 0;
+  padding: 18px 32px 12px 0;
   border-bottom: 1px solid #ccc;
 }
 .kfsi-board-list-item-number {
@@ -25963,6 +26203,9 @@ body {
 }
 .kfsi-board-list-item-text .badge {
   min-width: 70px;
+}
+.kfsi-board-list-item-text__head {
+  display: none;
 }
 .kfsi-board-list-item-text__title {
   display: flex;
@@ -25990,7 +26233,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 .kfsi-board-list-item-text__info p {
   display: flex;
@@ -26215,6 +26458,24 @@ body {
   justify-content: space-between;
   margin-top: 24px;
 }
+.kfsi-board-button-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 2px #406491;
+  background-color: #ebf2f5;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #406491;
+}
 .kfsi-board-button p {
   display: flex;
   gap: 16px;
@@ -26388,6 +26649,8 @@ body {
   color: #000;
 }
 .kfsi-board-view-reply__title {
+  display: flex;
+  align-items: center;
   margin-bottom: 23px;
   font-size: 18px;
   font-weight: bold;
@@ -26397,6 +26660,14 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: #032c5e;
+}
+.kfsi-board-view-reply__title hr {
+  width: 1px;
+  height: 10px;
+  margin: 0 9px;
+  border: 0;
+  background-color: #999;
+  opacity: 1;
 }
 .kfsi-board-view-button {
   display: flex;
@@ -26614,11 +26885,27 @@ body {
   pointer-events: none;
 }
 @media screen and (max-width: 992px) {
+  .kfsi-board {
+    margin-top: 30px;
+  }
+  .kfsi-board-text {
+    margin: 0 0 16px 0;
+  }
+  .kfsi-board-text ul {
+    margin: 6px 0 0 8px;
+    padding: 0;
+    list-style: none;
+  }
+  .kfsi-board-text ul li {
+    margin: 0;
+    padding: 0;
+  }
   .kfsi-board-head {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column-reverse;
+    gap: 24px;
     padding: 0 0 8px 0;
   }
   .kfsi-board-head-start {
@@ -26627,7 +26914,6 @@ body {
     justify-content: space-between;
     gap: 16px;
     width: 100%;
-    margin-top: 24px;
   }
   .kfsi-board-head-end {
     display: flex;
@@ -26785,28 +27071,47 @@ body {
     display: flex;
     align-items: center;
     gap: 26px;
-    padding: 14px 32px 12px 12px;
+    padding: 18px 12px 12px 12px;
     border-bottom: 1px solid #ccc;
   }
   .kfsi-board-list-item-number {
-    min-width: 64px;
+    min-width: 30px;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     color: #000;
     display: none;
   }
   .kfsi-board-list-item-text .badge {
     min-width: 70px;
   }
+  .kfsi-board-list-item-text__head {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+  .kfsi-board-list-item-text__head .kfsi-board-list-item-number {
+    display: flex;
+  }
+  .kfsi-board-list-item-text__head .badge {
+    margin-right: 12px;
+  }
   .kfsi-board-list-item-text__title {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  .kfsi-board-list-item-text__title .badge {
+    display: none;
+  }
+  .kfsi-board-list-item-text__title .ico-lock,
+  .kfsi-board-list-item-text__title .ico-lock-active {
+    display: none;
   }
   .kfsi-board-list-item-text__title p {
     margin: 0;
@@ -26835,7 +27140,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -26866,10 +27171,11 @@ body {
   }
   .kfsi-board-button {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    gap: 8px;
+    gap: 16px;
   }
   .kfsi-board-button--length3 {
     flex-direction: column;
@@ -26879,19 +27185,22 @@ body {
   }
   .kfsi-board-button p {
     display: flex;
-    gap: 8px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 16px;
     margin: 0;
     width: 100%;
   }
   .kfsi-board-button p .btn {
     min-width: 140px;
-    width: 100%;
+    width: 175px;
   }
   .kfsi-board-view-head {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    gap: 40px;
-    padding: 24px 5px 21px;
+    gap: 10px;
+    padding: 30px 5px 21px;
     border-bottom: 1px solid #ccc;
   }
   .kfsi-board-view-head-title {
@@ -26997,7 +27306,7 @@ body {
     color: #000;
   }
   .kfsi-board-view-recommend {
-    padding: 14px 16px;
+    padding: 34px 6px;
   }
   .kfsi-board-view-recommend ul {
     display: flex;
@@ -27033,7 +27342,7 @@ body {
     display: none;
   }
   .kfsi-board-view-reply {
-    padding: 46px 16px;
+    padding: 30px 0;
     border-top: 1px dashed #999;
     font-size: 16px;
     font-weight: normal;
@@ -27045,15 +27354,25 @@ body {
     color: #000;
   }
   .kfsi-board-view-reply__title {
-    margin-bottom: 23px;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.33;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
     color: #032c5e;
+  }
+  .kfsi-board-view-reply__title hr {
+    width: 1px;
+    height: 10px;
+    margin: 0 9px;
+    border: 0;
+    background-color: #999;
+    opacity: 1;
   }
   .kfsi-board-view-button {
     display: flex;
@@ -27376,6 +27695,140 @@ body {
   text-align: left;
   color: #666;
   text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  .kfsi-faq-search {
+    display: flex;
+    gap: 6px;
+    padding: 0 0;
+  }
+  .kfsi-faq-search .btn {
+    min-width: 60px;
+  }
+  .kfsi-faq-head {
+    padding-bottom: 10px;
+  }
+  .kfsi-faq-head-amount {
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  .kfsi-faq-list .accordion {
+    border: none;
+    border-radius: 0;
+    border-top: 2px solid #032c5e;
+  }
+  .kfsi-faq-list .accordion-item {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+  }
+  .kfsi-faq-list .accordion-button {
+    padding: 14px 10px;
+    border-radius: 0 !important;
+  }
+  .kfsi-faq-list .accordion-button:not(.collapsed) {
+    background-color: #fff;
+  }
+  .kfsi-faq-list .accordion-button:not(.collapsed) .kfsi-faq-list-head__category,
+  .kfsi-faq-list .accordion-button:not(.collapsed) .kfsi-faq-list-head__title {
+    font-weight: 700;
+    color: #032c5e;
+  }
+  .kfsi-faq-list .accordion-body {
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  .kfsi-faq-list-head {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+  .kfsi-faq-list-head__q {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #032c5e;
+  }
+  .kfsi-faq-list-head__category {
+    display: none;
+  }
+  .kfsi-faq-list-head__title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .kfsi-faq-list-head__title p {
+    margin: 0;
+  }
+  .kfsi-faq-list-body {
+    position: relative;
+    padding: 16px 35px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  .kfsi-faq-list-body__a {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d93600;
+  }
+  .kfsi-faq-list-body__file {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 16px;
+  }
+  .kfsi-faq-list-body__file strong {
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+  }
+  .kfsi-faq-list-body__file p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+  }
+  .kfsi-faq-list-body__file p a {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+    text-decoration: underline;
+  }
 }
 .kfsi-greeting {
   padding: 30px 0 0 0;

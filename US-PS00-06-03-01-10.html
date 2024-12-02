@@ -6,13 +6,11 @@
     <title>한국소방안전원</title>
 
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-    <!-- flatpickr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -50,6 +48,15 @@
                 <div class="kfsi-board-head">
                   <div class="kfsi-board-head-start">
                     <div class="kfsi-board-head-amount">총 10건</div>
+                    <div class="mo">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary"
+                        style="width: 120px"
+                      >
+                        글쓰기
+                      </button>
+                    </div>
                   </div>
                   <div class="kfsi-board-head-end">
                     <div class="kfsi-board-head-search">
@@ -78,6 +85,7 @@
                         type="text"
                         class="form-control"
                         placeholder="검색어를 입력해 주세요."
+                        title="검색어를 입력해 주세요."
                       />
                       <button type="button" class="btn btn-primary">
                         검색
@@ -89,24 +97,38 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">10</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">10</div>
+                        <span class="badge rounded-pill badge-outline-primary">
+                          진행중
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span class="badge rounded-pill badge-outline-primary">
                           진행중
                         </span>
                         <p>2024년 하반기 기간제 근로자 채용 공고</p>
+                        <i class="ico-file">파일</i>
                       </div>
                       <div class="kfsi-board-list-item-text__info">
                         <p>
                           <span>기간제(5명)</span>
                           <span>2024.09.01~2024.09.30</span>
                         </p>
-                        <i class="ico-file">파일</i>
                       </div>
                     </div>
                   </a>
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">9</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">9</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -126,6 +148,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">8</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">8</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -145,6 +175,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">7</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">7</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -164,6 +202,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">6</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">6</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -183,6 +229,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">5</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">5</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -202,6 +256,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">4</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">4</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -221,6 +283,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">3</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">3</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -240,6 +310,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">2</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">2</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -259,6 +337,14 @@
                   <a href="" class="kfsi-board-list-item">
                     <div class="kfsi-board-list-item-number">1</div>
                     <div class="kfsi-board-list-item-text">
+                      <div class="kfsi-board-list-item-text__head">
+                        <div class="kfsi-board-list-item-number">1</div>
+                        <span
+                          class="badge rounded-pill badge-outline-secondary"
+                        >
+                          채용마감
+                        </span>
+                      </div>
                       <div class="kfsi-board-list-item-text__title">
                         <span
                           class="badge rounded-pill badge-outline-secondary"
@@ -276,16 +362,18 @@
                     </div>
                   </a>
                 </div>
-                <div class="kfsi-board-button">
-                  <p></p>
-                  <p>
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary btn-lg"
-                    >
-                      글쓰기
-                    </button>
-                  </p>
+                <div class="pc">
+                  <div class="kfsi-board-button">
+                    <p></p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        글쓰기
+                      </button>
+                    </p>
+                  </div>
                 </div>
                 <div class="kfsi-board-pagination">
                   <nav>

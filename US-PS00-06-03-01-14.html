@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body pt-0">
+            <div class="kfsi-contents">
+              <div class="kfsi-contents-title mt-6">
+                <h1 class="text-center">지원하기</h1>
+              </div>
+              <div class="pc">
+                <div class="kfsi-career">
+                  <div class="kfsi-box bg-light mt-10">
+                    (※ 접수마감일 기준 “졸업“ 또는 “학위취득” 학력만 입력.
+                    <span class="text-danger"
+                      >“졸업예정“, “졸업유예“ 학력은 입력불가</span
+                    >)
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          학력사항 미기재 및 오기재시 불이익을 당할 수 있으므로
+                          정확하게 기재 바랍니다.
+                        </li>
+                        <li>
+                          본인의 졸업학력을 소재지를 포함하여 정확하게
+                          기재합니다.
+                        </li>
+                        <li>
+                          석사 및 박사학위의 경우 원서접수마감일 기준 학위를
+                          취득한 경우만 작성 (학위번호 입력)<br />
+                          국외 학위 취득자 중 학위번호가 없는 경우 학위번호
+                          [미입력]으로 입력
+                        </li>
+                        <li>
+                          학교명은 학위수여증명 확인에 활용, 면접자료에 블라인드
+                          처리 (직무관련 학위구분, 전공만 기재)
+                        </li>
+                        <li>졸업증명서는 추후 제출하셔야 합니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="kfsi-table">
+                      <table>
+                        <colgroup>
+                          <col style="width: 60px" />
+                          <col style="width: 165px" />
+                          <col style="width: 165px" />
+                          <col style="width: 180px" />
+                          <col style="width: 180px" />
+                          <col style="width: 100px" />
+                          <col style="width: 180px" />
+                          <col style="width: 160px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">학위구분</th>
+                            <th scope="col">입학연월</th>
+                            <th scope="col">졸업연월</th>
+                            <th scope="col">학교명</th>
+                            <th scope="col">학과명(전공)</th>
+                            <th scope="col">소재지</th>
+                            <th scope="col">학위번호</th>
+                            <th scope="col">졸업구분</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>전문학사</td>
+                            <td>
+                              <div class="d-flex gap-1">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    년도
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    월
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-flex gap-1">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    년도
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    월
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="학교명 입력"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="학과명(전공) 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  국내
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="학위번호 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  졸업(학위취득)
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Another action</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#"
+                                      >Something else here</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <h5 class="kfsi-h5 mb-3">병역사항</h5>
+                    <div class="kfsi-box bg-light">
+                      <div class="kfsi-textlist m-0">
+                        <ul>
+                          <li>
+                            군필 : 군별, 계급, 복무기간 등 입력 ※ 전역 예정자인
+                            경우 복무기간은 전역 만기일을 기재합니다.
+                          </li>
+                          <li>면제 : 면제사유 기재</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kfsi-career-table mt-6">
+                      <div class="kfsi-table">
+                        <table>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 1105px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">군필여부</th>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    선택
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">면제사유</th>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="면제사유 입력"
+                                />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="kfsi-career-table mt-6">
+                      <div class="kfsi-table">
+                        <table>
+                          <colgroup>
+                            <col style="width: 135px" />
+                            <col style="width: 175px" />
+                            <col style="width: 135px" />
+                            <col style="width: 175px" />
+                            <col style="width: 135px" />
+                            <col style="width: 175px" />
+                            <col style="width: 135px" />
+                            <col style="width: 175px" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row">군필여부</th>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    선택
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <th scope="row">군별</th>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    선택
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <th scope="row">계급</th>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    선택
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <th scope="row">제대구분</th>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    선택
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">복무기간</th>
+                              <td colspan="7">
+                                <div class="d-flex gap-4">
+                                  <input
+                                    type="date"
+                                    class="form-control w-auto"
+                                    title="복무기간 시작일 입력"
+                                    style="min-width: 200px"
+                                  />
+                                  ~
+                                  <input
+                                    type="date"
+                                    class="form-control w-auto"
+                                    title="복무기간 종료일 입력"
+                                    style="min-width: 200px"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <div class="d-flex align-items-center gap-4 mb-3">
+                      <h5 class="kfsi-h5">경력사항</h5>
+                      <small class="text-danger"
+                        >[경력사항은 서류심사 평가항목이 아님. “직무경험”을
+                        참고하기 위한 면접 자료로만 활용]</small
+                      >
+                    </div>
+                    <div class="kfsi-box bg-light">
+                      <div class="kfsi-textlist m-0">
+                        <ul>
+                          <li>경력기간 순으로 기재하시기 바랍니다.</li>
+                          <li>
+                            재직중일 경우 현재 년월을 재직 종료일로 기재하시기
+                            바랍니다.
+                          </li>
+                          <li>
+                            경력을 기입한 경우 추후 이를 증빙할 수 있는 서류를
+                            제출하셔야 합니다.
+                          </li>
+                          <li>주요 경력 3가지 이내만 작성</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

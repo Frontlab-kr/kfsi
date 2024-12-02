@@ -28,6 +28,15 @@ textarea {
 .fs-20 {
   font-size: 20px !important;
 }
+small {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+}
+@media screen and (max-width: $mobileWidth) {
+  small {
+    font-size: 14px !important;
+  }
+}
 .modal {
   &-dialog {
     max-width: 600px;
@@ -135,6 +144,13 @@ textarea {
     color: #999 !important;
   }
 }
+.dropdown-toggle {
+  min-width: 200px;
+  justify-content: space-between;
+  @media screen and (max-width: $mobileWidth) {
+    min-width: 100%;
+  }
+}
 .form-check {
   &-label {
     font-size: 16px;
@@ -162,8 +178,8 @@ textarea {
     color: #333;
   }
   &-outline-primary {
-    border: solid 1px #7fc5e1;
-    color: #008bc4;
+    border: solid 1px #032c5e;
+    color: #032c5e;
   }
   &-outline-secondary {
     border: solid 1px #999;
@@ -172,6 +188,11 @@ textarea {
   &-outline-danger {
     border: solid 1px #d93600;
     color: #d93600;
+  }
+  &-outline-info {
+    border: solid 1px #406491;
+    background-color: #f4fcff;
+    color: #406491;
   }
 }
 

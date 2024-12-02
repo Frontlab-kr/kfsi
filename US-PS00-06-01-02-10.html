@@ -6,13 +6,11 @@
     <title>한국소방안전원</title>
 
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-    <!-- flatpickr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -56,230 +54,233 @@
                 <h1>자주하는 질문</h1>
               </div>
 
-              <div class="kfsi-faq">
-                <div class="kfsi-faq-search mt-10">
+              <div class="kfsi-board">
+                <div class="kfsi-faq-search">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="검색어를 입력해 주세요."
+                    title="검색어를 입력해 주세요."
                   />
                   <button type="button" class="btn btn-primary">검색</button>
                 </div>
-              </div>
 
-              <div class="kfsi-tab mt-8">
-                <a href="" class="kfsi-tab-item active"><span>전체</span></a>
-                <a href="" class="kfsi-tab-item"><span>실무교육 관련</span></a>
-                <a href="" class="kfsi-tab-item"
-                  ><span>강습·시험·자격수첩 관련</span></a
-                >
-                <a href="" class="kfsi-tab-item"
-                  ><span>다중이용업·열린교육 관련</span></a
-                >
-                <a href="" class="kfsi-tab-item"
-                  ><span>점검·위험물 관련</span></a
-                >
-                <a href="" class="kfsi-tab-item"
-                  ><span>회원·회비·선임 관련</span></a
-                >
-                <a href="" class="kfsi-tab-item"
-                  ><span>의용소방대교육 관련</span></a
-                >
-                <a href="" class="kfsi-tab-item"><span>기타</span></a>
-              </div>
-              <div class="kfsi-faq mt-6">
-                <div class="kfsi-faq-head">
-                  <div class="kfsi-faq-head-amount">총 10건</div>
+                <div class="kfsi-tab mt-8">
+                  <a href="" class="kfsi-tab-item active"><span>전체</span></a>
+                  <a href="" class="kfsi-tab-item"
+                    ><span>실무교육 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"
+                    ><span>강습·시험·자격수첩 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"
+                    ><span>다중이용업·열린교육 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"
+                    ><span>점검·위험물 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"
+                    ><span>회원·회비·선임 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"
+                    ><span>의용소방대교육 관련</span></a
+                  >
+                  <a href="" class="kfsi-tab-item"><span>기타</span></a>
                 </div>
-                <div class="kfsi-faq-list">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          <div class="kfsi-faq-list-head">
-                            <div class="kfsi-faq-list-head__q">Q</div>
-                            <div class="kfsi-faq-list-head__category">
-                              [실무교육관련]
-                            </div>
-                            <div class="kfsi-faq-list-head__title">
-                              <p>
-                                선임대상처가 속한 지역이 아닌 다른 시도지부의
-                                실무교육 수료해도 되나요?
-                              </p>
-                              <i class="ico-file">파일</i>
-                            </div>
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <div class="kfsi-faq-list-body">
-                            <div class="kfsi-faq-list-body__a">A</div>
-                            가능합니다.<br />
-                            (예: 선임대상처가 경기도 소속이더라도 부산지역
-                            교육을 신청해도 됩니다)
-                            <div class="kfsi-faq-list-body__file">
-                              <strong>첨부파일</strong>
-                              <p>
+                <div class="kfsi-faq mt-6">
+                  <div class="kfsi-faq-head">
+                    <div class="kfsi-faq-head-amount">총 10건</div>
+                  </div>
+                  <div class="kfsi-faq-list">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            <div class="kfsi-faq-list-head">
+                              <div class="kfsi-faq-list-head__q">Q</div>
+                              <div class="kfsi-faq-list-head__category">
+                                [실무교육관련]
+                              </div>
+                              <div class="kfsi-faq-list-head__title">
+                                <p>
+                                  선임대상처가 속한 지역이 아닌 다른 시도지부의
+                                  실무교육 수료해도 되나요?
+                                </p>
                                 <i class="ico-file">파일</i>
-                                <a
-                                  href=""
-                                  title="첨부파일명.hwp이 다운로드 됩니다."
-                                  >첨부파일명.hwp</a
-                                >
-                              </p>
+                              </div>
+                            </div>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="kfsi-faq-list-body">
+                              <div class="kfsi-faq-list-body__a">A</div>
+                              가능합니다.<br />
+                              (예: 선임대상처가 경기도 소속이더라도 부산지역
+                              교육을 신청해도 됩니다)
+                              <div class="kfsi-faq-list-body__file">
+                                <strong>첨부파일</strong>
+                                <p>
+                                  <i class="ico-file">파일</i>
+                                  <a
+                                    href=""
+                                    title="첨부파일명.hwp이 다운로드 됩니다."
+                                    >첨부파일명.hwp</a
+                                  >
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          <div class="kfsi-faq-list-head">
-                            <div class="kfsi-faq-list-head__q">Q</div>
-                            <div class="kfsi-faq-list-head__category">
-                              [실무교육관련]
-                            </div>
-                            <div class="kfsi-faq-list-head__title">
-                              <p>
-                                선임대상처가 속한 지역이 아닌 다른 시도지부의
-                                실무교육 수료해도 되나요?
-                              </p>
-                              <i class="ico-file">파일</i>
-                            </div>
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <div class="kfsi-faq-list-body">
-                            <div class="kfsi-faq-list-body__a">A</div>
-                            가능합니다.<br />
-                            (예: 선임대상처가 경기도 소속이더라도 부산지역
-                            교육을 신청해도 됩니다)
-                            <div class="kfsi-faq-list-body__file">
-                              <strong>첨부파일</strong>
-                              <p>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            <div class="kfsi-faq-list-head">
+                              <div class="kfsi-faq-list-head__q">Q</div>
+                              <div class="kfsi-faq-list-head__category">
+                                [실무교육관련]
+                              </div>
+                              <div class="kfsi-faq-list-head__title">
+                                <p>
+                                  선임대상처가 속한 지역이 아닌 다른 시도지부의
+                                  실무교육 수료해도 되나요?
+                                </p>
                                 <i class="ico-file">파일</i>
-                                <a
-                                  href=""
-                                  title="첨부파일명.hwp이 다운로드 됩니다."
-                                  >첨부파일명.hwp</a
-                                >
-                              </p>
+                              </div>
+                            </div>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="kfsi-faq-list-body">
+                              <div class="kfsi-faq-list-body__a">A</div>
+                              가능합니다.<br />
+                              (예: 선임대상처가 경기도 소속이더라도 부산지역
+                              교육을 신청해도 됩니다)
+                              <div class="kfsi-faq-list-body__file">
+                                <strong>첨부파일</strong>
+                                <p>
+                                  <i class="ico-file">파일</i>
+                                  <a
+                                    href=""
+                                    title="첨부파일명.hwp이 다운로드 됩니다."
+                                    >첨부파일명.hwp</a
+                                  >
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          <div class="kfsi-faq-list-head">
-                            <div class="kfsi-faq-list-head__q">Q</div>
-                            <div class="kfsi-faq-list-head__category">
-                              [실무교육관련]
-                            </div>
-                            <div class="kfsi-faq-list-head__title">
-                              <p>
-                                선임대상처가 속한 지역이 아닌 다른 시도지부의
-                                실무교육 수료해도 되나요?
-                              </p>
-                              <i class="ico-file">파일</i>
-                            </div>
-                          </div>
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          <div class="kfsi-faq-list-body">
-                            <div class="kfsi-faq-list-body__a">A</div>
-                            가능합니다.<br />
-                            (예: 선임대상처가 경기도 소속이더라도 부산지역
-                            교육을 신청해도 됩니다)
-                            <div class="kfsi-faq-list-body__file">
-                              <strong>첨부파일</strong>
-                              <p>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            <div class="kfsi-faq-list-head">
+                              <div class="kfsi-faq-list-head__q">Q</div>
+                              <div class="kfsi-faq-list-head__category">
+                                [실무교육관련]
+                              </div>
+                              <div class="kfsi-faq-list-head__title">
+                                <p>
+                                  선임대상처가 속한 지역이 아닌 다른 시도지부의
+                                  실무교육 수료해도 되나요?
+                                </p>
                                 <i class="ico-file">파일</i>
-                                <a
-                                  href=""
-                                  title="첨부파일명.hwp이 다운로드 됩니다."
-                                  >첨부파일명.hwp</a
-                                >
-                              </p>
+                              </div>
+                            </div>
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="kfsi-faq-list-body">
+                              <div class="kfsi-faq-list-body__a">A</div>
+                              가능합니다.<br />
+                              (예: 선임대상처가 경기도 소속이더라도 부산지역
+                              교육을 신청해도 됩니다)
+                              <div class="kfsi-faq-list-body__file">
+                                <strong>첨부파일</strong>
+                                <p>
+                                  <i class="ico-file">파일</i>
+                                  <a
+                                    href=""
+                                    title="첨부파일명.hwp이 다운로드 됩니다."
+                                    >첨부파일명.hwp</a
+                                  >
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="kfsi-board-pagination mt-6">
-                  <nav>
-                    <ul class="pagination">
-                      <li class="page-item page-item--first">
-                        <a class="page-link" href="#">처음</a>
-                      </li>
-                      <li class="page-item page-item--prev">
-                        <a class="page-link" href="#">이전</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">4</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">5</a>
-                      </li>
-                      <li class="page-item page-item--next">
-                        <a class="page-link" href="#">다음</a>
-                      </li>
-                      <li class="page-item page-item--last">
-                        <a class="page-link" href="#">마지막</a>
-                      </li>
-                    </ul>
-                  </nav>
+                  <div class="kfsi-board-pagination mt-6">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item--first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item--prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item--next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item--last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>

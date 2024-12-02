@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>고객의 소리</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">묻고 답하기</a>
+              <a href="" class="kfsi-snb-item">자주하는 질문</a>
+              <a href="" class="kfsi-snb-item">친절직원 추천</a>
+              <a href="" class="kfsi-snb-item active">클린신고센터</a>
+              <a href="" class="kfsi-snb-item">
+                <span
+                  >갑질피해상담<i class="ico-newwindow-black ms-2"></i
+                ></span>
+              </a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">고객의 소리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      클린신고센터
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>클린신고센터</h1>
+              </div>
+              <div class="kfsi-board">
+                <div class="kfsi-board-text">
+                  다음의 내용을 포함하는 글은 사전고시 없이 관리자가 검토,
+                  삭제할 수 있으니 유의하여 주시기 바랍니다.
+                  <ul>
+                    <li>- 비실명으로 올리신 글</li>
+                    <li>- 특정인에 대한 비방 및 근거 없는 유언비어</li>
+                    <li>- 상업적인 내용의 글</li>
+                    <li>- 동일한 내용의 반복 게시</li>
+                  </ul>
+                </div>
+                <div class="kfsi-caution">
+                  게시글은 2년 경과 후 자동으로 삭제됩니다.<br class="mo" />
+                  이점 유의 하시기 바랍니다.
+                </div>
+                <div class="kfsi-board-write mt-10">
+                  <div class="kfsi-board-write__title">클린신고센터 입력</div>
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="클린 신고 센터 작성 양식으로 작성자 정보, 제목, 내용, 파일 첨부를 입력할 수 있는 테이블입니다."
+                    >
+                      <caption>
+                        클린신고센터 작성 양식
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 730px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th>작성자</th>
+                          <td>홍길동</td>
+                        </tr>
+                        <tr>
+                          <th>제목</th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="제목을 입력해 주세요."
+                              title="제목을 입력해 주세요."
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>내용</th>
+                          <td>
+                            <small class="text-danger">
+                              * 6하 원칙에 맞게 작성하여 주십시오.
+                            </small>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 360px"
+                              placeholder="내용을 입력해 주세요."
+                              title="내용을 입력해 주세요."
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>파일첨부</th>
+                          <td>
+                            <div class="kfsi-upload">
+                              <div id="dropzone">
+                                <form
+                                  class="dropzone needsclick"
+                                  id="demo-upload"
+                                  action="/upload"
+                                >
+                                  <div class="dz-message needsclick">
+                                    <div class="dz-message__title">
+                                      <i class="ico-file-plus"></i>
+                                      파일을 이곳에 드래그하세요.<br />
+                                    </div>
+                                    <small
+                                      >(또는 클릭하여 파일을 선택하세요)</small
+                                    >
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <script>
+                              var dropzone = new Dropzone('#demo-upload', {
+                                previewTemplate:
+                                  document.querySelector('#preview-template')
+                                    .innerHTML,
+                                parallelUploads: 2,
+                                thumbnailHeight: 120,
+                                thumbnailWidth: 120,
+                                maxFilesize: 3, // 최대 파일 크기 (MB)
+                                filesizeBase: 1000,
+                                dictDefaultMessage:
+                                  '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                dictFallbackMessage:
+                                  '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                dictFileTooBig:
+                                  '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                dictInvalidFileType:
+                                  '이 파일 형식은 업로드할 수 없습니다.',
+                                dictResponseError:
+                                  '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                dictCancelUpload: '업로드 취소',
+                                dictCancelUploadConfirmation:
+                                  '이 업로드를 정말 취소하시겠습니까?',
+                                dictRemoveFile: '파일 삭제',
+                                dictMaxFilesExceeded:
+                                  '더 이상 파일을 업로드할 수 없습니다.',
+                                thumbnail: function (file, dataUrl) {
+                                  if (file.previewElement) {
+                                    file.previewElement.classList.remove(
+                                      'dz-file-preview'
+                                    );
+                                    var images =
+                                      file.previewElement.querySelectorAll(
+                                        '[data-dz-thumbnail]'
+                                      );
+                                    for (var i = 0; i < images.length; i++) {
+                                      var thumbnailElement = images[i];
+                                      thumbnailElement.alt = file.name;
+                                      thumbnailElement.src = dataUrl;
+                                    }
+                                    setTimeout(function () {
+                                      file.previewElement.classList.add(
+                                        'dz-image-preview'
+                                      );
+                                    }, 1);
+                                  }
+                                },
+                              });
+
+                              // 파일 업로드 시 시뮬레이션
+                              var minSteps = 6,
+                                maxSteps = 60,
+                                timeBetweenSteps = 100,
+                                bytesPerStep = 100000;
+
+                              dropzone.uploadFiles = function (files) {
+                                var self = this;
+
+                                for (var i = 0; i < files.length; i++) {
+                                  var file = files[i];
+                                  totalSteps = Math.round(
+                                    Math.min(
+                                      maxSteps,
+                                      Math.max(
+                                        minSteps,
+                                        file.size / bytesPerStep
+                                      )
+                                    )
+                                  );
+
+                                  for (
+                                    var step = 0;
+                                    step < totalSteps;
+                                    step++
+                                  ) {
+                                    var duration =
+                                      timeBetweenSteps * (step + 1);
+                                    setTimeout(
+                                      (function (file, totalSteps, step) {
+                                        return function () {
+                                          file.upload = {
+                                            progress:
+                                              (100 * (step + 1)) / totalSteps,
+                                            total: file.size,
+                                            bytesSent:
+                                              ((step + 1) * file.size) /
+                                              totalSteps,
+                                          };
+
+                                          self.emit(
+                                            'uploadprogress',
+                                            file,
+                                            file.upload.progress,
+                                            file.upload.bytesSent
+                                          );
+                                          if (file.upload.progress == 100) {
+                                            file.status = Dropzone.SUCCESS;
+                                            self.emit(
+                                              'success',
+                                              file,
+                                              'success',
+                                              null
+                                            );
+                                            self.emit('complete', file);
+                                            self.processQueue();
+                                          }
+                                        };
+                                      })(file, totalSteps, step),
+                                      duration
+                                    );
+                                  }
+                                }
+                              };
+                            </script>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      목록
+                    </button>
+                  </p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      취소
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

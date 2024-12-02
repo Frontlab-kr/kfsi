@@ -9,6 +9,7 @@ $mobileWidth: 992px;
     letter-spacing: normal;
     text-align: left;
     color: #032c5e;
+    word-break: keep-all;
     @media screen and (max-width: $mobileWidth) {
       font-size: 17px;
     }
@@ -25,6 +26,7 @@ $mobileWidth: 992px;
     letter-spacing: normal;
     text-align: left;
     color: #000;
+    word-break: keep-all;
     &:before {
       content: '';
       display: block;
@@ -664,6 +666,38 @@ $mobileWidth: 992px;
           height: auto;
           font-size: 15px;
           line-height: 1.33;
+        }
+      }
+    }
+  }
+  &-upload {
+    .dropzone {
+      min-height: 80px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 3px 0 rgba(9, 0, 0, 0.1);
+      border: dashed 1px #ccc;
+      background-color: #fbfbfb;
+      .dz-message {
+        color: #666;
+        &__title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #666;
+        }
+      }
+      &.dz-started {
+        .dz-message {
+          display: none;
         }
       }
     }

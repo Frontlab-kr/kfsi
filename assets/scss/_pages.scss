@@ -1184,6 +1184,18 @@ $mobileWidth: 992px;
             }
           }
         }
+        &__none {
+          padding: 24px 16px;
+          border-bottom: 1px solid #ccc;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #666;
+        }
       }
       &-button {
         display: flex;
@@ -1752,6 +1764,17 @@ $mobileWidth: 992px;
               }
             }
           }
+          &__none {
+            padding: 20px 0;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            text-align: left;
+            color: #666;
+          }
         }
         &-button {
           display: flex;
@@ -2049,6 +2072,101 @@ $mobileWidth: 992px;
             img {
               display: block;
               margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-career {
+    &-agree {
+      width: 1240px;
+      padding: 20px 24px;
+      background-color: #f7f7f7;
+      &__body {
+        .accordion {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          &-item {
+            border: solid 1px #ccc;
+            border-radius: 0;
+          }
+          &-header {
+            border: none;
+            .form-check {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              height: 48px;
+              margin: 0;
+              padding: 0 20px;
+              &-input {
+                float: none;
+                width: 16px;
+                height: 16px;
+                margin: 0;
+                border-radius: 2px;
+              }
+              &-label {
+                width: 100%;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000;
+              }
+            }
+          }
+          &-body {
+            border-top: 1px solid #999;
+          }
+          &-button {
+            padding: 0;
+            background: none;
+            border: 0;
+            box-shadow: none;
+          }
+        }
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+        p {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin: 0;
+          .btn {
+            min-width: 140px;
+          }
+        }
+      }
+      &__text {
+        display: flex;
+        gap: 4px;
+        &::before {
+          content: '※';
+        }
+      }
+    }
+    &-table {
+      .kfsi-table {
+        table {
+          border-top: 2px solid #032c5e;
+          .form-control,
+          .dropdown-toggle {
+            width: 100%;
+            min-width: auto;
+          }
+          tbody {
+            td {
+              padding: 6px 10px;
             }
           }
         }
