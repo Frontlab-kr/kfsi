@@ -18043,6 +18043,10 @@ textarea {
   resize: none;
 }
 
+.fs-14 {
+  font-size: 14px !important;
+}
+
 .fs-15 {
   font-size: 15px !important;
 }
@@ -18065,6 +18069,10 @@ textarea {
 
 .fs-20 {
   font-size: 20px !important;
+}
+
+.fs-21 {
+  font-size: 21px !important;
 }
 
 small, .small {
@@ -18162,6 +18170,14 @@ small, .small {
 .btn-white:hover {
   background: #fff;
   color: #000;
+}
+.btn-primary-light {
+  background-color: #406491;
+  color: #fff !important;
+}
+.btn-primary-light:hover {
+  background-color: #406491;
+  color: #fff !important;
 }
 .btn-outline-primary {
   color: #333;
@@ -18266,6 +18282,7 @@ small, .small {
 }
 
 .form-select {
+  width: auto;
   height: 36px;
   font-size: 16px;
   border: solid 1px #ccc;
@@ -21254,10 +21271,6 @@ small, .small {
   width: 100%;
   min-width: auto;
 }
-.kfsi-career-table .kfsi-table table tbody td {
-  padding: 6px 10px;
-}
-
 @keyframes slideIn {
   from {
     transform: translateY(10px);

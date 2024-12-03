@@ -10,6 +10,9 @@ a {
 textarea {
   resize: none;
 }
+.fs-14 {
+  font-size: 14px !important;
+}
 .fs-15 {
   font-size: 15px !important;
 }
@@ -27,6 +30,9 @@ textarea {
 }
 .fs-20 {
   font-size: 20px !important;
+}
+.fs-21 {
+  font-size: 21px !important;
 }
 small {
   font-size: 15px !important;
@@ -119,6 +125,14 @@ small {
     &:hover {
       background: #fff;
       color: #000;
+    }
+  }
+  &-primary-light {
+    background-color: #406491;
+    color: #fff !important;
+    &:hover {
+      background-color: #406491;
+      color: #fff !important;
     }
   }
   &-outline-primary {
@@ -221,6 +235,7 @@ small {
   }
 }
 .form-select {
+  width: auto;
   height: 36px;
   font-size: 16px;
   border: solid 1px #ccc;

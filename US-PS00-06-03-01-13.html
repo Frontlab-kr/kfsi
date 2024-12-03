@@ -11,6 +11,9 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -73,323 +76,473 @@
                     </ul>
                   </div>
                 </div>
-                <div class="kfsi-board-write mt-10">
-                  <h5 class="kfsi-h5 mb-3">지원분야</h5>
-                  <div class="kfsi-board-write-form">
-                    <table summary="지원 분야를 선택할 수 있는 테이블">
-                      <caption>
-                        지원 분야 선택
-                      </caption>
-                      <colgroup>
-                        <col style="width: 210px" />
-                        <col style="width: 1030px" />
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th scope="row">지원분야</th>
-                          <td>
-                            <div class="dropdown">
-                              <button
-                                class="btn btn-outline-secondary dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                aria-haspopup="true"
-                                style="width: 500px"
-                              >
-                                선택해 주세요.
-                              </button>
-                              <ul
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton"
-                                role="menu"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item"
-                                    href="#"
-                                    role="menuitem"
-                                    >Action</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item"
-                                    href="#"
-                                    role="menuitem"
-                                    >Another action</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item"
-                                    href="#"
-                                    role="menuitem"
-                                    >Something else here</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                <div class="mt-10">
+                  <div class="kfsi-board-write">
+                    <h5 class="kfsi-h5 mb-3">지원분야</h5>
+                    <div class="kfsi-board-write-form">
+                      <table summary="지원 분야를 선택할 수 있는 테이블">
+                        <caption>
+                          지원 분야 선택
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">지원분야</th>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                  aria-haspopup="true"
+                                  style="width: 500px"
+                                >
+                                  선택해 주세요.
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                  role="menu"
+                                >
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
-                <div class="kfsi-box bg-light mt-10">
-                  <div class="kfsi-textlist m-0">
-                    <ul>
-                      <li>연락이 가능한 휴대폰 번호를 입력하시기 바랍니다.</li>
-                      <li>
-                        전화번호가 없는 경우, 거주지역의 지역번호와 휴대폰
-                        번호를 입력하시기 바랍니다.
-                      </li>
-                      <li>
-                        보훈대상자 또는 장애대상자는 추후 증빙서류를 제출하셔야
-                        합니다.
-                      </li>
-                    </ul>
+                <div class="mt-10">
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          연락이 가능한 휴대폰 번호를 입력하시기 바랍니다.
+                        </li>
+                        <li>
+                          전화번호가 없는 경우, 거주지역의 지역번호와 휴대폰
+                          번호를 입력하시기 바랍니다.
+                        </li>
+                        <li>
+                          보훈대상자 또는 장애대상자는 추후 증빙서류를
+                          제출하셔야 합니다.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="kfsi-board-write mt-5">
-                  <h5 class="kfsi-h5 mb-3">인적사항</h5>
-                  <div class="kfsi-board-write-form">
-                    <table
-                      summary="지원자의 인적사항 입력 양식으로 성명, 생년월일, 국적, 보훈대상, 장애대상, 연락처 및 주소를 포함한 항목들로 구성되어 있습니다."
-                    >
-                      <caption>
-                        인적사항 입력
-                      </caption>
-                      <colgroup>
-                        <col style="width: 210px" />
-                        <col style="width: 1030px" />
-                      </colgroup>
-                      <tbody>
-                        <tr>
-                          <th scope="row">성명</th>
-                          <td>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="성명을 입력해 주세요."
-                              title="성명을 입력해 주세요."
-                              style="width: 400px"
-                            />
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">생년월일</th>
-                          <td>
-                            <input
-                              type="date"
-                              class="form-control w-auto"
-                              title="생년월일 입력"
-                              style="min-width: 200px"
-                            />
-                          </td>
-                        </tr>
+                  <div class="kfsi-board-write mt-5">
+                    <h5 class="kfsi-h5 mb-3">인적사항</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="지원자의 인적사항 입력 양식으로 성명, 생년월일, 국적, 보훈대상, 장애대상, 연락처, 주소 및 사진을 포함한 항목들로 구성되어 있습니다."
+                      >
+                        <caption>
+                          인적사항 입력
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">성명</th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="성명을 입력해 주세요."
+                                title="성명을 입력해 주세요."
+                                style="width: 400px"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">생년월일</th>
+                            <td>
+                              <input
+                                type="date"
+                                class="form-control w-auto"
+                                title="생년월일 입력"
+                                style="min-width: 200px"
+                              />
+                            </td>
+                          </tr>
 
-                        <tr>
-                          <th scope="row">국적</th>
-                          <td>
-                            <div class="dropdown">
-                              <button
-                                class="btn btn-outline-secondary dropdown-toggle"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                style="min-width: 300px"
-                              >
-                                국적
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >Another action</a
+                          <tr>
+                            <th scope="row">국적</th>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                  style="min-width: 300px"
+                                >
+                                  국적
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">선택</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">선택</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">선택</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">보훈대상</th>
+                            <td>
+                              <div class="d-flex">
+                                <div class="form-check me-8">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault1"
+                                    id="flexRadioDefault1-1"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault1-1"
                                   >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >Something else here</a
+                                    대상
+                                  </label>
+                                </div>
+                                <div class="form-check me-8">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault1"
+                                    id="flexRadioDefault1-2"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault1-2"
                                   >
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">보훈대상</th>
-                          <td>
-                            <div class="d-flex">
-                              <div class="form-check me-8">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault1"
-                                  id="flexRadioDefault1-1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault1-1"
-                                >
-                                  대상
-                                </label>
+                                    비대상
+                                  </label>
+                                </div>
                               </div>
-                              <div class="form-check me-8">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault1"
-                                  id="flexRadioDefault1-2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault1-2"
-                                >
-                                  비대상
-                                </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">장애대상</th>
+                            <td>
+                              <div class="d-flex">
+                                <div class="form-check me-8">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault2"
+                                    id="flexRadioDefault2-1"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault2-1"
+                                  >
+                                    대상
+                                  </label>
+                                </div>
+                                <div class="form-check me-8">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="flexRadioDefault2"
+                                    id="flexRadioDefault2-2"
+                                    checked
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexRadioDefault2-2"
+                                  >
+                                    비대상
+                                  </label>
+                                </div>
                               </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">장애대상</th>
-                          <td>
-                            <div class="d-flex">
-                              <div class="form-check me-8">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault2"
-                                  id="flexRadioDefault2-1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault2-1"
-                                >
-                                  대상
-                                </label>
-                              </div>
-                              <div class="form-check me-8">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault2"
-                                  id="flexRadioDefault2-2"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault2-2"
-                                >
-                                  비대상
-                                </label>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">휴대폰</th>
-                          <td>
-                            <input
-                              type="text"
-                              class="form-control w-auto"
-                              placeholder="숫자만 입력 (ex 01012345678)"
-                              title="숫자만 입력 (ex 01012345678)"
-                            />
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">전화번호</th>
-                          <td>
-                            <div class="d-flex align-items-center">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">휴대폰</th>
+                            <td>
                               <input
                                 type="text"
                                 class="form-control w-auto"
                                 placeholder="숫자만 입력 (ex 01012345678)"
                                 title="숫자만 입력 (ex 01012345678)"
                               />
-                              <small class="text-danger ms-4"
-                                >[비상시 연락처 기재]</small
-                              >
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">이메일</th>
-                          <td>
-                            <div class="kfsi-email">
-                              <div class="kfsi-email-form">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">전화번호</th>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <input
+                                  type="text"
+                                  class="form-control w-auto"
+                                  placeholder="숫자만 입력 (ex 01012345678)"
+                                  title="숫자만 입력 (ex 01012345678)"
+                                />
+                                <small class="text-danger ms-4"
+                                  >[비상시 연락처 기재]</small
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일</th>
+                            <td>
+                              <div class="kfsi-email">
+                                <div
+                                  class="kfsi-email-form"
+                                  style="min-width: 500px"
+                                >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="이메일을 입력해 주세요."
+                                    title="이메일을 입력해 주세요."
+                                  />
+                                  <select
+                                    class="form-select"
+                                    aria-label="E-mail 선택"
+                                    title="E-mail 선택"
+                                  >
+                                    <option selected>선택</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hotmail.com">
+                                      hotmail.com
+                                    </option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="self">직접입력</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">건물 주소</th>
+                            <td>
+                              <div class="d-flex">
                                 <input
                                   type="text"
                                   class="form-control"
-                                  title="E-mail 입력"
+                                  style="min-width: 160px; width: 160px"
+                                  title="우편번호 입력"
                                 />
-                                <select
-                                  class="form-select w-auto"
-                                  aria-label="E-mail 선택"
-                                  title="E-mail 선택"
-                                >
-                                  <option selected>선택</option>
-                                  <option value="daum.net">daum.net</option>
-                                  <option value="gmail.com">gmail.com</option>
-                                  <option value="hotmail.com">
-                                    hotmail.com
-                                  </option>
-                                  <option value="naver.com">naver.com</option>
-                                  <option value="nate.com">nate.com</option>
-                                  <option value="self">직접입력</option>
-                                </select>
+                                <button type="button" class="btn btn-info ms-2">
+                                  우편번호 찾기
+                                </button>
                               </div>
-                              <small class="text-danger">
-                                ※ 개인 E-mail 사용 불가
-                              </small>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">건물 주소</th>
-                          <td>
-                            <div class="d-flex">
-                              <input
-                                type="text"
-                                class="form-control"
-                                style="min-width: 160px; width: 160px"
-                                title="우편번호 입력"
-                              />
-                              <button type="button" class="btn btn-info ms-2">
-                                우편번호 찾기
-                              </button>
-                            </div>
-                            <div class="mt-2">
-                              <input
-                                type="text"
-                                class="form-control"
-                                title="상세 주소"
-                              />
-                            </div>
-                            <div class="mt-2">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="나머지 주소"
-                                title="나머지 주소"
-                              />
-                            </div>
-                          </td>
-                        </tr>
+                              <div class="mt-2">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="상세 주소"
+                                />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="나머지 주소"
+                                  title="나머지 주소"
+                                />
+                              </div>
+                            </td>
+                          </tr>
 
-                        <tr>
-                          <th scope="row">사진</th>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                          <tr>
+                            <th scope="row">사진</th>
+                            <td>
+                              <div class="kfsi-upload">
+                                <div id="dropzone">
+                                  <form
+                                    class="dropzone needsclick"
+                                    id="demo-upload"
+                                    action="/upload"
+                                  >
+                                    <div class="dz-message needsclick">
+                                      <div class="dz-message__title">
+                                        <i class="ico-file-plus"></i>
+                                        파일을 이곳에 드래그하세요.<br />
+                                      </div>
+                                      <small
+                                        >(또는 클릭하여 파일을
+                                        선택하세요)</small
+                                      >
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <script>
+                                var dropzone = new Dropzone('#demo-upload', {
+                                  previewTemplate:
+                                    document.querySelector('#preview-template')
+                                      .innerHTML,
+                                  parallelUploads: 2,
+                                  thumbnailHeight: 120,
+                                  thumbnailWidth: 120,
+                                  maxFilesize: 3, // 최대 파일 크기 (MB)
+                                  filesizeBase: 1000,
+                                  dictDefaultMessage:
+                                    '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                  dictFallbackMessage:
+                                    '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                  dictFileTooBig:
+                                    '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                  dictInvalidFileType:
+                                    '이 파일 형식은 업로드할 수 없습니다.',
+                                  dictResponseError:
+                                    '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                  dictCancelUpload: '업로드 취소',
+                                  dictCancelUploadConfirmation:
+                                    '이 업로드를 정말 취소하시겠습니까?',
+                                  dictRemoveFile: '파일 삭제',
+                                  dictMaxFilesExceeded:
+                                    '더 이상 파일을 업로드할 수 없습니다.',
+                                  thumbnail: function (file, dataUrl) {
+                                    if (file.previewElement) {
+                                      file.previewElement.classList.remove(
+                                        'dz-file-preview'
+                                      );
+                                      var images =
+                                        file.previewElement.querySelectorAll(
+                                          '[data-dz-thumbnail]'
+                                        );
+                                      for (var i = 0; i < images.length; i++) {
+                                        var thumbnailElement = images[i];
+                                        thumbnailElement.alt = file.name;
+                                        thumbnailElement.src = dataUrl;
+                                      }
+                                      setTimeout(function () {
+                                        file.previewElement.classList.add(
+                                          'dz-image-preview'
+                                        );
+                                      }, 1);
+                                    }
+                                  },
+                                });
+
+                                // 파일 업로드 시 시뮬레이션
+                                var minSteps = 6,
+                                  maxSteps = 60,
+                                  timeBetweenSteps = 100,
+                                  bytesPerStep = 100000;
+
+                                dropzone.uploadFiles = function (files) {
+                                  var self = this;
+
+                                  for (var i = 0; i < files.length; i++) {
+                                    var file = files[i];
+                                    totalSteps = Math.round(
+                                      Math.min(
+                                        maxSteps,
+                                        Math.max(
+                                          minSteps,
+                                          file.size / bytesPerStep
+                                        )
+                                      )
+                                    );
+
+                                    for (
+                                      var step = 0;
+                                      step < totalSteps;
+                                      step++
+                                    ) {
+                                      var duration =
+                                        timeBetweenSteps * (step + 1);
+                                      setTimeout(
+                                        (function (file, totalSteps, step) {
+                                          return function () {
+                                            file.upload = {
+                                              progress:
+                                                (100 * (step + 1)) / totalSteps,
+                                              total: file.size,
+                                              bytesSent:
+                                                ((step + 1) * file.size) /
+                                                totalSteps,
+                                            };
+
+                                            self.emit(
+                                              'uploadprogress',
+                                              file,
+                                              file.upload.progress,
+                                              file.upload.bytesSent
+                                            );
+                                            if (file.upload.progress == 100) {
+                                              file.status = Dropzone.SUCCESS;
+                                              self.emit(
+                                                'success',
+                                                file,
+                                                'success',
+                                                null
+                                              );
+                                              self.emit('complete', file);
+                                              self.processQueue();
+                                            }
+                                          };
+                                        })(file, totalSteps, step),
+                                        duration
+                                      );
+                                    }
+                                  }
+                                };
+                              </script>
+                              <div class="mt-2">
+                                <small
+                                  >(최근 3개월이내에 촬영한 상반신 컬러사진,
+                                  500KByte 미만, JPG/GIF 파일만 가능)</small
+                                >
+                              </div>
+                              <div class="">
+                                <small class="text-danger"
+                                  >※ 사진은 면접시험 본인확인을 위한 목적임
+                                  (면접자료에는 블라인드 처리함)</small
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
                 <div class="kfsi-board-button">
