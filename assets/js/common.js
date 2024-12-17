@@ -30,6 +30,11 @@ $(document).ready(function () {
       $('.kfsi-main-search-popular-mo').removeClass('active');
     }
   });
+
+  //select
+  $('.dropdown-menu a').on('click', function () {
+    $(this).parents('.dropdown').find('.dropdown-toggle').text($(this).text());
+  });
 });
 // $('div.dropzone').dropzone({
 //   url: 'https://httpbin.org/post',

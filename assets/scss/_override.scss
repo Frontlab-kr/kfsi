@@ -141,10 +141,14 @@ small {
   &-outline-secondary {
     border: solid 1px #ccc;
     color: #666 !important;
-    &:hover {
-      background: none;
-      border: solid 1px #ccc;
-      color: #666;
+    &:hover,
+    &:active,
+    &:focus,
+    &:checked,
+    &.show {
+      background: none !important;
+      border: solid 1px #ccc !important;
+      color: #666 !important;
     }
   }
   &-info {
@@ -163,6 +167,14 @@ small {
   justify-content: space-between;
   @media screen and (max-width: $mobileWidth) {
     min-width: 100%;
+  }
+}
+.dropdown-menu {
+  li {
+    a {
+      color: #000 !important;
+      text-decoration: none !important;
+    }
   }
 }
 .form-check {

@@ -18186,10 +18186,10 @@ small, .small {
   border: solid 1px #ccc;
   color: #666 !important;
 }
-.btn-outline-secondary:hover {
-  background: none;
-  border: solid 1px #ccc;
-  color: #666;
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus, .btn-outline-secondary:checked, .btn-outline-secondary.show {
+  background: none !important;
+  border: solid 1px #ccc !important;
+  color: #666 !important;
 }
 .btn-info {
   border: solid 1px #ccc;
@@ -18209,6 +18209,11 @@ small, .small {
   .dropdown-toggle {
     min-width: 100%;
   }
+}
+
+.dropdown-menu li a {
+  color: #000 !important;
+  text-decoration: none !important;
 }
 
 .form-check-label {
