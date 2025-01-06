@@ -4,6 +4,9 @@ html,
 body {
   font-family: 'Pretendard', sans-serif;
 }
+strong {
+  font-weight: 700 !important;
+}
 a {
   text-decoration: none;
 }
@@ -137,6 +140,10 @@ small {
   }
   &-outline-primary {
     color: #333;
+    &:hover {
+      background-color: #fff;
+      color: #333 !important;
+    }
   }
   &-outline-secondary {
     border: solid 1px #ccc;

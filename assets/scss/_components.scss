@@ -282,7 +282,7 @@ $mobileWidth: 992px;
           text-align: center;
           color: #000;
           word-break: keep-all;
-          a {
+          a:not(.btn) {
             color: #054a9d;
             text-decoration: underline;
           }

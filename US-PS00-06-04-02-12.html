@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>취업정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">구인정보</a>
+              <a href="" class="kfsi-snb-item active">구직정보</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">취업정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      구직정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>구직정보</h1>
+              </div>
+              <div class="kfsi-board">
+                <div class="kfsi-board-write mt-10">
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="구직자가 입력하는 기본 정보와 희망 조건을 담은 테이블로, 제목, 출생년도, 연락처, 학력, 경력 등을 포함합니다."
+                    >
+                      <caption>
+                        구직정보 입력
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 730px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">제목</th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control w-100"
+                              placeholder="제목을 입력해 주세요."
+                              title="제목을 입력해 주세요."
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">출생년도</th>
+                          <td>1990년도</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">거주지(읍/면/동)</th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control w-100"
+                              placeholder="본인의 거주지를 읍/면/동까지 간략하게 입력하세요."
+                              title="본인의 거주지를 읍/면/동까지 간략하게 입력하세요."
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">연락처</th>
+                          <td>01012345678</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">최종학력 및 전공</th>
+                          <td>
+                            <div class="d-flex gap-15">
+                              <select
+                                class="form-select"
+                                aria-label="최종학력"
+                                title="최종학력"
+                                style="width: 160px"
+                              >
+                                <option selected>선택</option>
+                              </select>
+                              <div class="d-flex align-items-center gap-3">
+                                전공
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="전공"
+                                  style="width: 300px; min-width: 300px"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">병역</th>
+                          <td>
+                            <select
+                              class="form-select"
+                              aria-label="병역"
+                              title="병역"
+                              style="width: 160px"
+                            >
+                              <option selected>선택</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">응시구분</th>
+                          <td>
+                            <select
+                              class="form-select"
+                              aria-label="응시구분"
+                              title="응시구분"
+                              style="width: 160px"
+                            >
+                              <option selected>선택</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">희망분야</th>
+                          <td>
+                            <div class="d-flex justify-content-between">
+                              <div
+                                class="kfsi-board-write-checkbox-grid kfsi-board-write-checkbox-grid--columns3"
+                              >
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-01"
+                                  >
+                                    소방안전관리
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-02"
+                                  >
+                                    위험물안전관리
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-03"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-03"
+                                  >
+                                    소방시설(공사)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-04"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-04"
+                                  >
+                                    소방시설(설계)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-05"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-05"
+                                  >
+                                    소방시설(감리)
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="checkbox01"
+                                    id="checkbox01-06"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="checkbox01-06"
+                                  >
+                                    소방시설(점검)
+                                  </label>
+                                </div>
+                                <div
+                                  class="d-flex align-items-center gap-2 kfsi-board-write-checkbox-grid--100"
+                                >
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="checkbox01"
+                                      id="checkbox01-07"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="checkbox01-07"
+                                    >
+                                      기타
+                                    </label>
+                                  </div>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    title="기타"
+                                    style="width: 300px; min-width: 300px"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">희망연봉</th>
+                          <td>
+                            <select
+                              class="form-select"
+                              aria-label="희망연봉"
+                              title="희망연봉"
+                              style="width: 200px"
+                            >
+                              <option selected>선택</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">근무지</th>
+                          <td>
+                            <div class="d-flex align-items-center gap-8">
+                              <div class="d-flex align-items-center gap-3">
+                                근무지 1
+                                <select
+                                  class="form-select"
+                                  aria-label="근무지 1"
+                                  title="근무지 1"
+                                  style="width: 140px; min-width: 140px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </div>
+                              <div class="d-flex align-items-center gap-3">
+                                근무지 2
+                                <select
+                                  class="form-select"
+                                  aria-label="근무지 2"
+                                  title="근무지 2"
+                                  style="width: 140px; min-width: 140px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </div>
+                              <div class="d-flex align-items-center gap-3">
+                                근무지 3
+                                <select
+                                  class="form-select"
+                                  aria-label="근무지 3"
+                                  title="근무지 3"
+                                  style="width: 140px; min-width: 140px"
+                                >
+                                  <option selected>선택</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">경력사항</th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              placeholder=""
+                              title="경력사항"
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">자격(면허)사항</th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              title="자격(면허)사항"
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">기타사항</th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              title="기타사항"
+                            ></textarea>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      목록
+                    </button>
+                  </p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      취소
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

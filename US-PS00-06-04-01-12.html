@@ -28,17 +28,10 @@
           <div class="kfsi-body">
             <div class="kfsi-snb">
               <div class="kfsi-snb__title">
-                <h2>고객의 소리</h2>
+                <h2>취업정보</h2>
               </div>
-              <a href="" class="kfsi-snb-item">묻고 답하기</a>
-              <a href="" class="kfsi-snb-item">자주하는 질문</a>
-              <a href="" class="kfsi-snb-item">친절직원 추천</a>
-              <a href="" class="kfsi-snb-item active">클린신고센터</a>
-              <a href="" class="kfsi-snb-item">
-                <span
-                  >갑질피해상담<i class="ico-newwindow-black ms-2"></i
-                ></span>
-              </a>
+              <a href="" class="kfsi-snb-item active">구인정보</a>
+              <a href="" class="kfsi-snb-item">구직정보</a>
             </div>
             <div class="kfsi-contents">
               <div class="kfsi-breadcrumb">
@@ -46,39 +39,30 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
                     <li class="breadcrumb-item">고객센터</li>
-                    <li class="breadcrumb-item">고객의 소리</li>
+                    <li class="breadcrumb-item">취업정보</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      클린신고센터
+                      구인정보
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="kfsi-contents-title">
-                <h1>클린신고센터</h1>
+                <h1>구인정보</h1>
               </div>
               <div class="kfsi-board">
-                <div class="kfsi-board-text">
-                  다음의 내용을 포함하는 글은 사전고시 없이 관리자가 검토,
-                  삭제할 수 있으니 유의하여 주시기 바랍니다.
-                  <ul>
-                    <li>- 비실명으로 올리신 글</li>
-                    <li>- 특정인에 대한 비방 및 근거 없는 유언비어</li>
-                    <li>- 상업적인 내용의 글</li>
-                    <li>- 동일한 내용의 반복 게시</li>
-                  </ul>
-                </div>
-                <div class="kfsi-caution">
-                  게시글은 2년 경과 후 자동으로 삭제됩니다.<br class="mo" />
-                  이점 유의 하시기 바랍니다.
+                <div class="kfsi-box bg-light">
+                  <span class="text-danger">*</span> 표시 항목은 구인 작성 시
+                  자동 반영되는 항목이니, 정확히 입력하시기 바랍니다.<br />
+                  또한, 저장하신 후 입력하신 내용을 수정할 수 없으니, 주의하여
+                  작성하시기 바랍니다.
                 </div>
                 <div class="kfsi-board-write mt-10">
-                  <div class="kfsi-board-write__title">클린신고센터 입력</div>
                   <div class="kfsi-board-write-form">
                     <table
-                      summary="클린 신고 센터 작성 양식으로 작성자 정보, 제목, 내용, 파일 첨부를 입력할 수 있는 테이블입니다."
+                      summary="구인정보 작성 및 제출을 위한 양식입니다. 작성자의 아이디, 업체명, 사업자등록번호, 대표자 성명, 부서 및 직위, 업체 연락처, 기타사항, 사업자등록증 첨부 항목을 포함합니다."
                     >
                       <caption>
-                        클린신고센터 작성 양식
+                        구인정보 작성 양식
                       </caption>
                       <colgroup>
                         <col style="width: 210px" />
@@ -86,37 +70,105 @@
                       </colgroup>
                       <tbody>
                         <tr>
-                          <th scope="row">작성자</th>
-                          <td>홍길동</td>
+                          <th scope="row"><strong>구인작성 아이디</strong></th>
+                          <td>asdfg (홍길동)</td>
                         </tr>
                         <tr>
-                          <th scope="row">제목</th>
+                          <th scope="row">
+                            업체명 <span class="text-danger">*</span>
+                          </th>
                           <td>
                             <input
                               type="text"
                               class="form-control"
-                              placeholder="제목을 입력해 주세요."
-                              title="제목을 입력해 주세요."
+                              placeholder="업체명을 입력해 주세요."
+                              title="업체명을 입력해 주세요."
+                              style="width: 500px"
                             />
                           </td>
                         </tr>
                         <tr>
-                          <th scope="row">내용</th>
+                          <th scope="row">
+                            사업자등록번호 <span class="text-danger">*</span>
+                          </th>
                           <td>
-                            <small class="text-danger">
-                              * 6하 원칙에 맞게 작성하여 주십시오.
-                            </small>
+                            <div class="d-flex gap-1">
+                              <input
+                                type="text"
+                                class="form-control"
+                                style="min-width: 100px; width: 100px"
+                                title="사업자등록번호 첫번째자리"
+                              />
+                              <input
+                                type="text"
+                                class="form-control"
+                                style="min-width: 80px; width: 80px"
+                                title="사업자등록번호 두번째자리"
+                              />
+                              <input
+                                type="text"
+                                class="form-control"
+                                style="min-width: 120px; width: 120px"
+                                title="사업자등록번호 세번째자리"
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            대표자 성명 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="대표자명을 입력해 주세요."
+                              title="대표자명을 입력해 주세요."
+                              style="width: 400px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            부서 및 직위 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="부서 및 직위를 입력해 주세요."
+                              title="부서 및 직위를 입력해 주세요."
+                              style="width: 400px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            업체 연락처 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="숫자만 입력 (ex 0212345678)"
+                              title="숫자만 입력 (ex 0212345678)"
+                              style="width: 400px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">기타사항</th>
+                          <td>
                             <textarea
                               class="form-control"
                               rows="3"
-                              style="height: 360px"
-                              placeholder="내용을 입력해 주세요."
-                              title="내용을 입력해 주세요."
+                              style="height: 110px"
+                              title="기타사항"
                             ></textarea>
                           </td>
                         </tr>
                         <tr>
-                          <th scope="row">파일첨부</th>
+                          <th scope="row">사업자등록증 첨부</th>
                           <td>
                             <div class="kfsi-upload">
                               <div id="dropzone">
@@ -251,6 +303,15 @@
                                 }
                               };
                             </script>
+                            <div class="mt-2">
+                              <p class="m-0">
+                                ※ 사업자등록증을 스캔하신 후 첨부해 주시기
+                                바랍니다.
+                              </p>
+                              <p class="m-0 text-danger">
+                                ※ pdf, jpg, gif 파일만 등록하시기 바랍니다.
+                              </p>
+                            </div>
                           </td>
                         </tr>
                       </tbody>

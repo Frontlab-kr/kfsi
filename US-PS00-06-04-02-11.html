@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>취업정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">구인정보</a>
+              <a href="" class="kfsi-snb-item active">구직정보</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">취업정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      구직정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>구직정보</h1>
+              </div>
+              <div class="mt-10">
+                <h4 class="kfsi-h4 mb-5">구직정보 작성시 주의사항</h4>
+                <div class="mb-9">
+                  <div class="mb-2 text-danger">
+                    ※ 아래의 경우 작성자의 동의없이 삭제됩니다.
+                  </div>
+                  <div class="kfsi-box bg-light text-danger">
+                    1. 불법적인 사항(자격증 대여 등)이 포함된 경우(관련법에 의거
+                    형사고발 조치)<br />
+                    2. 비방, 욕설 등의 비정상적인 내용의 경우<br />
+                    3. 근무 형태가 비상근, 비상주, 재택 등의 내용이 포함된
+                    경우<br />
+                    4. 점검관련 일용직(아르바이트)에 대한 게시물을 등재한
+                    경우<br />
+                    5. 본인 및 타인의 개인정보를 기재하여 노출한
+                    경우(개인정보보호법 의거)<br />
+                    &nbsp;&nbsp;&nbsp;- 개인정보 : 주민등록번호, 운전면허번호,
+                    자격증번호, 통장번호, 성명 + 개인 연락처(휴대폰, 이메일 등)
+                    등
+                  </div>
+                </div>
+                <div class="mb-9">
+                  <h5 class="kfsi-h5 mb-3">글 작성시 사용금지 단어</h5>
+                  <div class="kfsi-box">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          ※비상주나 재택 근무 등 불법적인 사항과 관련하여 글
+                          작성시 제목이나 기타사항 등에 아래 단어를 사용할 수
+                          없습니다.<br />
+                          <span class="text-primary"
+                            >[금지단어 : 비상근, 비상주, 재택, 자택, 대여, 알바,
+                            아르바이트, 일용직, 일당, 집, PQ 대기 등]</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="kfsi-h5 mb-3">개인정보수집 · 이용 동의</h5>
+                  <div class="kfsi-box">
+                    <div class="kfsi-table">
+                      <table
+                        summary="개인정보 수집 및 이용 동의 항목에 대한 테이블입니다. 수집항목, 이용목적, 보유기간을 포함합니다."
+                      >
+                        <caption>
+                          개인정보 수집 및 이용 동의 안내
+                        </caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">수집항목</th>
+                            <th scope="col">이용목적</th>
+                            <th scope="col">보유기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start">
+                              (필수)ID<br />
+                              (선택) 담당자 휴대폰번호, 이메일 주소
+                            </td>
+                            <td class="text-start">
+                              구인정보(작성하신 글의 내용 확인이 필요한 <br />
+                              경우 연락을 취하는 용도로 활용)
+                            </td>
+                            <td class="text-start text-primary">
+                              <strong>
+                                작성일 기준 1개월 자동파기<br />
+                                게시판 노출은 작성일기준 1개월
+                              </strong>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="m-0 mt-4">
+                      ※ 동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른
+                      불이익 내용 : <br />
+                      개인정보 수집 및 이용 동의를 거부할 권리가 있으며, 동의
+                      거부시 해당 서비스를 이용할 수 없습니다.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-10"
+                >
+                  <p class="m-0">위와같이 개인정보 수집·이용에 동의하십니까?</p>
+                  <div class="d-flex align-items-center gap-10">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-1"
+                      />
+                      <label class="form-check-label" for="radio1-1">
+                        동의합니다.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                        id="radio1-2"
+                      />
+                      <label class="form-check-label" for="radio1-2">
+                        동의하지 않습니다.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-button mt-8 justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    style="width: 220px"
+                  >
+                    작성 계속
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

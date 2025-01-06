@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>취업정보</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">구인정보</a>
+              <a href="" class="kfsi-snb-item active">구직정보</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">취업정보</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      구직정보
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>구직정보</h1>
+              </div>
+              <div class="mt-10">
+                <div class="kfsi-box bg-light">
+                  <span class="text-danger"
+                    >본 정보는 회원 여러분이 자유롭게 작성한 자료입니다. 우리
+                    안전원은 해당 게시물에 대한 내용상의 오류 등에 따른
+                    민·형사상의 책임을 지지 않습니다. 반드시 게시물의 사실여부를
+                    확인하시어 불의의 피해를 입는 일이 없도록 주의하시기
+                    바랍니다.</span
+                  >
+                  <div class="my-4 p-5 bg-danger rounded-4 text-white">
+                    <p class="m-0 mb-1">
+                      ※ 자격증 대여는 불법입니다. 자격증 대여 사기 피해에
+                      주의하시기 바랍니다.
+                    </p>
+                    <p class="d-flex gap-1 m-0">
+                      <span class="text-nowrap">※ 관련법령:</span>
+                      「소방시설공사업법」 제28조(소방기술 경력 등의 인정 등)
+                      제4항제2호 따라 자격수첩 또는 경력수첩을 다른 사람에게
+                      빌려준 경우에는 그 자격이 취소됩니다.
+                    </p>
+                  </div>
+                  <span class="text-danger"
+                    >「소방시설점검 및 공사」등 영업 행위에 대한 게시물은 별도의
+                    통보없이 삭제 될 수 있습니다.</span
+                  ><br />
+                  작성일 기준 1개월이 지난 글은 자동삭제 됩니다.
+                </div>
+                <div class="kfsi-search-filter mt-6">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          <div class="d-flex justify-content-between w-100">
+                            조건검색
+                            <span class="me-3 button-open">열기</span>
+                            <span class="me-3 button-close">닫기</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <dl>
+                            <dt>희망분야</dt>
+                            <dd>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-1"
+                                />
+                                <label class="form-check-label" for="radio1-1">
+                                  소방안전관리
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-2"
+                                />
+                                <label class="form-check-label" for="radio1-2">
+                                  위험안전관리
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-3"
+                                />
+                                <label class="form-check-label" for="radio1-3">
+                                  소방시설(공사)
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-4"
+                                />
+                                <label class="form-check-label" for="radio1-4">
+                                  소방시설(설계)
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-5"
+                                />
+                                <label class="form-check-label" for="radio1-5">
+                                  소방시설(감리)
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-6"
+                                />
+                                <label class="form-check-label" for="radio1-6">
+                                  소방시설(점검)
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio1"
+                                  id="radio1-7"
+                                />
+                                <label class="form-check-label" for="radio1-7">
+                                  기타
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>응시구분</dt>
+                            <dd>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-1"
+                                />
+                                <label class="form-check-label" for="radio2-1">
+                                  무관
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-2"
+                                />
+                                <label class="form-check-label" for="radio2-2">
+                                  신입
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio2"
+                                  id="radio2-3"
+                                />
+                                <label class="form-check-label" for="radio2-3">
+                                  경력
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>학력</dt>
+                            <dd>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-1"
+                                />
+                                <label class="form-check-label" for="radio3-1">
+                                  고졸
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-2"
+                                />
+                                <label class="form-check-label" for="radio3-2">
+                                  전문대재학
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-3"
+                                />
+                                <label class="form-check-label" for="radio3-3">
+                                  전문대졸업
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-4"
+                                />
+                                <label class="form-check-label" for="radio3-4">
+                                  대학교재학
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-5"
+                                />
+                                <label class="form-check-label" for="radio3-5">
+                                  대학교졸업
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-6"
+                                />
+                                <label class="form-check-label" for="radio3-6">
+                                  대학원재학
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio3"
+                                  id="radio3-7"
+                                />
+                                <label class="form-check-label" for="radio3-7">
+                                  대학원졸업
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>병역</dt>
+                            <dd>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio4"
+                                  id="radio4-1"
+                                />
+                                <label class="form-check-label" for="radio4-1">
+                                  무관
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio4"
+                                  id="radio4-2"
+                                />
+                                <label class="form-check-label" for="radio4-2">
+                                  군필
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio4"
+                                  id="radio4-3"
+                                />
+                                <label class="form-check-label" for="radio4-3">
+                                  미필
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio4"
+                                  id="radio4-4"
+                                />
+                                <label class="form-check-label" for="radio4-4">
+                                  면제
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio4"
+                                  id="radio4-5"
+                                />
+                                <label class="form-check-label" for="radio4-5">
+                                  현역
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>급여</dt>
+                            <dd>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-1"
+                                />
+                                <label class="form-check-label" for="radio6-1">
+                                  1,000만원 이하
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-2"
+                                />
+                                <label class="form-check-label" for="radio6-2">
+                                  1,000~2,000만원
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-3"
+                                />
+                                <label class="form-check-label" for="radio6-3">
+                                  2,000~3,000만원
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-4"
+                                />
+                                <label class="form-check-label" for="radio6-4">
+                                  3,000~4,000만원
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-5"
+                                />
+                                <label class="form-check-label" for="radio6-5">
+                                  4,000~5,000만원
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-6"
+                                />
+                                <label class="form-check-label" for="radio6-6">
+                                  5,000만원 이상
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio6"
+                                  id="radio6-7"
+                                />
+                                <label class="form-check-label" for="radio6-7">
+                                  협의 후 결정
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>근무지</dt>
+                            <dd class="grid-9">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-1"
+                                />
+                                <label class="form-check-label" for="radio7-1">
+                                  전국
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-2"
+                                />
+                                <label class="form-check-label" for="radio7-2">
+                                  서울
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-3"
+                                />
+                                <label class="form-check-label" for="radio7-3">
+                                  인천
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-4"
+                                />
+                                <label class="form-check-label" for="radio7-4">
+                                  대전
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-5"
+                                />
+                                <label class="form-check-label" for="radio7-5">
+                                  세종
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-6"
+                                />
+                                <label class="form-check-label" for="radio7-6">
+                                  대구
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-7"
+                                />
+                                <label class="form-check-label" for="radio7-7">
+                                  부산
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-8"
+                                />
+                                <label class="form-check-label" for="radio7-8">
+                                  광주
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-9"
+                                />
+                                <label class="form-check-label" for="radio7-9">
+                                  울산
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-10"
+                                />
+                                <label class="form-check-label" for="radio7-10">
+                                  경기
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-11"
+                                />
+                                <label class="form-check-label" for="radio7-11">
+                                  강원
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-12"
+                                />
+                                <label class="form-check-label" for="radio7-12">
+                                  충북
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-13"
+                                />
+                                <label class="form-check-label" for="radio7-13">
+                                  충남
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-14"
+                                />
+                                <label class="form-check-label" for="radio7-14">
+                                  경북
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-15"
+                                />
+                                <label class="form-check-label" for="radio7-15">
+                                  경남
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-16"
+                                />
+                                <label class="form-check-label" for="radio7-16">
+                                  전북
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-17"
+                                />
+                                <label class="form-check-label" for="radio7-17">
+                                  전남
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="radio7"
+                                  id="radio7-18"
+                                />
+                                <label class="form-check-label" for="radio7-18">
+                                  제주
+                                </label>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-search-filter-button">
+                    <button class="btn btn-write">
+                      <i class="ico-refresh"></i>
+                      초기화
+                    </button>
+                    <button
+                      class="btn btn-outline-primary text-primary fs-15"
+                      style="width: 200px"
+                    >
+                      선택된 조건으로 검색
+                    </button>
+                  </div>
+                </div>
+                <div class="kfsi-board mt-10">
+                  <div class="kfsi-board-head">
+                    <div class="kfsi-board-head-start">
+                      <div class="kfsi-board-head-amount">총 10건</div>
+                      <div class="mo">
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary"
+                          style="width: 120px"
+                        >
+                          글쓰기
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-board-head-end">
+                      <div class="kfsi-board-head-search">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            작성자
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="javascript:void(0);"
+                                >선택</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="검색어를 입력해 주세요."
+                          title="검색어를 입력해 주세요."
+                        />
+                        <button type="button" class="btn btn-primary">
+                          검색
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-list">
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>오늘</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>오늘</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>오늘</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>오늘</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>오늘</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>2024.10.10</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>2024.10.10</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>2024.10.10</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>2024.10.10</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="" class="kfsi-board-list-item">
+                      <div class="kfsi-board-list-item-number">10</div>
+                      <div class="kfsi-board-list-item-text">
+                        <div class="kfsi-board-list-item-text__head">
+                          <div class="kfsi-board-list-item-number">10</div>
+                        </div>
+                        <div class="kfsi-board-list-item-text__title">
+                          <p>소방점검, 대행,보수(간단) 구직희망</p>
+                        </div>
+                        <div class="kfsi-board-list-item-text__info">
+                          <p>
+                            <span>cshdj25**</span>
+                            <span>2024.10.10</span>
+                            <span>서울</span>
+                            <span>조회수 155</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="pc">
+                    <div class="kfsi-board-button">
+                      <p></p>
+                      <p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary btn-lg"
+                        >
+                          글쓰기
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-pagination">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item page-item--first">
+                          <a class="page-link" href="#">처음</a>
+                        </li>
+                        <li class="page-item page-item--prev">
+                          <a class="page-link" href="#">이전</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item page-item--next">
+                          <a class="page-link" href="#">다음</a>
+                        </li>
+                        <li class="page-item page-item--last">
+                          <a class="page-link" href="#">마지막</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
