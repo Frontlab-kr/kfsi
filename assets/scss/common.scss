@@ -117,6 +117,9 @@ body {
   .mo-justify-content-center {
     justify-content: center !important;
   }
+  .mo-flex-column {
+    flex-direction: column !important;
+  }
 }
 .kfsi {
   // overflow-x: hidden;
@@ -1307,6 +1310,10 @@ body {
         margin: 0;
       }
     }
+    &-modal {
+      width: 1200px;
+      max-width: 1200px;
+    }
     @media screen and (max-width: $mobileWidth) {
       position: relative;
       background-color: #666;
@@ -1535,6 +1542,10 @@ body {
           display: flex;
           gap: 4px;
         }
+      }
+      &-modal {
+        width: 100%;
+        max-width: 100%;
       }
     }
   }
