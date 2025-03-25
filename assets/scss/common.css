@@ -18293,6 +18293,12 @@ small, .small {
 .form-control-lg {
   font-size: 18px;
 }
+.form-control::-moz-placeholder {
+  color: #999;
+}
+.form-control::placeholder {
+  color: #999;
+}
 
 .form-select {
   width: auto;

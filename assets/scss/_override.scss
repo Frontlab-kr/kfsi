@@ -252,6 +252,9 @@ small {
   &-lg {
     font-size: 18px;
   }
+  &::placeholder {
+    color: #999;
+  }
 }
 .form-select {
   width: auto;

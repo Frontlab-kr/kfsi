@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body pt-0">
+            <div class="kfsi-contents">
+              <div class="kfsi-contents-title mt-6">
+                <h1 class="text-center">지원하기</h1>
+              </div>
+              <div class="pc">
+                <div class="kfsi-career">
+                  <div class="kfsi-box bg-light mt-10">
+                    한국소방안전원은 ‘신입직원 채용＂을 목적으로 아래와 같이
+                    개인정보를 수집·이용 및 제 3자 제공합니다.<br />
+                    내용을 자세히 읽으신 다음 동의 여부를 결정하여 주십시오.
+                  </div>
+                  <div class="mt-9 mb-3">
+                    <h5 class="kfsi-h5">개인정보 수집 · 이용 동의</h5>
+                  </div>
+                  <div class="kfsi-career-agree">
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="agreeAll"
+                        />
+                        <label class="form-check-label" for="agreeAll">
+                          전체동의
+                        </label>
+                      </div>
+                    </div>
+                    <div class="kfsi-career-agree__body">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="agree01"
+                              />
+                              <label class="form-check-label" for="agree01">
+                                <button
+                                  class="accordion-button"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseOne"
+                                  aria-expanded="false"
+                                  aria-controls="collapseOne"
+                                >
+                                  개인정보 수집 · 이용동의 [필수]
+                                </button>
+                              </label>
+                            </div>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <div class="mb-3">
+                                한국소방안전원 채용지원 위하여 「개인정보
+                                보호법」에 따라 개인정보 수집∙이용, 제공 동의를
+                                받고자 합니다.
+                              </div>
+                              <div class="kfsi-table mb-3">
+                                <table
+                                  summary="수집 · 이용목적, 항목, 보유 · 이용기간을 명시한 표로 개인정보 수집 · 이용동의 관련된 정보를 제공합니다."
+                                >
+                                  <caption>
+                                    개인정보 수집 · 이용동의
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 250px" />
+                                    <col style="width: 590px" />
+                                    <col style="width: 300px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">수집 · 이용목적</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td scope="row">
+                                        신입직원 채용 절차 진행
+                                      </td>
+                                      <td class="text-start">
+                                        성명, 생년월일, 휴대폰번호, 전자우편,
+                                        주소, 자기소개서, 학력 및 전공사항,
+                                        자격증, 어학성적, 경력사항, 장애인증명,
+                                        취업지원대상자 증명, 병역증명
+                                      </td>
+                                      <td class="text-start">
+                                        「채용공정화에 관한 법률」에 따라 채용
+                                        종료 후 180일까지
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="kfsi-career-agree__text">
+                                동의를 거부할 수 있으며, 동의 거부 시 채용지원
+                                신청이 불가합니다.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="agree02"
+                              />
+                              <label class="form-check-label" for="agree02">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="collapseTwo"
+                                >
+                                  민감정보 처리 내역 [선택]
+                                </button>
+                              </label>
+                            </div>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <div class="kfsi-table mb-3">
+                                <table
+                                  summary="수집 · 이용목적, 항목, 보유 · 이용기간을 명시한 표로 민감정보 처리 관련된 정보를 제공합니다."
+                                >
+                                  <caption>
+                                    민감정보 처리
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 250px" />
+                                    <col style="width: 590px" />
+                                    <col style="width: 300px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">수집 · 이용목적</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td scope="row">장애여부</td>
+                                      <td>신입직원 채용절차 진행</td>
+                                      <td class="text-start">
+                                        「채용공정화에 관한 법률」에 따라 채용
+                                        종료 후 180일까지
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="kfsi-career-agree__text">
+                                위의 민감정보 처리에 대한 동의를 거부할 권리가
+                                있습니다.<br />
+                                동의에 거부하셔도 채용지원 신청은 가능합니다.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="agree03"
+                              />
+                              <label class="form-check-label" for="agree03">
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="collapseThree"
+                                >
+                                  개인정보 제3자제공 내역 [선택]
+                                </button>
+                              </label>
+                            </div>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <div class="kfsi-table mb-3">
+                                <table
+                                  summary="수집 · 이용목적, 항목, 제공항목, 보유 · 이용기간을 명시한 표로 개인정보 제3자제공 내역 관련된 정보를 제공합니다."
+                                >
+                                  <caption>
+                                    개인정보 제3자제공 내역
+                                  </caption>
+                                  <colgroup>
+                                    <col style="width: 250px" />
+                                    <col style="width: 370px" />
+                                    <col style="width: 220px" />
+                                    <col style="width: 300px" />
+                                  </colgroup>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">수집 · 이용목적</th>
+                                      <th scope="col">항목</th>
+                                      <th scope="col">제공항목</th>
+                                      <th scope="col">보유 · 이용기간</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td scope="row">
+                                        출신학교, 소속업체, 자격증 발행처
+                                      </td>
+                                      <td>신입직원 채용절차 진행</td>
+                                      <td>학력, 경력, 자격</td>
+                                      <td class="text-start">
+                                        「채용공정화에 관한 법률」에 따라 채용
+                                        종료 후 180일까지
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="kfsi-career-agree__text">
+                                위의 민감정보 처리에 대한 동의를 거부할 권리가
+                                있습니다.<br />
+                                동의에 거부하셔도 채용지원 신청은 가능합니다.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <strong>
+                          「개인정보보호법」 등 관련 법령에 의거하여 본인은 위와
+                          같이 개인전보 수집 및 활용에 동의합니다.
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-button">
+                    <p></p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        취소
+                      </button>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        확인
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

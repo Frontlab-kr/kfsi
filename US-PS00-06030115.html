@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body pt-0">
+            <div class="kfsi-contents">
+              <div class="kfsi-contents-title mt-6">
+                <h1 class="text-center">채용</h1>
+              </div>
+              <div class="pc">
+                <div class="pb-6 border-bottom border-black">
+                  <div class="kfsi-textlist m-0 mt-10">
+                    <ul>
+                      <li class="text-primary">
+                        <strong>현재는 임시저장 상태입니다.</strong>
+                      </li>
+                      <li>
+                        지원마감일 전까지 최종 입사지원서 제출 버튼을 클릭하지
+                        않으면 최종지원으로 인정되지 않습니다.
+                      </li>
+                      <li class="text-danger">
+                        입사 지원서는 작성내용을 획인 후 반드시 최종 입사지원서
+                        제출 버튼을 클릭 하시기 바랍니다.
+                      </li>
+                      <li class="text-danger">
+                        최종 입사지원서 제출 후에는 수정 또는 삭제를 할 수
+                        없습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex gap-3 justify-content-end mt-5">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      취소
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary-light btn-lg"
+                      style="min-width: 120px"
+                    >
+                      수정
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-info btn-lg"
+                      style="min-width: 120px"
+                    >
+                      삭제
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      인쇄
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      style="min-width: 250px"
+                    >
+                      <strong>최종 입사지원서 제출</strong>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="kfsi-board-write">
+                    <h5 class="kfsi-h5 mb-3">지원분야</h5>
+                    <div class="kfsi-board-write-form">
+                      <table summary="지원 분야를 선택할 수 있는 테이블">
+                        <caption>
+                          지원 분야 선택
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">지원분야</th>
+                            <td>공개경쟁채용 (교육 · 진단 · 연구)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          연락이 가능한 휴대폰 번호를 입력하시기 바랍니다.
+                        </li>
+                        <li>
+                          전화번호가 없는 경우, 거주지역의 지역번호와 휴대폰
+                          번호를 입력하시기 바랍니다.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-10">
+                    <h5 class="kfsi-h5 mb-3">인적사항</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="지원자의 인적사항을 입력하는 표입니다. 성명, 생년월일, 연락처, 이메일, 주소 등을 입력합니다."
+                      >
+                        <caption>
+                          지원자의 인적사항을 입력하는 표입니다. 필수 항목은
+                          성명, 생년월일, 연락처, 주소입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">성명 (한글)</th>
+                            <td>홍길동</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">성명 (영문)</th>
+                            <td>Hong Gil Dong</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">성명 (한자)</th>
+                            <td>弘吉東</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">생년월일</th>
+                            <td>1900년 5월 5일</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">본인휴대폰</th>
+                            <td>010-0000-0000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">비상연락처</th>
+                            <td>02-1234-5678</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일</th>
+                            <td>qwert@naver.com</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">주소 (거주지)</th>
+                            <td>
+                              (07226) 서울시 영등포구 영중로 170<br />
+                              우리빌딩 3층
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-10">
+                    <h5 class="kfsi-h5 mb-3">응시자격 요건 확인</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="응시자의 자격 요건 확인을 위한 표입니다. 60세 미만 여부, 결격사유 해당 여부, 병역 이행 여부를 확인합니다."
+                      >
+                        <caption>
+                          응시자의 자격 요건 확인을 위한 표입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 500px" />
+                          <col style="width: 740px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">60세 미만</th>
+                            <td>예</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <a href="" class="text-decoration-underline"
+                                >안전원 인사규정 제17조</a
+                              >의 신규채용자 결격사유에 해당하지 않는 자
+                            </th>
+                            <td>예</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">병역필 또는 면제자(여성포함)</th>
+                            <td>예</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-10">
+                    <h5 class="kfsi-h5 mb-3">우대사항</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="지원자의 우대사항 입력을 위한 표입니다. 취업지원대상자 및 장애인 여부를 입력합니다."
+                      >
+                        <caption>
+                          지원자의 우대사항 입력을 위한 표입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">취업지원대상자(보훈 등)</th>
+                            <td>비대상</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">장애인</th>
+                            <td>비대상</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-10">
+                  <h5 class="kfsi-h5">학력사항</h5>
+                  <div class="ms-5 mt-1">
+                    (※ 접수마감일 기준 “졸업“ 또는 “학위취득” 학력만 입력.
+                    <span class="text-danger"
+                      >“졸업예정“, “졸업유예“ 학력은 입력불가</span
+                    >
+                    )
+                  </div>
+                  <div class="kfsi-career-table mt-3">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자의 학력 정보를 입력하는 표로, 학위구분, 입학연월, 졸업연월, 학교명, 학과명, 소재지, 학위번호 및 졸업구분을 포함합니다."
+                      >
+                        <caption>
+                          학력 정보 입력
+                        </caption>
+                        <colgroup>
+                          <col style="width: 60px" />
+                          <col style="width: 165px" />
+                          <col style="width: 165px" />
+                          <col style="width: 180px" />
+                          <col style="width: 180px" />
+                          <col style="width: 100px" />
+                          <col style="width: 180px" />
+                          <col style="width: 160px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">학위구분</th>
+                            <th scope="col">입학연월</th>
+                            <th scope="col">졸업연월</th>
+                            <th scope="col">학교명</th>
+                            <th scope="col">학과명(전공)</th>
+                            <th scope="col">소재지</th>
+                            <th scope="col">학위번호</th>
+                            <th scope="col">졸업구분</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start">전문학사</td>
+                            <td>2020년 03월</td>
+                            <td>2024년 02월</td>
+                            <td>한국대학교</td>
+                            <td>경영학과</td>
+                            <td>서울</td>
+                            <td>12345678</td>
+                            <td>졸업</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">외국어</h5>
+                  <div class="kfsi-career-table">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 직접 입력하는 외국어 시험 성적 정보입니다. 시험 종류, 점수, 응시일자, 수험번호, 발급번호, 성명을 입력합니다."
+                        aria-describedby="foreign-language-table-caption"
+                      >
+                        <caption id="foreign-language-table-caption">
+                          외국어 시험 성적 입력을 위한 표입니다. 시험 종류,
+                          점수, 응시일자, 수험번호, 발급번호, 성명을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col style="width: 120px" />
+                          <col style="width: 290px" />
+                          <col style="width: 215px" />
+                          <col style="width: 215px" />
+                          <col style="width: 215px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">점수</th>
+                            <th scope="col">응시일수</th>
+                            <th scope="col">수험번호</th>
+                            <th scope="col">발급번호</th>
+                            <th scope="col">
+                              수험표와 동일 한글<br />또는 영어 대문자 성명
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>TOEIC</td>
+                            <td>870 점</td>
+                            <td>2022년 02월 05일</td>
+                            <td>1111111111</td>
+                            <td>1111111111</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">자격증</h5>
+                  <div class="kfsi-career-table">
+                    <div class="mb-2" style="color: #406491">
+                      <strong>국가기술자격</strong>
+                    </div>
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 보유한 국가기술자격 정보를 입력하는 표입니다. 자격증명, 자격번호, 합격일자, 발행기관을 입력합니다."
+                        aria-describedby="certificate-technical-caption"
+                      >
+                        <caption id="certificate-technical-caption">
+                          국가기술자격 입력을 위한 표입니다. 자격증명, 자격번호,
+                          합격일자, 발행기관을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 350px" />
+                          <col style="width: 360px" />
+                          <col style="width: 230px" />
+                          <col style="width: 300px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">자격증명</th>
+                            <th scope="col">자격(면허)번호</th>
+                            <th scope="col">합격일자(취득일자)</th>
+                            <th scope="col">발행기관</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>소방기술사</td>
+                            <td>1234567890A</td>
+                            <td>2001년 01월 01일</td>
+                            <td>한국산업인력공단</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="mb-2" style="color: #406491">
+                      <strong>국가전문자격 등</strong>
+                    </div>
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 보유한 국가전문자격 또는 기타 전문 자격 정보를 입력하는 표입니다. 자격증명, 자격번호, 합격일자, 발행기관을 입력합니다."
+                        aria-describedby="certificate-professional-caption"
+                      >
+                        <caption id="certificate-professional-caption">
+                          국가전문자격 등 입력을 위한 표입니다. 자격증명,
+                          자격번호, 합격일자, 발행기관을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 350px" />
+                          <col style="width: 360px" />
+                          <col style="width: 230px" />
+                          <col style="width: 300px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">자격증명</th>
+                            <th scope="col">자격(면허)번호</th>
+                            <th scope="col">합격일자(취득일자)</th>
+                            <th scope="col">발행기관</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>소방시설관리자</td>
+                            <td>1234567890A</td>
+                            <td>2001년 01월 01일</td>
+                            <td>소방청</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="d-flex align-items-center gap-4 mb-3">
+                    <h5 class="kfsi-h5">경력사항</h5>
+                  </div>
+
+                  <div class="kfsi-career-table">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자의 근무 기간, 기관명, 직위 및 담당업무를 입력하는 표입니다."
+                      >
+                        <caption>
+                          경력 정보 입력
+                        </caption>
+                        <colgroup>
+                          <col style="width: 340px" />
+                          <col style="width: 300px" />
+                          <col style="width: 200px" />
+                          <col style="width: 400px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">근무기간(년/월)</th>
+                            <th scope="col">기관명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">담당업무</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2017년 03월 ~ 2024년 10월</td>
+                            <td>(주)대한민국회사</td>
+                            <td>과장</td>
+                            <td>OOOO소방 관리</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">자기소개서</h5>
+                  <div class="kfsi-career-table">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원 동기, 협업 경험, 정보 분석 경험 및 직무 경력에 대한 입력 폼입니다."
+                      >
+                        <caption>
+                          자기소개서 입력
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  1. 한국소방안전원에 지원하게 된 동기 및 지원
+                                  분야의 직무 수행을 위해 준비해 온 과정에 대해
+                                  기술하십시오.
+                                </p>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              자기소개서 1번 문항에 대한 답변입니다.<br />
+                              한국소방안전원에 지원하게 된 동기 및 지원 분야의
+                              직무 수행을 위해 준비해 온 과정을 작성합니다.<br />
+                              해당 내용은 이와 같습니다.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  2. 공동의 목표를 달성하기 위해 다른 사람과
+                                  긴밀하게 소통하며 성공적으로 협업을 이루었던
+                                  경험에 대해 기술하십시오.
+                                </p>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              자기소개서 2번 문항에 대한 답변입니다.<br />
+                              공동의 목표를 달성하기 위해 다른 사람과 긴밀하게
+                              소통하며 성공적으로 협업을 이루었던 경험을
+                              작성합니다.<br />
+                              해당 내용은 이와 같습니다.<br />
+                              감사합니다.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  3. 다양한 정보 또는 데이터를 체게적으로
+                                  수집·분석·조직하여 활용해 본 경험에 대해
+                                  기술하십시오.
+                                </p>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              자기소개서 3번 문항에 대한 답변입니다.<br />
+                              다양한 정보 또는 데이터를 체게적으로
+                              수집·분석·조직하여 활용해 본 경험을 작성합니다.<br />
+                              해당 내용은 이와 같습니다.<br />
+                              감사합니다.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  4. 입사지원서에 기술한 직무경력이나 직무관련
+                                  기타 활동에 대해 구체적으로 기술하십시오.
+                                </p>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              자기소개서 4번 문항에 대한 답변입니다.<br />
+                              입사지원서에 기술한 직무경력이나 직무관련 기타<br />
+                              활동을 작성합니다. 해당 내용은 이와 같습니다.<br />
+                              감사합니다.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="kfsi-box bg-light mt-10 border-black">
+                  <p class="m-0">
+                    <strong class="fs-17"
+                      >귀 안전원 채용시험에 응시하고자 지원서를 제출하며,
+                      기재사항이 허위임이 판명되었을 때에는 합격취소 또는
+                      임용취소처분에도 이의를 제기하지 아니할 것을
+                      서약합니다.</strong
+                    >
+                  </p>
+                  <div class="d-flex justify-content-end mt-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <strong>동의함</strong>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-board-button">
+                  <p></p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      취소
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary-light btn-lg"
+                      style="min-width: 120px"
+                    >
+                      수정
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-info btn-lg"
+                      style="min-width: 120px"
+                    >
+                      삭제
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      style="width: 250px"
+                    >
+                      <strong>최종 입사지원서 제출</strong>
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

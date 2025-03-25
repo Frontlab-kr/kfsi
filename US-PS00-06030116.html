@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body pt-0">
+            <div class="kfsi-contents">
+              <div class="kfsi-contents-title mt-6">
+                <h1 class="text-center">채용</h1>
+              </div>
+              <div class="pc">
+                <div class="pb-6 border-bottom border-black">
+                  <div class="kfsi-textlist m-0 mt-10">
+                    <ul>
+                      <li class="text-primary">현재는 임시저장 상태입니다.</li>
+                      <li>
+                        지원마감일 전까지 최종 입사지원서 제출 버튼을 클릭하지
+                        않으면 최종지원으로 인정되지 않습니다.
+                      </li>
+                      <li class="text-danger">
+                        입사 지원서는 작성내용을 획인 후 반드시 최종 입사지원서
+                        제출 버튼을 클릭 하시기 바랍니다.
+                      </li>
+                      <li class="text-danger">
+                        최종 입사지원서 제출 후에는 수정 또는 삭제를 할 수
+                        없습니다.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex gap-3 justify-content-end mt-5">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      취소
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      저장
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="kfsi-board-write">
+                    <h5 class="kfsi-h5 mb-3">지원분야</h5>
+                    <div class="kfsi-board-write-form">
+                      <table summary="지원 분야를 선택할 수 있는 테이블">
+                        <caption>
+                          지원 분야 선택
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">지원분야</th>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                  aria-haspopup="true"
+                                  style="width: 500px"
+                                >
+                                  선택해 주세요.
+                                </button>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                  role="menu"
+                                >
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="#"
+                                      role="menuitem"
+                                      >선택</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          연락이 가능한 휴대폰 번호를 입력하시기 바랍니다.
+                        </li>
+                        <li>
+                          전화번호가 없는 경우, 거주지역의 지역번호와 휴대폰
+                          번호를 입력하시기 바랍니다.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-5">
+                    <h5 class="kfsi-h5 mb-3">인적사항</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="지원자의 인적사항을 입력하는 표입니다. 성명, 생년월일, 연락처, 이메일, 주소 등을 입력합니다."
+                      >
+                        <caption>
+                          지원자의 인적사항을 입력하는 표입니다. 필수 항목은
+                          성명, 생년월일, 연락처, 주소입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              성명 (한글) <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="성명을 입력해 주세요."
+                                title="성명을 입력해 주세요."
+                                style="width: 400px"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              성명 (영문) <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="성명을 입력해 주세요."
+                                title="성명을 입력해 주세요."
+                                style="width: 400px"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              성명 (한자) <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="성명을 입력해 주세요."
+                                title="성명을 입력해 주세요."
+                                style="width: 400px"
+                              />
+                              <small class="ms-4"
+                                >*순수 한글인 경우, 한글을 입력하세요</small
+                              >
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              생년월일 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <input
+                                type="date"
+                                class="form-control w-auto"
+                                title="생년월일 입력"
+                                style="min-width: 200px"
+                              />
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              본인휴대폰 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control w-auto"
+                                placeholder="숫자만 입력 (ex 01012345678)"
+                                title="숫자만 입력 (ex 01012345678)"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              비상연락처 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <input
+                                  type="text"
+                                  class="form-control w-auto"
+                                  placeholder="숫자만 입력 (ex 01012345678)"
+                                  title="숫자만 입력 (ex 01012345678)"
+                                />
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일</th>
+                            <td>
+                              <div class="kfsi-email">
+                                <div
+                                  class="kfsi-email-form"
+                                  style="min-width: 500px"
+                                >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="이메일을 입력해 주세요."
+                                    title="이메일을 입력해 주세요."
+                                  />
+                                  <select
+                                    class="form-select"
+                                    aria-label="E-mail 선택"
+                                    title="E-mail 선택"
+                                  >
+                                    <option selected>선택</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hotmail.com">
+                                      hotmail.com
+                                    </option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="self">직접입력</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              주소 (거주지) <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div class="d-flex">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  style="min-width: 160px; width: 160px"
+                                  title="우편번호 입력"
+                                />
+                                <button type="button" class="btn btn-info ms-2">
+                                  우편번호 찾기
+                                </button>
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="상세 주소"
+                                />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="나머지 주소"
+                                  title="나머지 주소"
+                                />
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-10">
+                    <h5 class="kfsi-h5 mb-3">응시자격 요건 확인</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="응시자의 자격 요건 확인을 위한 표입니다. 60세 미만 여부, 결격사유 해당 여부, 병역 이행 여부를 확인합니다."
+                      >
+                        <caption>
+                          응시자의 자격 요건 확인을 위한 표입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 500px" />
+                          <col style="width: 740px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              60세 미만 <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div
+                                class="kfsi-checklist-question-list-item-answer-checkbox"
+                              >
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-01"
+                                    id="radio01-01-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-01-01"
+                                    checked
+                                  >
+                                    예
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-01"
+                                    id="radio01-01-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-01-02"
+                                  >
+                                    아니오
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <a href="" class="text-decoration-underline"
+                                >안전원 인사규정 제17조</a
+                              >의 신규채용자 결격사유에 해당하지 않는 자
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div
+                                class="kfsi-checklist-question-list-item-answer-checkbox"
+                              >
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-02"
+                                    id="radio01-02-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-02-01"
+                                    checked
+                                  >
+                                    예
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-02"
+                                    id="radio01-02-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-02-02"
+                                  >
+                                    아니오
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              병역필 또는 면제자(여성포함)
+                              <span class="text-danger">*</span>
+                            </th>
+                            <td>
+                              <div
+                                class="kfsi-checklist-question-list-item-answer-checkbox"
+                              >
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-03"
+                                    id="radio01-03-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-03-01"
+                                    checked
+                                  >
+                                    예
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio01-03"
+                                    id="radio01-03-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio01-03-02"
+                                  >
+                                    아니오
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          기재된 정보는 지원자격 및 우대사항 확인 목적 외에는
+                          사용되지 않음.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-write mt-5">
+                    <h5 class="kfsi-h5 mb-3">우대사항</h5>
+                    <div class="kfsi-board-write-form">
+                      <table
+                        summary="지원자의 우대사항 입력을 위한 표입니다. 취업지원대상자 및 장애인 여부를 입력합니다."
+                      >
+                        <caption>
+                          지원자의 우대사항 입력을 위한 표입니다.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 210px" />
+                          <col style="width: 1030px" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">취업지원대상자(보훈 등)</th>
+                            <td>
+                              <div
+                                class="kfsi-checklist-question-list-item-answer-checkbox"
+                              >
+                                <div
+                                  class="form-check align-items-center d-inline-flex gap-2"
+                                >
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio02-01"
+                                    id="radio02-01-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio02-01-01"
+                                    checked
+                                  >
+                                    대상
+
+                                    <span
+                                      >[ 가점비율 :
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="가점비율"
+                                        style="min-width: 60px; width: 60px"
+                                      />
+                                      % , 보훈번호 :
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="보훈번호"
+                                        style="min-width: 200px; width: 200px"
+                                      />
+                                      ]</span
+                                    >
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check align-items-center d-inline-flex gap-2"
+                                >
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio02-01"
+                                    id="radio02-01-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio02-01-02"
+                                  >
+                                    비대상
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">장애인</th>
+                            <td>
+                              <div
+                                class="kfsi-checklist-question-list-item-answer-checkbox"
+                              >
+                                <div
+                                  class="form-check align-items-center d-inline-flex gap-2"
+                                >
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio02-02"
+                                    id="radio02-02-01"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio02-02-01"
+                                    checked
+                                  >
+                                    대상
+
+                                    <span
+                                      >[ 등록번호 :
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        title="등록번호"
+                                        style="min-width: 357px; width: 357px"
+                                      />
+                                      ]</span
+                                    >
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check align-items-center d-inline-flex gap-2"
+                                >
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio02-02"
+                                    id="radio02-02-02"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radio02-02-02"
+                                  >
+                                    비대상
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5">학력사항</h5>
+                  <div class="kfsi-box bg-light mt-3">
+                    <div class="kfsi-textlist m-0 mt-2">
+                      <ul>
+                        <li>
+                          ‘최종학력’은 ‘졸업(학위취득)’ 기준으로 작성
+                          (졸업예정자, 졸업유예자는 해당 없음).
+                        </li>
+                        <li>
+                          석사 및 박사 수료의 경우 졸업(학위취득)으로 인정되지
+                          않음.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자의 최종 학력사항을 입력하는 표입니다. 학위구분, 학과명, 졸업 여부를 작성합니다."
+                        aria-describedby="education-info-caption"
+                      >
+                        <caption id="education-info-caption">
+                          지원자의 학력사항 입력을 위한 표입니다. 학위구분,
+                          학과명(전공), 졸업 여부를 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col style="width: 600px" />
+                          <col style="width: 450px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">학위구분</th>
+                            <th scope="col">학과명(전공)</th>
+                            <th scope="col">졸업여부(졸업/학위취득)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start">전문학사</td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="학과명(전공) 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  졸업(학위취득)
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">외국어</h5>
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>
+                          자격요건 구비 시점은 공고마감일(원서접수 마감일) 기준
+                          발표되고, 입사예정일 기준으로 유효한 성적만 인정
+                          <ul class="no-bullet">
+                            <li>
+                              → 단, 유효기간(2년)이 만료되기 전에 인사혁신처
+                              통합채용포털 (carrer.gosi.kr)에 유효한
+                              정규(정기)시험 성적으로 등록된 경우 응시일로부터
+                              5년이 되는 날이 속한 연도의 말일까지 유효한
+                              정규(정기)시험 성적으로 인정.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 직접 입력하는 외국어 시험 성적 정보입니다. 시험 종류, 점수, 응시일자, 수험번호, 발급번호, 성명을 입력합니다."
+                        aria-describedby="foreign-language-table-caption"
+                      >
+                        <caption id="foreign-language-table-caption">
+                          외국어 시험 성적 입력을 위한 표입니다. 시험 종류,
+                          점수, 응시일자, 수험번호, 발급번호, 성명을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 180px" />
+                          <col style="width: 120px" />
+                          <col style="width: 290px" />
+                          <col style="width: 215px" />
+                          <col style="width: 215px" />
+                          <col style="width: 215px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">점수</th>
+                            <th scope="col">응시일수</th>
+                            <th scope="col">수험번호</th>
+                            <th scope="col">발급번호</th>
+                            <th scope="col">
+                              수험표와 동일 한글<br />또는 영어 대문자 성명
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start">TOEIC</td>
+                            <td>
+                              <div class="d-flex align-items-center gap-1">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="취득점수 입력"
+                                  style="min-width: 80px; width: 80px"
+                                />
+                                점
+                              </div>
+                            </td>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    년도
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    월
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    일
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="수험번호 입력"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="발급번호 입력"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="수험표와 동일 한글 
+                                또는 영어 대문자 성명 입력"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">자격증</h5>
+                  <div class="kfsi-box bg-light">
+                    <div class="kfsi-textlist m-0">
+                      <ul>
+                        <li>검색되는 자격증 외 등록은 불가합니다.</li>
+                        <li>
+                          <strong>‘ 직무 관련 자격 종류 ’</strong> 에 해당하는
+                          <strong>최종 합격에 대한 자격만 입력</strong>
+                          <ul class="no-bullet">
+                            <li>
+                              → ‘ 자격 ’ 은 상위자격 최대 N개까지 서류전형에서
+                              점수 부여(필기시험, 면접시험 점수 없음)
+                              <a href="" class="text-primary ms-4"
+                                >[점수가 인정되는 자격 목록 확인]</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          자격증은 지원자가 취득 보유한 자격 중에서
+                          <strong>4개 까지만</strong> 입력 가능(상위자격 순으로
+                          입력).
+                        </li>
+                        <li>
+                          <strong>‘ 자격(면허)번호 ‘</strong> 항목 입력시
+                          <strong
+                            >‘ 숫자 0 ’ 과 ‘ 알파벳 O ’ 입력 구분 유의</strong
+                          >
+                          (한국산업인력공단 자격번호는 숫자 11자리와 알파벳
+                          1자리로 구성)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="mb-2" style="color: #406491">
+                      <strong>국가기술자격</strong>
+                    </div>
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 보유한 국가기술자격 정보를 입력하는 표입니다. 자격증명, 자격번호, 합격일자, 발행기관을 입력합니다."
+                        aria-describedby="certificate-technical-caption"
+                      >
+                        <caption id="certificate-technical-caption">
+                          국가기술자격 입력을 위한 표입니다. 자격증명, 자격번호,
+                          합격일자, 발행기관을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 350px" />
+                          <col style="width: 360px" />
+                          <col style="width: 230px" />
+                          <col style="width: 300px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">자격증명</th>
+                            <th scope="col">자격(면허)번호</th>
+                            <th scope="col">합격일자(취득일자)</th>
+                            <th scope="col">발행기관</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="자격(면허)번호 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    년도
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    월
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    일
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="발행기관 입력"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="mb-2" style="color: #406491">
+                      <strong>국가전문자격 등</strong>
+                    </div>
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자가 보유한 국가전문자격 또는 기타 전문 자격 정보를 입력하는 표입니다. 자격증명, 자격번호, 합격일자, 발행기관을 입력합니다."
+                        aria-describedby="certificate-professional-caption"
+                      >
+                        <caption id="certificate-professional-caption">
+                          국가전문자격 등 입력을 위한 표입니다. 자격증명,
+                          자격번호, 합격일자, 발행기관을 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 350px" />
+                          <col style="width: 360px" />
+                          <col style="width: 230px" />
+                          <col style="width: 300px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">자격증명</th>
+                            <th scope="col">자격(면허)번호</th>
+                            <th scope="col">합격일자(취득일자)</th>
+                            <th scope="col">발행기관</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="dropdown-item"
+                                      href="javascript:void(0);"
+                                      >선택</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="자격(면허)번호 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="d-flex gap-2">
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    년도
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    월
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    일
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="javascript:void(0);"
+                                        >선택</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="발행기관 입력"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div class="d-flex align-items-center gap-4 mb-3">
+                    <h5 class="kfsi-h5">경력사항</h5>
+                    <small class="text-danger"
+                      >[경력사항은 서류심사 평가항목이 아님. “직무경험”을
+                      참고하기 위한 면접 자료로만 활용]</small
+                    >
+                  </div>
+
+                  <div class="kfsi-career-table">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원자의 경력사항을 입력하는 표입니다. 기관명, 근무기간, 직위, 담당업무 정보를 입력합니다."
+                        aria-describedby="career-info-caption"
+                      >
+                        <caption id="career-info-caption">
+                          경력사항 입력을 위한 표입니다. 기관명, 근무기간, 직위,
+                          담당업무를 입력하세요.
+                        </caption>
+                        <colgroup>
+                          <col style="width: 340px" />
+                          <col style="width: 300px" />
+                          <col style="width: 200px" />
+                          <col style="width: 400px" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">기관명</th>
+                            <th scope="col">근무기간(년/월)</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">담당업무</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="기관명 입력"
+                              />
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center gap-4">
+                                <div class="d-flex gap-2">
+                                  <div class="dropdown">
+                                    <button
+                                      class="btn btn-outline-secondary dropdown-toggle"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      년도
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="dropdown">
+                                    <button
+                                      class="btn btn-outline-secondary dropdown-toggle"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      월
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                ~
+                                <div class="d-flex gap-2">
+                                  <div class="dropdown">
+                                    <button
+                                      class="btn btn-outline-secondary dropdown-toggle"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      년도
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="dropdown">
+                                    <button
+                                      class="btn btn-outline-secondary dropdown-toggle"
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      월
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="dropdown-item"
+                                          href="javascript:void(0);"
+                                          >선택</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="직위 입력"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="text"
+                                class="form-control"
+                                title="담당업무 입력"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <h5 class="kfsi-h5 mb-3">자기소개서</h5>
+                  <div class="kfsi-career-table mt-6">
+                    <div class="kfsi-table">
+                      <table
+                        summary="지원 동기, 협업 경험, 정보 분석 경험 및 직무 경력에 대한 입력 폼입니다."
+                      >
+                        <caption>
+                          자기소개서 입력
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  1. 한국소방안전원에 지원하게 된 동기 및 지원
+                                  분야의 직무 수행을 위해 준비해 온 과정에 대해
+                                  기술하십시오.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                  <input
+                                    type="text"
+                                    class="form-control mw-auto"
+                                    title="학교명 입력"
+                                    style="width: 80px"
+                                  />
+                                  <span
+                                    class="fs-14 text-secondary fw-normal text-nowrap"
+                                    >/ 1,500byte</span
+                                  >
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              <textarea
+                                class="form-control"
+                                style="height: 400px"
+                                placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                              ></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  2. 공동의 목표를 달성하기 위해 다른 사람과
+                                  긴밀하게 소통하며 성공적으로 협업을 이루었던
+                                  경험에 대해 기술하십시오.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                  <input
+                                    type="text"
+                                    class="form-control mw-auto"
+                                    title="학교명 입력"
+                                    style="width: 80px"
+                                  />
+                                  <span
+                                    class="fs-14 text-secondary fw-normal text-nowrap"
+                                    >/ 1,500byte</span
+                                  >
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              <textarea
+                                class="form-control"
+                                style="height: 400px"
+                                placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                              ></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  3. 다양한 정보 또는 데이터를 체게적으로
+                                  수집·분석·조직하여 활용해 본 경험에 대해
+                                  기술하십시오.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                  <input
+                                    type="text"
+                                    class="form-control mw-auto"
+                                    title="학교명 입력"
+                                    style="width: 80px"
+                                  />
+                                  <span
+                                    class="fs-14 text-secondary fw-normal text-nowrap"
+                                    >/ 1,500byte</span
+                                  >
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              <textarea
+                                class="form-control"
+                                style="height: 400px"
+                                placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                              ></textarea>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <p class="m-0">
+                                  4. 입사지원서에 기술한 직무경력이나 직무관련
+                                  기타 활동에 대해 구체적으로 기술하십시오.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                  <input
+                                    type="text"
+                                    class="form-control mw-auto"
+                                    title="학교명 입력"
+                                    style="width: 80px"
+                                  />
+                                  <span
+                                    class="fs-14 text-secondary fw-normal text-nowrap"
+                                    >/ 1,500byte</span
+                                  >
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td class="text-start">
+                              <textarea
+                                class="form-control"
+                                style="height: 400px"
+                                placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                              ></textarea>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="kfsi-board-button">
+                  <p></p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      취소
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg"
+                      style="min-width: 120px"
+                    >
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
