@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body pt-0">
+            <div class="kfsi-contents">
+              <div class="kfsi-contents-title mt-6">
+                <h1 class="text-center">지원하기</h1>
+              </div>
+              <div class="pc">
+                <div class="kfsi-career">
+                  <div class="mt-10">
+                    <h5 class="kfsi-h5 mb-3">자기소개서</h5>
+                    <div class="kfsi-box bg-light">
+                      <div class="kfsi-textlist m-0">
+                        <ul>
+                          <li>
+                            입력 시, 성별, 학교명, 학력, 출신 지역, 가족관계,
+                            신장, 체중, 결혼관련, 종교 등에 대한 내용 작성 금지
+                            <ul class="no-bullet">
+                              <li>
+                                → 자기소개사항 불성실 기재가 (비속어 사용,
+                                무의미한 단어 나열 및 동일 문구 반복 등)는
+                                자격미달로 서류전형 불합격 처리될 수 있음.
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kfsi-career-table mt-6">
+                      <div class="kfsi-table">
+                        <table
+                          summary="지원 동기, 협업 경험, 정보 분석 경험 및 직무 경력에 대한 입력 폼입니다."
+                        >
+                          <caption>
+                            자기소개서 입력
+                          </caption>
+                          <tbody>
+                            <tr>
+                              <th scope="row">
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="m-0">
+                                    1. 귀하가 지원하게 된 동기를 기술하십시오.
+                                  </p>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <input
+                                      type="text"
+                                      class="form-control mw-auto"
+                                      title="학교명 입력"
+                                      style="width: 80px"
+                                    />
+                                    <span
+                                      class="fs-14 text-secondary fw-normal text-nowrap"
+                                      >/ 1,500byte</span
+                                    >
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                            <tr>
+                              <td class="text-start">
+                                <textarea
+                                  class="form-control"
+                                  style="height: 400px"
+                                  placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                  title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                ></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="m-0">
+                                    2. 해당 직무에 적합한 능력을 갖추기 위해
+                                    어떠한 노력을 해왔는지 기술하십시오.
+                                  </p>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <input
+                                      type="text"
+                                      class="form-control mw-auto"
+                                      title="학교명 입력"
+                                      style="width: 80px"
+                                    />
+                                    <span
+                                      class="fs-14 text-secondary fw-normal text-nowrap"
+                                      >/ 1,500byte</span
+                                    >
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                            <tr>
+                              <td class="text-start">
+                                <textarea
+                                  class="form-control"
+                                  style="height: 400px"
+                                  placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                  title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                ></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="m-0">
+                                    3. 공동의 목표를 달성하기 위해 다른 사람과
+                                    긴밀하게 소통하며 성공적으로 협업을 이루었던
+                                    경험에 대하여 기술하십시오.
+                                  </p>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <input
+                                      type="text"
+                                      class="form-control mw-auto"
+                                      title="학교명 입력"
+                                      style="width: 80px"
+                                    />
+                                    <span
+                                      class="fs-14 text-secondary fw-normal text-nowrap"
+                                      >/ 1,500byte</span
+                                    >
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                            <tr>
+                              <td class="text-start">
+                                <textarea
+                                  class="form-control"
+                                  style="height: 400px"
+                                  placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                  title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                ></textarea>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="m-0">
+                                    4. 공고에 명시된 담당예정직무와 연계하여
+                                    업무경험, 향후 업무수행계획 등을 기술하여
+                                    주십시오.
+                                  </p>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <input
+                                      type="text"
+                                      class="form-control mw-auto"
+                                      title="학교명 입력"
+                                      style="width: 80px"
+                                    />
+                                    <span
+                                      class="fs-14 text-secondary fw-normal text-nowrap"
+                                      >/ 1,500byte</span
+                                    >
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                            <tr>
+                              <td class="text-start">
+                                <textarea
+                                  class="form-control"
+                                  style="height: 400px"
+                                  placeholder="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                  title="30분이 지나면 자동 로그아웃 되오니, 내용을 개인 PC 메모장 등에 저장한 후 작성 하시기 바랍니다."
+                                ></textarea>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="kfsi-board-button">
+                    <p></p>
+                    <p>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary btn-lg"
+                        style="width: 200px"
+                      >
+                        이전단계
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg"
+                        style="width: 250px"
+                      >
+                        저장 후 다음단계
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

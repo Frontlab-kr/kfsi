@@ -8,6 +8,8 @@
 @import './components';
 @import './pages';
 
+.text-info {
+}
 @mixin text-clamp($lines: 2, $line-height: false) {
   display: -webkit-box;
   overflow: hidden;
@@ -5015,6 +5017,16 @@ body {
         text-align: left;
         color: #000;
       }
+      &-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+      }
       &-search {
         display: flex;
         align-items: center;
@@ -5929,6 +5941,16 @@ body {
           display: flex;
           align-items: center;
           width: 100%;
+        }
+        &-title {
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #032c5e;
         }
         &-amount {
           //margin-top: 22px;

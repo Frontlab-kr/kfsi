@@ -18203,6 +18203,10 @@ small, .small {
   border: solid 1px #ccc;
   color: #333 !important;
 }
+.btn-info2 {
+  background-color: #406491;
+  color: #fff;
+}
 .btn:disabled, .btn-disabled {
   border-color: #eee !important;
   background-color: #eee !important;
@@ -26092,6 +26096,16 @@ body {
   text-align: left;
   color: #000;
 }
+.kfsi-board-head-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
 .kfsi-board-head-search {
   display: flex;
   align-items: center;
@@ -26975,6 +26989,16 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+  }
+  .kfsi-board-head-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #032c5e;
   }
   .kfsi-board-head-amount {
     font-size: 15px;
