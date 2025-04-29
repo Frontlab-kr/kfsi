@@ -277,8 +277,19 @@ body {
       }
     }
     &-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.92;
+      letter-spacing: normal;
+      text-align: left;
+      color: #005aa9;
       img {
-        width: 167px;
+        width: 62px;
       }
     }
     &-gnb {
@@ -731,9 +742,20 @@ body {
         display: none;
       }
       &-logo {
-        padding: 10px 0 0 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #005aa9;
         img {
-          width: 125px;
+          width: 44px;
         }
       }
       &-back {
