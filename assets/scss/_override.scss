@@ -165,6 +165,10 @@ small {
   &-info2 {
     background-color: #406491;
     color: #fff;
+    &:hover {
+      background-color: #406491;
+      color: #fff;
+    }
   }
   &:disabled,
   &-disabled {

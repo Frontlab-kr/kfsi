@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>소방안전관리대상</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">안내</a>
+              <a href="" class="kfsi-snb-item active">공고</a>
+              <a href="" class="kfsi-snb-item">신청 및 결과</a>
+              <a href="" class="kfsi-snb-item">역대수상작</a>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전문화행사</li>
+                    <li class="breadcrumb-item">소방안전관리대상</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      지원하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="kfsi-contents-title">
+                <h1>지원하기 (2단계)</h1>
+              </div>
+              <div class="pt-10">
+                <div class="mb-15 mo-mb-10">
+                  <h5 class="kfsi-h5">대상물 목록</h5>
+                  <div class="kfsi-table kfsi-table-scroll mt-3">
+                    <table
+                      summary="소방안전관리 대상물 목록으로, 상호명, 주소, 선택 버튼으로 구성되어 있습니다."
+                    >
+                      <caption>
+                        대상물 목록 - 상호명 및 주소 선택
+                      </caption>
+                      <colgroup>
+                        <col style="width: 200px" />
+                        <col style="width: 620px" />
+                        <col style="width: 120px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">상호명</th>
+                          <th scope="col">주소</th>
+                          <th scope="col">선택</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="text-start">정가네 로얄프라자</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로 587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              선택
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-start">정가네 로얄프라자</td>
+                          <td class="text-start">
+                            인천광역시 서구 인천광역시 서구 승학로 587 587
+                            로얄프라자
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              선택
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h5 class="kfsi-h5">소방계획서 작성 대상물 정보</h5>
+                    <button type="button" class="btn btn-info2">
+                      불러오기
+                    </button>
+                  </div>
+                  <div class="kfsi-table kfsi-table-scroll mt-3">
+                    <table
+                      summary="소방계획서 작성 대상물 목록으로, 번호, 소방계획서 제목, 신청 상태 및 결과 정보로 구성되어 있습니다."
+                    >
+                      <caption>
+                        소방계획서 작성 대상물 정보
+                      </caption>
+                      <colgroup>
+                        <col style="width: 70px" />
+                        <col style="width: 630px" />
+                        <col style="width: 120px" />
+                        <col style="width: 120px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">NO</th>
+                          <th scope="col">소방계획서</th>
+                          <th scope="col">신청</th>
+                          <th scope="col">결과</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <div
+                              class="d-flex align-items-center justify-content-between mo-flex-column gap-2"
+                            >
+                              <div>로얄프라자 2025 소방계획서</div>
+
+                              <button
+                                type="button"
+                                class="btn btn-outline-secondary"
+                              >
+                                수정
+                              </button>
+                            </div>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              제출
+                            </button>
+                          </td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000000;
+      "
+    >
+      <a
+        href=""
+        class="btn btn-primary btn-sm"
+        data-bs-toggle="modal"
+        data-bs-target="#modal01"
+        >UI_PS00_0605330_M(P)</a
+      >
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal01" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 800px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5"></h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-table kfsi-table-scroll mt-3">
+              <table
+                summary="임시 저장된 소방계획서 목록으로, 상태 및 저장일시, 제목, 선택 버튼으로 구성됩니다."
+              >
+                <caption>
+                  임시 저장된 소방계획서 목록
+                </caption>
+                <colgroup>
+                  <col style="width: 222px" />
+                  <col style="width: 410px" />
+                  <col style="width: 120px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">상태(저장일시)</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">선택</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="text-start">작성 중 (2024.11.05 10:25)</td>
+                    <td class="text-start">
+                      로얄프라자 2025 소방계획서 (임시저장)
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">작성 중 (2024.11.05 10:25)</td>
+                    <td class="text-start">
+                      로얄프라자 2025 소방계획서 (임시저장)
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">작성 중 (2024.11.05 10:25)</td>
+                    <td class="text-start">
+                      로얄프라자 2025 소방계획서 (임시저장)
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
