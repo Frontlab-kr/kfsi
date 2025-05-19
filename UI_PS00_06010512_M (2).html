@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>고객의 소리</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">묻고 답하기</a>
+              <a href="" class="kfsi-snb-item">자주하는 질문</a>
+              <a href="" class="kfsi-snb-item">친절직원 추천</a>
+              <a href="" class="kfsi-snb-item">클린신고센터</a>
+              <a href="" class="kfsi-snb-item">
+                <span
+                  >갑질피해상담<i class="ico-newwindow-black ms-2"></i
+                ></span>
+              </a>
+              <a href="" class="kfsi-snb-item active">안전원 제안하기</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">고객센터</li>
+                    <li class="breadcrumb-item">고객의 소리</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      안전원 제안하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="kfsi-contents-title">
+                <h1>안전원 제안하기 등록</h1>
+              </div>
+              <div class="kfsi-board">
+                <div class="kfsi-board-write mt-10">
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="성함, 연락처, 소속, 직위, 제안건명, 개요, 현재상황 및 문제점, 개선방향, 실시효과, 파일첨부 등 제안 등록에 필요한 입력 항목을 포함한 표입니다."
+                    >
+                      <caption>
+                        제안 등록 입력 항목
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 730px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            성함 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="성함을 입력해 주세요."
+                              title="성함을 입력해 주세요."
+                              style="width: 300px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            연락처 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="연락처을 입력해 주세요."
+                              title="연락처을 입력해 주세요."
+                              style="width: 300px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            소속 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="소속을 입력해 주세요."
+                              title="소속을 입력해 주세요."
+                              style="width: 300px"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            직위 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="직위을 입력해 주세요."
+                              title="직위을 입력해 주세요."
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            제안건명 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="제안건명을 입력해 주세요."
+                              title="제안건명을 입력해 주세요."
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            개요 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              placeholder="개요를 입력해 주세요."
+                              title="개요를 입력해 주세요."
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            현재상황 및 문제점
+                            <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              placeholder="현재상황 및 문제점을 입력해 주세요."
+                              title="현재상황 및 문제점을 입력해 주세요."
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            개선방향 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              placeholder="개선방향을 입력해 주세요."
+                              title="개선방향을 입력해 주세요."
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            실시효과 <span class="text-danger">*</span>
+                          </th>
+                          <td>
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              style="height: 110px"
+                              placeholder="실시효과를 입력해 주세요."
+                              title="실시효과를 입력해 주세요."
+                            ></textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">파일첨부</th>
+                          <td>
+                            <div class="kfsi-upload">
+                              <div id="dropzone">
+                                <form
+                                  class="dropzone needsclick"
+                                  id="demo-upload"
+                                  action="/upload"
+                                >
+                                  <div class="dz-message needsclick">
+                                    <div class="dz-message__title">
+                                      <i class="ico-file-plus"></i>
+                                      파일을 이곳에 드래그하세요.<br />
+                                    </div>
+                                    <small
+                                      >(또는 클릭하여 파일을 선택하세요)</small
+                                    >
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <script>
+                              var dropzone = new Dropzone('#demo-upload', {
+                                previewTemplate:
+                                  document.querySelector('#preview-template')
+                                    .innerHTML,
+                                parallelUploads: 2,
+                                thumbnailHeight: 120,
+                                thumbnailWidth: 120,
+                                maxFilesize: 3, // 최대 파일 크기 (MB)
+                                filesizeBase: 1000,
+                                dictDefaultMessage:
+                                  '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                dictFallbackMessage:
+                                  '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                dictFileTooBig:
+                                  '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                dictInvalidFileType:
+                                  '이 파일 형식은 업로드할 수 없습니다.',
+                                dictResponseError:
+                                  '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                dictCancelUpload: '업로드 취소',
+                                dictCancelUploadConfirmation:
+                                  '이 업로드를 정말 취소하시겠습니까?',
+                                dictRemoveFile: '파일 삭제',
+                                dictMaxFilesExceeded:
+                                  '더 이상 파일을 업로드할 수 없습니다.',
+                                thumbnail: function (file, dataUrl) {
+                                  if (file.previewElement) {
+                                    file.previewElement.classList.remove(
+                                      'dz-file-preview'
+                                    );
+                                    var images =
+                                      file.previewElement.querySelectorAll(
+                                        '[data-dz-thumbnail]'
+                                      );
+                                    for (var i = 0; i < images.length; i++) {
+                                      var thumbnailElement = images[i];
+                                      thumbnailElement.alt = file.name;
+                                      thumbnailElement.src = dataUrl;
+                                    }
+                                    setTimeout(function () {
+                                      file.previewElement.classList.add(
+                                        'dz-image-preview'
+                                      );
+                                    }, 1);
+                                  }
+                                },
+                              });
+
+                              // 파일 업로드 시 시뮬레이션
+                              var minSteps = 6,
+                                maxSteps = 60,
+                                timeBetweenSteps = 100,
+                                bytesPerStep = 100000;
+
+                              dropzone.uploadFiles = function (files) {
+                                var self = this;
+
+                                for (var i = 0; i < files.length; i++) {
+                                  var file = files[i];
+                                  totalSteps = Math.round(
+                                    Math.min(
+                                      maxSteps,
+                                      Math.max(
+                                        minSteps,
+                                        file.size / bytesPerStep
+                                      )
+                                    )
+                                  );
+
+                                  for (
+                                    var step = 0;
+                                    step < totalSteps;
+                                    step++
+                                  ) {
+                                    var duration =
+                                      timeBetweenSteps * (step + 1);
+                                    setTimeout(
+                                      (function (file, totalSteps, step) {
+                                        return function () {
+                                          file.upload = {
+                                            progress:
+                                              (100 * (step + 1)) / totalSteps,
+                                            total: file.size,
+                                            bytesSent:
+                                              ((step + 1) * file.size) /
+                                              totalSteps,
+                                          };
+
+                                          self.emit(
+                                            'uploadprogress',
+                                            file,
+                                            file.upload.progress,
+                                            file.upload.bytesSent
+                                          );
+                                          if (file.upload.progress == 100) {
+                                            file.status = Dropzone.SUCCESS;
+                                            self.emit(
+                                              'success',
+                                              file,
+                                              'success',
+                                              null
+                                            );
+                                            self.emit('complete', file);
+                                            self.processQueue();
+                                          }
+                                        };
+                                      })(file, totalSteps, step),
+                                      duration
+                                    );
+                                  }
+                                }
+                              };
+                            </script>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-board-button">
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      목록
+                    </button>
+                  </p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary btn-lg"
+                    >
+                      취소
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg">
+                      저장
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
