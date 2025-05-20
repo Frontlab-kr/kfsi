@@ -26374,6 +26374,26 @@ body {
   text-align: center;
   color: #000;
 }
+.kfsi-board-list--comment .kfsi-board-list-item-text__title {
+  align-items: flex-start;
+}
+.kfsi-board-list--comment .kfsi-board-list-item-text__title::after {
+  content: "";
+  display: block;
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon/comment-arrow.svg) no-repeat 50% 50%;
+  background-size: 100%;
+  transition: all 0.2s ease;
+}
+.kfsi-board-list--comment .kfsi-board-list-item.active .kfsi-board-list-item-text__title p {
+  overflow: visible;
+  display: block;
+}
+.kfsi-board-list--comment .kfsi-board-list-item.active .kfsi-board-list-item-text__title::after {
+  transform: rotate(180deg);
+}
 .kfsi-board-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
