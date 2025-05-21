@@ -180,6 +180,7 @@ small {
 .dropdown-toggle {
   min-width: 200px;
   justify-content: space-between;
+  background-color: #fff;
   @media screen and (max-width: $mobileWidth) {
     min-width: 100%;
   }

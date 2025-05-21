@@ -27,11 +27,10 @@
               <div class="kfsi-snb__title">
                 <h2>소방안전관리대상</h2>
               </div>
-              <a href="" class="kfsi-snb-item">안내</a>
-              <a href="" class="kfsi-snb-item">공고</a>
+              <a href="" class="kfsi-snb-item">대회소개</a>
+              <a href="" class="kfsi-snb-item">공지사항</a>
               <a href="" class="kfsi-snb-item active">신청 및 결과</a>
               <a href="" class="kfsi-snb-item">역대수상작</a>
-              <a href="" class="kfsi-snb-item">공지사항</a>
             </div>
             <div class="kfsi-contents">
               <div class="kfsi-breadcrumb">
@@ -41,77 +40,84 @@
                     <li class="breadcrumb-item">안전문화행사</li>
                     <li class="breadcrumb-item">소방안전관리대상</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      신청내역 및 결과
+                      신청 및 결과
                     </li>
                   </ol>
                 </nav>
               </div>
 
               <div class="kfsi-contents-title">
-                <h1>신청내역 및 결과</h1>
+                <h1>신청 및 결과</h1>
               </div>
               <div class="pt-10">
                 <div class="mb-15 mo-mb-10">
                   <div
                     class="d-flex align-items-center justify-content-between"
                   >
-                    <h5 class="kfsi-h5">신청내역 및 결과</h5>
+                    <h5 class="kfsi-h5">신청 및 결과</h5>
                     <button type="button" class="btn btn-info2">
-                      불러오기
+                      수정하기
                     </button>
                   </div>
                   <div class="kfsi-table kfsi-table-scroll mt-3">
                     <table
-                      summary="신청된 소방계획서의 번호, 제목, 신청 여부, 결과 정보를 포함한 목록입니다."
+                      summary="소방계획서 신청 및 결과 정보를 제공하는 표입니다. 각 행은 대상물명, 소방계획서 제목, 첨부파일, 결과 상태 및 포기 버튼 정보를 포함합니다."
                     >
-                      <caption>
-                        소방계획서 신청내역 및 결과 목록
+                      <caption class="sr-only">
+                        소방계획서 신청 및 결과 테이블
                       </caption>
                       <colgroup>
                         <col style="width: 70px" />
-                        <col style="width: 630px" />
-                        <col style="width: 120px" />
-                        <col style="width: 120px" />
+                        <col style="width: 130px" />
+                        <col style="width: 240px" />
+                        <col style="width: 300px" />
+                        <col style="width: 100px" />
+                        <col style="width: 100px" />
                       </colgroup>
                       <thead>
                         <tr>
-                          <th scope="col">NO</th>
-                          <th scope="col">소방계획서</th>
-                          <th scope="col">신청</th>
-                          <th scope="col">결과</th>
+                          <th scope="col" rowspan="2">NO</th>
+                          <th scope="col" rowspan="2">대상물</th>
+                          <th scope="col" rowspan="2">소방계획서</th>
+                          <th scope="col" rowspan="2">첨부파일</th>
+                          <th scope="col" colspan="2">결과</th>
+                        </tr>
+                        <tr>
+                          <th scope="col">상태</th>
+                          <th scope="col">포기</th>
                         </tr>
                       </thead>
 
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>
-                            <div
-                              class="d-flex align-items-center justify-content-between mo-flex-column gap-2"
-                            >
-                              <div>로얄프라자 2025 소방계획서</div>
-
-                              <button
-                                type="button"
-                                class="btn btn-outline-secondary"
-                              >
-                                수정
-                              </button>
-                            </div>
-                          </td>
+                          <td>로얄프라자</td>
+                          <td>로얄프라자 2025 소방계획서</td>
+                          <td>특급1급분야-한국소방안전원-홍길동.zip</td>
+                          <td></td>
                           <td>
                             <button
                               type="button"
                               class="btn btn-outline-secondary"
                             >
-                              제출
+                              포기
                             </button>
                           </td>
-                          <td></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
+                </div>
+                <div class="mb-15 mo-mb-10">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h5 class="kfsi-h5">신청 및 결과</h5>
+                    <button type="button" class="btn btn-info2">
+                      신청하러가기
+                    </button>
+                  </div>
+                  <div class="mt-5 text-666">신청내역이 없습니다.</div>
                 </div>
               </div>
             </div>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>소방안전관리대상</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">안내</a>
+              <a href="" class="kfsi-snb-item active">공지사항</a>
+              <a href="" class="kfsi-snb-item">신청 및 결과</a>
+              <a href="" class="kfsi-snb-item">역대수상작</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전문화행사</li>
+                    <li class="breadcrumb-item">소방안전관리대상</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      지원하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="kfsi-contents-title">
+                <h1>소방안전관리대상(제출완료)</h1>
+              </div>
+              <div class="pb-6 border-bottom border-black">
+                <div class="kfsi-textlist m-0 mt-10">
+                  <ul>
+                    <li class="text-primary">
+                      <strong>현재는 최종 제출 상태입니다.</strong>
+                    </li>
+                    <li class="text-danger">
+                      최종 제출 상태에서는 수정 또는 삭제를 할 수 없습니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex gap-3 justify-content-end mt-5">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary btn-lg mo-w-100"
+                    style="min-width: 120px"
+                  >
+                    목록
+                  </button>
+                </div>
+              </div>
+              <div class="mt-10">
+                <div class="kfsi-board-write">
+                  <h5 class="kfsi-h5 mb-3">지원분야</h5>
+                  <div class="kfsi-board-write-form">
+                    <table summary="지원 분야를 선택할 수 있는 테이블">
+                      <caption>
+                        지원 분야 선택
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 1030px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">지원분야</th>
+                          <td>제3회 소방관리대상 공고</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <div class="kfsi-board-write">
+                  <h5 class="kfsi-h5 mb-3">대상물 정보</h5>
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="대상물 정보로, 대상물명, 주소, 등급, 이름, 연락처를 포함합니다."
+                    >
+                      <caption class="sr-only">
+                        대상물 정보 테이블
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 1030px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">대상물명</th>
+                          <td>로얄 프라자</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">주소</th>
+                          <td>
+                            인천광역시 서구 인천광역시 서구 승학로 587 587
+                            로얄프라자
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">등급</th>
+                          <td>1급</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">이름</th>
+                          <td>홍길동</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">연락처</th>
+                          <td>010-0000-0000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <div class="kfsi-board-write">
+                  <h5 class="kfsi-h5 mb-3">소방계획서</h5>
+                  <div class="kfsi-board-write-form">
+                    <table
+                      summary="소방계획서에 대한 정보로, 소방계획서 파일명과 기타 첨부파일명을 포함합니다."
+                    >
+                      <caption class="sr-only">
+                        소방계획서 정보 테이블
+                      </caption>
+                      <colgroup>
+                        <col style="width: 210px" />
+                        <col style="width: 1030px" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">소방계획서</th>
+                          <td>
+                            <div
+                              class="d-flex justify-content-between align-items-center mo-flex-column gap-2"
+                            >
+                              <div class="w-100">
+                                로얄프라자 2025 소방계획서
+                              </div>
+                              <button
+                                type="button"
+                                class="btn btn-primary-light btn-sm mo-w-100"
+                              >
+                                보기
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">기타 첨부파일</th>
+                          <td>
+                            <div class="kfsi-upload">
+                              <div id="dropzone">
+                                <form
+                                  class="dropzone needsclick"
+                                  id="demo-upload"
+                                  action="/upload"
+                                >
+                                  <div class="dz-message needsclick">
+                                    <div class="dz-message__title">
+                                      <i class="ico-file-plus"></i>
+                                      파일을 이곳에 드래그하세요.<br />
+                                    </div>
+                                    <small
+                                      >(또는 클릭하여 파일을 선택하세요)</small
+                                    >
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <script>
+                              var dropzone = new Dropzone('#demo-upload', {
+                                previewTemplate:
+                                  document.querySelector('#preview-template')
+                                    .innerHTML,
+                                parallelUploads: 2,
+                                thumbnailHeight: 120,
+                                thumbnailWidth: 120,
+                                maxFilesize: 3, // 최대 파일 크기 (MB)
+                                filesizeBase: 1000,
+                                dictDefaultMessage:
+                                  '파일을 이곳에 드래그하세요.', // 기본 메시지
+                                dictFallbackMessage:
+                                  '이 브라우저는 드래그 앤 드롭 파일 업로드를 지원하지 않습니다.',
+                                dictFileTooBig:
+                                  '파일 크기가 너무 큽니다 ({{filesize}}MB). 최대 크기: {{maxFilesize}}MB.',
+                                dictInvalidFileType:
+                                  '이 파일 형식은 업로드할 수 없습니다.',
+                                dictResponseError:
+                                  '서버에서 {{statusCode}} 에러가 발생했습니다.',
+                                dictCancelUpload: '업로드 취소',
+                                dictCancelUploadConfirmation:
+                                  '이 업로드를 정말 취소하시겠습니까?',
+                                dictRemoveFile: '파일 삭제',
+                                dictMaxFilesExceeded:
+                                  '더 이상 파일을 업로드할 수 없습니다.',
+                                thumbnail: function (file, dataUrl) {
+                                  if (file.previewElement) {
+                                    file.previewElement.classList.remove(
+                                      'dz-file-preview'
+                                    );
+                                    var images =
+                                      file.previewElement.querySelectorAll(
+                                        '[data-dz-thumbnail]'
+                                      );
+                                    for (var i = 0; i < images.length; i++) {
+                                      var thumbnailElement = images[i];
+                                      thumbnailElement.alt = file.name;
+                                      thumbnailElement.src = dataUrl;
+                                    }
+                                    setTimeout(function () {
+                                      file.previewElement.classList.add(
+                                        'dz-image-preview'
+                                      );
+                                    }, 1);
+                                  }
+                                },
+                              });
+
+                              // 파일 업로드 시 시뮬레이션
+                              var minSteps = 6,
+                                maxSteps = 60,
+                                timeBetweenSteps = 100,
+                                bytesPerStep = 100000;
+
+                              dropzone.uploadFiles = function (files) {
+                                var self = this;
+
+                                for (var i = 0; i < files.length; i++) {
+                                  var file = files[i];
+                                  totalSteps = Math.round(
+                                    Math.min(
+                                      maxSteps,
+                                      Math.max(
+                                        minSteps,
+                                        file.size / bytesPerStep
+                                      )
+                                    )
+                                  );
+
+                                  for (
+                                    var step = 0;
+                                    step < totalSteps;
+                                    step++
+                                  ) {
+                                    var duration =
+                                      timeBetweenSteps * (step + 1);
+                                    setTimeout(
+                                      (function (file, totalSteps, step) {
+                                        return function () {
+                                          file.upload = {
+                                            progress:
+                                              (100 * (step + 1)) / totalSteps,
+                                            total: file.size,
+                                            bytesSent:
+                                              ((step + 1) * file.size) /
+                                              totalSteps,
+                                          };
+
+                                          self.emit(
+                                            'uploadprogress',
+                                            file,
+                                            file.upload.progress,
+                                            file.upload.bytesSent
+                                          );
+                                          if (file.upload.progress == 100) {
+                                            file.status = Dropzone.SUCCESS;
+                                            self.emit(
+                                              'success',
+                                              file,
+                                              'success',
+                                              null
+                                            );
+                                            self.emit('complete', file);
+                                            self.processQueue();
+                                          }
+                                        };
+                                      })(file, totalSteps, step),
+                                      duration
+                                    );
+                                  }
+                                }
+                              };
+                            </script>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

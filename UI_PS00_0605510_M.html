@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-inner">
+          <div class="kfsi-body">
+            <div class="kfsi-snb">
+              <div class="kfsi-snb__title">
+                <h2>소방안전관리대상</h2>
+              </div>
+              <a href="" class="kfsi-snb-item">안내</a>
+              <a href="" class="kfsi-snb-item">공지사항</a>
+              <a href="" class="kfsi-snb-item">신청 및 결과</a>
+              <a href="" class="kfsi-snb-item active">역대수상작</a>
+            </div>
+            <div class="kfsi-contents">
+              <div class="kfsi-breadcrumb">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><i class="ico-home">홈</i></li>
+                    <li class="breadcrumb-item">안전문화행사</li>
+                    <li class="breadcrumb-item">소방안전관리대상</li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      역대수상작
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="kfsi-contents-title">
+                <h1>역대수상작</h1>
+              </div>
+              <div class="mt-10">
+                <div
+                  class="d-flex align-items-center justify-content-between mo-flex-column gap-3 border py-3 px-4"
+                  style="border: 1px solid #999; background: #ebf2f5"
+                >
+                  <div
+                    class="d-flex align-items-center gap-3 flex-wrap mo-d-grid w-100"
+                    style="grid-template-columns: 1fr 1fr"
+                  >
+                    <div class="dropdown mo-w-100">
+                      <button
+                        class="btn btn-outline-secondary dropdown-toggle mo-w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="min-width: auto"
+                      >
+                        전체지역
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown mo-w-100">
+                      <button
+                        class="btn btn-outline-secondary dropdown-toggle mo-w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="min-width: auto"
+                      >
+                        전체훈격
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown mo-w-100">
+                      <button
+                        class="btn btn-outline-secondary dropdown-toggle mo-w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="min-width: auto"
+                      >
+                        전체등급
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown mo-w-100">
+                      <button
+                        class="btn btn-outline-secondary dropdown-toggle mo-w-100"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="min-width: auto"
+                      >
+                        전체용도
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="kfsi-board-head-search">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-outline-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        제목
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >선택</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="검색어를 입력해 주세요."
+                      title="검색어를 입력해 주세요."
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                  <button type="button" class="btn btn-primary">검색</button>
+                </div>
+                <div class="kfsi-board-head mt-5">
+                  <div class="kfsi-board-head-start">
+                    <div class="kfsi-board-head-amount">총 100개</div>
+                  </div>
+                </div>
+                <div class="kfsi-table kfsi-table-mo-list">
+                  <table
+                    class="list"
+                    summary="역대 수상작의 번호, 지역, 훈격, 등급, 용도, 제목을 보여주는 테이블입니다."
+                  >
+                    <caption class="sr-only">
+                      역대 수상작 목록
+                    </caption>
+                    <colgroup>
+                      <col style="width: 48px" />
+                      <col style="width: 80px" />
+                      <col style="width: 87px" />
+                      <col style="width: 90px" />
+                      <col style="width: 95px" />
+                      <col style="width: 540px" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">지역</th>
+                        <th scope="col">훈격</th>
+                        <th scope="col">등급</th>
+                        <th scope="col">용도</th>
+                        <th scope="col">제목</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td title="NO">1</td>
+                        <td title="지역">경기</td>
+                        <td title="훈격">대상</td>
+                        <td title="등급">특급1급</td>
+                        <td title="용도">상업</td>
+                        <td title="제목" class="text-start">
+                          <a href="" class="d-flex align-items-center gap-3">
+                            삼성전자 평택사업장
+                            <i class="ico-file">파일</i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td title="NO">1</td>
+                        <td title="지역">경기</td>
+                        <td title="훈격">대상</td>
+                        <td title="등급">특급1급</td>
+                        <td title="용도">상업</td>
+                        <td title="제목" class="text-start">
+                          <a href="" class="d-flex align-items-center gap-3">
+                            삼성전자 평택사업장
+                            <i class="ico-file">파일</i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td title="NO">1</td>
+                        <td title="지역">경기</td>
+                        <td title="훈격">대상</td>
+                        <td title="등급">특급1급</td>
+                        <td title="용도">상업</td>
+                        <td title="제목" class="text-start">
+                          <a href="" class="d-flex align-items-center gap-3">
+                            삼성전자 평택사업장
+                            <i class="ico-file">파일</i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td title="NO">1</td>
+                        <td title="지역">경기</td>
+                        <td title="훈격">대상</td>
+                        <td title="등급">특급1급</td>
+                        <td title="용도">상업</td>
+                        <td title="제목" class="text-start">
+                          <a href="" class="d-flex align-items-center gap-3">
+                            삼성전자 평택사업장
+                            <i class="ico-file">파일</i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td title="NO">1</td>
+                        <td title="지역">경기</td>
+                        <td title="훈격">대상</td>
+                        <td title="등급">특급1급</td>
+                        <td title="용도">상업</td>
+                        <td title="제목" class="text-start">
+                          <a href="" class="d-flex align-items-center gap-3">
+                            삼성전자 평택사업장
+                            <i class="ico-file">파일</i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="kfsi-board-pagination">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item page-item--first">
+                        <a class="page-link" href="#">처음</a>
+                      </li>
+                      <li class="page-item page-item--prev">
+                        <a class="page-link" href="#">이전</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item page-item--next">
+                        <a class="page-link" href="#">다음</a>
+                      </li>
+                      <li class="page-item page-item--last">
+                        <a class="page-link" href="#">마지막</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
