@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안전체험관</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: #fff;
+      }
+
+      .ui-reservation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .map {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        height: 600px;
+        background-image: url('https://fire.seoul.go.kr/safe119/resevation-map.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(162, 162, 162, 0.1);
+        border-radius: 16px;
+      }
+
+      .title-area {
+        padding: 40px 20px 20px;
+        max-width: 600px;
+      }
+
+      .title-area .tit {
+        color: #002f67;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .title-area p {
+        color: #595959;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .link-button {
+        position: absolute;
+        width: 250px;
+        height: 80px;
+        background-image: url('https://fire.seoul.go.kr/safe119/speech_bubble.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 0px 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 700;
+        color: #002f67;
+        font-size: 22px;
+      }
+
+      /* 광나루 버튼 위치 */
+      .link-button.gwangnaru {
+        bottom: 290px;
+        right: 220px;
+      }
+
+      /* 보라매 버튼 위치 */
+      .link-button.boramae {
+        bottom: 190px;
+        right: 460px;
+      }
+
+      .link-button .icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        bottom: -10px;
+        background-color: #1071e5;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .link-button .icon::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://fire.seoul.go.kr/safe119/link-arrow.svg');
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .ui-reservation {
+          padding: 16px 12px;
+        }
+        .map {
+          width: 509px;
+          height: 458px;
+          background-image: url('https://fire.seoul.go.kr/safe119/resevation-map.png');
+          background-size: cover;
+        }
+
+        .title-area {
+          padding: 32px 20px 20px;
+          max-width: 600px;
+        }
+
+        .title-area .tit {
+          font-size: 24px;
+          margin-bottom: 16px;
+        }
+
+        .title-area p {
+          font-size: 14px;
+        }
+
+        .link-button {
+          width: 180px;
+          height: 60px;
+          font-size: 16px;
+        }
+
+        .link-button .icon {
+          width: 24px;
+          height: 24px;
+        }
+
+        .link-button.gwangnaru {
+          bottom: 220px;
+          right: auto;
+          left: 50%;
+          margin-left: -30px;
+        }
+
+        .link-button.boramae {
+          bottom: 144px;
+          right: auto;
+          left: 50%;
+          margin-left: -210px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="ui-reservation">
+      <div class="map">
+        <div class="title-area">
+          <strong class="tit">안전을 체험해보세요.</strong>
+          <p>
+            소중한 일상을 지키는 첫걸음,<br />
+            지금 신청해보세요.
+          </p>
+        </div>
+
+        <div class="link-button gwangnaru">
+          <a
+            href="http://fire.seoul.go.kr/gwangnaru/"
+            target="_blank"
+            style="margin-bottom: 15px"
+          >
+            광나루안전체험관
+            <span class="icon"></span>
+          </a>
+        </div>
+
+        <div class="link-button boramae">
+          <a
+            href="http://fire.seoul.go.kr/boramae/"
+            target="_blank"
+            style="margin-bottom: 15px"
+          >
+            보라매안전체험관
+            <span class="icon"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

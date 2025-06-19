@@ -5239,7 +5239,7 @@ body {
               letter-spacing: normal;
               text-align: left;
               color: #000;
-              @include text-clamp(1);
+              //@include text-clamp(1);
             }
           }
           &__info {
@@ -5318,6 +5318,27 @@ body {
                   50%;
                 background-size: 100%;
                 transition: all 0.2s ease;
+                display: none;
+              }
+            }
+          }
+          &.text-ellipsis {
+            .kfsi-board-list-item-text__title {
+              p {
+                @include text-clamp(1);
+              }
+              &::after {
+                display: block;
+              }
+            }
+          }
+          &:not(.text-ellipsis) {
+            cursor: default;
+            &:hover {
+              .kfsi-board-list-item-text__title p {
+                color: #000;
+                font-weight: normal;
+                text-decoration: none;
               }
             }
           }

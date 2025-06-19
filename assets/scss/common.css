@@ -26432,12 +26432,6 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: #000;
-  display: -webkit-box;
-  overflow: hidden;
-  /* autoprefixer: ignore next */
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
 }
 .kfsi-board-list-item-text__info {
   display: flex;
@@ -26502,6 +26496,26 @@ body {
   background: url(../images/icon/comment-arrow.svg) no-repeat 50% 50%;
   background-size: 100%;
   transition: all 0.2s ease;
+  display: none;
+}
+.kfsi-board-list--comment .kfsi-board-list-item.text-ellipsis .kfsi-board-list-item-text__title p {
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.kfsi-board-list--comment .kfsi-board-list-item.text-ellipsis .kfsi-board-list-item-text__title::after {
+  display: block;
+}
+.kfsi-board-list--comment .kfsi-board-list-item:not(.text-ellipsis) {
+  cursor: default;
+}
+.kfsi-board-list--comment .kfsi-board-list-item:not(.text-ellipsis):hover .kfsi-board-list-item-text__title p {
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
 }
 .kfsi-board-list--comment .kfsi-board-list-item.active .kfsi-board-list-item-text__title p {
   overflow: visible;
