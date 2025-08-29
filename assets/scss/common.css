@@ -18186,8 +18186,8 @@ small, .small {
 .btn-outline-primary {
   color: #333;
 }
-.btn-outline-primary:hover {
-  background-color: #fff;
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:focus-visible {
+  background-color: #fff !important;
   color: #333 !important;
 }
 .btn-outline-secondary {
@@ -18214,7 +18214,7 @@ small, .small {
 .btn:disabled, .btn-disabled {
   border-color: #eee !important;
   background-color: #eee !important;
-  color: #999 !important;
+  color: #787878 !important;
 }
 
 .dropdown-toggle {
@@ -18265,7 +18265,7 @@ small, .small {
 }
 .badge-outline-secondary {
   border: solid 1px #999;
-  color: #999;
+  color: #787878;
 }
 .badge-outline-danger {
   border: solid 1px #d93600;
@@ -18303,10 +18303,10 @@ small, .small {
   font-size: 18px;
 }
 .form-control::-moz-placeholder {
-  color: #999;
+  color: #787878;
 }
 .form-control::placeholder {
-  color: #999;
+  color: #787878;
 }
 
 .form-select {
@@ -19414,16 +19414,8 @@ small, .small {
 }
 .kfsi-email-form {
   display: flex;
+  gap: 8px;
   min-width: 400px;
-}
-.kfsi-email .form-control {
-  min-width: auto;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-}
-.kfsi-email .form-select {
-  border-left: none;
-  border-radius: 0 5px 5px 0;
 }
 @media screen and (max-width: 992px) {
   .kfsi-email {
@@ -21917,6 +21909,14 @@ small, .small {
   width: 100%;
   min-width: auto;
 }
+:focus-visible {
+  outline: 3px dotted red !important;
+}
+
+.text-info {
+  color: #787878 !important;
+}
+
 .text-666 {
   color: #666 !important;
 }
@@ -21961,7 +21961,8 @@ table caption {
   white-space: noWrap;
 }
 
-.hide {
+.hide,
+.hidden {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -22238,6 +22239,8 @@ body {
   text-align: center;
   color: #000;
   transition: all 0.2s ease;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
 }
 .kfsi-header-gnb-item > a::after {
   content: "";
@@ -22249,6 +22252,7 @@ body {
 }
 .kfsi-header-gnb-item:focus-within > a, .kfsi-header-gnb-item:hover > a {
   color: #032c5e;
+  border-bottom-color: #032c5e;
 }
 .kfsi-header-gnb-item:focus-within > a::after, .kfsi-header-gnb-item:hover > a::after {
   background: url(../images/icon/ico-gnb-arrow-hover.png) no-repeat 50% 50%;
@@ -22311,9 +22315,11 @@ body {
 .kfsi-header-gnb-item-depth dl dd a.active {
   font-weight: bold;
   color: #032c5e;
+  background-color: #f1f1f1;
 }
 .kfsi-header-gnb-item-depth dl dd a:hover {
   color: #032c5e;
+  background-color: #f1f1f1;
 }
 .kfsi-header-gnb-item-depth dl dd a:first-child {
   margin-top: 0;
@@ -22964,7 +22970,7 @@ body {
 .kfsi-footer-site {
   position: relative;
   height: 55px;
-  background-color: #999;
+  background-color: #787878;
 }
 .kfsi-footer-site-select {
   position: relative;
@@ -23710,11 +23716,11 @@ body {
   text-align: center;
   color: #032c5e;
 }
-.kfsi-main-search-popular:hover {
+.kfsi-main-search-popular.active {
   height: 100%;
   overflow: visible;
 }
-.kfsi-main-search-popular:hover ol {
+.kfsi-main-search-popular.active ol {
   position: absolute;
   top: -24px;
   left: 0;
@@ -23731,7 +23737,7 @@ body {
   border: solid 1px #ccc;
   background-color: #fff;
 }
-.kfsi-main-search-popular:hover ol li {
+.kfsi-main-search-popular.active ol li {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -23742,12 +23748,12 @@ body {
   visibility: visible;
   transition: none;
 }
-.kfsi-main-search-popular:hover ol li.active {
+.kfsi-main-search-popular.active ol li.active {
   opacity: 1;
   visibility: visible;
   animation: none;
 }
-.kfsi-main-search-popular:hover ol li a {
+.kfsi-main-search-popular.active ol li a {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -23755,10 +23761,10 @@ body {
   height: 40px;
   padding: 0 20px;
 }
-.kfsi-main-search-popular:hover ol li a:hover {
+.kfsi-main-search-popular.active ol li a:hover {
   background-color: #ebf2f5;
 }
-.kfsi-main-search-popular:hover ol li strong {
+.kfsi-main-search-popular.active ol li strong {
   display: block;
   min-width: 20px;
   text-align: center;
@@ -23771,7 +23777,7 @@ body {
   text-align: left;
   color: #000;
 }
-.kfsi-main-search-popular:hover ol li p {
+.kfsi-main-search-popular.active ol li p {
   margin: 0;
   font-size: 16px;
   font-weight: normal;
@@ -23782,7 +23788,7 @@ body {
   text-align: left;
   color: #000;
 }
-.kfsi-main-search-popular:hover:after {
+.kfsi-main-search-popular.active:after {
   display: none;
 }
 .kfsi-main-banner {
@@ -23805,23 +23811,28 @@ body {
   font-size: 0;
 }
 .kfsi-main-banner .swiper-button-prev:after, .kfsi-main-banner .swiper-button-next:after {
-  color: #000;
-  font-size: 16px;
+  display: block;
+  min-width: 25px;
+  height: 25px;
+  margin: 0;
+  background: url(../images/main/ico-prev.svg) no-repeat 50% 50%;
+  font-size: 0;
+}
+.kfsi-main-banner .swiper-button-next:after {
+  background: url(../images/main/ico-next.svg) no-repeat 50% 50%;
 }
 .kfsi-main-banner .swiper-button-pause {
   display: block;
-  width: 14px;
-  height: 14px;
-  margin-left: 10px;
-  background: #f60 url(../images/icon/ico-main-play.png) no-repeat 50% 50%;
+  width: 25px;
+  height: 25px;
+  background: url(../images/main/ico-pause.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 .kfsi-main-banner .swiper-button-play {
   display: none;
-  width: 14px;
-  height: 14px;
-  margin-left: 10px;
-  background: url(../images/icon/ico-main-play.png) no-repeat 50% 50%;
+  width: 25px;
+  height: 25px;
+  background: url(../images/main/ico-play.svg) no-repeat 50% 50%;
   font-size: 0;
 }
 .kfsi-main-banner .swiper-pagination {
@@ -23854,13 +23865,14 @@ body {
 .kfsi-main-banner__button {
   display: flex;
   align-items: center;
+  gap: 10px;
   position: absolute;
   z-index: 10;
   right: 0;
   bottom: 0;
   height: 45px;
   padding: 0 16px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px 0 0 0;
 }
 .kfsi-main-board {
@@ -23941,7 +23953,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #999;
+  color: #787878;
 }
 .kfsi-main-board-list-item--notice p {
   font-weight: bold;
@@ -24126,7 +24138,7 @@ body {
   line-height: 1.2;
   letter-spacing: -0.5px;
   text-align: left;
-  color: #999;
+  color: #787878;
 }
 .kfsi-main-promotion-body {
   position: relative;
@@ -24382,7 +24394,7 @@ body {
   line-height: 1.33;
   letter-spacing: normal;
   text-align: left;
-  color: #999;
+  color: #787878;
 }
 .kfsi-main-introduction-page-item span {
   position: absolute;
@@ -24439,7 +24451,7 @@ body {
   line-height: 1.33;
   letter-spacing: -0.45px;
   text-align: left;
-  color: #999;
+  color: #787878;
 }
 .kfsi-main-introduction-customer-item p strong {
   display: block;
@@ -24774,7 +24786,7 @@ body {
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #999;
+    color: #787878;
   }
   .kfsi-main-board-list-item--notice p {
     font-weight: bold;
@@ -25305,7 +25317,7 @@ body {
     line-height: 1;
     letter-spacing: -0.35px;
     text-align: center;
-    color: #999;
+    color: #787878;
   }
   .kfsi-main-introduction-page-item span {
     display: none;
@@ -25355,7 +25367,7 @@ body {
     line-height: 1.71;
     letter-spacing: -0.35px;
     text-align: center;
-    color: #999;
+    color: #787878;
   }
   .kfsi-main-introduction-customer-item p strong {
     display: block;
@@ -25596,7 +25608,7 @@ body {
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
-  color: #999;
+  color: #787878;
 }
 .kfsi-checklist-nav-item p {
   font-size: 15px;
@@ -25606,7 +25618,7 @@ body {
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
-  color: #999;
+  color: #787878;
 }
 .kfsi-checklist-nav-item.active strong span {
   background-color: #032c5e;
@@ -26531,10 +26543,8 @@ body {
 }
 .kfsi-tab {
   display: grid;
-  gap: 1px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background: #ccc;
-  border: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 .kfsi-tab-item {
   position: relative;
@@ -26553,10 +26563,15 @@ body {
   text-align: center;
   color: #666;
   word-break: keep-all;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .kfsi-tab-item span {
   position: relative;
   z-index: 20;
+}
+.kfsi-tab-item:nth-child(1), .kfsi-tab-item:nth-child(2), .kfsi-tab-item:nth-child(3), .kfsi-tab-item:nth-child(4) {
+  border-top: 1px solid #ccc;
 }
 .kfsi-tab-item.active {
   font-weight: bold;
@@ -26575,10 +26590,7 @@ body {
 @media screen and (max-width: 992px) {
   .kfsi-tab {
     display: grid;
-    gap: 1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: #ccc;
-    border: 1px solid #ccc;
   }
   .kfsi-tab-item {
     position: relative;
@@ -27548,10 +27560,10 @@ body {
   border-top: none;
 }
 .kfsi-board-view-nav-item.disabled strong {
-  color: #999;
+  color: #787878;
 }
 .kfsi-board-view-nav-item.disabled p {
-  color: #999;
+  color: #787878;
 }
 .kfsi-board-write__title {
   padding: 0 0 12px 0;
@@ -28267,10 +28279,10 @@ body {
     border-top: none;
   }
   .kfsi-board-view-nav-item.disabled strong {
-    color: #999;
+    color: #787878;
   }
   .kfsi-board-view-nav-item.disabled p {
-    color: #999;
+    color: #787878;
   }
   .kfsi-board-write__title {
     padding: 0 0 13px 0;
@@ -29296,7 +29308,7 @@ body {
 }
 .kfsi-guide-list-item-info p {
   margin: 20px 0 0 0;
-  color: #999;
+  color: #787878;
   font-size: 14px;
 }
 .kfsi-guide-list-item-button {
@@ -29394,7 +29406,7 @@ body {
   }
   .kfsi-guide-list-item-info p {
     margin: 0 0 0 0;
-    color: #999;
+    color: #787878;
     font-size: 14px;
   }
   .kfsi-guide-list-item-button {

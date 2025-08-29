@@ -8,7 +8,12 @@
 @import './components';
 @import './pages';
 
+:focus-visible {
+  outline: 3px dotted red !important;
+}
+
 .text-info {
+  color: #787878 !important;
 }
 .text-666 {
   color: #666 !important;
@@ -62,7 +67,8 @@ table {
     white-space: noWrap;
   }
 }
-.hide {
+.hide,
+.hidden {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -329,6 +335,8 @@ body {
           text-align: center;
           color: #000;
           transition: all 0.2s ease;
+          border-top: 4px solid #fff;
+          border-bottom: 4px solid #fff;
           &::after {
             content: '';
             display: block;
@@ -350,6 +358,7 @@ body {
         &:hover {
           > a {
             color: #032c5e;
+            border-bottom-color: #032c5e;
             &::after {
               background: url(../images/icon/ico-gnb-arrow-hover.png) no-repeat
                 50% 50%;
@@ -420,9 +429,11 @@ body {
                 &.active {
                   font-weight: bold;
                   color: #032c5e;
+                  background-color: #f1f1f1;
                 }
                 &:hover {
                   color: #032c5e;
+                  background-color: #f1f1f1;
                 }
                 &:first-child {
                   margin-top: 0;
@@ -1115,7 +1126,7 @@ body {
     &-site {
       position: relative;
       height: 55px;
-      background-color: #999;
+      background-color: #787878;
       &-select {
         position: relative;
         width: 230px;
@@ -1882,7 +1893,7 @@ body {
             }
           }
         }
-        &:hover {
+        &.active {
           height: 100%;
           overflow: visible;
           ol {
@@ -1982,25 +1993,33 @@ body {
             height: auto;
             font-size: 0;
             &:after {
-              color: #000;
-              font-size: 16px;
+              display: block;
+              min-width: 25px;
+              height: 25px;
+              margin: 0;
+              background: url(../images/main/ico-prev.svg) no-repeat 50% 50%;
+              font-size: 0;
+            }
+          }
+          &-next {
+            &:after {
+              background: url(../images/main/ico-next.svg) no-repeat 50% 50%;
             }
           }
           &-pause {
             display: block;
-            width: 14px;
-            height: 14px;
-            margin-left: 10px;
-            background: #f60 url(../images/icon/ico-main-play.png) no-repeat 50%
-              50%;
+            width: 25px;
+            height: 25px;
+
+            background: url(../images/main/ico-pause.svg) no-repeat 50% 50%;
             font-size: 0;
           }
           &-play {
             display: none;
-            width: 14px;
-            height: 14px;
-            margin-left: 10px;
-            background: url(../images/icon/ico-main-play.png) no-repeat 50% 50%;
+            width: 25px;
+            height: 25px;
+
+            background: url(../images/main/ico-play.svg) no-repeat 50% 50%;
             font-size: 0;
           }
         }
@@ -2041,13 +2060,14 @@ body {
       &__button {
         display: flex;
         align-items: center;
+        gap: 10px;
         position: absolute;
         z-index: 10;
         right: 0;
         bottom: 0;
         height: 45px;
         padding: 0 16px;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.8);
         border-radius: 20px 0 0 0;
       }
     }
@@ -2122,7 +2142,7 @@ body {
             line-height: normal;
             letter-spacing: normal;
             text-align: left;
-            color: #999;
+            color: #787878;
           }
           &--notice {
             p {
@@ -2310,7 +2330,7 @@ body {
           line-height: 1.2;
           letter-spacing: -0.5px;
           text-align: left;
-          color: #999;
+          color: #787878;
         }
       }
       &-body {
@@ -2569,7 +2589,7 @@ body {
             line-height: 1.33;
             letter-spacing: normal;
             text-align: left;
-            color: #999;
+            color: #787878;
           }
           span {
             position: absolute;
@@ -2626,7 +2646,7 @@ body {
             line-height: 1.33;
             letter-spacing: -0.45px;
             text-align: left;
-            color: #999;
+            color: #787878;
             strong {
               display: block;
               margin-bottom: 8px;
@@ -2965,7 +2985,7 @@ body {
               line-height: normal;
               letter-spacing: normal;
               text-align: left;
-              color: #999;
+              color: #787878;
             }
             &--notice {
               p {
@@ -3528,7 +3548,7 @@ body {
               line-height: 1;
               letter-spacing: -0.35px;
               text-align: center;
-              color: #999;
+              color: #787878;
             }
             span {
               display: none;
@@ -3579,7 +3599,7 @@ body {
               line-height: 1.71;
               letter-spacing: -0.35px;
               text-align: center;
-              color: #999;
+              color: #787878;
               strong {
                 display: block;
                 margin-bottom: 0;
@@ -3831,7 +3851,7 @@ body {
             line-height: 1;
             letter-spacing: normal;
             text-align: center;
-            color: #999;
+            color: #787878;
           }
         }
         p {
@@ -3842,7 +3862,7 @@ body {
           line-height: 1.33;
           letter-spacing: normal;
           text-align: center;
-          color: #999;
+          color: #787878;
         }
         &.active {
           strong {
@@ -4829,10 +4849,10 @@ body {
   }
   &-tab {
     display: grid;
-    gap: 1px;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: #ccc;
-    border: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+
     &-item {
       position: relative;
       display: flex;
@@ -4850,9 +4870,17 @@ body {
       text-align: center;
       color: #666;
       word-break: keep-all;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       span {
         position: relative;
         z-index: 20;
+      }
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        border-top: 1px solid #ccc;
       }
       &.active {
         font-weight: bold;
@@ -4871,10 +4899,7 @@ body {
     }
     @media screen and (max-width: $mobileWidth) {
       display: grid;
-      gap: 1px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      background: #ccc;
-      border: 1px solid #ccc;
       &-item {
         position: relative;
         display: flex;
@@ -5871,10 +5896,10 @@ body {
           }
           &.disabled {
             strong {
-              color: #999;
+              color: #787878;
             }
             p {
-              color: #999;
+              color: #787878;
             }
           }
         }
@@ -6622,10 +6647,10 @@ body {
             }
             &.disabled {
               strong {
-                color: #999;
+                color: #787878;
               }
               p {
-                color: #999;
+                color: #787878;
               }
             }
           }
@@ -7758,7 +7783,7 @@ body {
           }
           p {
             margin: 20px 0 0 0;
-            color: #999;
+            color: #787878;
             font-size: 14px;
           }
         }
@@ -7857,7 +7882,7 @@ body {
             }
             p {
               margin: 0 0 0 0;
-              color: #999;
+              color: #787878;
               font-size: 14px;
             }
           }

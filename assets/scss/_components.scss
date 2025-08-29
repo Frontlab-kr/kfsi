@@ -911,17 +911,18 @@ $mobileWidth: 992px;
     gap: 16px;
     &-form {
       display: flex;
+      gap: 8px;
       min-width: 400px;
     }
-    .form-control {
-      min-width: auto;
-      border-right: none;
-      border-radius: 5px 0 0 5px;
-    }
-    .form-select {
-      border-left: none;
-      border-radius: 0 5px 5px 0;
-    }
+    // .form-control {
+    //   min-width: auto;
+    //   border-right: none;
+    //   border-radius: 5px 0 0 5px;
+    // }
+    // .form-select {
+    //   border-left: none;
+    //   border-radius: 0 5px 5px 0;
+    // }
     @media screen and (max-width: $mobileWidth) {
       display: flex;
       align-items: flex-start;

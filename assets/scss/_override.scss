@@ -140,8 +140,11 @@ small {
   }
   &-outline-primary {
     color: #333;
-    &:hover {
-      background-color: #fff;
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus-visible {
+      background-color: #fff !important;
       color: #333 !important;
     }
   }
@@ -174,7 +177,7 @@ small {
   &-disabled {
     border-color: #eee !important;
     background-color: #eee !important;
-    color: #999 !important;
+    color: #787878 !important;
   }
 }
 .dropdown-toggle {
@@ -225,7 +228,7 @@ small {
   }
   &-outline-secondary {
     border: solid 1px #999;
-    color: #999;
+    color: #787878;
   }
   &-outline-danger {
     border: solid 1px #d93600;
@@ -262,7 +265,7 @@ small {
     font-size: 18px;
   }
   &::placeholder {
-    color: #999;
+    color: #787878;
   }
 }
 .form-select {

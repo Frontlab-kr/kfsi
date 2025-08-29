@@ -37,63 +37,181 @@
                   <button>검색</button>
                 </div>
                 <div class="pc">
-                  <div class="kfsi-main-search-popular">
-                    <ol>
-                      <li>
+                  <div
+                    class="kfsi-main-search-popular"
+                    tabindex="0"
+                    aria-label="인기 검색어"
+                    aria-expanded="false"
+                  >
+                    <ol role="listbox">
+                      <li role="option" aria-selected="false">
                         <a href=""
                           ><strong>1</strong>
                           <p>소방관련법령</p></a
                         >
                       </li>
-                      <li>
+                      <li role="option" aria-selected="false">
                         <a href=""
                           ><strong>2</strong>
                           <p>소방관련법령</p></a
                         >
                       </li>
-                      <li>
+                      <li role="option" aria-selected="false">
                         <a href=""
                           ><strong>3</strong>
                           <p>소방관련법령</p></a
                         >
                       </li>
-                      <li>
+                      <li role="option" aria-selected="false">
                         <a href=""
                           ><strong>4</strong>
                           <p>소방관련법령</p></a
                         >
                       </li>
-                      <li>
+                      <li role="option" aria-selected="false">
                         <a href=""
                           ><strong>5</strong>
                           <p>소방관련법령</p></a
                         >
                       </li>
                     </ol>
-                    <!-- <a href="" class="kfsi-main-search-popular__all">
-                      전체보기
-                    </a> -->
                   </div>
+
                   <script>
                     document.addEventListener('DOMContentLoaded', function () {
-                      const items = document.querySelectorAll(
-                        '.kfsi-main-search-popular li'
-                      );
+                      const $box = $('.kfsi-main-search-popular');
+                      const $items = $box.find('li');
+                      const $links = $items.find('a');
                       let currentIndex = 0;
+                      let timer = null;
+                      const INTERVAL = 3000;
 
-                      function showNextItem() {
-                        items.forEach((item, index) => {
-                          item.classList.remove('active');
-                          if (index === currentIndex) {
-                            item.classList.add('active');
-                          }
-                        });
+                      function setActive(index) {
+                        currentIndex = (index + $items.length) % $items.length;
+                        $items
+                          .removeClass('active')
+                          .attr('aria-selected', 'false');
+                        $items
+                          .eq(currentIndex)
+                          .addClass('active')
+                          .attr('aria-selected', 'true');
 
-                        currentIndex = (currentIndex + 1) % items.length;
+                        // active 상태일 때는 자동재생 멈춤
+                        if ($box.hasClass('active')) {
+                          stopAuto();
+                        }
                       }
 
-                      setInterval(showNextItem, 3000); // 2초 간격으로 전환
-                      showNextItem(); // 첫 항목 표시
+                      function startAuto() {
+                        if (timer) return;
+                        timer = setInterval(function () {
+                          if (
+                            !$box.hasClass('active') &&
+                            !$box.is(':hover') &&
+                            !$box.is(':focus-within')
+                          ) {
+                            setActive(currentIndex + 1);
+                          }
+                        }, INTERVAL);
+                      }
+
+                      function stopAuto() {
+                        clearInterval(timer);
+                        timer = null;
+                      }
+
+                      // 초기 표시
+                      setActive(0);
+                      startAuto();
+
+                      // Hover로 열고 닫기
+                      $box.hover(
+                        function () {
+                          $(this)
+                            .addClass('active')
+                            .attr('aria-expanded', 'true');
+                          stopAuto();
+                        },
+                        function () {
+                          $(this)
+                            .removeClass('active')
+                            .attr('aria-expanded', 'false');
+                          startAuto();
+                        }
+                      );
+
+                      // Focus(키보드 진입) 시 열기 / 포커스 빠져나가면 닫기
+                      $box.on('focusin', function () {
+                        $(this)
+                          .addClass('active')
+                          .attr('aria-expanded', 'true');
+                        stopAuto();
+                      });
+                      $box.on('focusout', function (e) {
+                        // 컨테이너 밖으로 완전히 포커스 나가면 닫기
+                        setTimeout(function () {
+                          if (!$box.get(0).contains(document.activeElement)) {
+                            $box
+                              .removeClass('active')
+                              .attr('aria-expanded', 'false');
+                            startAuto();
+                          }
+                        }, 0);
+                      });
+
+                      // 키보드 조작: ↑/↓/Home/End/Enter/Escape
+                      $box.on('keydown', function (e) {
+                        const key = e.key;
+
+                        if (
+                          [
+                            'ArrowDown',
+                            'ArrowUp',
+                            'Home',
+                            'End',
+                            'Enter',
+                            'Escape',
+                          ].includes(key)
+                        ) {
+                          e.preventDefault();
+                        }
+
+                        if (key === 'ArrowDown') {
+                          setActive(currentIndex + 1);
+                          // 현재 항목 링크로 포커스 이동
+                          $links.eq(currentIndex).focus();
+                        } else if (key === 'ArrowUp') {
+                          setActive(currentIndex - 1);
+                          $links.eq(currentIndex).focus();
+                        } else if (key === 'Home') {
+                          setActive(0);
+                          $links.eq(currentIndex).focus();
+                        } else if (key === 'End') {
+                          setActive($items.length - 1);
+                          $links.eq(currentIndex).focus();
+                        } else if (key === 'Enter') {
+                          // 컨테이너에 포커스가 있으면 현재 항목 실행
+                          if (document.activeElement === $box.get(0)) {
+                            $links.eq(currentIndex).get(0).click();
+                          }
+                          // 링크에 포커스가 있으면 브라우저 기본 동작으로 이동(위의 preventDefault로 막혔으므로 직접 실행)
+                          else if ($(document.activeElement).is($links)) {
+                            document.activeElement.click();
+                          }
+                        } else if (key === 'Escape') {
+                          // 닫고 컨테이너에 포커스 되돌리기
+                          $box
+                            .removeClass('active')
+                            .attr('aria-expanded', 'false')
+                            .focus();
+                          startAuto();
+                        }
+                      });
+
+                      // 마우스로 항목 올리면 그 항목 활성화(선택 느낌)
+                      $items.on('mouseenter', function () {
+                        setActive($(this).index());
+                      });
                     });
                   </script>
                 </div>
@@ -273,8 +391,25 @@
                       <span>2024-07-17</span>
                     </a>
                   </div>
-                  <a href="" class="kfsi-main-board-more">+</a>
+                  <a href="" class="kfsi-main-board-more"
+                    >+ <span class="hidden">공지사항 더보기</span></a
+                  >
                 </div>
+                <script>
+                  $(function () {
+                    $('.kfsi-main-board-tab-item').on('click', function (e) {
+                      //e.preventDefault();
+
+                      // 탭 텍스트 가져오기
+                      var tabText = $(this).text().trim();
+
+                      // 더보기 문구 변경
+                      $('.kfsi-main-board-more .hidden').text(
+                        tabText + ' 더보기'
+                      );
+                    });
+                  });
+                </script>
               </div>
             </div>
           </div>
@@ -282,28 +417,19 @@
             <div class="kfsi-main-quick">
               <a href="" class="kfsi-main-quick-item">
                 <div class="kfsi-main-quick-item__img">
-                  <img
-                    src="./assets/images/main/quick01.png"
-                    alt="소방관계법령"
-                  />
+                  <img src="./assets/images/main/quick01.png" alt="" />
                 </div>
                 <p>소방<br class="mo" />관계법령</p>
               </a>
               <a href="" class="kfsi-main-quick-item">
                 <div class="kfsi-main-quick-item__img">
-                  <img
-                    src="./assets/images/main/quick02.png"
-                    alt="소방계획서작성영상"
-                  />
+                  <img src="./assets/images/main/quick02.png" alt="" />
                 </div>
                 <p>소방계획서<br class="mo" />작성영상</p>
               </a>
               <a href="" class="kfsi-main-quick-item">
                 <div class="kfsi-main-quick-item__img">
-                  <img
-                    src="./assets/images/main/quick03.png"
-                    alt="소방정보 각종서식"
-                  />
+                  <img src="./assets/images/main/quick03.png" alt="" />
                 </div>
                 <p>
                   소방정보<br class="mo" />
@@ -321,19 +447,13 @@
               </a>
               <a href="" class="kfsi-main-quick-item">
                 <div class="kfsi-main-quick-item__img">
-                  <img
-                    src="./assets/images/main/quick05.png"
-                    alt="소방안전플러스"
-                  />
+                  <img src="./assets/images/main/quick05.png" alt="" />
                 </div>
                 <p>소방안전<br class="mo" />플러스</p>
               </a>
               <a href="" class="kfsi-main-quick-item">
                 <div class="kfsi-main-quick-item__img">
-                  <img
-                    src="./assets/images/main/quick06.png"
-                    alt="캠페인영상"
-                  />
+                  <img src="./assets/images/main/quick06.png" alt="" />
                 </div>
                 <p>캠페인<br class="mo" />영상</p>
               </a>
@@ -348,10 +468,7 @@
               <div class="kfsi-main-check-list">
                 <div class="kfsi-main-check-list-item">
                   <div class="kfsi-main-check-list-item__img">
-                    <img
-                      src="./assets/images/main/check01.png"
-                      alt="특별화재예방안전진단 견적신청"
-                    />
+                    <img src="./assets/images/main/check01.png" alt="" />
                   </div>
                   <strong
                     >특별화재예방안전진단<br />
@@ -367,10 +484,7 @@
                 </div>
                 <div class="kfsi-main-check-list-item">
                   <div class="kfsi-main-check-list-item__img">
-                    <img
-                      src="./assets/images/main/check02.png"
-                      alt="소방시설점검 견적신청"
-                    />
+                    <img src="./assets/images/main/check02.png" alt="" />
                   </div>
                   <strong> 소방시설점검<br/ > 견적신청 </strong>
                   <p>건축물 화재예방을 위한<br/ > 전문인력의 소방시설 점검</p>
@@ -380,10 +494,7 @@
                 </div>
                 <div class="kfsi-main-check-list-item">
                   <div class="kfsi-main-check-list-item__img">
-                    <img
-                      src="./assets/images/main/check03.png"
-                      alt="연구실안전진단 견적신청"
-                    />
+                    <img src="./assets/images/main/check03.png" alt="" />
                   </div>
                   <strong> 연구실안전진단<br/ > 견적신청 </strong>
                   <p>
@@ -395,10 +506,7 @@
                 </div>
                 <div class="kfsi-main-check-list-item">
                   <div class="kfsi-main-check-list-item__img">
-                    <img
-                      src="./assets/images/main/check04.png"
-                      alt="화재안전진단 견적신청"
-                    />
+                    <img src="./assets/images/main/check04.png" alt="" />
                   </div>
                   <strong> 화재안전진단<br/ > 견적신청 </strong>
                   <p>
@@ -432,14 +540,14 @@
                       <div class="pc">
                         <img
                           src="./assets/images/main/promotion01.png"
-                          alt="홍보 동영상 썸네일"
+                          alt=""
                           style="width: 210px"
                         />
                       </div>
                       <div class="mo">
                         <img
                           src="./assets/images/main/promotion01_mo.png"
-                          alt="홍보 동영상 썸네일"
+                          alt=""
                         />
                       </div>
                       <p>홍보 동영상</p>
@@ -448,14 +556,14 @@
                       <div class="pc">
                         <img
                           src="./assets/images/main/promotion02.png"
-                          alt="브랜드 캠페인 썸네일"
+                          alt=""
                           style="width: 210px"
                         />
                       </div>
                       <div class="mo">
                         <img
                           src="./assets/images/main/promotion02_mo.png"
-                          alt="브랜드 캠페인 썸네일"
+                          alt=""
                         />
                       </div>
                       <p>브랜드 캠페인</p>
@@ -464,14 +572,14 @@
                       <div class="pc">
                         <img
                           src="./assets/images/main/promotion03.png"
-                          alt="Shorts 썸네일"
+                          alt=""
                           style="width: 122px"
                         />
                       </div>
                       <div class="mo">
                         <img
                           src="./assets/images/main/promotion03_mo.png"
-                          alt="Shorts 썸네일"
+                          alt=""
                         />
                       </div>
                       <p>
@@ -491,7 +599,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member01.png"
-                        alt="회원가입안내"
+                        alt=""
                         style="width: 63px"
                       />
                     </div>
@@ -501,7 +609,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member02.png"
-                        alt="회비납부"
+                        alt=""
                         style="width: 39px"
                       />
                     </div>
@@ -511,7 +619,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member03.png"
-                        alt="납부조회"
+                        alt=""
                         style="width: 65px"
                       />
                     </div>
@@ -521,7 +629,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member04.png"
-                        alt="확인서 발급"
+                        alt=""
                         style="width: 46px"
                       />
                     </div>
@@ -531,7 +639,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member05.png"
-                        alt="재해위로금 신청"
+                        alt=""
                         style="width: 77px"
                       />
                     </div>
@@ -541,7 +649,7 @@
                     <div class="kfsi-main-member-list-item__img">
                       <img
                         src="./assets/images/main/member06.png"
-                        alt="장학금 신청"
+                        alt=""
                         style="width: 87px"
                       />
                     </div>
@@ -563,10 +671,7 @@
               <div class="kfsi-main-benefit-list">
                 <a href="" class="kfsi-main-benefit-list-item">
                   <div class="kfsi-main-benefit-list-item__img">
-                    <img
-                      src="./assets/images/main/benefit02.png"
-                      alt="제휴업체"
-                    />
+                    <img src="./assets/images/main/benefit02.png" alt="" />
                   </div>
                   <strong>제휴업체</strong>
                   <p>
@@ -578,10 +683,7 @@
                 </a>
                 <a href="" class="kfsi-main-benefit-list-item">
                   <div class="kfsi-main-benefit-list-item__img">
-                    <img
-                      src="./assets/images/main/benefit03.png"
-                      alt="퀴즈이벤트"
-                    />
+                    <img src="./assets/images/main/benefit03.png" alt="" />
                   </div>
                   <strong>퀴즈이벤트</strong>
                   <p>
@@ -593,10 +695,7 @@
                 </a>
                 <a href="" class="kfsi-main-benefit-list-item">
                   <div class="kfsi-main-benefit-list-item__img">
-                    <img
-                      src="./assets/images/main/benefit04.png"
-                      alt="전자도서관"
-                    />
+                    <img src="./assets/images/main/benefit04.png" alt="" />
                   </div>
                   <strong>전자도서관</strong>
                   <p>
@@ -642,7 +741,7 @@
                     <div class="kfsi-main-introduction-customer__img">
                       <img
                         src="./assets/images/main/customer01.png"
-                        alt="자주하는 질문"
+                        alt=""
                         style="width: 60px"
                       />
                     </div>
@@ -655,7 +754,7 @@
                     <div class="kfsi-main-introduction-customer__img">
                       <img
                         src="./assets/images/main/customer02.png"
-                        alt="묻고 답하기"
+                        alt=""
                         style="width: 50px"
                       />
                     </div>
@@ -668,7 +767,7 @@
                     <div class="kfsi-main-introduction-customer__img">
                       <img
                         src="./assets/images/main/customer03.png"
-                        alt="취업 정보"
+                        alt=""
                         style="width: 50px"
                       />
                     </div>
