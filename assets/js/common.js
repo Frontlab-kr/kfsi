@@ -231,6 +231,21 @@ $(document).ready(function () {
     if (!this.hasAttribute('tabindex')) this.setAttribute('tabindex', '0'); // 또는 -1
   });
 
+  $(function () {
+    // #dropzone 내부의 small을 button으로 교체
+    $('#dropzone small').each(function () {
+      const text = $(this).text().trim();
+      $(this).replaceWith(
+        $('<button>', {
+          type: 'button',
+          id: 'dz-open',
+          'aria-describedby': 'dz-instruction',
+          text: text,
+        })
+      );
+    });
+  });
+
   // $('.kfsi-datepicker').datepicker({
   //   language: 'ko',
   //   format: 'yyyy/mm/dd',
