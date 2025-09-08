@@ -11,6 +11,9 @@
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
+    <!-- dropzone -->
+    <script src="./assets/js/dropzone.min.js"></script>
+
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -217,9 +220,9 @@
                             </div>
                             <script>
                               var dropzone = new Dropzone('#demo-upload', {
-                                previewTemplate:
-                                  document.querySelector('#preview-template')
-                                    .innerHTML,
+                                // previewTemplate:
+                                //   document.querySelector('#preview-template')
+                                //     .innerHTML,
                                 parallelUploads: 2,
                                 thumbnailHeight: 120,
                                 thumbnailWidth: 120,

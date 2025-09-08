@@ -85,7 +85,7 @@ table {
   margin: 0 auto;
   width: 100%;
   list-style: none;
-  font-size: 1.15em;
+  font-size: 16px;
   top: -10.5em;
   left: 0;
   z-index: 999;
@@ -1804,21 +1804,22 @@ body {
         display: flex;
         align-items: center;
         width: 630px;
-        height: 60px;
+        //height: 60px;
+        padding: 2px 16px;
         border-radius: 30px;
         border: solid 3px #032c5e;
         background-color: #fff;
         overflow: hidden;
         .form-control {
-          height: 100%;
+          height: 56px;
           border: 0;
           font-size: 18px;
           padding: 0 34px;
         }
         button {
-          min-width: 60px;
-          width: 60px;
-          height: 60px;
+          min-width: 56px;
+          width: 56px;
+          height: 56px;
           margin-right: 10px;
           border: 0;
           background: url(../images/icon/ico-search-main.png) no-repeat 50% 50%;
@@ -7531,8 +7532,16 @@ body {
         &-item {
           border: solid 1px #ccc;
           &-thumb {
+            display: flex;
             height: 586px;
             overflow: hidden;
+            a {
+              display: block;
+              &:focus,
+              &:focus-visible {
+                margin: 4px;
+              }
+            }
             img {
               display: block;
               width: 100%;

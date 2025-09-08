@@ -21983,7 +21983,7 @@ table caption {
   margin: 0 auto;
   width: 100%;
   list-style: none;
-  font-size: 1.15em;
+  font-size: 16px;
   top: -10.5em;
   left: 0;
   z-index: 999;
@@ -23632,22 +23632,22 @@ body {
   display: flex;
   align-items: center;
   width: 630px;
-  height: 60px;
+  padding: 2px 16px;
   border-radius: 30px;
   border: solid 3px #032c5e;
   background-color: #fff;
   overflow: hidden;
 }
 .kfsi-main-search-form .form-control {
-  height: 100%;
+  height: 56px;
   border: 0;
   font-size: 18px;
   padding: 0 34px;
 }
 .kfsi-main-search-form button {
-  min-width: 60px;
-  width: 60px;
-  height: 60px;
+  min-width: 56px;
+  width: 56px;
+  height: 56px;
   margin-right: 10px;
   border: 0;
   background: url(../images/icon/ico-search-main.png) no-repeat 50% 50%;
@@ -29068,8 +29068,15 @@ body {
   border: solid 1px #ccc;
 }
 .kfsi-webzine-section-list-item-thumb {
+  display: flex;
   height: 586px;
   overflow: hidden;
+}
+.kfsi-webzine-section-list-item-thumb a {
+  display: block;
+}
+.kfsi-webzine-section-list-item-thumb a:focus, .kfsi-webzine-section-list-item-thumb a:focus-visible {
+  margin: 4px;
 }
 .kfsi-webzine-section-list-item-thumb img {
   display: block;
