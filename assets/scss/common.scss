@@ -1199,6 +1199,11 @@ body {
           }
         }
         &.active {
+          button {
+            &::after {
+              content: '-';
+            }
+          }
           ul {
             display: block;
           }

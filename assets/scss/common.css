@@ -23045,6 +23045,9 @@ body {
 .kfsi-footer-site-select ul li a:hover {
   background-color: #ebf2f5;
 }
+.kfsi-footer-site-select.active button::after {
+  content: "-";
+}
 .kfsi-footer-site-select.active ul {
   display: block;
 }
