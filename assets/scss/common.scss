@@ -10,8 +10,11 @@
 
 :focus-visible {
   outline: 3px dotted red !important;
+  outline-offset: -4px;
 }
-
+.wrap_controllers {
+  display: none !important;
+}
 .text-info {
   color: #787878 !important;
 }
@@ -3654,7 +3657,8 @@ body {
     &-title {
       padding: 24px 0 22px 0;
       border-bottom: 1px solid #000;
-      h1 {
+      h1,
+      h3 {
         margin: 0;
         font-size: 24px;
         font-weight: bold;
@@ -3687,7 +3691,8 @@ body {
       &-title {
         padding: 24px 0 22px 0;
         border-bottom: 1px solid #000;
-        h1 {
+        h1,
+        h3 {
           margin: 0;
           font-size: 24px;
           font-weight: bold;
@@ -5970,9 +5975,15 @@ body {
               padding: 3px 0;
               background: none;
               border: 0;
+              vertical-align: top;
             }
             th {
               padding-top: 9px;
+            }
+            td {
+              &:first-child {
+                padding-top: 9px;
+              }
             }
           }
         }

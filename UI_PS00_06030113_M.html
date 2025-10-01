@@ -78,7 +78,11 @@
                 </div>
                 <div class="mt-10">
                   <div class="kfsi-board-write">
-                    <h5 class="kfsi-h5 mb-3">지원분야</h5>
+                    <h5 class="kfsi-h5 mb-3">
+                      지원분야<small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </h5>
                     <div class="kfsi-board-write-form">
                       <table>
                         <caption>
@@ -101,6 +105,7 @@
                                   aria-expanded="false"
                                   aria-haspopup="true"
                                   style="width: 500px"
+                                  title="지원분야 선택"
                                 >
                                   선택해 주세요.
                                 </button>
@@ -157,7 +162,11 @@
                     </div>
                   </div>
                   <div class="kfsi-board-write mt-5">
-                    <h5 class="kfsi-h5 mb-3">인적사항</h5>
+                    <h5 class="kfsi-h5 mb-3">
+                      인적사항<small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </h5>
                     <div class="kfsi-board-write-form">
                       <table>
                         <caption>
@@ -178,7 +187,7 @@
                                 type="text"
                                 class="form-control"
                                 placeholder="성명을 입력해 주세요."
-                                title="성명을 입력해 주세요."
+                                title="성명 (한글)을 입력해 주세요."
                                 style="width: 400px"
                               />
                             </td>
@@ -192,7 +201,7 @@
                                 type="text"
                                 class="form-control"
                                 placeholder="성명을 입력해 주세요."
-                                title="성명을 입력해 주세요."
+                                title="성명 (영문)을 입력해 주세요."
                                 style="width: 400px"
                               />
                             </td>
@@ -206,7 +215,7 @@
                                 type="text"
                                 class="form-control"
                                 placeholder="성명을 입력해 주세요."
-                                title="성명을 입력해 주세요."
+                                title="성명 (한자)을 입력해 주세요."
                                 style="width: 400px"
                               />
                               <small class="ms-4"
@@ -237,7 +246,7 @@
                                 type="text"
                                 class="form-control w-auto"
                                 placeholder="숫자만 입력 (ex 01012345678)"
-                                title="숫자만 입력 (ex 01012345678)"
+                                title="본인휴대폰 숫자만 입력 (ex 01012345678)"
                               />
                             </td>
                           </tr>
@@ -251,7 +260,7 @@
                                   type="text"
                                   class="form-control w-auto"
                                   placeholder="숫자만 입력 (ex 01012345678)"
-                                  title="숫자만 입력 (ex 01012345678)"
+                                  title="비상연락처 숫자만 입력 (ex 01012345678)"
                                 />
                               </div>
                             </td>
@@ -272,8 +281,8 @@
                                   />
                                   <select
                                     class="form-select"
-                                    aria-label="E-mail 선택"
-                                    title="E-mail 선택"
+                                    aria-label="이메일 도메인 선택"
+                                    title="이메일 도메인 선택"
                                   >
                                     <option selected>선택</option>
                                     <option value="daum.net">daum.net</option>
@@ -299,7 +308,7 @@
                                   type="text"
                                   class="form-control"
                                   style="min-width: 160px; width: 160px"
-                                  title="우편번호 입력"
+                                  title="주소(거주지) 우편번호 숫자만 입력"
                                 />
                                 <button type="button" class="btn btn-info ms-2">
                                   우편번호 찾기
@@ -309,7 +318,7 @@
                                 <input
                                   type="text"
                                   class="form-control"
-                                  title="상세 주소"
+                                  title="주소(거주지) 상세 주소"
                                 />
                               </div>
                               <div class="mt-2">
@@ -317,7 +326,7 @@
                                   type="text"
                                   class="form-control"
                                   placeholder="나머지 주소"
-                                  title="나머지 주소"
+                                  title="주소(거주지) 나머지 주소"
                                 />
                               </div>
                             </td>
@@ -327,7 +336,12 @@
                     </div>
                   </div>
                   <div class="kfsi-board-write mt-10">
-                    <h5 class="kfsi-h5 mb-3">응시자격 요건 확인</h5>
+                    <h5 class="kfsi-h5 mb-3">
+                      응시자격 요건 확인<small
+                        class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </h5>
                     <div class="kfsi-board-write-form">
                       <table>
                         <caption>
@@ -353,6 +367,7 @@
                                     type="radio"
                                     name="radio01-01"
                                     id="radio01-01-01"
+                                    title="60세 미만"
                                   />
                                   <label
                                     class="form-check-label"
@@ -368,6 +383,7 @@
                                     type="radio"
                                     name="radio01-01"
                                     id="radio01-01-02"
+                                    title="60세 미만"
                                   />
                                   <label
                                     class="form-check-label"
@@ -396,6 +412,7 @@
                                     type="radio"
                                     name="radio01-02"
                                     id="radio01-02-01"
+                                    title="안전원 인사규정 제17조의 신규채용자 결격사유에 해당하지 않는 자"
                                   />
                                   <label
                                     class="form-check-label"
@@ -411,6 +428,7 @@
                                     type="radio"
                                     name="radio01-02"
                                     id="radio01-02-02"
+                                    title="안전원 인사규정 제17조의 신규채용자 결격사유에 해당하지 않는 자"
                                   />
                                   <label
                                     class="form-check-label"
@@ -437,6 +455,7 @@
                                     type="radio"
                                     name="radio01-03"
                                     id="radio01-03-01"
+                                    title="병역필 또는 면제자(여성포함)"
                                   />
                                   <label
                                     class="form-check-label"
@@ -452,6 +471,7 @@
                                     type="radio"
                                     name="radio01-03"
                                     id="radio01-03-02"
+                                    title="병역필 또는 면제자(여성포함)"
                                   />
                                   <label
                                     class="form-check-label"
@@ -480,7 +500,11 @@
                     </div>
                   </div>
                   <div class="kfsi-board-write mt-5">
-                    <h5 class="kfsi-h5 mb-3">우대사항</h5>
+                    <h5 class="kfsi-h5 mb-3">
+                      우대사항<small class="text-danger fw-normal ms-2"
+                        >(*필수 입력사항입니다.)</small
+                      >
+                    </h5>
                     <div class="kfsi-board-write-form">
                       <table>
                         <caption>
@@ -506,6 +530,7 @@
                                     type="radio"
                                     name="radio02-01"
                                     id="radio02-01-01"
+                                    title="취업지원대상자(보훈 등)"
                                   />
                                   <label
                                     class="form-check-label"
@@ -541,6 +566,7 @@
                                     type="radio"
                                     name="radio02-01"
                                     id="radio02-01-02"
+                                    title="취업지원대상자(보훈 등)"
                                   />
                                   <label
                                     class="form-check-label"
@@ -566,6 +592,7 @@
                                     type="radio"
                                     name="radio02-02"
                                     id="radio02-02-01"
+                                    title="장애인"
                                   />
                                   <label
                                     class="form-check-label"
@@ -594,6 +621,7 @@
                                     type="radio"
                                     name="radio02-02"
                                     id="radio02-02-02"
+                                    title="장애인"
                                   />
                                   <label
                                     class="form-check-label"

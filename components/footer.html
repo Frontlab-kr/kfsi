@@ -115,29 +115,29 @@
       const $wrap = $('.kfsi-footer-site-select');
       const $btn = $wrap.find('button');
       const $menu = $wrap.find('ul');
-      const $items = $menu.find('a');
+      const $items = $menu.find('a[href]'); // href가 있어야 포커스 가능
 
-      // ARIA 초기화
+      // ARIA: 메뉴 버튼 패턴(링크 목록이므로 menu role 미사용)
       $btn.attr({
-        'aria-haspopup': 'menu',
         'aria-expanded': 'false',
         'aria-controls': 'kfsi-related-sites',
       });
-      $menu.attr({ id: 'kfsi-related-sites', role: 'menu' });
-      $items.attr({ role: 'menuitem', tabindex: '-1' });
+      $menu.attr({ id: 'kfsi-related-sites' });
+
+      function focusFirstOrLast(which = 'first') {
+        const $t = which === 'last' ? $items.last() : $items.first();
+        if ($t.length) $t.focus();
+      }
 
       function openMenu(focusTarget = 'first') {
         $wrap.addClass('active');
         $btn.attr('aria-expanded', 'true');
-        $items.attr('tabindex', '-1');
-        const $t = focusTarget === 'last' ? $items.last() : $items.first();
-        $t.attr('tabindex', '0').focus();
+        focusFirstOrLast(focusTarget);
       }
 
       function closeMenu(returnFocus = false) {
         $wrap.removeClass('active');
         $btn.attr('aria-expanded', 'false');
-        $items.attr('tabindex', '-1');
         if (returnFocus) $btn.focus();
       }
 
@@ -146,6 +146,7 @@
         e.stopPropagation();
         $wrap.hasClass('active') ? closeMenu(true) : openMenu('first');
       });
+
       $btn.on('keydown', function (e) {
         switch (e.key) {
           case 'ArrowDown':
@@ -168,10 +169,10 @@
         }
       });
 
-      // 메뉴 항목: 방향키/홈/엔드/탭/ESC
+      // 링크 항목: (선택) 화살표로 이동 지원 — tabindex 없이도 가능
       $items.on('keydown', function (e) {
         const i = $items.index(this);
-        let next;
+        let next = null;
         switch (e.key) {
           case 'ArrowDown':
             e.preventDefault();
@@ -193,14 +194,13 @@
             e.preventDefault();
             closeMenu(true);
             return;
-          case 'Tab': // 포커스가 영역 밖으로 나가므로 닫고 기본 탭 이동 유지
+          case 'Tab':
             closeMenu(false);
-            return;
+            return; // 기본 탭 이동
           default:
             return;
         }
-        $items.attr('tabindex', '-1');
-        $items.eq(next).attr('tabindex', '0').focus();
+        if (next !== null) $items.eq(next).focus();
       });
 
       // 항목 클릭 시 닫기
@@ -214,7 +214,7 @@
           closeMenu(false);
       });
 
-      // 포커스가 컴포넌트 밖으로 완전히 나가면 닫기 (탭 이동 포함)
+      // 포커스가 컴포넌트 밖으로 완전히 나가면 닫기
       $wrap.on('focusout', function () {
         setTimeout(function () {
           if (!$wrap.find(':focus').length) closeMenu(false);

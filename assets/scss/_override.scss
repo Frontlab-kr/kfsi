@@ -133,7 +133,10 @@ small {
   &-primary-light {
     background-color: #406491;
     color: #fff !important;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus-visible {
       background-color: #406491;
       color: #fff !important;
     }

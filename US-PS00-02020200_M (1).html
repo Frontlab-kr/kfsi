@@ -84,7 +84,11 @@
                   </div>
                 </div>
                 <div class="kfsi-join-step02">
-                  <h4 class="kfsi-h4">신청자 정보</h4>
+                  <h4 class="kfsi-h4">
+                    신청자 정보<small class="text-danger fw-normal ms-2"
+                      >(*필수 입력사항입니다.)</small
+                    >
+                  </h4>
                   <div class="kfsi-board">
                     <div class="kfsi-board-write">
                       <div class="kfsi-board-write-form">
@@ -120,6 +124,7 @@
                                       class="btn btn-secondary btn-sm"
                                       data-bs-toggle="modal"
                                       data-bs-target="#alert01"
+                                      title="아이디 중복확인"
                                     >
                                       중복확인
                                     </button>
@@ -216,7 +221,7 @@
                                   <input
                                     type="text"
                                     class="form-control"
-                                    title="아이디"
+                                    title="성함"
                                     style="width: 200px"
                                   />
                                 </span>
@@ -236,7 +241,7 @@
                                     >
                                       <select
                                         class="form-select"
-                                        title="년도 선택"
+                                        title="생년월일 년도 선택"
                                         style="min-width: 100px; width: 100px"
                                       >
                                         <option selected>선택</option>
@@ -248,7 +253,7 @@
                                     >
                                       <select
                                         class="form-select"
-                                        title="월 선택"
+                                        title="생년월일 월 선택"
                                         style="min-width: 80px; width: 80px"
                                       >
                                         <option selected>선택</option>
@@ -260,7 +265,7 @@
                                     >
                                       <select
                                         class="form-select"
-                                        title="일 선택"
+                                        title="생년월일 일 선택"
                                         style="min-width: 80px; width: 80px"
                                       >
                                         <option selected>선택</option>
@@ -316,6 +321,7 @@
                                     <button
                                       type="button"
                                       class="btn btn-secondary btn-sm"
+                                      title="휴대폰 번호"
                                     >
                                       인증번호 전송
                                     </button>
@@ -338,6 +344,7 @@
                                       <button
                                         type="button"
                                         class="btn btn-secondary btn-sm"
+                                        title="휴대폰 번호"
                                       >
                                         인증번호 확인
                                       </button>
@@ -421,6 +428,7 @@
                                         value=""
                                         name="radio1"
                                         id="radio1-1"
+                                        title="연령확인"
                                       />
                                       <label
                                         class="form-check-label"
@@ -436,6 +444,7 @@
                                         value=""
                                         name="radio1"
                                         id="radio1-2"
+                                        title="연령확인"
                                       />
                                       <label
                                         class="form-check-label"

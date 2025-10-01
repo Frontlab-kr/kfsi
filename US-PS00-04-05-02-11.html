@@ -66,8 +66,8 @@
                     <div class="kfsi-board-write-form">
                       <table>
                         <caption>
-                          담당자 정보와 관련된 입력 필드로 담당자명, 해당지역,
-                          회사 전화번호, 회사 이메일 정보를 입력합니다.
+                          기본정보 입력 필드로 담당자명, 해당지역, 회사
+                          전화번호, 회사 이메일 정보를 입력합니다.
                         </caption>
                         <colgroup>
                           <col style="width: 210px" />
@@ -97,12 +97,14 @@
                               <div class="d-flex gap-2">
                                 <select
                                   class="form-select"
-                                  aria-label="지부 선택"
-                                  title="지부 선택"
+                                  aria-label="해당지역 지부 선택"
+                                  title="해당지역 지부 선택"
                                 >
                                   <option selected>선택</option>
                                 </select>
-                                <a href="" class="btn btn-info">지부정보보기</a>
+                                <a href="" class="btn btn-info" title="새창"
+                                  >지부정보보기</a
+                                >
                               </div>
                             </td>
                           </tr>
@@ -110,10 +112,10 @@
                             <th scope="row">회사 전화번호</th>
                             <td>
                               <input
-                                type="text"
+                                type="number"
                                 class="form-control w-auto"
                                 placeholder="숫자만 입력 (ex 02267987468)"
-                                title="숫자만 입력 (ex 02267987468)"
+                                title="회사 전화번호 숫자만 입력 (ex 02267987468)"
                               />
                             </td>
                           </tr>
@@ -127,12 +129,12 @@
                                   <input
                                     type="text"
                                     class="form-control"
-                                    title="E-mail 입력"
+                                    title="회사 E-mail 입력"
                                   />
                                   <select
                                     class="form-select"
-                                    aria-label="E-mail 선택"
-                                    title="E-mail 선택"
+                                    aria-label="회사 E-mail 도메인 선택"
+                                    title="회사 E-mail 도메인 선택"
                                   >
                                     <option selected>선택</option>
                                     <option value="daum.net">daum.net</option>
@@ -198,21 +200,24 @@
                                   type="text"
                                   class="form-control"
                                   style="min-width: 160px; width: 160px"
-                                  title="우편번호 입력"
+                                  title="건물 주소 우편번호 숫자만 입력"
                                 />
-                                <a href="" class="btn btn-info"
+                                <a
+                                  href=""
+                                  class="btn btn-info"
+                                  title="건물 주소"
                                   >우편번호 찾기</a
                                 >
                               </div>
                               <input
                                 type="text"
                                 class="form-control mt-2"
-                                title="상세 주소"
+                                title="건물 주소 상세 주소"
                               />
                               <input
                                 type="text"
                                 class="form-control mt-2"
-                                title="나머지 주소"
+                                title="건물 주소 나머지 주소"
                                 placeholder="나머지 주소"
                               />
                             </td>
@@ -224,17 +229,12 @@
                             <td>
                               <div class="kfsi-board-write-subtable">
                                 <table>
-                                  <caption>
-                                    연구실현황 입력을 위한 테이블로 진단대상
-                                    연구실 수 항목을 포함하며, 입력 필드가
-                                    제공됩니다.
-                                  </caption>
                                   <colgroup>
                                     <col style="width: 170px" />
                                   </colgroup>
                                   <tbody>
                                     <tr>
-                                      <th scope="row">진단대상 연구실 수</th>
+                                      <td>진단대상 연구실 수</td>
                                       <td>
                                         <div
                                           class="kfsi-board-write-subtable-input"
@@ -254,7 +254,7 @@
                                                 min-width: 100px;
                                                 width: 100px;
                                               "
-                                              title="연구실 수 입력"
+                                              title="연구실현황 연구실 수 입력"
                                             />
                                             동
                                           </div>
@@ -277,7 +277,7 @@
                                                 min-width: 100px;
                                                 width: 100px;
                                               "
-                                              title="연구실 수 입력"
+                                              title="연구실현황 연구실 수 입력"
                                             />
                                             동
                                           </div>
@@ -296,7 +296,7 @@
                                 class="form-control"
                                 style="height: 108px"
                                 placeholder="내용을 입력해 주세요."
-                                title="내용을 입력해 주세요."
+                                title="간단한 내용을 입력해 주세요."
                               ></textarea>
                             </td>
                           </tr>

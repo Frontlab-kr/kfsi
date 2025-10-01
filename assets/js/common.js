@@ -262,6 +262,92 @@ $(document).ready(function () {
     });
   });
 
+  //h1 수정
+  $('.kfsi-contents-title h1').each(function () {
+    // h1의 내용과 속성을 그대로 가져와서 h3로 교체
+    var $h1 = $(this);
+    var $h3 = $('<h3>').html($h1.html());
+
+    // h1에 있던 속성이 있다면 복사
+    $.each(this.attributes, function () {
+      if (this.specified) {
+        $h3.attr(this.name, this.value);
+      }
+    });
+
+    $h1.replaceWith($h3);
+  });
+
+  //ico-remove
+  $(function () {
+    $('.ico-remove').attr('tabindex', '0');
+  });
+
+  //
+  $(function () {
+    function updateChecklistNav() {
+      // 활성 항목에만 추가
+      $('.kfsi-checklist-nav-item.active p').append(
+        '<span class="hidden"> 진행중인 단계</span>'
+      );
+    }
+
+    // 초기 로드시 실행
+    updateChecklistNav();
+  });
+
+  //
+  $(function () {
+    function updateTabTitle() {
+      // 활성 탭에만 title="선택됨" 추가
+      $('.kfsi-tab-item.active').attr('title', '선택됨');
+    }
+
+    // 초기 로드시 실행
+    updateTabTitle();
+  });
+
+  //
+  $(function () {
+    function updateIconAltText() {
+      // 기존 숨김 텍스트 제거 (중복 방지)
+      $('.ico-lock-active .hidden, .ico-lock .hidden').remove();
+
+      // 공개 아이콘에는 '게시글 공개'
+      $('.ico-lock-active').append('<span class="hidden">게시글 공개</span>');
+
+      // 비공개 아이콘에는 '게시글 비공개'
+      $('.ico-lock').append('<span class="hidden">게시글 비공개</span>');
+    }
+
+    // 초기 로드 시 실행
+    updateIconAltText();
+  });
+
+  //
+  $(function () {
+    function updateSearchTab() {
+      // 모든 탭 링크에서 title 제거
+      $('.kfsi-search-tab-item a').removeAttr('title');
+
+      // active 탭 링크에만 title="선택됨" 추가
+      $('.kfsi-search-tab-item.active a').attr('title', '선택됨');
+    }
+
+    // 초기 로드시 실행
+    updateSearchTab();
+
+    // 탭 클릭 시 active 갱신 + title 속성 업데이트
+    $('.kfsi-search-tab-item a').on('click', function (e) {
+      e.preventDefault();
+
+      $('.kfsi-search-tab-item').removeClass('active');
+      $(this).parent().addClass('active');
+
+      updateSearchTab();
+    });
+  });
+
   // $('.kfsi-datepicker').datepicker({
   //   language: 'ko',
   //   format: 'yyyy/mm/dd',
@@ -394,7 +480,7 @@ $(document).ready(function () {
     const img = previewEl.querySelector('[data-dz-thumbnail]');
     if (img && file.name) {
       if (!img.getAttribute('alt') || img.getAttribute('alt') === '') {
-        img.setAttribute('alt', `${file.name} 미리보기 이미지`);
+        img.setAttribute('alt', `${file.name} 미리보기`);
       }
     }
   }

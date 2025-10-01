@@ -282,16 +282,30 @@
                       });
 
                       // 멈춤 버튼 클릭 이벤트
-                      $('.swiper-button-pause').on('click', function () {
-                        swiper.autoplay.stop();
-                        $('.kfsi-main-banner').addClass('pause');
-                      });
+                      $('.swiper-button-pause')
+                        .on('click', function (e) {
+                          e.preventDefault(); // 기본 링크 이동 방지
+                        })
+                        .on('keydown', function (e) {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            swiper.autoplay.stop();
+                            $('.kfsi-main-banner').addClass('pause');
+                          }
+                        });
 
                       // 재생 버튼 클릭 이벤트
-                      $('.swiper-button-play').on('click', function () {
-                        swiper.autoplay.start();
-                        $('.kfsi-main-banner').removeClass('pause');
-                      });
+                      $('.swiper-button-play')
+                        .on('click', function (e) {
+                          e.preventDefault();
+                        })
+                        .on('keydown', function (e) {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            swiper.autoplay.start();
+                            $('.kfsi-main-banner').removeClass('pause');
+                          }
+                        });
                     });
                   </script>
                 </div>
@@ -355,11 +369,21 @@
                 </div>
                 <div class="kfsi-main-board">
                   <div class="kfsi-main-board-tab">
-                    <a href="" class="kfsi-main-board-tab-item active"
+                    <a
+                      href="javascript:void(0)"
+                      class="kfsi-main-board-tab-item active"
                       >공지사항</a
                     >
-                    <a href="" class="kfsi-main-board-tab-item">입찰공고</a>
-                    <a href="" class="kfsi-main-board-tab-item">보도자료</a>
+                    <a
+                      href="javascript:void(0)"
+                      class="kfsi-main-board-tab-item"
+                      >입찰공고</a
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="kfsi-main-board-tab-item"
+                      >보도자료</a
+                    >
                   </div>
                   <div class="kfsi-main-board-list">
                     <a
@@ -397,11 +421,22 @@
                 </div>
                 <script>
                   $(function () {
-                    $('.kfsi-main-board-tab-item').on('click', function (e) {
-                      //e.preventDefault();
+                    // 초기 로드시 .active 탭에 title="선택됨" 추가
+                    $('.kfsi-main-board-tab-item.active').attr(
+                      'title',
+                      '선택됨'
+                    );
 
-                      // 탭 텍스트 가져오기
+                    $('.kfsi-main-board-tab-item').on('click', function () {
                       var tabText = $(this).text().trim();
+
+                      // 기존 탭에서 active 클래스, title 제거
+                      $('.kfsi-main-board-tab-item')
+                        .removeClass('active')
+                        .removeAttr('title');
+
+                      // 현재 선택된 탭에 active + title="선택됨" 추가
+                      $(this).addClass('active').attr('title', '선택됨');
 
                       // 더보기 문구 변경
                       $('.kfsi-main-board-more .hidden').text(

@@ -8,7 +8,7 @@
     <!-- jquery -->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- bootstrap -->
-        <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <!-- js -->
@@ -20,8 +20,8 @@
   <body>
     <div class="kfsi">
       <div id="header"></div>
-      </div>
-      <div id="kfsi-body">
+    </div>
+    <div id="kfsi-body">
       <div class="kfsi-inner">
         <div class="kfsi-body">
           <div class="kfsi-snb">
@@ -84,40 +84,294 @@
                 />
               </div>
               <div class="hide">
-                조직도 설명:<br />
-                <br />
-                중앙 상단:<br />
-                <br />
-                원장 (기관의 수장)<br />
-                좌측 상단:<br />
-                <br />
-                이사회<br />
-                중앙 하단:<br />
-                <br />
-                경영기획이사<br />
-                경영관리부: 경영관리과, 재무회계과<br />
-                고객관리부: 고객지원과, 홍보과<br />
-                정책연구소: 전문자격과, 정책연구과<br />
-                우측 하단:<br />
-                <br />
-                교육안전이사<br />
-                교육부: 교육운영과, 교재개발과<br />
-                안전관리부: 기술지원과, 안전진단과<br />
-                우측 끝:<br />
-                <br />
-                감사, 감사실<br />
-                하단부에 나열된 사무국들 (지역별 지사):<br />
-                <br />
-                서울 교육국, 서울동부 사무국, 부산 사무국, 대구경북 교육국 및
-                사무국, 인천 사무국, 광주전남 사무국, 대전충남 교육국 및 사무국,
-                울산 사무국, 경기 교육국 및 사무국, 경북 사무국, 강원 사무국,
-                충북 사무국, 전북 사무국, 경남 사무국, 제주 사무국
+                <p>
+                  <strong>본부</strong>
+                  4부 1소 1실 10과
+                </p>
+                <dl class="org">
+                  <!-- 1 ● 원장 -->
+                  <dt>원장</dt>
+                  <dd>
+                    <ul>
+                      <!-- 2 ▶ 이사회 -->
+                      <li>
+                        <dl>
+                          <dt>이사회</dt>
+                          <dd><!-- 이사회는 하위 항목 없음 --></dd>
+                        </dl>
+                      </li>
+
+                      <!-- 2 ▶ 경영기획이사 -->
+                      <li>
+                        <dl>
+                          <dt>경영기획이사</dt>
+                          <dd>
+                            <ul>
+                              <!-- 3 ◆ 경영관리부 -->
+                              <li>
+                                <dl>
+                                  <dt>경영관리부</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>경영관리과</li>
+                                      <!-- 4 ▼ 경영관리과 -->
+                                      <li>재무회계과</li>
+                                      <!-- 4 ▼ 재무회계과 -->
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+
+                              <!-- 3 ◆ 고객관리부 -->
+                              <li>
+                                <dl>
+                                  <dt>고객관리부</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>고객지원과</li>
+                                      <li>홍보과</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+
+                              <!-- 3 ◆ 정책연구소 -->
+                              <li>
+                                <dl>
+                                  <dt>정책연구소</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>전문자격과</li>
+                                      <li>정책연구과</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </li>
+
+                      <!-- 2 ▶ 교육안전이사 -->
+                      <li>
+                        <dl>
+                          <dt>교육안전이사</dt>
+                          <dd>
+                            <ul>
+                              <!-- 3 ◆ 교육부 -->
+                              <li>
+                                <dl>
+                                  <dt>교육부</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>교육운영과</li>
+                                      <li>교재개발과</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+
+                              <!-- 3 ◆ 안전관리부 -->
+                              <li>
+                                <dl>
+                                  <dt>안전관리부</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>기술지원과</li>
+                                      <li>안전진단과</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </li>
+
+                      <!-- 2 ▶ 감사 -->
+                      <li>
+                        <dl>
+                          <dt>감사</dt>
+                          <dd>
+                            <ul>
+                              <li>감사실</li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </li>
+
+                      <!-- 2 ▶ 지역 지사(사무국/교육국) -->
+                      <li>
+                        <dl>
+                          <dt>지역 지사</dt>
+                          <dd>
+                            <ul>
+                              <li>
+                                <dl>
+                                  <dt>서울</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>교육국</li>
+                                      <li>안전국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>서울동부</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>부산</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>대구경북</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>교육국</li>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>인천</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>광주전남</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>대전충남</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>교육국</li>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>울산</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>경기</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>교육국</li>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>경북</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>강원</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>충북</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>전북</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>경남</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl>
+                                  <dt>제주</dt>
+                                  <dd>
+                                    <ul>
+                                      <li>사무국</li>
+                                    </ul>
+                                  </dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <div id="footer"></div>
     </div>
   </body>

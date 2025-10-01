@@ -880,6 +880,8 @@ $mobileWidth: 992px;
             &:checked ~ .form-check-label {
               color: #054a9d;
               border-color: #054a9d;
+              font-weight: 700;
+              text-decoration: underline;
             }
           }
           .form-check-label {
