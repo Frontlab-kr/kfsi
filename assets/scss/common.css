@@ -19920,6 +19920,9 @@ small, .small {
     background-color: #fff;
     text-align: center;
   }
+  .kfsi-openmanagement-box img {
+    width: 100%;
+  }
   .kfsi-openmanagement-table {
     display: flex;
     flex-direction: column;
@@ -24697,7 +24700,7 @@ body {
   }
   .kfsi-main-banner .swiper-button-prev:after, .kfsi-main-banner .swiper-button-next:after {
     color: #000;
-    font-size: 16px;
+    font-size: 0;
   }
   .kfsi-main-banner .swiper-pagination {
     position: relative;
@@ -31924,4 +31927,4 @@ body {
   .kfsi-tab04-type2 > .nav .nav-link:before {
     display: none !important;
   }
-}/*# sourceMappingURL=common.css.map */
+}

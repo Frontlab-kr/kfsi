@@ -144,6 +144,9 @@ $mobileWidth: 992px;
         border: solid 1px #ccc;
         background-color: #fff;
         text-align: center;
+        img {
+          width: 100%;
+        }
       }
       &-table {
         display: flex;
