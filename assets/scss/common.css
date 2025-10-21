@@ -22059,6 +22059,9 @@ body {
   .mo-w-100 {
     width: 100% !important;
   }
+  .mo-align-items-start {
+    align-items: start !important;
+  }
 }
 @media screen and (max-width: 992px) {
   .kfsi {
