@@ -18330,18 +18330,28 @@ small, .small {
 
 .ico-login {
   display: inline-block;
-  min-width: 13px;
-  height: 15px;
-  background: url(../images/icon/ico-login.png) no-repeat 50% 50%;
+  min-width: 16px;
+  height: 19px;
+  background: url(../images/icon/ico-login.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
 }
 
-.ico-sign {
+.ico-logout {
   display: inline-block;
   min-width: 15px;
-  height: 15px;
-  background: url(../images/icon/ico-sign.png) no-repeat 50% 50%;
+  height: 14px;
+  background: url(../images/icon/ico-logout.svg) no-repeat 50% 50%;
+  background-size: cover;
+  font-size: 0;
+  line-height: 0;
+}
+
+.ico-sign {
+  display: inline-block;
+  min-width: 16px;
+  height: 16px;
+  background: url(../images/icon/ico-sign.svg) no-repeat 50% 50%;
   background-size: cover;
   font-size: 0;
 }
