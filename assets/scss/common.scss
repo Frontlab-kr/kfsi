@@ -327,6 +327,14 @@ body {
         display: flex;
         align-items: center;
         height: 100%;
+        &-end {
+          .kfsi-header-gnb-item-depth {
+            dl {
+              margin-left: auto;
+              margin-right: 62px;
+            }
+          }
+        }
         > a {
           display: flex;
           align-items: center;
@@ -492,6 +500,7 @@ body {
         right: 0;
         width: 1240px;
         height: 850px;
+        height: calc(100vh - 200px);
         box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
         border: solid 1px #032c5e;
         background-color: #fff;
@@ -834,6 +843,17 @@ body {
           50%;
         background-size: 18px 18px;
         font-size: 0;
+      }
+      &-gnb {
+        &-item {
+          &-end {
+            .kfsi-header-gnb-item-depth {
+              dl {
+                margin: 0;
+              }
+            }
+          }
+        }
       }
       &-menu {
         position: absolute;

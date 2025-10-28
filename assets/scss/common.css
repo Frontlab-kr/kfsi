@@ -22259,6 +22259,10 @@ body {
   align-items: center;
   height: 100%;
 }
+.kfsi-header-gnb-item-end .kfsi-header-gnb-item-depth dl {
+  margin-left: auto;
+  margin-right: 62px;
+}
 .kfsi-header-gnb-item > a {
   display: flex;
   align-items: center;
@@ -22401,6 +22405,7 @@ body {
   right: 0;
   width: 1240px;
   height: 850px;
+  height: calc(100vh - 200px);
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px #032c5e;
   background-color: #fff;
@@ -22733,6 +22738,9 @@ body {
     background: url(../images/mo/icon/ico-header-search.png) no-repeat 50% 50%;
     background-size: 18px 18px;
     font-size: 0;
+  }
+  .kfsi-header-gnb-item-end .kfsi-header-gnb-item-depth dl {
+    margin: 0;
   }
   .kfsi-header-menu {
     position: absolute;
